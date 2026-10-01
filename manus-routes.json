@@ -1,0 +1,5 @@
+{
+  "routes": [
+    { "path": "/", "title": "Datos a tener en cuenta" }
+  ]
+}

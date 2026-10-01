@@ -1,0 +1,274 @@
+{
+  "id": "alcaldia",
+  "name": "Alcaldía de Bogotá 2023-2027",
+  "candidates": [
+    {
+      "id": "alcaldia-2023-carlos-fernando-galan-pachon",
+      "name": "Carlos Fernando Galan Pachon",
+      "color": "#2a9d8f"
+    },
+    {
+      "id": "alcaldia-2023-gustavo-bolivar-moreno",
+      "name": "Gustavo Bolivar Moreno",
+      "color": "#e9a800"
+    },
+    {
+      "id": "alcaldia-2023-juan-daniel-oviedo-arango",
+      "name": "Juan Daniel Oviedo Arango",
+      "color": "#457b9d"
+    },
+    {
+      "id": "alcaldia-2023-rodrigo-lara-restrepo",
+      "name": "Rodrigo Lara Restrepo",
+      "color": "#f4722b"
+    },
+    {
+      "id": "alcaldia-2023-diego-andres-molano-aponte",
+      "name": "Diego Andres Molano Aponte",
+      "color": "#43aa8b"
+    },
+    {
+      "id": "alcaldia-2023-jorge-luis-vargas-valencia",
+      "name": "Jorge Luis Vargas Valencia",
+      "color": "#8d99ae"
+    },
+    {
+      "id": "alcaldia-2023-jorge-enrique-robledo-castillo",
+      "name": "Jorge Enrique Robledo Castillo",
+      "color": "#b56576"
+    },
+    {
+      "id": "alcaldia-2023-nicolas-ramos-barbosa",
+      "name": "Nicolas Ramos Barbosa",
+      "color": "#264653"
+    },
+    {
+      "id": "alcaldia-2023-rafael-alfonso-quintero-mora",
+      "name": "Rafael Alfonso Quintero Mora",
+      "color": "#a68a64"
+    }
+  ],
+  "localidades": {
+    "L1": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 149026,
+      "alcaldia-2023-gustavo-bolivar-moreno": 23031,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 54128,
+      "alcaldia-2023-rodrigo-lara-restrepo": 3430,
+      "alcaldia-2023-diego-andres-molano-aponte": 6529,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 1519,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 2599,
+      "alcaldia-2023-nicolas-ramos-barbosa": 825,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 390
+    },
+    "L2": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 48576,
+      "alcaldia-2023-gustavo-bolivar-moreno": 10074,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 19197,
+      "alcaldia-2023-rodrigo-lara-restrepo": 1207,
+      "alcaldia-2023-diego-andres-molano-aponte": 1907,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 579,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 1235,
+      "alcaldia-2023-nicolas-ramos-barbosa": 196,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 222
+    },
+    "L3": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 18100,
+      "alcaldia-2023-gustavo-bolivar-moreno": 10792,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 7517,
+      "alcaldia-2023-rodrigo-lara-restrepo": 923,
+      "alcaldia-2023-diego-andres-molano-aponte": 750,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 429,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 675,
+      "alcaldia-2023-nicolas-ramos-barbosa": 211,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 62
+    },
+    "L4": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 59326,
+      "alcaldia-2023-gustavo-bolivar-moreno": 33163,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 22935,
+      "alcaldia-2023-rodrigo-lara-restrepo": 4274,
+      "alcaldia-2023-diego-andres-molano-aponte": 2607,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 2024,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 1303,
+      "alcaldia-2023-nicolas-ramos-barbosa": 884,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 312
+    },
+    "L5": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 50614,
+      "alcaldia-2023-gustavo-bolivar-moreno": 30071,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 16380,
+      "alcaldia-2023-rodrigo-lara-restrepo": 3286,
+      "alcaldia-2023-diego-andres-molano-aponte": 1875,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 1515,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 1188,
+      "alcaldia-2023-nicolas-ramos-barbosa": 669,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 189
+    },
+    "L6": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 36802,
+      "alcaldia-2023-gustavo-bolivar-moreno": 17626,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 14925,
+      "alcaldia-2023-rodrigo-lara-restrepo": 2030,
+      "alcaldia-2023-diego-andres-molano-aponte": 1443,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 1036,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 842,
+      "alcaldia-2023-nicolas-ramos-barbosa": 363,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 90
+    },
+    "L7": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 97840,
+      "alcaldia-2023-gustavo-bolivar-moreno": 54258,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 41988,
+      "alcaldia-2023-rodrigo-lara-restrepo": 7100,
+      "alcaldia-2023-diego-andres-molano-aponte": 4117,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 2813,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 2086,
+      "alcaldia-2023-nicolas-ramos-barbosa": 1398,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 358
+    },
+    "L8": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 176804,
+      "alcaldia-2023-gustavo-bolivar-moreno": 76885,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 77629,
+      "alcaldia-2023-rodrigo-lara-restrepo": 9977,
+      "alcaldia-2023-diego-andres-molano-aponte": 7832,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 4131,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 4136,
+      "alcaldia-2023-nicolas-ramos-barbosa": 2175,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 656
+    },
+    "L9": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 83064,
+      "alcaldia-2023-gustavo-bolivar-moreno": 26525,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 38849,
+      "alcaldia-2023-rodrigo-lara-restrepo": 3512,
+      "alcaldia-2023-diego-andres-molano-aponte": 3507,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 1472,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 2093,
+      "alcaldia-2023-nicolas-ramos-barbosa": 839,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 155
+    },
+    "L10": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 166519,
+      "alcaldia-2023-gustavo-bolivar-moreno": 60742,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 77581,
+      "alcaldia-2023-rodrigo-lara-restrepo": 7009,
+      "alcaldia-2023-diego-andres-molano-aponte": 7797,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 3039,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 4133,
+      "alcaldia-2023-nicolas-ramos-barbosa": 2095,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 570
+    },
+    "L11": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 245022,
+      "alcaldia-2023-gustavo-bolivar-moreno": 65639,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 99970,
+      "alcaldia-2023-rodrigo-lara-restrepo": 8645,
+      "alcaldia-2023-diego-andres-molano-aponte": 11141,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 3611,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 4894,
+      "alcaldia-2023-nicolas-ramos-barbosa": 1992,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 437
+    },
+    "L12": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 44533,
+      "alcaldia-2023-gustavo-bolivar-moreno": 12532,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 17930,
+      "alcaldia-2023-rodrigo-lara-restrepo": 1324,
+      "alcaldia-2023-diego-andres-molano-aponte": 2115,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 921,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 1140,
+      "alcaldia-2023-nicolas-ramos-barbosa": 368,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 81
+    },
+    "L13": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 43440,
+      "alcaldia-2023-gustavo-bolivar-moreno": 18626,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 21330,
+      "alcaldia-2023-rodrigo-lara-restrepo": 1182,
+      "alcaldia-2023-diego-andres-molano-aponte": 2011,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 672,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 1663,
+      "alcaldia-2023-nicolas-ramos-barbosa": 419,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 232
+    },
+    "L14": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 20526,
+      "alcaldia-2023-gustavo-bolivar-moreno": 7486,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 6847,
+      "alcaldia-2023-rodrigo-lara-restrepo": 924,
+      "alcaldia-2023-diego-andres-molano-aponte": 939,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 444,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 468,
+      "alcaldia-2023-nicolas-ramos-barbosa": 143,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 59
+    },
+    "L15": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 26999,
+      "alcaldia-2023-gustavo-bolivar-moreno": 11544,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 10560,
+      "alcaldia-2023-rodrigo-lara-restrepo": 1096,
+      "alcaldia-2023-diego-andres-molano-aponte": 1176,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 547,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 606,
+      "alcaldia-2023-nicolas-ramos-barbosa": 324,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 150
+    },
+    "L16": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 61002,
+      "alcaldia-2023-gustavo-bolivar-moreno": 21757,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 25040,
+      "alcaldia-2023-rodrigo-lara-restrepo": 2325,
+      "alcaldia-2023-diego-andres-molano-aponte": 2724,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 1060,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 1583,
+      "alcaldia-2023-nicolas-ramos-barbosa": 698,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 237
+    },
+    "L17": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 9318,
+      "alcaldia-2023-gustavo-bolivar-moreno": 6290,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 3484,
+      "alcaldia-2023-rodrigo-lara-restrepo": 392,
+      "alcaldia-2023-diego-andres-molano-aponte": 455,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 323,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 394,
+      "alcaldia-2023-nicolas-ramos-barbosa": 111,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 24
+    },
+    "L18": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 59693,
+      "alcaldia-2023-gustavo-bolivar-moreno": 29569,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 23166,
+      "alcaldia-2023-rodrigo-lara-restrepo": 3644,
+      "alcaldia-2023-diego-andres-molano-aponte": 2494,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 1623,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 1398,
+      "alcaldia-2023-nicolas-ramos-barbosa": 700,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 259
+    },
+    "L19": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 85943,
+      "alcaldia-2023-gustavo-bolivar-moreno": 48107,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 28931,
+      "alcaldia-2023-rodrigo-lara-restrepo": 6661,
+      "alcaldia-2023-diego-andres-molano-aponte": 3527,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 3197,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 1917,
+      "alcaldia-2023-nicolas-ramos-barbosa": 1281,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 400
+    },
+    "L20": {
+      "alcaldia-2023-carlos-fernando-galan-pachon": 1234,
+      "alcaldia-2023-gustavo-bolivar-moreno": 1565,
+      "alcaldia-2023-juan-daniel-oviedo-arango": 240,
+      "alcaldia-2023-rodrigo-lara-restrepo": 35,
+      "alcaldia-2023-diego-andres-molano-aponte": 24,
+      "alcaldia-2023-jorge-luis-vargas-valencia": 27,
+      "alcaldia-2023-jorge-enrique-robledo-castillo": 17,
+      "alcaldia-2023-nicolas-ramos-barbosa": 7,
+      "alcaldia-2023-rafael-alfonso-quintero-mora": 7
+    }
+  },
+  "puestos": []
+}
