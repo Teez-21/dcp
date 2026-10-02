@@ -16,12 +16,19 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Slider } from "@/components/ui/slider";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import { displayPuestoVotes, sumVotes } from "@/lib/electoral";
+import { pollingStationSummary, stationForPuesto } from "@/lib/pollingStations";
 import MiniChart from "./MiniChart";
 
 const MODES = [
-  { value: "winner", label: "Localidad ganada", desc: "Cada localidad con el color de quien ganó", icon: Landmark },
-  { value: "split", label: "Proporción por localidad", desc: "Franjas de color según el porcentaje de cada uno", icon: Layers },
-  { value: "puestos", label: "Puestos de votación", desc: "Ganador y segundo por puesto; se agrupan al alejar el zoom", icon: CircleDot },
+  { value: "winner", label: "Ganador", desc: "Color del candidato o partido más votado en cada zona", icon: Landmark },
+  { value: "split", label: "Proporción", desc: "Reparte el color según la participación de cada candidatura", icon: Layers },
+] as const;
+
+const TERRITORY_LEVELS = [
+  { value: "localidades", label: "Localidad", icon: Landmark },
+  { value: "upz", label: "UPZ", icon: Layers },
+  { value: "puestos", label: "Puesto", icon: CircleDot },
 ] as const;
 
 function download(name: string, text: string) {
@@ -37,9 +44,7 @@ export default function ControlDeck() {
   const s = useDashboardStore();
   const editingE = s.elections.find((e) => e.id === s.editing) ?? s.elections[0];
   const [msg, setMsg] = useState<string | null>(null);
-  const geoLoaded = Boolean(s.geo);
 
-  const fGeo = useRef<HTMLInputElement>(null);
   const fReg = useRef<HTMLInputElement>(null);
   const fCoord = useRef<HTMLInputElement>(null);
   const fLoc = useRef<HTMLInputElement>(null);
@@ -52,11 +57,17 @@ export default function ControlDeck() {
     if (!editingE?.partyMode) return [];
     return Array.from(new Set(editingE.candidates.map((c) => c.party).filter(Boolean))) as string[];
   }, [editingE]);
-
-  const props = useMemo(() => {
-    if (!s.geo || !s.geo.features[0]) return [];
-    return Object.keys(s.geo.features[0].properties || {});
-  }, [s.geo]);
+  const outsideUpzPostCount = useMemo(() => {
+    const stationKeys = new Set<string>();
+    s.elections.filter((e) => s.visible.includes(e.id)).forEach((e) => {
+      const view = s.resultViewByElection?.[e.id] || "candidate";
+      e.puestos.forEach((puesto) => {
+        const station = stationForPuesto(puesto);
+        if (station && !station.upz_code && sumVotes(displayPuestoVotes(e, puesto, view)) > 0) stationKeys.add(station.station_key);
+      });
+    });
+    return stationKeys.size;
+  }, [s.elections, s.visible, s.resultViewByElection]);
 
   function withFile(input: React.RefObject<HTMLInputElement>, cb: (text: string) => void) {
     const f = input.current?.files?.[0];
@@ -122,48 +133,64 @@ export default function ControlDeck() {
               ))}
               <DropdownMenuSeparator />
               <p className="px-3 pb-1.5 pt-1 text-[11px] leading-snug text-muted">
-                En «localidad ganada» y «proporción» se dibuja la última que marques; en «puestos de votación» se superponen todas.
+                Las votaciones seleccionadas se dibujan como capas translúcidas; al superponerse, sus colores se mezclan.
               </p>
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <button
-            type="button"
-            onClick={() => fGeo.current?.click()}
-            className="flex w-full items-center gap-2 rounded-lg border border-signal/55 bg-signal/10 px-3 py-2.5 text-left text-[12px] font-semibold text-signal transition-colors hover:bg-signal/20"
-          >
-            <FileJson className="h-4 w-4 shrink-0" />
-            <span className="flex-1"><span className="block">Subir GeoJSON de localidades</span><span className="mt-0.5 block text-[10.5px] font-normal text-muted">{geoLoaded ? `${s.geo?.features.length ?? 0} zonas cargadas` : "Activa el mapa de las 20 localidades de Bogotá"}</span></span>
-            <Upload className="h-3.5 w-3.5" />
-          </button>
-          <input ref={fGeo} type="file" accept=".geojson,application/geo+json,.json" hidden onChange={() =>
-            withFile(fGeo, (t) => { s.importGeoJSON(JSON.parse(t)); setMsg("GeoJSON cargado correctamente."); })} />
-
-          {/* Modo de visualización */}
           <div>
-            <p className="mb-1.5 px-0.5 text-[10.5px] font-semibold uppercase tracking-wide text-muted">Modo de visualización</p>
+            <p className="mb-1.5 px-0.5 text-[10.5px] font-semibold uppercase tracking-wide text-muted">Unidad territorial</p>
             <ToggleGroup
               type="single"
-              value={s.mode}
-              onValueChange={(v) => v && s.setMode(v as typeof s.mode)}
+              value={s.territoryLevel}
+              onValueChange={(value) => value && s.setTerritoryLevel(value as typeof s.territoryLevel)}
+              className="grid grid-cols-3"
+              aria-label="Cambiar entre localidad, UPZ y puesto de votación"
             >
-              {MODES.map((m) => (
-                <ToggleGroupItem key={m.value} value={m.value}>
-                  <m.icon className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                  <span>
-                    <span className="block text-[12.5px] font-semibold">{m.label}</span>
-                    <span className="block text-[11px] leading-snug text-muted">{m.desc}</span>
-                  </span>
+              {TERRITORY_LEVELS.map((level) => (
+                <ToggleGroupItem key={level.value} value={level.value} className="justify-center gap-1 text-center text-[11.5px]">
+                  <level.icon className="h-3.5 w-3.5 shrink-0 text-accent" />{level.label}
                 </ToggleGroupItem>
               ))}
             </ToggleGroup>
-            {s.mode === "puestos" && (
-              <div className="mt-2.5 flex items-center gap-3 px-0.5">
-                <span className="whitespace-nowrap text-[11.5px] text-muted">Opacidad</span>
-                <Slider min={0.1} max={1} step={0.05} value={[s.opacity]} onValueChange={([v]) => s.setOpacity(v)} />
-                <span className="w-9 text-right font-mono text-[11px] text-muted">{Math.round(s.opacity * 100)}%</span>
-              </div>
+            {s.territoryLevel === "upz" && (
+              <p role="status" className="mt-1.5 rounded-lg border border-accent/25 bg-accent/5 px-2.5 py-2 text-[10.5px] leading-snug text-muted">
+                Los votos se suman desde sus puestos. {pollingStationSummary.upz_without_stations} UPZ sin puestos aparecen en gris; {outsideUpzPostCount} puestos con votos fuera de estos polígonos no se asignan a una UPZ.
+              </p>
             )}
+          </div>
+
+          {/* Modo de resultado y margen de los círculos */}
+          <div>
+            {s.territoryLevel === "puestos" ? (
+              <>
+                <p className="mb-1.5 px-0.5 text-[10.5px] font-semibold uppercase tracking-wide text-muted">El tamaño del círculo indica la diferencia</p>
+                <ToggleGroup type="single" value={s.marginMetric} onValueChange={(v) => v && s.setMarginMetric(v as typeof s.marginMetric)} className="grid grid-cols-2">
+                  <ToggleGroupItem value="absolute" className="justify-center text-[12px]">Votos de diferencia</ToggleGroupItem>
+                  <ToggleGroupItem value="percentage" className="justify-center text-[12px]">Diferencia porcentual</ToggleGroupItem>
+                </ToggleGroup>
+                <p className="mt-1.5 px-0.5 text-[10.5px] leading-snug text-muted">
+                  Entre el primer y segundo lugar; el porcentaje se calcula sobre los votos de candidatos o partidos.
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="mb-1.5 px-0.5 text-[10.5px] font-semibold uppercase tracking-wide text-muted">Resultado por {s.territoryLevel === "localidades" ? "localidad" : "UPZ"}</p>
+                <ToggleGroup type="single" value={s.mode} onValueChange={(v) => v && s.setMode(v as typeof s.mode)} className="grid grid-cols-2">
+                  {MODES.map((m) => (
+                    <ToggleGroupItem key={m.value} value={m.value} className="justify-center text-[12px]">
+                      <m.icon className="h-3.5 w-3.5 text-accent" />{m.label}
+                    </ToggleGroupItem>
+                  ))}
+                </ToggleGroup>
+                <p className="mt-1.5 px-0.5 text-[10.5px] leading-snug text-muted">{MODES.find((m) => m.value === s.mode)?.desc}</p>
+              </>
+            )}
+            <div className="mt-2.5 flex items-center gap-3 px-0.5">
+              <span className="whitespace-nowrap text-[11.5px] text-muted">Transparencia</span>
+              <Slider min={0.1} max={1} step={0.05} value={[s.opacity]} onValueChange={([v]) => s.setOpacity(v)} aria-label="Transparencia de las capas de elecciones" />
+              <span className="w-9 text-right font-mono text-[11px] text-muted">{Math.round(s.opacity * 100)}%</span>
+            </div>
           </div>
 
           {/* Mini gráfico resumen */}
@@ -187,7 +214,7 @@ export default function ControlDeck() {
           {editingE && (
             <p className="-mt-2 px-0.5 text-[11px] text-muted">
               {Object.keys(editingE.localidades).length} localidades con datos · {editingE.puestos.length} puestos
-              ({editingE.puestos.filter((p) => Number.isFinite(p.lat)).length} con coordenadas)
+              ({editingE.puestos.filter((p) => Number.isFinite(p.lat) && Number.isFinite(p.lng) || Boolean(stationForPuesto(p))).length} con coordenadas)
             </p>
           )}
 

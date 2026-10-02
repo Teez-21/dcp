@@ -32,7 +32,8 @@ export type Election = {
   partyMode?: boolean;
 };
 
-export type MapMode = "winner" | "split" | "puestos";
+export type MapMode = "winner" | "split";
+export type MarginMetric = "absolute" | "percentage";
 export type ThemeName = "tokyo" | "solarized";
 
 export const PALETTE = [

@@ -25,7 +25,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999972,
         "COBERTURA_LOCALIDADES_PCT": 99.999989,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 1,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -1442,7 +1444,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999942,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 0,
+        "PUESTOS_GEOJSON_STATUS": "sin_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -2211,7 +2215,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.997194,
         "COBERTURA_LOCALIDADES_PCT": 99.997271,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 1,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -2644,7 +2650,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.99996,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 12,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -4601,7 +4609,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999997,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 9,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -12378,7 +12388,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 7,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -18303,7 +18315,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.99998,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 2,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -18644,7 +18658,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999979,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 13,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -30665,7 +30681,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999993,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -53610,7 +53628,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999947,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 5,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -53943,7 +53963,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999988,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 5,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -54552,7 +54574,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999947,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -55181,7 +55205,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999986,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -55722,7 +55748,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999956,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -56979,7 +57007,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999869,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 5,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -57420,7 +57450,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999894,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 10,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -57665,7 +57697,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999945,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 12,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -57946,7 +57980,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 7,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -58799,7 +58835,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 10,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -62008,7 +62046,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999985,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 4,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -64761,7 +64801,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999993,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 14,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -65286,7 +65328,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 15,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -66579,7 +66623,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999999,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 25,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -68484,7 +68530,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999961,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 16,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -69557,7 +69605,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 22,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -70098,7 +70148,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999972,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 9,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -70511,7 +70563,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.998999,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 10,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -79904,7 +79958,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.990096,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 10,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -80465,7 +80521,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999912,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 14,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -84002,7 +84060,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999988,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -84347,7 +84407,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999957,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 5,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -86792,7 +86854,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999913,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 8,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -87069,7 +87133,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999776,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 17,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -87717,7 +87783,9 @@
             "area_m2": 861.42,
             "porcentaje_upz": 0.02296
           }
-        ]
+        ],
+        "PUESTOS_GEOJSON_COUNT": 21,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -88074,7 +88142,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.99999,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 23,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -88427,7 +88497,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999968,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 13,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -88692,7 +88764,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999984,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 26,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -91213,7 +91287,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 16,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -91442,7 +91518,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999983,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 13,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -91811,7 +91889,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999997,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 14,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -92512,7 +92592,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999999,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 16,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -93529,7 +93611,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 19,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -94042,7 +94126,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999905,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 18,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -95039,7 +95125,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999941,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 9,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -95684,7 +95772,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999967,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 13,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -100617,7 +100707,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999986,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 11,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -101930,7 +102022,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999996,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 2,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -103109,7 +103203,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999995,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 13,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -104062,7 +104158,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999992,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 12,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -104991,7 +105089,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999203,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 14,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -106304,7 +106404,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999956,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -107765,7 +107867,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999972,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 21,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -109082,7 +109186,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999903,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 11,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -113131,7 +113237,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -113951,7 +114059,9 @@
             "area_m2": 369967.89,
             "porcentaje_upz": 8.836015
           }
-        ]
+        ],
+        "PUESTOS_GEOJSON_COUNT": 0,
+        "PUESTOS_GEOJSON_STATUS": "sin_puestos"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -115566,7 +115676,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999976,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 5,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -125265,7 +125377,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999944,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 11,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -126686,7 +126800,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999957,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 0,
+        "PUESTOS_GEOJSON_STATUS": "sin_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -128003,7 +128119,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999928,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 0,
+        "PUESTOS_GEOJSON_STATUS": "sin_puestos"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -136898,7 +137016,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999983,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 11,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -139799,7 +139919,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999999,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 8,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -140920,7 +141042,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999999,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 19,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -142561,7 +142685,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -143724,7 +143850,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999997,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 19,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -144701,7 +144829,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 9,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -146290,7 +146420,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999935,
         "COBERTURA_LOCALIDADES_PCT": 99.999936,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 25,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -148075,7 +148207,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999971,
         "COBERTURA_LOCALIDADES_PCT": 99.99998,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 7,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -148904,7 +149038,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.99911,
         "COBERTURA_LOCALIDADES_PCT": 99.99911,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 17,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -149921,7 +150057,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999919,
         "COBERTURA_LOCALIDADES_PCT": 99.999929,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 9,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -150770,7 +150908,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 18,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -152583,7 +152723,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999896,
         "COBERTURA_LOCALIDADES_PCT": 99.999896,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -152988,7 +153130,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999975,
         "COBERTURA_LOCALIDADES_PCT": 99.999976,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 5,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -154649,7 +154793,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.918517,
         "COBERTURA_LOCALIDADES_PCT": 99.918521,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 4,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -155690,7 +155836,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.843165,
         "COBERTURA_LOCALIDADES_PCT": 99.843165,
         "ESTADO_CRUCE": "cobertura_parcial",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 4,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -156039,7 +156187,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 3,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -156508,7 +156658,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999983,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 10,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -157661,7 +157813,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.790849,
         "COBERTURA_LOCALIDADES_PCT": 99.790849,
         "ESTADO_CRUCE": "cobertura_parcial",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 14,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -158054,7 +158208,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.444941,
         "COBERTURA_LOCALIDADES_PCT": 99.445002,
         "ESTADO_CRUCE": "cobertura_parcial",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 1,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -158311,7 +158467,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999992,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 17,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -159948,7 +160106,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.932125,
         "COBERTURA_LOCALIDADES_PCT": 99.932131,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 37,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -161881,7 +162041,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999896,
         "COBERTURA_LOCALIDADES_PCT": 99.9999,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 9,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -162362,7 +162524,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.994203,
         "COBERTURA_LOCALIDADES_PCT": 99.994203,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 8,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -163975,7 +164139,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999977,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 5,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -177567,7 +177733,9 @@
             "area_m2": 76117.61,
             "porcentaje_upz": 6.740398
           }
-        ]
+        ],
+        "PUESTOS_GEOJSON_COUNT": 2,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -177768,7 +177936,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999999,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -186969,7 +187139,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999987,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 3,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -189570,7 +189742,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999928,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 3,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -207747,7 +207921,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999892,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 9,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -224944,7 +225120,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999788,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 10,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -277804,7 +277982,9 @@
             "area_m2": 7415.43,
             "porcentaje_upz": 0.803454
           }
-        ]
+        ],
+        "PUESTOS_GEOJSON_COUNT": 3,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -285493,7 +285673,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.998691,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 5,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -299302,7 +299484,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.99993,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 13,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -299751,7 +299935,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999863,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 15,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -299988,7 +300174,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999985,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 9,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -301101,7 +301289,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999963,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 11,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -301226,7 +301416,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999922,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 10,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -301495,7 +301687,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.99988,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 17,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -302116,7 +302310,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999995,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 1,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -302341,7 +302537,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999947,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 5,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -302730,7 +302928,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999913,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 2,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -302831,7 +303031,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999989,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -302972,7 +303174,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999867,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -303709,7 +303913,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999929,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 8,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -303918,7 +304124,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999862,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 2,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -304551,7 +304759,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.99993,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 2,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -304700,7 +304910,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.99994,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 5,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -304849,7 +305061,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999951,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 6,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -306882,7 +307096,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999992,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 7,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -307367,7 +307583,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 100.0,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 7,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -307664,7 +307882,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999912,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 4,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -308333,7 +308553,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999994,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 2,
+        "PUESTOS_GEOJSON_STATUS": "con_puestos"
       },
       "geometry": {
         "type": "Polygon",
@@ -308766,7 +308988,9 @@
         "PORCENTAJE_EN_LOCALIDAD": 99.999997,
         "COBERTURA_LOCALIDADES_PCT": 100.0,
         "ESTADO_CRUCE": "una_sola_localidad",
-        "OTRAS_INTERSECCIONES": []
+        "OTRAS_INTERSECCIONES": [],
+        "PUESTOS_GEOJSON_COUNT": 0,
+        "PUESTOS_GEOJSON_STATUS": "sin_puestos"
       },
       "geometry": {
         "type": "Polygon",

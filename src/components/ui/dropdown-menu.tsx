@@ -38,9 +38,15 @@ const DropdownMenuCheckboxItem = React.forwardRef<
     )}
     {...props}
   >
-    <span className="absolute left-2.5 flex h-4 w-4 items-center justify-center rounded border border-border-soft data-[state=checked]:border-accent data-[state=checked]:bg-accent">
-      <DropdownMenuPrimitive.ItemIndicator><Check className="h-3 w-3 text-on-accent" /></DropdownMenuPrimitive.ItemIndicator>
-    </span>
+      <span
+        aria-hidden="true"
+        className={cn(
+          "absolute left-2.5 flex h-4 w-4 items-center justify-center rounded border transition-colors",
+          checked === true ? "border-accent bg-accent" : "border-border-soft bg-transparent"
+        )}
+      >
+        {checked === true && <Check className="h-3 w-3 text-white" strokeWidth={3} />}
+      </span>
     {children}
   </DropdownMenuPrimitive.CheckboxItem>
 ));

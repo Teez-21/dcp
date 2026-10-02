@@ -1,0 +1,1085 @@
+﻿station_key,geo_code,zone_code,source_locality_code,locality_name,station_number,name,site_name,address,longitude,latitude,upz_code,upz_name,join_status
+19-1,160011901,19,19,Ciudad Bolívar,1,Colegio Distrital León de Greiff,Lucero del Sur,CRA 17 B Bis A # 67 - 30 Sur / CRA 17 B Bis A # 67 - 48 Sur,-74.1384196,4.55066116,67,LUCERO,inside_source_locality
+19-4,160011904,19,19,Ciudad Bolívar,4,Colegio Distrital Bicentenario,El Tesoro,CLL 81 Sur # 18 M - 02 / CLL 81 Sur # 18 P - 08,-74.14944514,4.53497258,68,EL TESORO,inside_source_locality
+19-5,160011905,19,19,Ciudad Bolívar,5,Colegio Distrital República de México - Sede Principal,México,CLL 64 Sur # 17 - 50 / CRA 17 # 64 - 14 Sur,-74.13659955,4.55500558,67,LUCERO,inside_source_locality
+19-6,160011906,19,19,Ciudad Bolívar,6,Colegio Distrital El Recuerdo - Sede A,Lucero Medio,CLL 69 Sur # 18 B - 35,-74.1456146,4.54902685,67,LUCERO,inside_source_locality
+19-13,160011913,19,19,Ciudad Bolívar,13,Colegio Distrital Arborizadora Baja,Arborizadora Baja,CLL 59 I Sur # 44 A - 02 / CLL 59 Sur # 44 A - 09,-74.15152412,4.57546332,65,ARBORIZADORA,inside_source_locality
+19-18,160011918,19,19,Ciudad Bolívar,18,Colegio Distrital José Jaime Rojas,Cordillera,CRA 18 R # 77 - 16 Sur / CLL 77 A # 18 U - 91 Sur,-74.14964728,4.53986676,67,LUCERO,inside_source_locality
+19-20,160011920,19,19,Ciudad Bolívar,20,Colegio Distrital La Estancia San Isidro,La Estancia,CLL 59 A Sur # 75 B - 75 CRA 75 # 59 - 45 Sur,-74.17636492,4.59307763,69,ISMAEL PERDOMO,inside_source_locality
+19-23,160011923,19,19,Ciudad Bolívar,23,Colegio Distrital Paraíso Manuela Beltrán - Sede A,Manuela Beltrán,CRA 45 C # 69 D - 15 Sur /CLL 69 D Sur # 45 B - 37,-74.15747735,4.57256519,70,JERUSALEM,inside_source_locality
+19-24,160011924,19,19,Ciudad Bolívar,24,Colegio Distrital CEDIT Ciudad Bolívar,Sierra Morena,CLL 70 Sur # 56 - 11,-74.1656239,4.57767852,69,ISMAEL PERDOMO,inside_source_locality
+19-26,160011926,19,19,Ciudad Bolívar,26,Colegio Distrital Sierra Morena -  Sede B,Santo Domingo,CLL 62 B Sur # 77 C - 11 / CLL 68 B Sur # 77 A - 07,-74.17893964,4.57884444,69,ISMAEL PERDOMO,inside_source_locality
+19-29,160011929,19,19,Ciudad Bolívar,29,Colegio Distrital Gimnasio Sabio Caldas,Arborizadora Alta,CRA 42 # 72 C - 24 Sur /CRA 42 # 73 A - 10 Sur,-74.16372347,4.56785763,70,JERUSALEM,inside_source_locality
+19-32,160011932,19,19,Ciudad Bolívar,32,Colegio Distrital Guillermo Ca# Isaza,Meissen,CRA 16 C # 62 - 35 Sur /CRA 16 C # 62 - 81 Sur,-74.13563346,4.55671475,67,LUCERO,inside_source_locality
+8-58,160010858,8,8,Kennedy,58,Colegio Distrital Saludcoop Sur,Col. Dis. Saludcoop Sur,CRA 89 # 26 - 03 Sur / CRA 89 # 26 - 01 Sur,-74.16378937,4.64236661,82,PATIO BONITO,inside_source_locality
+10-15,160011015,10,10,Engativá,15,Colegio Manyanet,La Florida,CRA 89 # 68 A - 36 /CRA 89 # 68 A - 32,-74.11058797,4.69289956,30,BOYACA REAL,inside_source_locality
+10-16,160011016,10,10,Engativá,16,Colegio Distrital Manuela Ayala de Gaitán - Sede B,Santa Helenita,CRA 78 # 69 A - 11,-74.10337861,4.68892877,30,BOYACA REAL,inside_source_locality
+10-17,160011017,10,10,Engativá,17,Colegio Distrital Néstor Forero Alcalá - Sede A,La Europa,CRA 70 C Bis # 71 - 33,-74.09357475,4.68380899,26,LAS FERIAS,inside_source_locality
+10-18,160011018,10,10,Engativá,18,Colegio Distrital República de Colombia - Sede B,La Estrada,CRA 69 C # 69 - 20,-74.0915258,4.67878229,26,LAS FERIAS,inside_source_locality
+10-19,160011019,10,10,Engativá,19,Colegio Distrital República de Colombia - Sede A,La Estradita,CLL 68 # 69 - 10,-74.09156636,4.67742134,26,LAS FERIAS,inside_source_locality
+10-20,160011020,10,10,Engativá,20,Colegio Distrital Naciones Unidas - Sede C,Las Ferias,CLL 73 Bis # 68 G - 27,-74.08716271,4.68068259,26,LAS FERIAS,inside_source_locality
+10-21,160011021,10,10,Engativá,21,Colegio Distrital Técnico República de Guatemala,Bonanza,CLL 78 Bis # 69T - 45,-74.08685265,4.6901322,26,LAS FERIAS,inside_source_locality
+10-22,160011022,10,10,Engativá,22,Colegio Distrital Tabora - Sede B,Santa María del Lago,CLL 74 B # 73 A - 20,-74.09470132,4.69166144,30,BOYACA REAL,inside_source_locality
+10-23,160011023,10,10,Engativá,23,Colegio Distrital San José Norte - Sede A,La Granja,CRA 84 # 75 A - 09,-74.10180745,4.69871344,30,BOYACA REAL,inside_source_locality
+8-3,160010803,8,8,Kennedy,3,Colegio Distrital Villa Rica - Sede A,Colegio Distrital Villa Rica - Sede A,CRA 77 K Bis A # 50 - 26 Sur,-74.16713612,4.60566253,48,TIMIZA,inside_source_locality
+8-5,160010805,8,8,Kennedy,5,Salón Comunal Casablanca 32,Casablanca 32,CRA 79 F # 46 - 16 Sur,-74.1679326,4.61839802,47,KENNEDY CENTRAL,inside_source_locality
+8-6,160010806,8,8,Kennedy,6,Colegio Distrital Gran Britalia - Sede B,Britalia,CLL 47 A Sur # 82 - 99,-74.17301133,4.62530959,81,GRAN BRITALIA,inside_source_locality
+8-7,160010807,8,8,Kennedy,7,Colegio Distrital San José,Colegio Distrital San José - Sede A,CLL 42 A Sur # 79 D – 37 /CRA 79 D # 42 A - 67 Sur,-74.16282961,4.62125033,47,KENNEDY CENTRAL,inside_source_locality
+8-8,160010808,8,8,Kennedy,8,Colegio Distrital Los Periodistas,Los Periodistas,CLL 41 C Sur # 78 H - 85,-74.15832381,4.61738822,47,KENNEDY CENTRAL,inside_source_locality
+8-9,160010809,8,8,Kennedy,9,Colegio Distrital República de Finlandia,Carlos Arturo Torres,TRV 72 B # 44 C - 19 Sur,-74.14635852,4.59965013,45,CARVAJAL,inside_source_locality
+8-10,160010810,8,8,Kennedy,10,Colegio Distrital La Chucua,La Chucua,CRA 72 I # 42 F - 54 Sur,-74.14854789,4.60363994,48,TIMIZA,inside_source_locality
+8-11,160010811,8,8,Kennedy,11,Colegio Distrital Alfonso López,Colegio Alfonso López Pumarejo,CRA 72 G # 39 - 99 Sur / CLL 39 B Sur # 72 G - 62,-74.14384351,4.60828841,45,CARVAJAL,inside_source_locality
+8-12,160010812,8,8,Kennedy,12,Colegio Distrital Francisco Miranda,Francisco Miranda,DIAG 41 Sur # 73 A - 80,-74.15445626,4.61258886,48,TIMIZA,inside_source_locality
+8-13,160010813,8,8,Kennedy,13,Colegio Distrital Las Américas - Sede A,Las Américas Sede A,CRA 73 C Bis # 38 C - 84 Sur / CLL 38C Sur # 73A - 93,-74.1506275,4.61676526,45,CARVAJAL,inside_source_locality
+8-14,160010814,8,8,Kennedy,14,Colegio Distrital Tom Adams,Colegio Tom Adams,CLL 40 J Sur # 78 - 08,-74.1556454,4.61828805,47,KENNEDY CENTRAL,inside_source_locality
+8-16,160010816,8,8,Kennedy,16,Colegio Distrital El Japón,El Japón,CRA 78 G # 38 C - 11 Sur,-74.15351731,4.62169755,47,KENNEDY CENTRAL,inside_source_locality
+8-18,160010818,8,8,Kennedy,18,Colegio Distrital La Amistad - Sede B,El Saucedal,CRA 83 # 38 B - 12 Sur,-74.16282557,4.63303883,80,CORABASTOS,inside_source_locality
+8-19,160010819,8,8,Kennedy,19,Colegio Distrital Manuel Zapata Olivella,Colegio Distrital Manuel Zapata Olivella,CLL 1 Bis Sur # 87 - 84,-74.15996042,4.64064436,82,PATIO BONITO,inside_source_locality
+8-21,160010821,8,8,Kennedy,21,Colegio Privado C.E.L.C.O. San Lucas,Colegio C.E.L.C.O. San Lucas,CLL 35 A Sur # 78 I - 21/CRA 78 F # 35 C - 63 Sur,-74.15123482,4.62514187,47,KENNEDY CENTRAL,inside_source_locality
+8-22,160010822,8,8,Kennedy,22,Colegio Próspero Pinzón,Próspero Pinzón,CLL 35 C Sur #78 F - 81,-74.15109254,4.62432124,47,KENNEDY CENTRAL,inside_source_locality
+8-23,160010823,8,8,Kennedy,23,Colegio Distrital La Amistad,Colegio La Amistad,CRA 78 # 35 - 30 Sur,-74.14812765,4.62342255,47,KENNEDY CENTRAL,inside_source_locality
+8-25,160010825,8,8,Kennedy,25,Colegio Distrital OEA,Colegio OEA,CRA 72 L # 34 - 19 Sur,-74.14145868,4.61815863,45,CARVAJAL,inside_source_locality
+8-26,160010826,8,8,Kennedy,26,Salón Comunal Floralia,Floralia,TRV 68 C # 31 - 26 Sur,-74.13231109,4.60870488,45,CARVAJAL,inside_source_locality
+8-27,160010827,8,8,Kennedy,27,Colegio Distrital Antonia Santos,Carvajal II - Sede Antonia Santos I,CLL 25 Sur # 69 C - 34,-74.13547168,4.61532107,44,AMERICAS,inside_source_locality
+8-28,160010828,8,8,Kennedy,28,Salón Comunal Villa Adriana,Villa Adriana,CLL 20 Sur # 68 D - 36,-74.12908471,4.61292395,44,AMERICAS,inside_source_locality
+8-29,160010829,8,8,Kennedy,29,Colegio Superior Americano,Superior Americano,CRA 71 C # 3 A - 41,-74.13590568,4.62618638,44,AMERICAS,inside_source_locality
+8-30,160010830,8,8,Kennedy,30,Colegio Distrital La Floresta Sur - Sede 1,La Floresta Sur,CRA 68 B Bis # 1 - 09 Sur,-74.12744374,4.62079586,44,AMERICAS,inside_source_locality
+8-31,160010831,8,8,Kennedy,31,Colegio Distrital Marsella,Marsella,CRA 69 # 7 - 90,-74.12731737,4.63215129,113,BAVARIA,inside_source_locality
+8-32,160010832,8,8,Kennedy,32,Salón Comunal Aloha,Aloha,CLL 7 A Bis # 71 A - 20,-74.1332479,4.63290124,113,BAVARIA,inside_source_locality
+8-36,160010836,8,8,Kennedy,36,Colegio Distrital Alfonso López Pumarejo - Sede B,Villanueva,CLL 40 B Sur # 57 - 26 / CRA 68I # 39D - 04 Sur,-74.14097588,4.60320002,45,CARVAJAL,inside_source_locality
+8-37,160010837,8,8,Kennedy,37,Colegio Distrital Patio Bonito,Col. Distrital Jairo Aníbal Niño,CRA 87 H Bis # 39 A-23 Sur / CRA 87 H Bis # 39 - 23 Sur,-74.16683629,4.63694086,82,PATIO BONITO,inside_source_locality
+8-39,160010839,8,8,Kennedy,39,Salón Comunal,Salón Comunal Almenar,CRA 80 D # 48 A - 17 Sur,-74.17039948,4.61973032,81,GRAN BRITALIA,inside_source_locality
+8-40,160010840,8,8,Kennedy,40,Colegio Distrital Alquería,Colegio Alquería,CLL 37 B Sur # 68 D - 93,-74.13617279,4.60493528,45,CARVAJAL,inside_source_locality
+8-41,160010841,8,8,Kennedy,41,Salón Comunal Boita 1 Sector,Boita,CLL 48 B # 72 K - 13 Sur,-74.15258213,4.60236291,48,TIMIZA,inside_source_locality
+8-42,160010842,8,8,Kennedy,42,Col de Timiza,Col de Timiza,CRA 74 # 42 G - 52 Sur,-74.15855086,4.60983934,48,TIMIZA,inside_source_locality
+8-43,160010843,8,8,Kennedy,43,Colegio Distrital Hernando Durán Dussan,Col. Dis. Hernando Durán Dussan,CLL 42 F Sur # 88 A - 25,-74.17220866,4.63459646,82,PATIO BONITO,inside_source_locality
+8-44,160010844,8,8,Kennedy,44,Colegio Distrital Rodrigo de Triana - Sede B,Col. Dis. Rodrigo de Triana - Sede B,CRA 90 A # 39 - 12 Sur,-74.16940801,4.64064523,82,PATIO BONITO,inside_source_locality
+8-45,160010845,8,8,Kennedy,45,Colegio Distrital Eduardo Umaña Luna,Col. Dis. Eduardo Umaña Luna,CRA 93 A # 42 A - 37 Sur,-74.17467597,4.64174278,82,PATIO BONITO,inside_source_locality
+8-47,160010847,8,8,Kennedy,47,Centro Comercial Milenio Plaza,Milenio Plaza,AV Ciudad de Cali # 42 B - 51 Sur / AV CRA 86 # 42 B - 51 Sur,-74.16878478,4.63034909,82,PATIO BONITO,inside_source_locality
+8-46,160010846,8,8,Kennedy,46,Colegio Privado El Castillo,Liceo El Castillo,CRA 82 Bis # 7 D - 12,-74.14992683,4.64389462,46,CASTILLA,inside_source_locality
+8-48,160010848,8,8,Kennedy,48,Colegio Distrital Gabriel Betancourt Mejía,Col. Gabriel Betancourt Mejia,CRA 87 A # 6 A - 23 / CRA 88 # 6 A - 28,-74.15653034,4.64454144,79,CALANDAIMA,inside_source_locality
+8-49,160010849,8,8,Kennedy,49,Salón Comunal María Paz,María Paz,CLL 5 A Sur # 82 - 63 / CLL 5 A Sur # 82 - 01,-74.15796744,4.63686868,80,CORABASTOS,inside_source_locality
+8-50,160010850,8,8,Kennedy,50,Colegio Disitrital Nelson Mandela,Colegio Nelson Mandela,CRA 91 # 43 - 98 Sur / CRA 90 A # 46 - 50 Sur,-74.17790968,4.63585371,83,LAS MARGARITAS,inside_source_locality
+8-52,160010852,8,8,Kennedy,52,Colegio Distrital Class - Sede B,Colegio Class I.E.D. Sede B,CLL 56 A Sur # 78 A - 20,-74.17120201,4.60889326,48,TIMIZA,inside_source_locality
+8-54,160010854,8,8,Kennedy,54,Colegio Distrital Villa Rica - Sede B,Col. Dis. Villa Rica - sede B,CLL 49 Sur # 78 - 35,-74.16641358,4.61143764,48,TIMIZA,inside_source_locality
+8-55,160010855,8,8,Kennedy,55,Colegio Distrital Jaime Garzón,Colegio Jaime Garzón,TRV 85 A # 49 - 45 Sur,-74.17558465,4.62582794,81,GRAN BRITALIA,inside_source_locality
+8-56,160010856,8,8,Kennedy,56,Colegio Distrital Debora Arango Pérez,Colegio Debora Arango,CRA 84 A # 57 B - 04 Sur / CRA 84 A # 57 B - 22 Sur,-74.18313506,4.61796959,81,GRAN BRITALIA,inside_source_locality
+9-1,160010901,9,9,Fontibon,1,Colegio Parroquial San Pedro Claver,Fontibón,CRA 99 CLL 17 A Esquina / CRA 99 # 17A - 62,-74.14450538,4.67263517,75,FONTIBON,inside_source_locality
+9-2,160010902,9,9,Fontibon,2,Colegio Distrital Villemar El Carmen,Villemar,CLL 20 D # 96 G - 51,-74.13918465,4.67259423,75,FONTIBON,inside_source_locality
+9-3,160010903,9,9,Fontibon,3,Centro Comercial Hayuelos,Hayuelos Centro Comercial,CLL 20 # 82 - 52,-74.13054684,4.66420361,112,GRANJAS DE TECHO,inside_source_locality
+9-4,160010904,9,9,Fontibon,4,Colegio Integrado de Fontibón,Belén,CRA 106 # 18 - 77,-74.14731025,4.67843395,75,FONTIBON,inside_source_locality
+9-5,160010905,9,9,Fontibon,5,Colegio Distrital Antonio Van Üden,San Pablo La Perla,CLL 17 D # 123 B - 37,-74.15887107,4.68899323,76,FONTIBON SAN PABLO,inside_source_locality
+9-7,160010907,9,9,Fontibon,7,Colegio Distrital República de Costa Rica - Sede C,Veracruz,CRA 101 # 23 - 42,-74.13770942,4.6794464,75,FONTIBON,inside_source_locality
+9-8,160010908,9,9,Fontibon,8,Salón Múltiple Comunitario,Modelia Sur,CLL 25 B # 81 - 41 / CRA 81C # 24D 60,-74.11924086,4.67004975,114,MODELIA,inside_source_locality
+9-9,160010909,9,9,Fontibon,9,Colegio Distrital Santa Cecilia,Santa Cecilia - Modelia,CLL 25 B # 83 - 14,-74.12063459,4.67195766,114,MODELIA,inside_source_locality
+9-10,160010910,9,9,Fontibon,10,Colegio Distrital Rodrigo Arenas Betancourt,Centro A,CRA 97 # 16 J - 15,-74.14464348,4.67062762,75,FONTIBON,inside_source_locality
+9-11,160010911,9,9,Fontibon,11,Colegio Distrital Pablo Neruda,La Laguna,CLL 16 F Bis # 102 - 70,-74.14939245,4.67224561,75,FONTIBON,inside_source_locality
+9-12,160010912,9,9,Fontibon,12,Concentración Escolar Batavia,Batavia,CRA 114 # 17 C - 07,-74.15300324,4.68268358,75,FONTIBON,inside_source_locality
+9-13,160010913,9,9,Fontibon,13,Subdirección de Integración Social,La Giralda,CRA 104 B # 22 J - 15 /CLL 23 # 104 B - 15,-74.14173479,4.68172534,75,FONTIBON,inside_source_locality
+9-14,160010914,9,9,Fontibon,14,Colegio Distrital Costa Rica - Sede C,Puerta de Teja,CLL 25 C Bis B # 96 - 56,-74.12699896,4.68217956,115,CAPELLANIA,inside_source_locality
+9-16,160010916,9,9,Fontibon,16,Colegio Agustiniano Salitre,Agustiniano - Salitre,CLL 23 C # 69 B - 02,-74.11834597,4.6600551,114,MODELIA,inside_source_locality
+9-17,160010917,9,9,Fontibon,17,Liceo Juvenil Moravia,Puente Grande,CRA 137 A # 17 D - 31,-74.1681164,4.69766389,76,FONTIBON SAN PABLO,inside_source_locality
+9-18,160010918,9,9,Fontibon,18,Colegio Distrital Carlo Federici,Zona Franca,CLL 14 A # 108 - 78,-74.15965763,4.67173957,77,ZONA FRANCA,inside_source_locality
+9-19,160010919,9,9,Fontibon,19,Salón Social Conjunto Residencial Fontibón Reservado,Recodo,CLL 14 B # 119 A - 17,-74.16613787,4.68047745,77,ZONA FRANCA,inside_source_locality
+10-1,160011001,10,10,Engativá,1,Colegio Distrital Manuela Ayala de Gaitán - Sede A,Boyacá,CLL 71 # 75 - 11,-74.09952889,4.68813907,30,BOYACA REAL,inside_source_locality
+10-2,160011002,10,10,Engativá,2,Colegio Distrital General Santander,Engativá,CRA 123 # 65 A - 03 / CLL 65A # 123 - 38,-74.14095824,4.71628823,74,ENGATIVA,inside_source_locality
+10-3,160011003,10,10,Engativá,3,Colegio Privado Instituto Técnico Industrial Centro Don Bosco,Normandía,DIAG 44 # 69 - 96,-74.10790265,4.6619574,105,JARDIN BOTANICO,inside_source_locality
+10-4,160011004,10,10,Engativá,4,Colegio Distrital Instituto Técnico Industrial Francisco Jose de Caldas - Sede A,Bosque Popular,CRA 68 F # 63 B - 02,-74.0953826,4.66880592,26,LAS FERIAS,inside_source_locality
+10-5,160011005,10,10,Engativá,5,Colegio Cafam Básica Primaria,El Gualí,AV CLL 64 C # 68 F - 29,-74.09435406,4.67121558,26,LAS FERIAS,inside_source_locality
+10-6,160011006,10,10,Engativá,6,Colegio Distrital Robert Kennedy - Sede A,El Luján,AV Boyacá # 64 H - 39 /AV CRA 72 # 64 H - 39,-74.1014887,4.67889477,31,SANTA CECILIA,inside_source_locality
+10-7,160011007,10,10,Engativá,7,Gimnasio Los Alerces,Villaluz,CLL 64 C # 76 - 23 /CLL 64 C # 76 - 43,-74.10643213,4.68078185,31,SANTA CECILIA,inside_source_locality
+10-8,160011008,10,10,Engativá,8,"Colegio Cooperativo Los Álamos - \""COALAMOS\""",Los Alamos,CLL 66 A # 97 A - 15,-74.11978795,4.69570563,116,ALAMOS,inside_source_locality
+10-10,160011010,10,10,Engativá,10,Colegio Distrital Los Cerezos,Villas de Granada,CLL 72 F # 114 - 51,-74.1297192,4.71605736,73,GARCES NAVAS,inside_source_locality
+10-11,160011011,10,10,Engativá,11,Colegio Distrital Nueva Constitución,Garces Navas,CRA 107 B # 74 B - 31,-74.12207204,4.71113651,73,GARCES NAVAS,inside_source_locality
+10-12,160011012,10,10,Engativá,12,Centro Comercial Portal 80,Bochica,TRV 100A # 80A - 20 / AV CLL 80 # 100 - 50,-74.11216229,4.71057074,72,BOLIVIA,inside_source_locality
+10-13,160011013,10,10,Engativá,13,Colegio Distrital Garces Navas Sede A,Los Alamos Norte,CRA 104 A # 76 B - 09,-74.11737052,4.71031715,73,GARCES NAVAS,inside_source_locality
+10-14,160011014,10,10,Engativá,14,Colegio Distrital Florida Blanca - Sede A,La Salina,CLL 70 A # 94 - 38,-74.11402123,4.69795626,30,BOYACA REAL,inside_source_locality
+11-11,160011111,11,11,Suba,11,Parqueadero Centro Comercial Bulevar Niza,Centro Comercial Bulevar Niza,AV CLL 127 # 58 - 58,-74.07167953,4.71159459,24,NIZA,inside_source_locality
+11-25,160011125,11,11,Suba,25,Colegio Distrital La Gaitana,La Gaitana Sede A - IED,TRV 126 # 134 - 88,-74.10852232,4.74217689,71,TIBABUYES,inside_source_locality
+12-15,160011215,12,12,Barrios Unidos,15,Colegio San Felipe Neri,Los Alcázares,CRA 27 C # 71 - 80,-74.07035058,4.66374804,98,LOS ALCAZARES,inside_source_locality
+14-10,160011410,14,14,Mártires,10,Centro Educativo Distrital Eduardo Santos,Eduardo Santos,CRA 19 A Bis # 1 A - 55 / CRA 19 B Bis # 1 C - 55,-74.0933305,4.59433924,37,SANTA ISABEL,inside_source_locality
+15-1,160011501,15,15,Antonio Nariño,1,Colegio Distrital Jaime Pardo Leal,Policarpa,CRA 10 A Sur # 3 - 63/CRA 10 A # 3 - 21 Sur,-74.08822098,4.586603,35,CIUDAD JARDIN,inside_source_locality
+15-13,160011513,15,15,Antonio Nariño,13,SENA Centro Distrital (San Jorge Central),SENA,AV CRA 30 # 17 B - 25 Sur/AV CRA 30 # 17 - 91 Sur,-74.11194131,4.59518979,38,RESTREPO,inside_source_locality
+16-3,160011603,16,16,Puente Aranda,3,Colegio Distrital Marco Antonio Carreño - Sede B,Santa Matilde,CLL 1 # 34 B 20 / CLL 1 B # 35 - 20,-74.10943884,4.60305043,40,CIUDAD MONTES,inside_source_locality
+16-4,160011604,16,16,Puente Aranda,4,Colegio Distrital Marco Antonio Carreño - Sede C,La Asunción,CRA 32 B #1 D - 21,-74.10681926,4.60269444,40,CIUDAD MONTES,inside_source_locality
+16-19,160011619,16,16,Puente Aranda,19,Colegio Distrital Luis Vargas Tejada - Sede B,El Tejar,CRA 52 D # 24 - 50 Sur / CRA 52 D # 24 - 48 Sur,-74.12752015,4.60858481,40,CIUDAD MONTES,inside_source_locality
+17-1,160011701,17,17,Candelaria,1,Colegio Distrital La Concordia,La Concordia,CLL 12D # 1A - 09 / CLL 12C # 1A - 24,-74.06917663,4.598773,94,LA CANDELARIA,inside_source_locality
+17-3,160011703,17,17,Candelaria,3,Escuela Nacional de Comercio -  Sede B,Egipto,CRA 3 Este # 9 - 77,-74.07001944,4.5929434,94,LA CANDELARIA,inside_source_locality
+17-4,160011704,17,17,Candelaria,4,Archivo Distrital,Archivo Distrital,CLL 6 B # 5 - 75,-74.07713535,4.59168199,94,LA CANDELARIA,inside_source_locality
+18-1,160011801,18,18,Rafael Uribe Uribe,1,Colegio Distrital Manuel del Socorro Rodríguez - Sede B,Claret,CLL 46 Sur # 27 - 12,-74.12841807,4.5830014,39,QUIROGA,inside_source_locality
+18-2,160011802,18,18,Rafael Uribe Uribe,2,Colegio Distrital Restrepo Millán - Sede B,Inglés,CLL 40 Sur # 26 - 90 / CLL 41 Sur # 26 - 44,-74.12341539,4.58332285,39,QUIROGA,inside_source_locality
+18-7,160011807,18,18,Rafael Uribe Uribe,7,Colegio Distrital Gustavo Restrepo - Sedes B y C,San José Rafael Uribe,CRA 13 A # 26 - 17 Sur /CRA 12 F # 26 - 17 Sur,-74.10269822,4.57705637,36,SAN JOSE,inside_source_locality
+18-12,160011812,18,18,Rafael Uribe Uribe,12,Colegio Distrital Manuel del Socorro Rodríguez - Sede A,Santa Lucía,TRV 23 Bis # 44 - 90 Sur,-74.12599364,4.57761582,39,QUIROGA,inside_source_locality
+18-23,160011823,18,18,Rafael Uribe Uribe,23,Colegio Distrital Palermo Sur,Palermo Sur,TRV 2 B Bis # 49 D - 41 Sur,-74.10971794,4.54309972,55,DIANA TURBAY,inside_source_locality
+18-27,160011827,18,18,Rafael Uribe Uribe,27,Colegio Distrital La Paz,Rafael Uribe La Paz,DIAG 52 A Sur # 4 P - 10,-74.11728253,4.54371045,55,DIANA TURBAY,inside_source_locality
+18-29,160011829,18,18,Rafael Uribe Uribe,29,Colegio Distrital Diana Turbay - Sede A,Covivienda del Sur Oriente,DIAG 48 Z Sur # 4 B - 10,-74.11013651,4.54753988,55,DIANA TURBAY,inside_source_locality
+18-31,160011831,18,18,Rafael Uribe Uribe,31,Salón Comunal La Marqueza,Salón Comunal La Marqueza,DIAG 49 B Bis A Sur # 1 B - 35 Este,-74.1068815,4.54230656,55,DIANA TURBAY,inside_source_locality
+18-34,160011834,18,18,Rafael Uribe Uribe,34,Colegio Distrital Alfredo Iriarte - Sede C,Providencia,TRV 11 A # 49 D - 12 Sur / TRV 11 D # 49 D - 57 Sur,-74.12083406,4.56171992,54,MARRUECOS,inside_source_locality
+10-46,160011046,10,10,Engativá,46,Salón Comunal Urbanización Plazuelas del Virrey,Plazuelas del Virrey,CLL 70 A # 105 G - 23 / CLL 70 # 105 F - 28,-74.12330065,4.70455727,73,GARCES NAVAS,inside_source_locality
+10-47,160011047,10,10,Engativá,47,Colegio Distrital Instituto Técnico industrial Francisco José de Caldas - Sede B,Ciudad de Honda,CLL 64 F Bis # 68 G - 16,-74.09349928,4.67293256,26,LAS FERIAS,inside_source_locality
+10-49,160011049,10,10,Engativá,49,Salón Comunal,Villa Constanza,CLL 70 C # 111 - 15,-74.12846496,4.7082914,74,ENGATIVA,inside_source_locality
+10-50,160011050,10,10,Engativá,50,Salón Comunal,Mortiño,CLL 75 # 110 A - 23,-74.12370081,4.71308174,73,GARCES NAVAS,inside_source_locality
+11-1,160011101,11,11,Suba,1,Parque Fundacional de Suba,Parque Fundacional de Suba,CRA 90 # 146 C - 40,-74.08333585,4.74093155,27,SUBA,inside_source_locality
+11-3,160011103,11,11,Suba,3,Colegio Villa Elisa Sedes C y D,Villa Elisa Sede C - IED,CLL 128 Bis # 93 - 80,-74.09331633,4.72274255,28,EL RINCON,inside_source_locality
+11-4,160011104,11,11,Suba,4,Colegio Distrital Gerardo Paredes - Sede A,Gerardo Paredes - IED,CRA 94 C # 129 A - 04,-74.09362809,4.72587057,28,EL RINCON,inside_source_locality
+11-5,160011105,11,11,Suba,5,Colegio Distrital Alberto Lleras Camargo,Alberto Lleras Camargo - IED,CRA 111 A # 139 - 88,-74.10211915,4.74408145,28,EL RINCON,inside_source_locality
+11-6,160011106,11,11,Suba,6,Colegio Distrital Tibabuyes Universal,Tibabuyes Universal Sede A - IED,CRA 128 A # 139 - 13,-74.11057587,4.74623162,71,TIBABUYES,inside_source_locality
+11-7,160011107,11,11,Suba,7,Parque Casablanca,Casablanca Suba,CLL 146 B # 78 - 51,-74.07585599,4.73804037,23,CASA BLANCA SUBA,inside_source_locality
+11-8,160011108,11,11,Suba,8,UNIAGRARIA,Villa Del Prado-Uni. Agraria,CLL 170 # 54 A - 10,-74.05350404,4.75345933,17,SAN JOSE DE BAVARIA,inside_source_locality
+11-9,160011109,11,11,Suba,9,Colegio Distrital Anibal Fernández de Soto,Prado Pinzón,CRA 53 # 135 - 13,-74.05738754,4.7229907,19,EL PRADO,inside_source_locality
+11-10,160011110,11,11,Suba,10,Colegio Distrital Gustavo Morales Morales - Sede B,Prado Ciudad Jardín,CLL 129 B # 58 B - 45,-74.06980868,4.71928901,24,NIZA,inside_source_locality
+11-12,160011112,11,11,Suba,12,Colegio Distrital Santa Rosa - Sede A,Pontevedra,CLL 102 A # 70 - 40,-74.07401792,4.69596725,25,LA FLORESTA,inside_source_locality
+11-13,160011113,11,11,Suba,13,San Nicolás - Agustiniano Norte,San Nicolás - Agustiniano Norte,CRA 70 C # 116 A - 12,-74.07214129,4.70029134,25,LA FLORESTA,inside_source_locality
+11-15,160011115,11,11,Suba,15,Colegio Distrital Prado Veraniego I - Sede A,Prado Veraniego,CRA 46 # 130 - 65,-74.05417374,4.71715963,19,EL PRADO,inside_source_locality
+11-16,160011116,11,11,Suba,16,Colegio Distrital Prado Veraniego II - Sede B,Niza IX,CRA 53 A # 128 - 51,-74.06067303,4.71349587,19,EL PRADO,inside_source_locality
+11-17,160011117,11,11,Suba,17,Parqueadero Carulla CLL 116,La Alhambra - Carulla,CLL 114 A # 45 - 98,-74.05748507,4.69887925,20,LA ALHAMBRA,inside_source_locality
+11-18,160011118,11,11,Suba,18,Colegio Emmanuel D'alzon,Puente Largo - Emmanuel D'alzon,TRV 56 # 114 - 50,-74.06724004,4.69797057,20,LA ALHAMBRA,inside_source_locality
+11-19,160011119,11,11,Suba,19,Colegio Instituto Técnico Distrital Julio Flórez - Sede B,Floresta Norte - Julio Flórez,CRA 68 B # 94 - 12,-74.07750307,4.68716899,25,LA FLORESTA,inside_source_locality
+11-20,160011120,11,11,Suba,20,Parqueadero los Tres Elefantes,Pasadena - Los Tres Elefantes,CRA 53 #102 A - 77,-74.06293148,4.69108608,20,LA ALHAMBRA,inside_source_locality
+11-21,160011121,11,11,Suba,21,Colegio Distrital Nueva Zelandia,Nueva Zelandia,CLL 181 # 51 A - 31,-74.04953913,4.75908562,17,SAN JOSE DE BAVARIA,inside_source_locality
+11-22,160011122,11,11,Suba,22,Colegio Distrital El Salitre Suba - Sede C,El Salitre Sede C - IED,CRA 92 # 152 A - 52,-74.08305401,4.74919249,27,SUBA,inside_source_locality
+11-23,160011123,11,11,Suba,23,Colegio Distrital Vista Bella - Sede B,San Cipriano,CLL 166 Bis  # 54 C - 08 / CLL 166 # 54 C - 08,-74.05503119,4.74862904,18,BRITALIA,inside_source_locality
+11-24,160011124,11,11,Suba,24,Fundación Universitaria Luis Amigó,Fundación Universi. Luis Amigó,TRV 60 # 128 A - 51,-74.07402014,4.71656025,24,NIZA,inside_source_locality
+11-26,160011126,11,11,Suba,26,Centro Educativo Distrital Don Bosco V,Don Bosco - IED,CLL 143 A # 118 - 50,-74.10748215,4.7504136,71,TIBABUYES,inside_source_locality
+11-27,160011127,11,11,Suba,27,Colegio Hijas de Cristo Rey,Colegio - Hijas de Cristo Rey,AV CLL 138 # 58 D - 50,-74.06727899,4.72944338,23,CASA BLANCA SUBA,inside_source_locality
+11-28,160011128,11,11,Suba,28,Parqueadero Centro Comercial Mazurén,Centro Comercial Mazurén,CRA 46 # 152 - 46,-74.05005202,4.73649034,19,EL PRADO,inside_source_locality
+11-29,160011129,11,11,Suba,29,Universidad Pedagógica Nacional,Tejares Norte,CLL 183 # 54 D - 25,-74.05026995,4.76278287,17,SAN JOSE DE BAVARIA,inside_source_locality
+11-30,160011130,11,11,Suba,30,Colegio Celestin Freinet,Colegio Celestin Freinet,CLL 136 # 136A - 12,-74.11433533,4.74543379,71,TIBABUYES,inside_source_locality
+11-31,160011131,11,11,Suba,31,Colegio Distrital Álvaro Gómez Hurtado,Alvaro Gomez Hurtado Sede A - IED,CRA 100 A # 130 - 18,-74.0968505,4.7304445,28,EL RINCON,inside_source_locality
+11-32,160011132,11,11,Suba,32,Colegio Distrital Delia Zapata Olivella,Delia Zapata Olivella - IED,CLL 144 C # 141 A - 51,-74.11330965,4.75313734,71,TIBABUYES,inside_source_locality
+11-33,160011133,11,11,Suba,33,Colegio Distrital Hunza - Sede B,Hunza Sede B - IED,CLL 128 B # 87 D - 05,-74.08725562,4.72068616,28,EL RINCON,inside_source_locality
+11-34,160011134,11,11,Suba,34,Colegio Distrital Villa Elisa - Sede A,Villa Elisa Sede A - IED,CLL 132 C # 92 A - 71,-74.08785469,4.73234393,28,EL RINCON,inside_source_locality
+11-35,160011135,11,11,Suba,35,Colegio Distrital República Dominicana,República Dominicana Sede A - IED,CLL 131 A # 125 - 39,-74.10899939,4.73896439,71,TIBABUYES,inside_source_locality
+11-36,160011136,11,11,Suba,36,Colegio Distrital Lisboa - Sede B,La Toscana Lisboa Sede B - IED,CRA 151 A # 132 A - 16,-74.12165519,4.74331374,71,TIBABUYES,inside_source_locality
+11-37,160011137,11,11,Suba,37,Universidad UDCA,Universidad UDCA,CLL 222 # 55 - 09,-74.04886565,4.8002238,,,outside_upz
+11-39,160011139,11,11,Suba,39,Colegio Distrital Gustavo Morales Morales,Prado Sur,CLL 129 # 55 - 55,-74.06435554,4.71651067,24,NIZA,inside_source_locality
+11-40,160011140,11,11,Suba,40,Vía Pública,Supercade CAD Suba,AV CLL 145 # 103B - 90,-74.09570175,4.74650214,27,SUBA,inside_source_locality
+11-41,160011141,11,11,Suba,41,Colegio Distrital Nicolás Buenaventura,Nicolás Buenaventura - IED,CRA 103 B # 153 - 01,-74.09060192,4.75553748,27,SUBA,inside_source_locality
+12-1,160011201,12,12,Barrios Unidos,1,Cancha detrás de Olimpica,La Castellana,CRA 47 A con CLL 94 Cancha Parque / CRA 48 # 94 - 02,-74.06048852,4.68258983,21,LOS ANDES,inside_source_locality
+12-2,160011202,12,12,Barrios Unidos,2,Colegio Distrital Faustino Sarmiento - Sede A,Rionegro,TRV 60 # 95 - 51,-74.06649725,4.68497881,21,LOS ANDES,inside_source_locality
+12-3,160011203,12,12,Barrios Unidos,3,Fundación Educativa Santa María,Patria,CRA 50 # 90 - 50,-74.06517255,4.67907565,21,LOS ANDES,inside_source_locality
+12-4,160011204,12,12,Barrios Unidos,4,Colegio Distrital Rafaél Bernal Jiménez - Sede B,Gaitán,CRA 54 # 78 - 85,-74.07245198,4.67422942,22,DOCE DE OCTUBRE,inside_source_locality
+12-5,160011205,12,12,Barrios Unidos,5,Parqueadero Conjunto Residencial Entre Ríos,Entre Ríos,CRA 62 # 83 - 02 / AV CLL 80 # 58 - 84,-74.07541462,4.68030015,21,LOS ANDES,inside_source_locality
+12-6,160011206,12,12,Barrios Unidos,6,Centro Comercial Metrópolis,Metrópolis,AV CRA 68 # 75 A - 50,-74.08229831,4.68054473,22,DOCE DE OCTUBRE,inside_source_locality
+12-8,160011208,12,12,Barrios Unidos,8,Fundación Universitaria Monserrate - UNIMONSERRATE,José Joaquín Vargas,AV CLL 68 # 62 - 11,-74.0831481,4.6726826,22,DOCE DE OCTUBRE,inside_source_locality
+12-9,160011209,12,12,Barrios Unidos,9,Colegio Distrital República de Panamá Sede A,San Fernando,CRA 57 A # 74 A - 32,-74.07670481,4.67277772,22,DOCE DE OCTUBRE,inside_source_locality
+12-10,160011210,12,12,Barrios Unidos,10,Colegio Distrital Jorge Eliecer Gaitán - Sede A,Popular Modelo,CLL 66 A # 56 B – 35 / CLL 66 A # 56 - 25,-74.08165929,4.66545065,22,DOCE DE OCTUBRE,inside_source_locality
+12-11,160011211,12,12,Barrios Unidos,11,Colegio Distrital  Francisco Primero Sede C,12 de Octubre,CRA 29 C # 71 C - 11,-74.07335095,4.66694194,98,LOS ALCAZARES,inside_source_locality
+12-12,160011212,12,12,Barrios Unidos,12,Colegio Distrital Juan Francisco Berbeo - Sede A,Santa Sofía,CRA 28 B # 78 - 40 / CRA 28 B # 78 - 30,-74.06707618,4.67067732,98,LOS ALCAZARES,inside_source_locality
+12-13,160011213,12,12,Barrios Unidos,13,Alianza Cristiana y Misionera Colombiana,Polo Club,AV CRA 20 (Autopista norte) # 81 - 55,-74.06070017,4.6691613,98,LOS ALCAZARES,inside_source_locality
+12-14,160011214,12,12,Barrios Unidos,14,Colegio Distrital Juan Francisco Berbeo - Sede B,San Felipe,CLL 77 # 22 - 66 / CLL 77 # 22 - 68,-74.06340934,4.66684597,98,LOS ALCAZARES,inside_source_locality
+12-16,160011216,12,12,Barrios Unidos,16,Colegio Distrital Francisco primero Sede Manuela Ayala,La Paz,CRA 28 B # 65 - 80,-74.07520914,4.66022017,98,LOS ALCAZARES,inside_source_locality
+12-17,160011217,12,12,Barrios Unidos,17,Colegio Mercedario San Pedro,Colombia,CLL 69 # 17 - 39,-74.06551906,4.65737587,98,LOS ALCAZARES,inside_source_locality
+12-18,160011218,12,12,Barrios Unidos,18,Colegio Distrital Heladia Mejía - Sede B,La Muequeta,CLL 64 # 20 - 21,-74.06936125,4.65447537,98,LOS ALCAZARES,inside_source_locality
+12-19,160011219,12,12,Barrios Unidos,19,Universidad del Rosario,Siete de Agosto,CRA 24 # 63 C - 69,-74.07208127,4.65462356,98,LOS ALCAZARES,inside_source_locality
+12-20,160011220,12,12,Barrios Unidos,20,Colegio Distrital Francisco Primero Sede Alemania,Benjamín Herrera,CRA 28 # 63 - 64,-74.0756793,4.65227376,98,LOS ALCAZARES,inside_source_locality
+13-1,160011301,13,13,Teusaquillo,1,Colegio Distrital Manuela Beltrán,Divino Salvador,CRA 14 A # 57 - 28,-74.06639657,4.64442705,100,GALERIAS,inside_source_locality
+13-2,160011302,13,13,Teusaquillo,2,Colegio Antonio Nariño,San Luis,CL 61 16 15,-74.06726195,4.64830091,100,GALERIAS,inside_source_locality
+13-4,160011304,13,13,Teusaquillo,4,Colegio de la Contraloría,Nicolás de Federmán,CLL 57 B # 37 - 34,-74.08198888,4.64823876,106,LA ESMERALDA,inside_source_locality
+13-5,160011305,13,13,Teusaquillo,5,Plazoleta Pablo VI,Pablo VI,CRA 53 con CLL 57 B (Plazoleta) / CLL 57A # 53 - 21,-74.08685655,4.64979288,106,LA ESMERALDA,inside_source_locality
+13-6,160011306,13,13,Teusaquillo,6,Salón Comunal Salitre Greco,El Salitre,CLL 46 # 67 A - 35,-74.10011002,4.65593062,104,PARQUE SIMON BOLIVAR - CAN,inside_source_locality
+13-7,160011307,13,13,Teusaquillo,7,Colegio Calazanz Femenino,La Esmeralda,CLL 44 C # 55 - 50 /CLL 45 # 54 - 51,-74.09103471,4.647254,106,LA ESMERALDA,inside_source_locality
+13-8,160011308,13,13,Teusaquillo,8,Parqueadero Centro Médico Cafam,Cafam CLL 51,CRA 16 # 51 - 20 / CRA 16 # 51 - 26 (Parqueadero),-74.06838479,4.63902279,100,GALERIAS,inside_source_locality
+13-9,160011309,13,13,Teusaquillo,9,Colegio Distrital Palermo,Palermo,CRA 23 # 49 - 37,-74.07408781,4.6380432,100,GALERIAS,inside_source_locality
+13-10,160011310,13,13,Teusaquillo,10,Colegio Americano,Colegio Americano,CRA 22 # 45 A - 51,-74.07409026,4.63431056,101,TEUSAQUILLO,inside_source_locality
+13-11,160011311,13,13,Teusaquillo,11,Gimnasio Boyacá,Belalcazar,CRA 27 # 45 A - 63,-74.07762639,4.63541269,100,GALERIAS,inside_source_locality
+13-12,160011312,13,13,Teusaquillo,12,Hemeroteca Nacional,Quinta Paredes A,AV Dorado CLL 26 # 44 A - 40,-74.09153301,4.6361709,104,PARQUE SIMON BOLIVAR - CAN,inside_source_locality
+13-13,160011313,13,13,Teusaquillo,13,Gimnasio Mackinley,Quinta Paredes B,AV CLL 24 # 48 - 53,-74.09760864,4.63701809,107,QUINTA PAREDES,inside_source_locality
+13-14,160011314,13,13,Teusaquillo,14,Acueducto,Centro Nariño,AV CLL 24 # 37 - 27,-74.09149145,4.62847369,107,QUINTA PAREDES,inside_source_locality
+13-15,160011315,13,13,Teusaquillo,15,Instituto Distrital Manuela Beltrán,Residencias B.C.H.,CRA 32 A # 27 - 18,-74.08162454,4.62967291,107,QUINTA PAREDES,inside_source_locality
+13-16,160011316,13,13,Teusaquillo,16,Liceo Universidad Católica,Santa Teresita,DIAG 46 A # 15 - 21 /CRA 15 # 46 - 69,-74.06879446,4.63429593,101,TEUSAQUILLO,inside_source_locality
+13-17,160011317,13,13,Teusaquillo,17,Colegio Champagnat,La Magdalena,CRA 17 # 39 B - 51,-74.07105251,4.62935096,101,TEUSAQUILLO,inside_source_locality
+13-18,160011318,13,13,Teusaquillo,18,Fundación Universitaria Compensar (Sede K),Teusaquillo,CLL 32 A # 17 - 14,-74.07273436,4.62128033,101,TEUSAQUILLO,inside_source_locality
+13-19,160011319,13,13,Teusaquillo,19,Casa de la Cultura,Pablo VI - II Etapa,CRA 57 # 56 – 36,-74.08881136,4.6507716,106,LA ESMERALDA,inside_source_locality
+13-20,160011320,13,13,Teusaquillo,20,Escuela Superior de Administración Pública - ESAP,Rafael Nuñez,CLL 44 # 53 - 37,-74.09262937,4.64462394,104,PARQUE SIMON BOLIVAR - CAN,inside_source_locality
+13-21,160011321,13,13,Teusaquillo,21,Plazoleta Centro Comercial Gran Estación,Ciudad Salitre,AV CLL 26 # 62 - 47 /AV CLL 26 # 60 - 61,-74.10117281,4.64855878,109,CIUDAD SALITRE ORIENTAL,inside_source_locality
+14-1,160011401,14,14,Mártires,1,Colegio Distrital República Bolivariana de Venezuela - Sede A,Santa Fé,CLL 22 A # 18 B - 42,-74.07940438,4.6151628,102,LA SABANA,inside_source_locality
+14-2,160011402,14,14,Mártires,2,Colegio Distrital República Bolivariana de Venezuela - Sede B,IED República Bolivariana Sede B (Samper Mendoza),CLL 22 A # 25 - 52,-74.08305314,4.61837266,102,LA SABANA,inside_source_locality
+14-3,160011403,14,14,Mártires,3,Salón Comunal,Colseguros,AV CLL 22 C # 29 A - 47,-74.08428457,4.62169865,102,LA SABANA,inside_source_locality
+14-4,160011404,14,14,Mártires,4,Salones de la Estación,Estación de la Sabana,CLL 13 # 18 - 24,-74.08335137,4.60702894,102,LA SABANA,inside_source_locality
+1-1,160010101,1,1,Usaquén,1,Vía Pública,Usaquén,CRA 6A ENTRE CLL 119 Y 120A VIA PUBLICA,-74.03074328,4.69628022,14,USAQUEN,inside_source_locality
+1-3,160010103,1,1,Usaquén,3,Colegio Calasanz - Sede Norte,Calasanz,CRA 20 A # 173 A - 10 Entrada al Parqueadero,-74.04243565,4.75361694,10,LA URIBE,inside_source_locality
+1-4,160010104,1,1,Usaquén,4,Colegio Distrital Aquileo Parra,Colegio Aquileo Parra sede Bachillerato,CRA 18 A # 187 - 75 /CRA 18 A # 187 - 97,-74.03911765,4.76625987,9,VERBENAL,inside_source_locality
+1-5,160010105,1,1,Usaquén,5,Colegio Distrital Unión Colombia - Sede B,Lijacá,CLL 189 # 7 - 05,-74.02799443,4.76553742,9,VERBENAL,inside_source_locality
+1-6,160010106,1,1,Usaquén,6,Colegio Distrital Unión Colombia - Sede A,San Antonio Unión Colombia,CRA 7 A # 182 A - 07,-74.02751644,4.75946183,9,VERBENAL,inside_source_locality
+1-7,160010107,1,1,Usaquén,7,Colegio Distrital Agustín Fernández - Sede A,Colegio Agustín Fernández Sede A,CRA 7 # 155 - 20,-74.02379498,4.72954402,13,LOS CEDROS,inside_source_locality
+1-8,160010108,1,1,Usaquén,8,Parqueadero Centro Comercial Cedritos 151,Centro Comercial Cedritos 151,CLL 150 # 16 - 56,-74.04181593,4.73149009,13,LOS CEDROS,inside_source_locality
+1-9,160010109,1,1,Usaquén,9,Universidad El Bosque,Universidad El Bosque,AV CRA 9 # 131 A – 02,-74.03238881,4.71034076,14,USAQUEN,inside_source_locality
+1-11,160010111,1,1,Usaquén,11,Instituto Pedagógico Nacional,Instituto Pedagógico Nacional,AV CLL 127 # 11 - 20,-74.0344479,4.70439298,15,COUNTRY CLUB,inside_source_locality
+1-12,160010112,1,1,Usaquén,12,Parqueadero Unicentro,Centro Comercial Unicentro,AV CRA 15 # 124 - 30,-74.042625,4.70237877,16,SANTA BARBARA,inside_source_locality
+1-13,160010113,1,1,Usaquén,13,Parqueadero Plaza México,Plaza México,CRA 19 A con CLL 117,-74.05045574,4.69934385,16,SANTA BARBARA,inside_source_locality
+1-14,160010114,1,1,Usaquén,14,Parqueadero,Santa Paula,CRA 13 A # 107 A - 10,-74.04258362,4.69048288,16,SANTA BARBARA,inside_source_locality
+1-15,160010115,1,1,Usaquén,15,Centro Comercial Hacienda Santa Bárbara,Centro Comercial Hacienda Santa Barbara,CLL 114 CRA 6 Entrada Zona C /CRA 6 # 115 - 65 Entrada F,-74.03165673,4.69259303,14,USAQUEN,inside_source_locality
+1-17,160010117,1,1,Usaquén,17,Colegio Distrital Toberín - Sede A,Colegio Distrital Toberín - Sede A,CLL 166 # 16 C - 15,-74.0393839,4.74539895,12,TOBERIN,inside_source_locality
+9-6,160010906,9,9,Fontibon,6,Colegio Distrital Internacional,Versalles,CRA 112 # 23 - 05,-74.14523522,4.68683727,75,FONTIBON,inside_source_locality
+2-1,160010201,2,2,Chapinero,1,Parqueadero,Chicó Norte,AV CLL 100 # 16 - 75,-74.04965464,4.68507557,97,CHICO LAGO,inside_source_locality
+2-2,160010202,2,2,Chapinero,2,Parqueadero Olímpica,Chicó Reservado,CLL 97 # 10 - 45,-74.04422466,4.67973371,88,EL REFUGIO,inside_source_locality
+2-3,160010203,2,2,Chapinero,3,Liceo Francés Louis Pasteur,Chico Liceo Francés Louis Pasteur,CLL 86 # 7 - 40,-74.04677356,4.66671198,88,EL REFUGIO,inside_source_locality
+2-4,160010204,2,2,Chapinero,4,Carulla - Plazoleta,Antiguo Country Plazoleta Carulla,CRA 15 con CLL 85 Esquina,-74.05568487,4.66990414,97,CHICO LAGO,inside_source_locality
+2-5,160010205,2,2,Chapinero,5,Universidad EAN,Universidad EAN,CLL 79 # 11 - 45 / CRA 11 # 78 - 47,-74.05480025,4.66343108,97,CHICO LAGO,inside_source_locality
+2-6,160010206,2,2,Chapinero,6,Universidad Sergio Arboleda,Universidad Sergio Arboleda,CLL 74 # 14 - 14,-74.05979579,4.66089464,97,CHICO LAGO,inside_source_locality
+2-7,160010207,2,2,Chapinero,7,Universidad Pedagógica Nacional,Universidad Pedagógica Nacional,CLL 72 # 11 - 86,-74.05929989,4.65786738,97,CHICO LAGO,inside_source_locality
+2-9,160010209,2,2,Chapinero,9,SENA,SENA CLL 65,CRA 13 # 65 - 10 Entrada Parqueadero,-74.06288077,4.65175626,99,CHAPINERO,inside_source_locality
+2-10,160010210,2,2,Chapinero,10,Fundación Universitaria Konrad Lorenz,Universidad Konrad Lorenz,CRA 9 Bis # 62 - 43,-74.06145696,4.64841756,99,CHAPINERO,inside_source_locality
+2-11,160010211,2,2,Chapinero,11,Parqueadero SENA,SENA CLL 52,CLL 52 # 13 - 65,-74.06613584,4.63902645,99,CHAPINERO,inside_source_locality
+2-12,160010212,2,2,Chapinero,12,Universidad Piloto de Colombia,Universidad Piloto,CRA 9 # 45 A - 25,-74.06547382,4.63277236,99,CHAPINERO,inside_source_locality
+2-13,160010213,2,2,Chapinero,13,Colegio Distrital Campestre Monteverde,Colegio Campestre Monteverde San Luis,CRA 5 C Este # 98 A - 55,-74.02153895,4.67020974,89,SAN ISIDRO - PATIOS,inside_source_locality
+3-1,160010301,3,3,Santa Fe,1,Colegio Distrital Externado Camilo Torres,Camilo Torres,CRA 7 # 33 - 64,-74.06658512,4.62028845,91,SAGRADO CORAZON,inside_source_locality
+3-2,160010302,3,3,Santa Fe,2,Colegio Distrital Manuel Elkin Patarroyo,La Perseverancia,CLL 32 A # 3 C - 37,-74.06450467,4.617778,92,LA MACARENA,inside_source_locality
+3-3,160010303,3,3,Santa Fe,3,Colegio Distrital Popicarpa Salavarrieta - Sede A,Policarpa Salavarrieta,CLL 28 # 5 A - 06,-74.06780815,4.61491222,91,SAGRADO CORAZON,inside_source_locality
+3-4,160010304,3,3,Santa Fe,4,Palacio San Francisco,Palacio San Francisco,CLL 13 (AV Jiménez) # 7 - 56,-74.07359544,4.60196152,93,LAS NIEVES,inside_source_locality
+3-5,160010305,3,3,Santa Fe,5,Biblioteca Distrital Antonio Nariño,Facultad De Artes - ASAB,CRA 13 # 14 - 69,-74.07837073,4.60459885,93,LAS NIEVES,inside_source_locality
+3-6,160010306,3,3,Santa Fe,6,Colegio Distrital Efraín Cañavera - Sede B (Los Pinos),Los Laches,CRA 7 Este # 5 - 20,-74.06663597,4.58746547,96,LOURDES,inside_source_locality
+3-7,160010307,3,3,Santa Fe,7,Centro Comunitario Lourdes,Centro Oriente,CRA 2 # 4 - 10 /CRA 2 # 4 - 12,-74.07394485,4.58950447,96,LOURDES,inside_source_locality
+3-8,160010308,3,3,Santa Fe,8,Colegio Distrital Los Ángeles - Sede B (Santa Inés),San Bernardo,CLL 3 # 11 B - 40 / CRA 12 # 3 - 04,-74.08471558,4.59360814,95,LAS CRUCES,inside_source_locality
+3-9,160010309,3,3,Santa Fe,9,Colegio Distrital Antonio José Uribe,Las Cruces,CLL 3 # 9 - 70,-74.08225488,4.59222008,95,LAS CRUCES,inside_source_locality
+3-10,160010310,3,3,Santa Fe,10,Colegio Distrital Jorge Soto del Corral - Sede A,Girardot,CLL 3 # 1 B - 09 Este /CLL 3 # 2 - 64 Este,-74.0729962,4.58758004,96,LOURDES,inside_source_locality
+3-12,160010312,3,3,Santa Fe,12,Antigua Escuela Santa Ines,Medicina Legal,CRA 12 A # 7 - 07,-74.08290338,4.59753617,93,LAS NIEVES,inside_source_locality
+3-13,160010313,3,3,Santa Fe,13,Parqueadero primer piso edificio Julio Mario Santo Domingo Universidad de los Andes,Las Aguas,CLL 21 # 1 - 20,-74.0659286,4.60414564,92,LA MACARENA,inside_source_locality
+3-14,160010314,3,3,Santa Fe,14,Colegio Distrital República de Argentina - Sede B (Policarpa Salavarrieta),Las Nieves,CLL 20 # 4 - 68,-74.0691309,4.60501359,93,LAS NIEVES,inside_source_locality
+4-2,160010402,4,4,San Cristóbal,2,Colegio Distrital José Félix Restrepo - Sede B,Santa Ana Sur,CLL 10 A Sur # 3 A - 61,-74.08415687,4.57704149,33,SOSIEGO,inside_source_locality
+4-7,160010407,4,4,San Cristóbal,7,Colegio Distrital Rafael Nuñez,Sosiego,CRA 9 A # 18 - 74 Sur,-74.09301012,4.57636159,33,SOSIEGO,inside_source_locality
+4-8,160010408,4,4,San Cristóbal,8,Colegio privado Salesiano Juan del Rizzo Sede B,Juan del Rizzo,CLL 27 Sur # 2 B - 59 / CLL 27 A Sur # 2 B - 59,-74.09322579,4.56702821,34,20 DE JULIO,inside_source_locality
+4-11,160010411,4,4,San Cristóbal,11,Colegio Distrital José Castro Martínez - Sede A,Bello Horizonte,CLL 31 D Bis Sur # 2 - 24 Este /CLL 31 D Bis Sur # 2 - 25 Este,-74.09247453,4.55995649,34,20 DE JULIO,inside_source_locality
+4-12,160010412,4,4,San Cristóbal,12,Colegio Distrital San isidro Sur Oriental - Sede A,San Isidro,CLL 34 Sur # 7 A - 88,-74.10093586,4.56590459,34,20 DE JULIO,inside_source_locality
+4-14,160010414,4,4,San Cristóbal,14,Colegio Distrital Juán Evangelista Gómez,San Martín de Loba Sur,DIAG 39 Sur # 2 - 10 Este  /DIAG 39 Sur # 2 - 00 Este,-74.09566885,4.55208676,50,LA GLORIA,inside_source_locality
+4-17,160010417,4,4,San Cristóbal,17,Colegio Distrital Altamira Sur Oriental - Sede A,Altamira,CLL 42 A Sur # 12 A - 27 Este,-74.08484396,4.54538569,50,LA GLORIA,inside_source_locality
+4-18,160010418,4,4,San Cristóbal,18,Colegio Distrital El Quindío - Sede B,El Quindío,CLL 46 G Sur # 16 A - 01 Este,-74.08281202,4.53739402,50,LA GLORIA,inside_source_locality
+4-21,160010421,4,4,San Cristóbal,21,Colegio Distrital Juan Rey - Sede A,Juan Rey,CLL 70 Sur # 13 B - 27 Este,-74.0899558,4.52243383,51,LOS LIBERTADORES,inside_source_locality
+5-5,160010505,5,5,Usme,5,Colegio Distrital Orlando Fals Borda,Santa Librada,CRA 1 A Este # 72 - 60 Sur / CRA 12 # 72 - 60 Sur,-74.11594454,4.51935766,57,GRAN YOMASA,inside_source_locality
+5-6,160010506,5,5,Usme,6,Colegio Distrital Almirante Padilla,Almirante Padilla,CLL 76 A Sur # 8 D - 59 Este / CLL 76 A Sur # 8 D - 25,-74.11190314,4.51226625,57,GRAN YOMASA,inside_source_locality
+5-7,160010507,5,5,Usme,7,Colegio Distrital Usminia - Sede B,Usminia,CLL 102 A Sur # 5 - 06,-74.1144873,4.49543866,58,COMUNEROS,inside_source_locality
+5-8,160010508,5,5,Usme,8,Colegio Distrital Miguel de Cervantes Saavedra - Sede A,Marichuela,CRA 14 B # 76 - 33 Sur,-74.11698188,4.5124141,57,GRAN YOMASA,inside_source_locality
+5-11,160010511,5,5,Usme,11,Colegio Distrital Nueva Esperanza,La Flora,CRA 14 B Este # 76 - 59 Sur /CRA 14 Este # 76 - 79 Sur,-74.09039198,4.51356435,52,LA FLORA,inside_source_locality
+5-13,160010513,5,5,Usme,13,Colegio Distrital Los Comuneros,Los Comuneros,CLL 91 C Sur # 2 A - 49,-74.10874844,4.49858795,58,COMUNEROS,inside_source_locality
+5-15,160010515,5,5,Usme,15,Colegio Distrital  Fabio Lozano Simonelli - Sede B,El Danubio Azul,CLL 56 A Sur # 3 A - 14,-74.11502144,4.53776572,56,DANUBIO,inside_source_locality
+5-17,160010517,5,5,Usme,17,Colegio Distrital El Cortijo Vianey Sede B,La Fortaleza,CLL 73B Sur # 14C - 16,-74.11916044,4.51783087,57,GRAN YOMASA,inside_source_locality
+5-18,160010518,5,5,Usme,18,Colegio Distrital Ofelia Uribe de Acosta,El Bosque,CLL 81 A Sur # 6 - 40 Este / TRV 1 Este # 85 - 86 Sur,-74.10311554,4.50601832,57,GRAN YOMASA,inside_source_locality
+5-19,160010519,5,5,Usme,19,Colegio Distrital Villa Hermosa,Villa Hermosa,CLL 97 F Sur # 6 F - 08 Este / CLL 97 Sur # 6 F - 08 Este *,-74.10232048,4.49398625,59,ALFONSO LOPEZ,inside_source_locality
+5-20,160010520,5,5,Usme,20,Colegio Distrital Atabanzha,Valles de Cafam,CLL 92 Sur # 14 D - 87,-74.11805942,4.5076536,58,COMUNEROS,inside_source_locality
+6-1,160010601,6,6,Tunjuelito,1,Colegio Distrital Rufino José de Cuervo - Sede A,Tunjuelito A,CRA 11 B # 52 - 53 Sur /CRA 12 # 52 - 60 Sur,-74.1247815,4.55947267,62,TUNJUELITO,inside_source_locality
+6-2,160010602,6,6,Tunjuelito,2,Instituto Técnico Industrial Piloto - Sede A,"Fátima \""A\""",CRA 35 # 51 B - 87 Sur,-74.13798927,4.58552198,42,VENECIA,inside_source_locality
+6-3,160010603,6,6,Tunjuelito,3,Colegio Distrital Cecilia de la Fuente Lleras - Sede B (Rufino José de Cuervo),Abraham Lincoln,CRA 8 # 53 A - 44 Sur,-74.12380751,4.55532442,62,TUNJUELITO,inside_source_locality
+6-4,160010604,6,6,Tunjuelito,4,Colegio Distrital San Carlos - Sede B,San Carlos,CRA 19 # 50 A - 37 Sur,-74.12815741,4.56946039,62,TUNJUELITO,inside_source_locality
+6-5,160010605,6,6,Tunjuelito,5,Colegio Distrital José Antonio Ricaurte,San Benito,CRA 18 # 56 A - 45 Sur,-74.13237462,4.56441495,62,TUNJUELITO,inside_source_locality
+6-6,160010606,6,6,Tunjuelito,6,Colegio Distrital Santiago Pérez - Sede A,"El Tunal \""A\""",CRA 24 # 49 - 86 Sur / CRA 24 # 48 C - 86 Sur,-74.13192148,4.57592314,42,VENECIA,inside_source_locality
+6-7,160010607,6,6,Tunjuelito,7,Colegio Distrital Rafaél Uribe Uribe - Sede B,"El Carmen Sur \""A\""",CLL 48 B Sur # 28 - 75 /CRA 29 # 48 B - 36 Sur,-74.13231082,4.58299685,42,VENECIA,inside_source_locality
+6-8,160010608,6,6,Tunjuelito,8,Colegio Distrital Ciudad de Bogotá - Sede A,San Vicente Ferrer,CRA 25 # 53 B - 32 Sur,-74.13827659,4.57718576,42,VENECIA,inside_source_locality
+6-9,160010609,6,6,Tunjuelito,9,Colegio Distrital Venecia - Sede A,"Venecia \""A\""",CRA 55 # 49 - 25 Sur /CRA 55 # 49 - 55 Sur,-74.14358301,4.59223243,42,VENECIA,inside_source_locality
+6-10,160010610,6,6,Tunjuelito,10,Colegio Distrital Venecia - Sede B,"Nuevo Muzu \""A\""",CRA 59 # 52 A - 30 Sur /CRA 61 B # 52 A - 20 Sur,-74.14759958,4.58612315,42,VENECIA,inside_source_locality
+6-11,160010611,6,6,Tunjuelito,11,Colegio Distrital Isla del Sol,Isla del Sol,CLL 67 B Sur # 63 - 19,-74.1525068,4.58921138,42,VENECIA,inside_source_locality
+6-12,160010612,6,6,Tunjuelito,12,Colegio Nuestra Señora de Fátima Policía Nacional,"Venecia \""B\""",DIAG 49 Sur # 48 - 71 / DIAG 49 Sur # 51 D - 05,-74.13480057,4.59130994,42,VENECIA,inside_source_locality
+7-1,160010701,7,7,Bosa,1,Colegio Distrital Argelia,Bosa,CLL 63 Sur # 81 A - 30,-74.18578013,4.61158504,85,BOSA CENTRAL,inside_source_locality
+7-2,160010702,7,7,Bosa,2,Salón Comunal Villa del Río,Villa del Río,CLL 55 A # 66 - 50 Sur,-74.15738737,4.60222542,49,APOGEO,inside_source_locality
+7-5,160010705,7,7,Bosa,5,Colegio Distrital Carlos Albán Holguín - Sede A,Carlos Albán,CLL 72 Sur # 79 D - 33 / CLL 72 B Sur # 79 D - 06,-74.19756533,4.60571473,85,BOSA CENTRAL,inside_source_locality
+7-6,160010706,7,7,Bosa,6,Colegio Distrital José Francisco Socarrás,La Libertad,CRA 88 C # 66 A - 03 Sur,-74.19449058,4.62512538,84,BOSA OCCIDENTAL,inside_source_locality
+7-7,160010707,7,7,Bosa,7,Colegio Distrital Fernando Mazuera Villegas,Piamonte,CLL 68 A Sur # 80 H - 05,-74.1907486,4.60686832,85,BOSA CENTRAL,inside_source_locality
+7-8,160010708,7,7,Bosa,8,La Estación,La Estación,CRA 78 ENTRE CLL 60A Sur Y CLL 63 Sur,-74.18069717,4.60131729,85,BOSA CENTRAL,inside_source_locality
+7-9,160010709,7,7,Bosa,9,Colegio Distrital Gran Colombiano - Sede B,Laureles,CRA 80 K # 73 F - 29 Sur,-74.20015506,4.60905901,85,BOSA CENTRAL,inside_source_locality
+7-10,160010710,7,7,Bosa,10,Colegio Distrital Porfilio Barba Jacob,Palestina,CLL 70 A Sur # 81 G - 13,-74.1936458,4.61187183,85,BOSA CENTRAL,inside_source_locality
+7-11,160010711,7,7,Bosa,11,Colegio Distrital Orlando Higuita Rojas,Orlando Higuita,CLL 57 Sur # 87 H - 03 / CLL 57 Sur # 87 G - 35,-74.18696812,4.6254451,84,BOSA OCCIDENTAL,inside_source_locality
+7-12,160010712,7,7,Bosa,12,Colegio Distrital Paulo de Tarso - Sede B,Bosa Paulo VI,CLL 71 Bis Sur # 77 I - 21,-74.19443339,4.59935029,85,BOSA CENTRAL,inside_source_locality
+7-13,160010713,7,7,Bosa,13,Colegio Distrital Brasilia,Bosa Brasilia,CLL 52 A Sur # 87 D - 45,-74.18158177,4.62795813,84,BOSA OCCIDENTAL,inside_source_locality
+7-14,160010714,7,7,Bosa,14,Colegio Distrital Alfonso Reyes EchandíaAlfonso Reyes Echandía,Islandia,CRA 86 # 74 - 00 Sur,-74.20035773,4.61616277,85,BOSA CENTRAL,inside_source_locality
+10-24,160011024,10,10,Engativá,24,Colegio Distrital Nidia Quintero de Turbay - Sede B,Florencia,DIAG 74 B # 87 - 40,-74.10526332,4.69956811,30,BOYACA REAL,inside_source_locality
+18-11,160011811,18,18,Rafael Uribe Uribe,11,Colegio Distrital Bravo Páez,Central Quiroga,CLL 37 Sur # 23 - 51,-74.1190882,4.57988502,39,QUIROGA,inside_source_locality
+18-13,160011813,18,18,Rafael Uribe Uribe,13,Colegio Distrital José Marti - Sede B,Las Colinas,DIAG 32 B Sur # 15 C - 25 / DIAG 32 B Sur # 13 B - 17,-74.11286774,4.57436931,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-14,160011814,18,18,Rafael Uribe Uribe,14,Colegio Distrital Enrique Olaya Herrera,Country Sur,CRA 10 # 31 - 29 Sur,-74.10245541,4.56817299,36,SAN JOSE,inside_source_locality
+10-25,160011025,10,10,Engativá,25,Colegio Distrital Nidia Quintero de Turbay - Sede A,Santa Rosita,CLL 75 # 90 - 75,-74.10789106,4.70172764,30,BOYACA REAL,inside_source_locality
+10-26,160011026,10,10,Engativá,26,Colegio Distrital República de China,Quirigua,CRA 92 # 82 - 20,-74.10385844,4.70761207,29,MINUTO DE DIOS,inside_source_locality
+10-27,160011027,10,10,Engativá,27,Colegio Distrital Jorge Gaitán Cortés - Sede A,La Española,CRA 82 A # 82 D - 34 / CRA 82 A # 82 D - 40,-74.09653855,4.70337586,29,MINUTO DE DIOS,inside_source_locality
+10-28,160011028,10,10,Engativá,28,Colegio Minuto de Dios,Minuto de Dios,TRV 74 # 81 C - 05,-74.09033768,4.69812925,29,MINUTO DE DIOS,inside_source_locality
+10-29,160011029,10,10,Engativá,29,Colegio Distrital Simón Bolívar - Sede B,La Serena,CRA 85 # 88 - 99 / CRA 85 # 88 - 91,-74.09499903,4.70863188,29,MINUTO DE DIOS,inside_source_locality
+10-30,160011030,10,10,Engativá,30,Colegio Técnico Distrital Laureano Gómez - Sede B,Bachue,CLL 90 A # 95 D - 56,-74.10182823,4.71863563,29,MINUTO DE DIOS,inside_source_locality
+10-32,160011032,10,10,Engativá,32,Sede Social Edificio Comunal Bochica 1,Bachue II - Bochica I,CLL 83 # 95 D - 04,-74.10589613,4.71239578,29,MINUTO DE DIOS,inside_source_locality
+10-33,160011033,10,10,Engativá,33,Colegio Distrital Antonio Villavicencio - Sede A,Villa Gladys,CLL 65 # 112 A - 39,-74.13430698,4.70506745,74,ENGATIVA,inside_source_locality
+10-34,160011034,10,10,Engativá,34,Parqueadero Supermanzana D - Portería 1,Cortijo,CRA 116 # 80 A - 69 /CLL 80 A # 116 B - 10,-74.12238074,4.7256716,72,BOLIVIA,inside_source_locality
+10-35,160011035,10,10,Engativá,35,Colegio Distrital Antonio Nariño - Sede A,San Marcos,CRA 77 A # 67 - 17,-74.10397213,4.68596151,30,BOYACA REAL,inside_source_locality
+10-36,160011036,10,10,Engativá,36,Colegio Distrital Marco Tulio Fernández - Sede D,San Ignacio,TRV 76 B # 51 A - 57 /CRA 75 # 51 A - 69,-74.11170781,4.67393804,31,SANTA CECILIA,inside_source_locality
+10-37,160011037,10,10,Engativá,37,Colegio Distrital Tabora - Sede A,Tabora,CRA 77 B # 74 A - 02 / CRA 77 B # 74 - 02,-74.09808773,4.69378944,30,BOYACA REAL,inside_source_locality
+10-39,160011039,10,10,Engativá,39,Polideportivo,Los Cerezos,TRV 87 A # 83 A - 48,-74.10015044,4.70639036,29,MINUTO DE DIOS,inside_source_locality
+10-40,160011040,10,10,Engativá,40,Colegio Centro Educativo Integral Colsubsidio,Ciudadela Colsubsidio,CLL 83 # 110 - 58,-74.11391557,4.72081141,72,BOLIVIA,inside_source_locality
+10-41,160011041,10,10,Engativá,41,Colegio Distrital Juán del Corral - Sede A,Ferias II,CRA 69 B # 79 A - 42,-74.08190081,4.68696149,26,LAS FERIAS,inside_source_locality
+10-42,160011042,10,10,Engativá,42,Colegio Colsubsidio Las Mercedes,El Muelle,CRA 105 D # 66 A - 15 /CRA 105 F # 66 - 33,-74.12521384,4.70028914,74,ENGATIVA,inside_source_locality
+10-43,160011043,10,10,Engativá,43,Colegio Distrital Marco Tulio Fernández - Sede A,La Cabaña,CLL 63 B # 71 A - 16,-74.10219663,4.67429616,26,LAS FERIAS,inside_source_locality
+10-45,160011045,10,10,Engativá,45,Salón Comunal,Santa Cecilia,CLL 52 A Bis # 78 - 35 /TRV 85 # 52 A - 70,-74.11305605,4.67724862,31,SANTA CECILIA,inside_source_locality
+10-9,160011009,10,10,Engativá,9,Colegio Distrital Villa Amalia,Villa Amalia,CRA 110 B # 71 C - 45 /CLL 71 C # 110 B - 21,-74.12630135,4.71059849,73,GARCES NAVAS,inside_source_locality
+10-31,160011031,10,10,Engativá,31,Colegio Distrital José Asunción Silva - Sede A,Quirigua Plaza de mercado,CRA 92 # 89 - 79 /CLL 89 Bis # 91 - 20,-74.09834882,4.71270819,29,MINUTO DE DIOS,inside_source_locality
+10-38,160011038,10,10,Engativá,38,Colegio Distrital Morisco,El Morisco,DIAG 83 # 73 - 12 / DIAG 83 # 73 A - 12,-74.09038497,4.70515559,29,MINUTO DE DIOS,inside_source_locality
+10-44,160011044,10,10,Engativá,44,Salón Comunal,Tisquesusa,DIAG 82 B # 79 - 10,-74.09468949,4.70230746,29,MINUTO DE DIOS,inside_source_locality
+10-48,160011048,10,10,Engativá,48,Sede Social Conjunto Zarzamora CAFAM,Zarzamora,CLL 71 B # 88 - 35,-74.10797802,4.69628194,30,BOYACA REAL,inside_source_locality
+11-2,160011102,11,11,Suba,2,Colegio San José de Calasanz,Colegio San José de Calasanz,CLL 129 # 88B - 35,-74.08824496,4.72303026,28,EL RINCON,inside_source_locality
+8-61,160010861,8,8,Kennedy,61,Salón Comunal Urbanización Villa Andrea,Santa Maria de Kennedy,CLL 51 C Sur # 82 A - 09,-74.17647344,4.62250183,81,GRAN BRITALIA,inside_source_locality
+14-5,160011405,14,14,Mártires,5,Colegio Distrital Antonio Ricaurte - Sede B,Ricaurte,CLL 10 # 29 - 64,-74.09447962,4.6101124,102,LA SABANA,inside_source_locality
+14-6,160011406,14,14,Mártires,6,La Estanzuela - IED Antonia Santos,La Estanzuela - IED Antonia Santos,CRA 22 # 12 - 49,-74.08799466,4.60830311,102,LA SABANA,inside_source_locality
+14-7,160011407,14,14,Mártires,7,Salón Comunal Barrio El Progreso,Veraguas,CLL 5 A # 26 A - 39,-74.09628111,4.60287729,37,SANTA ISABEL,inside_source_locality
+14-8,160011408,14,14,Mártires,8,Centro Crecer,Centro Crecer,AV CLL 1 # 24 B - 26,-74.09769647,4.59470829,37,SANTA ISABEL,inside_source_locality
+14-9,160011409,14,14,Mártires,9,Colegio Distrital San Francisco de Asís - Sede B,El Vergel,CRA 21  # 1 D – 06 / CRA 21 # 1 H – 06,-74.09426547,4.59632187,37,SANTA ISABEL,inside_source_locality
+14-11,160011411,14,14,Mártires,11,Colegio Nuestra Señora de la Presentación,San Fason,CLL 19 # 19 - 27,-74.08133886,4.61216225,102,LA SABANA,inside_source_locality
+15-2,160011502,15,15,Antonio Nariño,2,Escuela Superior Distrital María Montesory - Sede B,Ciudad Berna,CLL 10 Sur # 13 - 27,-74.09353678,4.58613271,35,CIUDAD JARDIN,inside_source_locality
+15-3,160011503,15,15,Antonio Nariño,3,Gimnasio Monseñor Manuel María Camargo,San Antonio,CLL 6 Sur # 14 - 49 / CRA 14 # 6 - 51 Sur,-74.09360646,4.58760036,38,RESTREPO,inside_source_locality
+15-4,160011504,15,15,Antonio Nariño,4,Colegio Distrital Guillermo León Valencia - Sede C,Luna Park,CLL 10 B Bis Sur # 16 - 11,-74.09726189,4.58719452,38,RESTREPO,inside_source_locality
+15-5,160011505,15,15,Antonio Nariño,5,Colegio Cooperativo del Magisterio de Cundinamarca,Ciudad Jardín,CLL 16 Bis Sur # 12 C - 02,-74.09646508,4.58221169,35,CIUDAD JARDIN,inside_source_locality
+15-6,160011506,15,15,Antonio Nariño,6,Escuela Normal Superior Distrital María Montesory - Sede A,Restrepo A,CLL 14 Sur # 14 - 20,-74.09690013,4.58524452,38,RESTREPO,inside_source_locality
+15-7,160011507,15,15,Antonio Nariño,7,Colegio Distrital Guillermo León Valencia - Sede A,Restrepo B,CLL 15 Sur # 24 B - 15 / CLL 15 Sur # 24 B - 17 / CRA 24 B # 16 - 03 Sur,-74.10211535,4.58827876,38,RESTREPO,inside_source_locality
+15-8,160011508,15,15,Antonio Nariño,8,Salón Comunal La Fraguita,Salón Comunal La Fraguita,CRA 25 Bis # 3-51/71 Sur,-74.10004221,4.59402054,38,RESTREPO,inside_source_locality
+15-9,160011509,15,15,Antonio Nariño,9,Colegio Distrital Atanasio Girardot - Sede A,La Fragua,CLL 14 Sur # 28 - 16,-74.10444052,4.59428636,38,RESTREPO,inside_source_locality
+15-10,160011510,15,15,Antonio Nariño,10,Colegio Distrital Francisco Jose de Paula - Sede A,Santander,CLL 23 Sur # 27 - 27,-74.11035551,4.58981623,38,RESTREPO,inside_source_locality
+15-11,160011511,15,15,Antonio Nariño,11,Colegio Distrital Francisco Jose de Paula - Sede B,Santander Sur,CLL 29 Sur # 29 A - 47,-74.11432249,4.59098921,38,RESTREPO,inside_source_locality
+15-12,160011512,15,15,Antonio Nariño,12,Centro Comercial Centro Mayor,Villa Mayor,CLL 38 A Sur # 34 D - 51,-74.12509335,4.59264446,38,RESTREPO,inside_source_locality
+16-1,160011601,16,16,Puente Aranda,1,Colegio Distrital Andrés Bello,Delicias (Muzu),CLL 39 Sur # 51 D - 19,-74.13043866,4.59924968,41,MUZU,inside_source_locality
+16-2,160011602,16,16,Puente Aranda,2,Colegio Nacional de Cultura Popular,Ciudad Montes,CRA 51 # 16 -64 Sur,-74.1202933,4.60615837,40,CIUDAD MONTES,inside_source_locality
+16-5,160011605,16,16,Puente Aranda,5,Alcaldía Local de Puente Aranda,Alcaldía Puente Aranda,CRA 31 D # 04 - 43,-74.10315107,4.60579881,40,CIUDAD MONTES,inside_source_locality
+7-15,160010715,7,7,Bosa,15,Colegio Distrital Fernando Mazuera Villegas - Sede B,Jiménez de Quesada,DIAG 66 Sur # 80 C - 20,-74.18843551,4.60619085,85,BOSA CENTRAL,inside_source_locality
+7-16,160010716,7,7,Bosa,16,Colegio Distrital San Bernardino,San Bernardino,CRA 89 C # 79 - 51 Sur,-74.20614751,4.62364962,84,BOSA OCCIDENTAL,inside_source_locality
+7-19,160010719,7,7,Bosa,19,Colegio Distrital Nuevo Chile,Nuevo Chile,CLL 56 Sur # 72 G - 20,-74.1662632,4.6033055,49,APOGEO,inside_source_locality
+7-20,160010720,7,7,Bosa,20,Colegio Distrital Villas del Progreso,Santa Fé de Bosa,CRA 102A # 56F - 34 Sur,-74.19523999,4.64115361,86,EL PORVENIR,inside_source_locality
+7-21,160010721,7,7,Bosa,21,Colegio Distrital El Porvenir Sede A,El Porvenir,CLL 51 Sur # 91 D - 56,-74.18362206,4.63589891,86,EL PORVENIR,inside_source_locality
+7-22,160010722,7,7,Bosa,22,Colegio Distrital Leonardo Posada Pedraza,El Recreo,CRA 92 # 72 - 42 Sur,-74.20148261,4.62753357,87,TINTAL SUR,inside_source_locality
+7-24,160010724,7,7,Bosa,24,Colegio Distrital Francisco de Paula Santander,Francisco de Paula Santander,CLL 61 Sur # 80 I - 40,-74.18477974,4.6108717,85,BOSA CENTRAL,inside_source_locality
+7-26,160010726,7,7,Bosa,26,Colegio Distrital Santiago de las Atalayas,Atalayas,CLL 61 Sur # 103 - 33 / CLL 59C Sur # 89B - 45,-74.19283751,4.62934493,84,BOSA OCCIDENTAL,inside_source_locality
+7-28,160010728,7,7,Bosa,28,Colegio Distrital Fe y Alegría San Ignacio,Fe y Alegría San Ignacio,CLL 56 F Sur # 91 D - 14,-74.1897848,4.63334323,86,EL PORVENIR,inside_source_locality
+7-29,160010729,7,7,Bosa,29,Colegio Distrital Ciudadela Educativa de Bosa,Ciudadela El Porvenir,CLL 52 Sur # 97 C - 35,-74.18721155,4.64082973,86,EL PORVENIR,inside_source_locality
+8-1,160010801,8,8,Kennedy,1,Colegio Distrital Class - Sede A,Colegio Distrital Class - Sede A,CRA 80 I # 57 B - 50 Sur,-74.17890293,4.61418176,81,GRAN BRITALIA,inside_source_locality
+8-2,160010802,8,8,Kennedy,2,Colegio Distrital Rómulo Gallegos,Col Class IED - Sede C,CLL 57 A Sur # 78 N - 21,-74.17402687,4.61042338,48,TIMIZA,inside_source_locality
+18-3,160011803,18,18,Rafael Uribe Uribe,3,Colegio Distrital Rafael Delgado Salguero (General Paez) - Sede A,Bravo Páez,CRA 26 B # 35 B - 49 Sur,-74.12037854,4.5848005,39,QUIROGA,inside_source_locality
+18-4,160011804,18,18,Rafael Uribe Uribe,4,Colegio Distrital El Libertador,Libertador II,CLL 32 Sur # 24 B - 20,-74.11613921,4.58403661,39,QUIROGA,inside_source_locality
+18-5,160011805,18,18,Rafael Uribe Uribe,5,Instituto San Pablo Apóstol - ISPA,Centenario,CRA 24 B # 29 A - 02 Sur,-74.11268452,4.58483538,39,QUIROGA,inside_source_locality
+18-6,160011806,18,18,Rafael Uribe Uribe,6,Colegio Distrital Antonio Baraya -  Sede A,Olaya,CLL 27 Sur # 22 A - 02,-74.10905679,4.58349648,39,QUIROGA,inside_source_locality
+18-8,160011808,18,18,Rafael Uribe Uribe,8,Colegio Distrital Alejandro Obregón,Alejandro Obregón Gustavo Restrepo,CLL 30 Sur # 13 - 45,-74.10885291,4.57649108,36,SAN JOSE,inside_source_locality
+18-9,160011809,18,18,Rafael Uribe Uribe,9,Colegio Distrital Clemencia Holguín de Urdaneta,Quiroga,CLL 30 Sur # 19 B - 25,-74.11055171,4.57922234,39,QUIROGA,inside_source_locality
+18-10,160011810,18,18,Rafael Uribe Uribe,10,Colegio Distrital Clemencia de Caycedo,Alcaldía Quiroga,CLL 32 Sur # 22 - 30,-74.11464626,4.58046976,39,QUIROGA,inside_source_locality
+18-15,160011815,18,18,Rafael Uribe Uribe,15,Colegio Distrital Misael Pastrana Borrero,Las Lomas,CRA 10 A # 39 - 05 Sur,-74.10835908,4.56467151,53,MARCO FIDEL SUAREZ,inside_source_locality
+19-15,160011915,19,19,Ciudad Bolívar,15,Colegio Distrital Ismael Perdomo,Ismael Perdomo,CLL 64 Sur # 71 F - 18,-74.1654152,4.5872227,69,ISMAEL PERDOMO,inside_source_locality
+19-19,160011919,19,19,Ciudad Bolívar,19,Colegio Distrital Ciudad Bolívar Argentina - Sede B,Nueva Argentina,CLL 72 Sur # 47 B - 09,-74.16226333,4.57326618,70,JERUSALEM,inside_source_locality
+19-21,160011921,19,19,Ciudad Bolívar,21,Colegio Distrital Paraíso Mirador - Sede B,El Paraíso,CRA 27 B # 71 C - 12 Sur,-74.15899212,4.55238876,67,LUCERO,inside_source_locality
+19-25,160011925,19,19,Ciudad Bolívar,25,Colegio Distrital Antonio García,Sotavento,CRA 17 F # 73 A - 31 Sur,-74.13939967,4.54440031,68,EL TESORO,inside_source_locality
+19-27,160011927,19,19,Ciudad Bolívar,27,Colegio Distrital Villa Mar - Sede A,Villa Gloria Sur,CRA 18 M # 69 J - 25 Sur,-74.1527506,4.55345947,67,LUCERO,inside_source_locality
+19-28,160011928,19,19,Ciudad Bolívar,28,Colegio Distrital Cundinamarca,Galicia,CLL 60 A Sur # 73 - 31,-74.17067692,4.59099991,69,ISMAEL PERDOMO,inside_source_locality
+19-30,160011930,19,19,Ciudad Bolívar,30,Universidad ECCI Sede Sur,Casavianca- Universidad ECCI Sede Sur,CLL 57 Z Sur # 75 D - 10 / CRA 76A Sur # 57 R - 10S,-74.18008043,4.5962777,69,ISMAEL PERDOMO,inside_source_locality
+19-31,160011931,19,19,Ciudad Bolívar,31,Facultad Tecnológica Universidad Distrital,Casona - Colegio Distrital Maria Currea Manrique,CLL 58 D Sur # 51 - 10,-74.15309675,4.58150128,65,ARBORIZADORA,inside_source_locality
+19-33,160011933,19,19,Ciudad Bolívar,33,Colegio Distrital Sierra Morena -  Sede C (Divino Niño),Potosí (La Laguna),TRV 46 A # 79 D - 15 Sur,-74.169542,4.5708712,70,JERUSALEM,inside_source_locality
+19-34,160011934,19,19,Ciudad Bolívar,34,Salón Comunal,Altos de Jalisco,CRA 18 K Bis # 61 B - 52 Sur,-74.13929742,4.55577596,67,LUCERO,inside_source_locality
+19-35,160011935,19,19,Ciudad Bolívar,35,Colegio Distrital Estrella del Sur - Sede C,Estrella del Sur,CLL 74 A Sur # 18 - 23,-74.14255464,4.54309905,68,EL TESORO,inside_source_locality
+19-36,160011936,19,19,Ciudad Bolívar,36,Salón Comunal Nuevo Caracolí,Caracolí,CLL 77 Sur # 73 C 18,-74.17115117,4.57264019,69,ISMAEL PERDOMO,inside_source_locality
+19-38,160011938,19,19,Ciudad Bolívar,38,Colegio Distrital República de Canadá,Brisas del Volador,CLL 76 Sur # 24 A - 11,-74.15459904,4.54108558,67,LUCERO,inside_source_locality
+19-39,160011939,19,19,Ciudad Bolívar,39,Comedor Comunitario,Divino Niño,CLL 78 C Sur # 16 - 29 /CLL 78 C Sur # 16 P - 29,-74.13810352,4.53780919,68,EL TESORO,inside_source_locality
+19-40,160011940,19,19,Ciudad Bolívar,40,Casa Grande - Col Dist Agudelo Restrepo,Casa Grande - Colegio Distrital Agudelo Restrepo,CLL 68 D Bis A Sur # 63 - 34 / CLL 68 D Bis A Sur # 63 - 35,-74.16048695,4.58118199,69,ISMAEL PERDOMO,inside_source_locality
+90-1,160019001,90,90,Teusaquillo,1,CORFERIAS,Puesto Censo (Feria Exposición),CLL 24 # 37 - 94,-74.08994026,4.63036965,107,QUINTA PAREDES,inside_source_locality
+98-2,160019802,98,98,Puente Aranda,2,Localidad Puente Aranda,Cárcel Distrital Judicial Modelo,CRA 56 # 18 A - 47,-74.10724119,4.63538471,111,PUENTE ARANDA,inside_source_locality
+98-3,160019803,98,98,Barrios Unidos,3,Localidad Barrios Unidos,Reclusión de Mujeres El Buen Pastor,CRA 58 # 80 - 95,-74.07286632,4.68262764,21,LOS ANDES,inside_source_locality
+98-4,160019804,98,98,San Cristóbal,4,Localidad San Cristobal,Cárcel Distrital,CRA 8 # 1 C - 50 Sur,-74.08526107,4.58586195,33,SOSIEGO,inside_source_locality
+12-7,160011207,12,12,Barrios Unidos,7,Colegio Distrital Tomás Carrasquilla - sede A,Simón Bolívar,CLL 74 A # 62 - 44,-74.08023466,4.67576162,22,DOCE DE OCTUBRE,inside_source_locality
+13-3,160011303,13,13,Teusaquillo,3,Centro Superior de Estudios en Administración Deportiva - CEAD (Frente al Col. Cubierto El Campín),El Campín,DIAG 61 C  # 27 - 21,-74.07582905,4.64927993,100,GALERIAS,inside_source_locality
+19-12,160011912,19,19,Ciudad Bolívar,12,Colegio Distrital Rodrigo Lara Bonilla,Candelaria La Nueva,DIAG 64 A Sur # 41 - 51 / CRA 43A # 66-51 Sur,-74.15287385,4.57110385,66,SAN FRANCISCO,inside_source_locality
+5-2,160010502,5,5,Usme,2,Colegio Distrital El Destino,El Destino,KM 8 Vía San Juan de Sumapáz,-74.13895919,4.408203,,,outside_upz
+5-12,160010512,5,5,Usme,12,Colegio Distrital El Hato,El Hato,Kilómetro 14 Vía San Juan de Sumapáz,-74.17951988,4.36958887,,,outside_upz
+19-3,160011903,19,19,Ciudad Bolívar,3,Colegio Distrital Rural Pasquilla,Pasquilla,KM 5 Vía Olarte,-74.15583652,4.44845159,,,outside_upz
+19-16,160011916,19,19,Ciudad Bolívar,16,Colegio Distrital Rural Mochuelo Alto,Mochuelo Alto,KM 24 Vía a Pasquilla,-74.14828891,4.48879561,,,outside_upz
+19-17,160011917,19,19,Ciudad Bolívar,17,Colegio Distrital José Celestino Mutis,Mochuelo Bajo,El Clavel KM 10 Vía Quiba,-74.15202864,4.51041423,,,outside_upz
+19-22,160011922,19,19,Ciudad Bolívar,22,Colegio Distrital Quiba Alta San Martín - Sede B,Vereda Quiba,Kilómetro 20 Vía a Quiba,-74.16620635,4.52830382,,,outside_upz
+19-37,160011937,19,19,Ciudad Bolívar,37,Vereda Santa Rosa,Santa Rosa,Vereda Santa Rosa Zona Rural Ciudad Bolívar Vía Pasquilla,-74.16104312,4.39716816,,,outside_upz
+20-2,160012002,20,20,Sumapaz,2,Salón Comunal Nazareth,Nazareth,Centro Poblado Corregimiento de Nazareth,-74.14727385,4.17263029,,,outside_upz
+20-3,160012003,20,20,Sumapaz,3,Salón Comunal de Betania,Betania,Centro Poblado Corregimiento de Betania,-74.14625838,4.2178953,,,outside_upz
+98-1,160019801,98,98,Rafael Uribe Uribe,1,Localidad Rafaél Uribe Uribe,Penitenciaría La Picota,Vía Usme KM 5 / CLL 51 Sur # 5F - 50,-74.1164288,4.54916452,54,MARRUECOS,inside_source_locality
+9-15,160010915,9,9,Fontibon,15,Colegio Agustiniano Salitre,Agustiniano - Salitre,CLL 23 C # 69 B – 01,-74.1135309,4.65543962,110,CIUDAD SALITRE OCCIDENTAL,inside_source_locality
+8-53,160010853,8,8,Kennedy,53,Salón Comunal El Ruby II Sector,Gema,CLL 58 B Sur # 78 K - 21 /CLL 58 C Sur # 78 K - 21,-74.17686552,4.60752583,48,TIMIZA,inside_source_locality
+20-1,160012001,20,20,Sumapaz,1,Salón Comunal Mario Upegui,San Juán de Sumapaz,Centro Poblado Corregimiento de San Juan de Sumapaz,-74.31516926,4.02874679,,,outside_upz
+11-38,160011138,11,11,Suba,38,Colegio Privado la Khumbre,Colegio La Khumbre,KM 16 Vía Guaymaral Finca Cucaita,-74.07350945,4.82389189,,,outside_upz
+1-16,160010116,1,1,Usaquén,16,Colegio Monterrosales,Colegio Monterrosales,KM 4.5 Vía La Calera,-74.01973279,4.67414296,,,outside_upz
+3-15,160010315,3,3,Santa Fe,15,Colegio Distrital El Verjón Alto - Sede B (Verjón),El Verjón,KM 13 Vía a Choachí,-74.02245577,4.60582459,,,outside_upz
+20-4,160012004,20,20,Sumapaz,4,Salón Comunal La Unión,La Unión,Centro Poblado Corregimiento de La Unión,-74.36349309,3.98574147,,,outside_upz
+2-14,160010214,2,2,Chapinero,14,Colegio Distrital  Simón Rodríguez Sede A,Colegio Simón Rodríguez Sede A,CLL 69 # 11 - 27,-74.06109618,4.65405244,97,CHICO LAGO,inside_source_locality
+2-15,160010215,2,2,Chapinero,15,Universidad Distrital,Universidad Distrital,CRA 8 # 40 B - 62 / 64,-74.06579505,4.62818952,99,CHAPINERO,inside_source_locality
+8-59,160010859,8,8,Kennedy,59,Colegio Distrital Manuel Cepeda Vargas,Manuel Cepeda,CLL 56 Sur # 81 - 26,-74.1776623,4.61653001,81,GRAN BRITALIA,inside_source_locality
+11-14,160011114,11,11,Suba,14,Colegio Distrital Salitre Sede B,La Conejera,CLL 163 # 92 - 96 / CRA 92 # 169 B - 60,-74.07711755,4.75996836,,,outside_upz
+1-2,160010102,1,1,Usaquén,2,Centro de Atención Distrital Especializado Servitá,Servitá,CLL 165 # 7 - 38 /CLL 165 # 7 - 52,-74.0234639,4.74140597,10,LA URIBE,inside_source_locality
+1-10,160010110,1,1,Usaquén,10,Colegio Santo Tomás de Aquino,Santo Tomás de Aquino,CRA 21 # 132 – 46,-74.04961494,4.71731454,15,COUNTRY CLUB,inside_source_locality
+1-21,160010121,1,1,Usaquén,21,Vía pública,Canaima,CLL 195 # 19 - 50 Vía Pública / CLL 195 # 20 - 91 Vía Pública,-74.04098848,4.77274702,1,PASEO DE LOS LIBERTADORES,inside_source_locality
+2-8,160010208,2,2,Chapinero,8,Colegio Distrital Simón Rodríguez - Sede B,Granada Colegio Simón Rodríguez Sede B,CLL 65 Bis # 4 - 90,-74.05664863,4.64839626,90,PARDO RUBIO,inside_source_locality
+3-11,160010311,3,3,Santa Fe,11,Colegio Distrital Aulas Colombianas - Sede A,El Consuelo,CRA 11 Este # 1 A - 85,-74.0711475,4.58083908,96,LOURDES,inside_source_locality
+4-1,160010401,4,4,San Cristóbal,1,Colegio Distrital República del Ecuador I.E.D.,Las Brisas,CRA 1 A # 6 C - 50 Sur /CRA 1 C Este # 6 C - 85 Sur,-74.08007909,4.57683852,33,SOSIEGO,inside_source_locality
+4-3,160010403,4,4,San Cristóbal,3,Colegio Distrital José Félix Restrepo - Sede C,San Cristóbal Sur,AV CLL 11 Sur # 4 - 79 Este,-74.079455,4.57270725,33,SOSIEGO,inside_source_locality
+4-4,160010404,4,4,San Cristóbal,4,Colegio Distrital San Critóbal - Sede B,Las Mercedes,CLL 19 Sur # 10C - 44 Este,-74.08081979,4.56926968,32,SAN BLAS,inside_source_locality
+4-5,160010405,4,4,San Cristóbal,5,Colegio Distrital Manuelita Sáenz,San Blas,CRA 3 Este # 18 A - 34 Sur,-74.08486411,4.57112399,33,SOSIEGO,inside_source_locality
+4-6,160010406,4,4,San Cristóbal,6,Colegio Distrital José Félix Restrepo - Sede A,Primera de Mayo,CRA 6 A # 18 A - 04 Sur / CRA 6 # 18 - 02 Sur *,-74.09008012,4.57431848,33,SOSIEGO,inside_source_locality
+4-9,160010409,4,4,San Cristóbal,9,Colegio Distrital Montebello,Montebello,CLL 24 A Sur # 1 A - 95 Este,-74.08799158,4.56674682,34,20 DE JULIO,inside_source_locality
+4-10,160010410,4,4,San Cristóbal,10,Colegio Distrital José Acevedo y Gómez - Sede A,Ramajal,CRA 9 B Este # 28 - 81 Sur,-74.08363441,4.56217359,32,SAN BLAS,inside_source_locality
+4-13,160010413,4,4,San Cristóbal,13,Colegio Distrital Alemania Unificada - Sede B,Parqueadero Guacamayas,CRA 2 L # 38 A - 11 Sur,-74.10010722,4.55759889,50,LA GLORIA,inside_source_locality
+4-15,160010415,4,4,San Cristóbal,15,Colegio Distrital Los Alpes,Bellavista San Cristóbal,CRA 9 Este # 36 G - 80 Sur,-74.08445704,4.55263246,32,SAN BLAS,inside_source_locality
+4-16,160010416,4,4,San Cristóbal,16,Centro de Desarrollo Comunitario La Victoria,CDC La Victoria,CLL 37 Bis B Sur # 2 - 81 Este,-74.09505746,4.55459752,50,LA GLORIA,inside_source_locality
+4-19,160010419,4,4,San Cristóbal,19,Colegio Distrital Juana Escobar - Sede C,República del Canadá,CRA 13 D Bis Este # 50 - 07 Sur,-74.0873273,4.53577178,51,LOS LIBERTADORES,inside_source_locality
+4-20,160010420,4,4,San Cristóbal,20,Colegio Distrital  Altamira - Sede B,La Gloria,CLL 48 B Sur # 11 - 14 Este,-74.0892899,4.54103868,51,LOS LIBERTADORES,inside_source_locality
+4-22,160010422,4,4,San Cristóbal,22,Polideportivo Coliseo Villa de Los Alpes,Villa de los Alpes,CRA 3 B  # 35 - 22 Sur / CRA 3 B # 35 - 04 Sur,-74.09844988,4.56145349,34,20 DE JULIO,inside_source_locality
+4-23,160010423,4,4,San Cristóbal,23,Colegio Distrital Los Libertadores,Los Libertadores,CLL 55 Sur # 10 A - 29 Este,-74.09086297,4.5344026,51,LOS LIBERTADORES,inside_source_locality
+4-24,160010424,4,4,San Cristóbal,24,Colegio Distrital Tomás Rueda Vargas - Sede A - parte posterior,San Pedro Sur Oriental,CRA 5 Este # 26 - 91 Sur,-74.08717515,4.56450454,34,20 DE JULIO,inside_source_locality
+4-25,160010425,4,4,San Cristóbal,25,Salón Comunal Villa del Cerro,Villa del Cerro,CLL 46 A Sur  # 3 B - 40 Este / CLL 46 A Sur # 3 B - 30 Este,-74.09562216,4.54418875,51,LOS LIBERTADORES,inside_source_locality
+4-26,160010426,4,4,San Cristóbal,26,Colegio Distrital Canadá Guira - Sede C,Canada Guira,CLL 48 Sur # 2 - 27 Este,-74.09879301,4.54438496,51,LOS LIBERTADORES,inside_source_locality
+4-27,160010427,4,4,San Cristóbal,27,Colegio Distrital Aldemar Rojas Plazas,Arboleda Sur,CRA 9 A # 14 -04 Sur,-74.09111477,4.57919566,33,SOSIEGO,inside_source_locality
+5-1,160010501,5,5,Usme,1,Colegio Distrital Francisco Antonio Zea - Sede A,Usme,CLL 136 Sur # 12 - 38,-74.12153516,4.47258194,61,CIUDAD USME,inside_source_locality
+5-3,160010503,5,5,Usme,3,Colegio Distrital Diego Montaño Cuellar,Monteblanco,TRV 6 B # 100 C - 55 Sur,-74.11504819,4.49678055,58,COMUNEROS,inside_source_locality
+5-4,160010504,5,5,Usme,4,Colegio Distrital Santa Marta,Santa Marta,CLL 69 D Sur # 8 B - 63,-74.11562808,4.52527317,57,GRAN YOMASA,inside_source_locality
+18-16,160011816,18,18,Rafael Uribe Uribe,16,Colegio Distrital Alexander Fleming - Sede B,Alexander Fleming San Jorge,CLL 43 Sur # 16 A - 40 /DIAG 45 Bis B Sur # 13 F - 41,-74.12031361,4.57159355,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-17,160011817,18,18,Rafael Uribe Uribe,17,Colegio Distrital Reino de Holanda - Sede B,Reino de Holanda,DIAG 46 Sur # 12 A - 32,-74.11530818,4.56728072,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-18,160011818,18,18,Rafael Uribe Uribe,18,Colegio Distrital Reino de Holanda - Sede A,Marco Fidel Suárez,TRV 13 G Bis # 46 - 35 Sur,-74.12201371,4.56814376,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-19,160011819,18,18,Rafael Uribe Uribe,19,Colegio Distrital Alexander Fleming - Sede D,El Socorro Sur,CLL 50 B Sur # 13 A - 32,-74.12448237,4.56480862,54,MARRUECOS,inside_source_locality
+18-20,160011820,18,18,Rafael Uribe Uribe,20,Colegio Distrital Marruecos y Molinos - Sede A,Molinos del Sur,CLL 49 D Bis Sur # 5 X - 02,-74.11787294,4.55516154,54,MARRUECOS,inside_source_locality
+18-21,160011821,18,18,Rafael Uribe Uribe,21,Colegio Distrital Alfredo Iriarte - Sede A,Ciudad Bochica Sur,TRV 5 J # 48 F - 69 Sur / TRV 5 L Bis # 48 F - 69 Sur,-74.11213382,4.557649,54,MARRUECOS,inside_source_locality
+18-22,160011822,18,18,Rafael Uribe Uribe,22,Colegio Distrital Colombia Viva - Sede A,Los Molinos II Sector,TRV 5 A # 48 M - 50 Sur,-74.1076952,4.55358905,54,MARRUECOS,inside_source_locality
+18-24,160011824,18,18,Rafael Uribe Uribe,24,Salón Comunal Villa Mayor La Nueva,Villa Mayor La Nueva,DIAG 41 Sur # 34 A -90,-74.12704196,4.58939404,39,QUIROGA,inside_source_locality
+18-25,160011825,18,18,Rafael Uribe Uribe,25,Colegio Distrital José Marti - Sede C,Granjas de San Pablo,CLL 40 D Sur # 12 J - 39,-74.11613732,4.57151293,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-26,160011826,18,18,Rafael Uribe Uribe,26,Colegio Distrital José Marti - Sede D,Resurrección,DIAG 32 B Sur # 12 B - 36 / CLL 36 D Sur # 11 D - 40,-74.10933183,4.56841424,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-28,160011828,18,18,Rafael Uribe Uribe,28,Colegio Distrital San Agustín - Sede A,San Agustín Sur,CLL 49 C Sur # 5 C - 41,-74.11336675,4.54774728,55,DIANA TURBAY,inside_source_locality
+18-30,160011830,18,18,Rafael Uribe Uribe,30,Salón Comunal Marruecos,Marruecos Apartamentos,CLL 48 P # 5 L - 40 Sur / CLL 48 Q Sur # 5 J - 86,-74.11256657,4.55436768,54,MARRUECOS,inside_source_locality
+18-32,160011832,18,18,Rafael Uribe Uribe,32,Salón Comunal Mirador de Marrocos,Mirador de Marrocos,TRV 5 P # 48 J - 31 Sur,-74.11357177,4.5578005,54,MARRUECOS,inside_source_locality
+18-33,160011833,18,18,Rafael Uribe Uribe,33,Plazoleta entrada del almacén ARA - Conjunto Asturias Real,San Juanito,AV Caracas # 37 - 48 Sur,-74.11861099,4.57583632,53,MARCO FIDEL SUAREZ,inside_source_locality
+19-2,160011902,19,19,Ciudad Bolívar,2,Colegio Distrital Don Bosco La Joya Sede A,San Joaquín del Vaticano,CLL 80 A Sur # 18 C - 70,-74.14493208,4.53707728,68,EL TESORO,inside_source_locality
+19-7,160011907,19,19,Ciudad Bolívar,7,Colegio Distrital Rafaél Uribe Uribe,Vistahermosa,DIAG 71 B Sur # 18 I - 20,-74.14905682,4.54710188,67,LUCERO,inside_source_locality
+19-8,160011908,19,19,Ciudad Bolívar,8,Colegio Distrital La Acacia II - Sede A,La Acacia,CLL 62 Sur # 19 B – 42,-74.14226652,4.56067214,66,SAN FRANCISCO,inside_source_locality
+19-9,160011909,19,19,Ciudad Bolívar,9,Colegio Distrital Tanque Laguna - Sede B,Jerusalén (El Tanque),CLL 75 Sur # 46 B - 16,-74.16542993,4.57190709,70,JERUSALEM,inside_source_locality
+19-10,160011910,19,19,Ciudad Bolívar,10,Colegio Distrital Santa Bárbara,Juan Pablo II,CRA 18 P # 67 C - 21 Sur /CRA 18 Q Bis B # 67 C - 21 Sur,-74.14786308,4.55526199,67,LUCERO,inside_source_locality
+19-11,160011911,19,19,Ciudad Bolívar,11,Colegio Distrital Nicolas Gómez Dávila,San Francisco,CLL 67 Sur # 20 D - 20,-74.14905785,4.56362294,66,SAN FRANCISCO,inside_source_locality
+19-14,160011914,19,19,Ciudad Bolívar,14,Colegio Distrital El Ensueño,Madelena,TRV 70 D # 60 - 90 Sur,-74.15838841,4.58636921,65,ARBORIZADORA,inside_source_locality
+1-18,160010118,1,1,Usaquén,18,Parque Cedritos,Parque Cedritos,CRA 9 Entre CLL 145 y 146 / CRA 11 # 145 - 60,-74.03252396,4.72340171,13,LOS CEDROS,inside_source_locality
+1-19,160010119,1,1,Usaquén,19,Parque Cedro Golf,Cedro Golf,CRA 7 A # 150 - 85,-74.02642592,4.72549439,13,LOS CEDROS,inside_source_locality
+1-20,160010120,1,1,Usaquén,20,Colegio Distrital Nuevo Horizonte Sede A,Buenavista,CRA 5 B # 189 B - 30,-74.02579167,4.76685669,9,VERBENAL,inside_source_locality
+7-3,160010703,7,7,Bosa,3,Colegio Distrital José Antonio Galán,José Antonio Galán,CRA 78 J # 58 M - 10 Sur,-74.17896636,4.60614261,85,BOSA CENTRAL,inside_source_locality
+7-4,160010704,7,7,Bosa,4,Colegio Distrital Luis López de Meza,La Amistad,CLL 65 H Sur # 78 A - 03 / CLL 65 H Sur # 78 A - 05,-74.18588292,4.60059729,85,BOSA CENTRAL,inside_source_locality
+7-17,160010717,7,7,Bosa,17,Colegio Distrital  Albán Holguín - Sede C,Bosa San José,CRA 89 Bis # 85 A - 20 Sur / CRA 80 K # 85 A - 33 Sur,-74.20988606,4.61376442,85,BOSA CENTRAL,inside_source_locality
+7-18,160010718,7,7,Bosa,18,SuperCADE de Bosa,Surbana,AV CLL 57 R Sur # 72 D - 12,-74.16766294,4.59703159,49,APOGEO,inside_source_locality
+7-23,160010723,7,7,Bosa,23,Colegio Distrital La Esperanza,La Esperanza,CLL 77 A Sur # 86 - 40 / CLL 78 Sur # 79 - 40,-74.2053697,4.60969598,85,BOSA CENTRAL,inside_source_locality
+7-25,160010725,7,7,Bosa,25,Colegio Distrital Pablo de Tarso - Sede A,Pablo de Tarso,CRA 78 J Bis # 65 J - 04 Sur / CLL 65 J Sur # 78 J - 21,-74.18698568,4.60397696,85,BOSA CENTRAL,inside_source_locality
+7-27,160010727,7,7,Bosa,27,Colegio Distrital El Porvenir - Sede B,El Recuerdo Santafé,CLL 58 Sur # 104 A - 04 / CLL 58 Sur # 104 A - 50,-74.19774784,4.64169996,86,EL PORVENIR,inside_source_locality
+7-30,160010730,7,7,Bosa,30,Colegio Distrital Carlos Pizarro León Gómez - Sede A,Carlos Pizarro León Gómez,CLL 72 Sur # 100 A - 71,-74.20486502,4.63560566,87,TINTAL SUR,inside_source_locality
+8-4,160010804,8,8,Kennedy,4,Colegio Distrital Las Américas - Sede B (San Rafaél),Catalina,CLL 52 A Sur # 77 W - 05,-74.16898938,4.61001117,48,TIMIZA,inside_source_locality
+8-15,160010815,8,8,Kennedy,15,Colegio Distrital Jhon F. Kennedy,John F. Kennedy,CRA 74 B # 38 A - 35 Sur,-74.15025404,4.61957328,47,KENNEDY CENTRAL,inside_source_locality
+8-17,160010817,8,8,Kennedy,17,Polideportivo Cayetano Cañizares,Polideportivo Cayetano Cañizares,CRA 80 # 39 A - 55 Sur,-74.16032959,4.62562787,80,CORABASTOS,inside_source_locality
+8-20,160010820,8,8,Kennedy,20,Colegio Distrital INEM Francisco de Paula Santander -Sede B,Francisco Jose de Caldas - INEM Sede B,CLL 35 C Sur # 78 N - 10,-74.15317528,4.62654572,47,KENNEDY CENTRAL,inside_source_locality
+8-24,160010824,8,8,Kennedy,24,Colegio Distrital Los Héroes,Los Héroes,CLL 35 B Sur # 73 A - 40 Int 1,-74.14522564,4.62054083,47,KENNEDY CENTRAL,inside_source_locality
+8-33,160010833,8,8,Kennedy,33,Colegio Distrital Kennedy,Mandalay - Colegio Kennedy,CLL 5 Sur # 72 A - 69,-74.14082628,4.62026763,44,AMERICAS,inside_source_locality
+8-34,160010834,8,8,Kennedy,34,Colegio Distrital Isabel II -  Sede B,Pio XII - Sede Colegio Isabel II,CRA 79 F # 6 B - 30 / CRA 79 F # 6 B - 34,-74.15182268,4.63536117,46,CASTILLA,inside_source_locality
+8-35,160010835,8,8,Kennedy,35,Colegio Distrital Nueva Castilla,Colegio Nueva Castilla,CRA 78 C # 8 A - 43,-74.14191584,4.64046558,46,CASTILLA,inside_source_locality
+8-38,160010838,8,8,Kennedy,38,Colegio Distrital San José de Castilla - Sede C,Visión de Colombia,CRA 79 C # 13 A - 40,-74.13528234,4.65068339,46,CASTILLA,inside_source_locality
+8-51,160010851,8,8,Kennedy,51,Colegio Distrital Gustavo Rojas Pinilla,Colegio Gustavo Rojas Pinilla,CLL 11 B # 80 B - 61 / CLL 11 B # 80 C - 10,-74.14064983,4.64850908,46,CASTILLA,inside_source_locality
+8-57,160010857,8,8,Kennedy,57,Colegio Distrital Cafam Bellavista,Col. Dis.Cafam Bellavista,CLL 40 Sur # 94 C - 50,-74.17254202,4.64538585,82,PATIO BONITO,inside_source_locality
+8-60,160010860,8,8,Kennedy,60,Centro Comercial El Edén,Centro Comercial El Edén,CRA 72 # 12 B - 48,-74.12914781,4.64652563,113,BAVARIA,inside_source_locality
+16-25,160011625,16,16,Puente Aranda,25,Centro Comercial,CRA Centro Comercial,AV las Américas # 50 - 15 / AV CLL 9 # 50 - 15,-74.10792935,4.6264742,43,SAN RAFAEL,inside_source_locality
+16-26,160011626,16,16,Puente Aranda,26,Centro Comercial Puerto López,San Andresito,CRA 38 # 10 - 90,-74.1014283,4.61695696,108,ZONA INDUSTRIAL,inside_source_locality
+17-2,160011702,17,17,Candelaria,2,Parqueadero de La Alcaldía Mayor y Palacio de Justicia,Alcaldía Mayor,"CRA 8 # 10 - 65 Entre Calles 10, 11 y 12",-74.07650556,4.5984276,94,LA CANDELARIA,inside_source_locality
+5-32,160010532,5,5,Usme,32,Colegio Distrital Ciudad de Villavicencio Sede A,Uval - Puerta al Llano,CRA 6 H Este # 114 - 88 Sur /TRV 7 Este # 107 A - 50 Sur,-74.102477,4.487109,59,ALFONSO LOPEZ,inside_source_locality
+5-33,160010533,5,5,Usme,33,Colegio Distrital Eduardo Umaña Mendoza,Villa Alemania,CLL 111 A Sur # 4 B - 07 Este /CLL 111 A Bis Sur # 3 A - 07 *,-74.11255111,4.48973567,61,CIUDAD USME,inside_source_locality
+5-31,160010531,5,5,Usme,31,Colegio Distrital Estanislao Zuleta Sede B,La Alborada,CRA 4 Este # 90 D - 24 Sur,-74.103957,4.497972,59,ALFONSO LOPEZ,inside_source_locality
+5-30,160010530,5,5,Usme,30,Colegio Distrital Estanislao Zuleta Sede A,Alfonso López,CRA 7 C Este # 92 - 48 Sur/CRA 7 C Este # 90 A - 35 Sur,-74.100862,4.497976,59,ALFONSO LOPEZ,inside_source_locality
+5-29,160010529,5,5,Usme,29,Colegio Distrital Fernando González Ochoa,Colegio Fernando González Ochoa,CRA 4 A # 89 - 43 Sur /CRA 4 # 89 - 43 Sur,-74.10763077,4.50266929,58,COMUNEROS,inside_source_locality
+5-25,160010525,5,5,Usme,25,Colegio Distrital Eduardo Mora Osejo,Tenerife,CLL 95 Sur # 14 B - 64,-74.11880591,4.50393517,58,COMUNEROS,inside_source_locality
+5-26,160010526,5,5,Usme,26,Colegio Distrital Gran Yomasa,Gran Yomasa,CLL 81 C Sur # 8 A - 06,-74.109734,4.508524,57,GRAN YOMASA,inside_source_locality
+5-27,160010527,5,5,Usme,27,Colegio Distrital Federico Lorca Sede B,Cabañas,CLL 80 A Sur # 5 - 15,-74.10794,4.509259,57,GRAN YOMASA,inside_source_locality
+5-28,160010528,5,5,Usme,28,Colegio Distrital Los Tejares Sede A,Tejares,CLL 75 C Bis Sur # 5 - 52,-74.1083354,4.51305906,57,GRAN YOMASA,inside_source_locality
+5-23,160010523,5,5,Usme,23,Colegio Distrital Brasilia,Brasilia,CRA 12 B # 73 B - 97 Sur /CRA 12 B # 73 B - 31 Sur,-74.11643953,4.51760874,57,GRAN YOMASA,inside_source_locality
+5-24,160010524,5,5,Usme,24,Colegio Distrital El Cortijo Vianey - Sede A,El Cortijo,CRA 2A # 74B - 00 Sur /CLL 74B Sur # 14H - 25,-74.11894304,4.51510234,57,GRAN YOMASA,inside_source_locality
+4-35,160010435,4,4,San Cristóbal,35,Colegio Distrital Juana Escobar,Juana Escobar Sede A,CRA 15 A Este # 57 A - 16 Sur,-74.08541719,4.53056748,51,LOS LIBERTADORES,inside_source_locality
+5-22,160010522,5,5,Usme,22,Colegio Distrital Paulo Freire,Portal Usme,CRA 11 # 65 C - 50 Sur,-74.11700228,4.53263147,56,DANUBIO,inside_source_locality
+4-36,160010436,4,4,San Cristóbal,36,Colegio Nueva Roma I.D.E.,Roma Colsubsidio,CLL 48 Sur # 4 - 85 Este,-74.09591549,4.54107974,51,LOS LIBERTADORES,inside_source_locality
+18-41,160011841,18,18,Rafael Uribe Uribe,41,Integración Social Mi Taller Creativo,La Marqueza,TRV 1 B Este # 49 B - 20 Sur,-74.106957,4.543018,55,DIANA TURBAY,inside_source_locality
+19-47,160011947,19,19,Ciudad Bolívar,47,Colegio Distrital José María Vargas Vila (Bella Flor),Bella Flor,DIAG 74 B Bis A Sur # 26 C - 12 /CRA 27 # 74 B - 51 Sur,-74.16173742,4.54330343,67,LUCERO,inside_source_locality
+18-40,160011840,18,18,Rafael Uribe Uribe,40,Salón Comunal Cebadal,Salón Comunal Cebadal,CRA 4 D Bis # 52 - 95 Sur,-74.115074,4.543416,55,DIANA TURBAY,inside_source_locality
+19-48,160011948,19,19,Ciudad Bolívar,48,Colegio Distrital Paraíso Mirador,El Mirador,CRA 27 L # 71 H - 46 Sur,-74.16189115,4.55155805,67,LUCERO,inside_source_locality
+19-41,160011941,19,19,Ciudad Bolívar,41,Colegio Rómulo Gallego Sede B (Villas del Diamante),Montreal,CRA 17 B # 64 B - 45 Sur,-74.138289,4.553398,67,LUCERO,inside_source_locality
+4-34,160010434,4,4,San Cristóbal,34,Colegio Distrital La Victoria Sede B,Escuela La Victoria B,CRA 3 A Este # 35 - 37 Sur /CRA 3 A Este # 37 A - 59 Sur,-74.09391079,4.55434881,50,LA GLORIA,inside_source_locality
+18-39,160011839,18,18,Rafael Uribe Uribe,39,Liceo Psicopedagógico San Pablo,Liceo San Pablo,TRV 5 G # 48 P - 03 /CLL 48 P Sur # 5 G - 07,-74.11162579,4.55445588,54,MARRUECOS,inside_source_locality
+4-32,160010432,4,4,San Cristóbal,32,Colegio San Vicente I.D.E.,San Vicente Colsubsidio,TRV 6 C Este # 33 - 70 Sur,-74.087694,4.555281,32,SAN BLAS,inside_source_locality
+4-33,160010433,4,4,San Cristóbal,33,Colegio Distrital Alemania Unificada Sede A,Guacamayas II,CLL 37 A Bis Sur # 2 A - 04,-74.09673593,4.55573948,50,LA GLORIA,inside_source_locality
+19-42,160011942,19,19,Ciudad Bolívar,42,Colegio Distrital Unión Europea Sede A,Unión Europea,CRA 18 M # 63 D - 09 Sur / CRA 18 M # 63 D -15 Sur,-74.14190998,4.55591685,67,LUCERO,inside_source_locality
+6-13,160010613,6,6,Tunjuelito,13,Centro Educativo Distrital Nuevo Tunjuelito (Rufi# José de Cuervo Sede C),Tunjuelito B,CLL 58 Sur # 12A - 45 / CLL 58A Sur # 12 A - 25,-74.12936562,4.55908065,62,TUNJUELITO,inside_source_locality
+19-43,160011943,19,19,Ciudad Bolívar,43,Colegio Distrital San Francisco Sede B,San Francisco Sede B,CRA 20 C # 67 - 00 Sur / CLL 67 Sur # 20 A - 51,-74.14975263,4.56251426,66,SAN FRANCISCO,inside_source_locality
+4-31,160010431,4,4,San Cristóbal,31,Colegio Distrital Francisco Javier Matiz,Suramérica,CRA 2 A # 29 A - 29 Sur,-74.09360624,4.56528638,34,20 DE JULIO,inside_source_locality
+19-44,160011944,19,19,Ciudad Bolívar,44,Colegio Distrital San Francisco Sede A,San Francisco Sede A,CRA 22 # 64 - 29 Sur,-74.147127,4.566305,66,SAN FRANCISCO,inside_source_locality
+19-45,160011945,19,19,Ciudad Bolívar,45,Vía pública al costado del Colegio Distrital Rodrigo Lara Bonilla Sede B (José Celesti# Mutis),José Celestino Mutis,CRA 29 entre Calles 64 y 64 C Sur,-74.14997741,4.56874508,66,SAN FRANCISCO,inside_source_locality
+4-30,160010430,4,4,San Cristóbal,30,Cancha Maracaná,San Gerónimo,CRA 18 Este # 13 - 42 Sur,-74.07476983,4.56905108,32,SAN BLAS,inside_source_locality
+4-28,160010428,4,4,San Cristóbal,28,Colegio Distrital 20 de Julio Sede A,20 de Julio Sede B,CRA 7 A # 24 - 01 Sur /CLL 25 Sur # 7 - 76,-74.09452945,4.57146427,34,20 DE JULIO,inside_source_locality
+18-38,160011838,18,18,Rafael Uribe Uribe,38,Colegio Distrital  Alexander Fleming - sede A,San Jorge,CLL 45 A Sur # 14 A - 19 / DIAG 45 Bis B Sur # 13F - 36,-74.11984848,4.57167503,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-35,160011835,18,18,Rafael Uribe Uribe,35,Colegio Distrital Gustavo Restrepo - Sede A,Gustavo Restrepo,CRA 12 H Bis B # 28 C - 24 Sur,-74.10616394,4.5757555,36,SAN JOSE,inside_source_locality
+4-29,160010429,4,4,San Cristóbal,29,Coliseo Deportivo Primera de Mayo,Coliseo Deportivo Primera de Mayo,CRA 5 Bis # 18 A - 14 Sur / CL 19 S # 5 - 40,-74.08919655,4.5737321,33,SOSIEGO,inside_source_locality
+6-14,160010614,6,6,Tunjuelito,14,Colegio Distrital José María Córdoba,"El Tunal \""B\""",CLL 48 C Sur # 24 - 14 / CLL 48 C Sur # 24 - 41,-74.13189651,4.57767466,42,VENECIA,inside_source_locality
+6-15,160010615,6,6,Tunjuelito,15,Colegio Distrital Santiago Pérez Sede B,"El Carmen Sur \""B\""",CLL 48 B Sur # 28 - 56,-74.131871,4.583144,42,VENECIA,inside_source_locality
+18-36,160011836,18,18,Rafael Uribe Uribe,36,Salón Comunal Ingles,Salón Comunal Ingles,CLL 41 Sur # 27 - 87 / CRA 26 A # 41 - 10 Sur,-74.12364275,4.58336395,39,QUIROGA,inside_source_locality
+18-37,160011837,18,18,Rafael Uribe Uribe,37,Salón Comunal Claret,Salón Comunal Claret,CLL 46 Sur # 27 - 30,-74.12849367,4.5834128,39,QUIROGA,inside_source_locality
+6-16,160010616,6,6,Tunjuelito,16,Colegio Instituto Técnico Industrial Piloto Sede B,"Fátima \""B\""",DIAG 50 # 34 A - 00 Sur /DIAG 52 A Sur # 33 - 81,-74.13874222,4.58468218,42,VENECIA,inside_source_locality
+6-17,160010617,6,6,Tunjuelito,17,Polideportivo Nuevo Muzu,"Nuevo Muzu \""B\""",CRA 59 # 52 A - 50 Sur / CRA 61 B # 52 A 20 Sur,-74.14743701,4.58584028,42,VENECIA,inside_source_locality
+19-46,160011946,19,19,Ciudad Bolívar,46,Colegio Distrital María Mercedes Carranza,Bonavista,TRV 70 G # 65 - 02 Sur,-74.163333,4.586891,69,ISMAEL PERDOMO,inside_source_locality
+15-14,160011514,15,15,Antonio Nariño,14,Colegio Parroquial La Valvanera,La Valvanera,CLL 13 Sur # 24 B - 04,-74.100284,4.589989,38,RESTREPO,inside_source_locality
+14-12,160011412,14,14,Mártires,12,Colegio Distrital Eduardo Santos - Sede B - Primera Infancia,La Rebeca,CRA 24 # 1 H - 19,-74.09586258,4.59690498,37,SANTA ISABEL,inside_source_locality
+16-23,160011623,16,16,Puente Aranda,23,Salón Comunal Barrio Autopista Sur,Autopista Sur,CLL 38 Sur # 50 A - 70 / CRA 51 # 37 A - 52 Sur,-74.12678913,4.59853367,41,MUZU,inside_source_locality
+7-37,160010737,7,7,Bosa,37,Colegio Distrital Carlos Albán Holguín Sede B,Carbonell,DIAG 71 C Bis A Sur # 77 G - 15,-74.197716,4.599669,85,BOSA CENTRAL,inside_source_locality
+7-38,160010738,7,7,Bosa,38,Colegio Distrital CEDID San Pablo Sede C,Nueva Granada,CLL 70 Bis Sur # 77 L - 05 /CLL 70 A Sur # 77 L - 06,-74.192261,4.600995,85,BOSA CENTRAL,inside_source_locality
+7-36,160010736,7,7,Bosa,36,Colegio Distrital Llano Oriental,Llano Oriental,CLL 73 B Sur # 78 A Bis - 15 / CLL 73 B Sur # 78 A - 15,-74.19999756,4.60336507,85,BOSA CENTRAL,inside_source_locality
+7-33,160010733,7,7,Bosa,33,Nueva Estación,Nueva Estación,CLL 63 Sur # 78J - 10,-74.18230046,4.60517869,85,BOSA CENTRAL,inside_source_locality
+7-31,160010731,7,7,Bosa,31,Colegio Distrital Gran Colombiano Sede D,Nuevo Carlos Albán,CLL 72 A Sur # 80 J - 20 / CRA 80 J # 72 - 19 Sur,-74.19669726,4.60814774,85,BOSA CENTRAL,inside_source_locality
+7-39,160010739,7,7,Bosa,39,Colegio Distrital Los Naranjos,Naranjos,CRA 80 M # 71 C - 31 Sur,-74.194879,4.609038,85,BOSA CENTRAL,inside_source_locality
+7-32,160010732,7,7,Bosa,32,Colegio Distrital Gran Colombiano Sede A,Laureles II,CLL 73 F Sur # 80 N Bis - 49 / CLL 73 F Sur # 80 N - 41,-74.19991419,4.61022667,85,BOSA CENTRAL,inside_source_locality
+7-41,160010741,7,7,Bosa,41,Colegio Claretiano de Bosa,Claretiano,CLL 60 Sur # 80 K - 02 / CLL 60 Sur # 80 H - 58,-74.18399516,4.61186041,85,BOSA CENTRAL,inside_source_locality
+8-62,160010862,8,8,Kennedy,62,Colegio Distrital Paulo VI Sede A,Colegio Paulo VI Sede A,CRA 78 N # 41 - 17/ 21 Sur / CRA 78 P # 41 - 20 Sur,-74.15802883,4.62088803,47,KENNEDY CENTRAL,inside_source_locality
+16-27,160011627,16,16,Puente Aranda,27,Salón Comunal Barrio Colón,Salón Comunal Colón,CRA 53F # 4G - 04,-74.11500638,4.62225696,43,SAN RAFAEL,inside_source_locality
+7-34,160010734,7,7,Bosa,34,Colegio Mixto Villa Carolina,La Independencia,CRA 87 C # 69 A - 80 Sur / CLL 69 B Sur # 87 B - 32,-74.194785,4.620748,84,BOSA OCCIDENTAL,inside_source_locality
+8-63,160010863,8,8,Kennedy,63,Centro de Desarrollo Comunitario Kennedy,Centro Desarrollo Comunitario Kennedy,CRA 80 # 43 - 43 Sur /AV CRA 80 # 43 - 43 Sur,-74.16661075,4.62090271,81,GRAN BRITALIA,inside_source_locality
+7-40,160010740,7,7,Bosa,40,Colegio Distrital Kimy Pernia,Campo Verde - Potreritos,CLL 82 Sur # 89 - 21,-74.207959,4.622137,87,TINTAL SUR,inside_source_locality
+7-35,160010735,7,7,Bosa,35,Colegio Distrital Bosa Nova,Bosanova,CLL 59 B Sur # 87 B - 02,-74.188373,4.622721,84,BOSA OCCIDENTAL,inside_source_locality
+2-18,160010218,2,2,Chapinero,18,Vía Pública Salón Comunal Paraíso El Tropihueco,Salón Comunal Paraíso el Tropihueco,TRV 1 Este # 40 B - 90,-74.06058272,4.62699392,90,PARDO RUBIO,inside_source_locality
+13-23,160011323,13,13,Teusaquillo,23,Salón Comunal Acevedo Tejada,Acevedo Tejada,CRA 32 A # 27 A - 16/CRA 32 A # 27 A -20,-74.081239,4.629909,107,QUINTA PAREDES,inside_source_locality
+2-19,160010219,2,2,Chapinero,19,Colegio Distrital San Martín de Porres Sede B,Colegio  San Martín de Porres Sede B,CRA 2 # 44 A - 20 / CRA 2 # 44 - 36,-74.06121181,4.63071314,90,PARDO RUBIO,inside_source_locality
+8-70,160010870,8,8,Kennedy,70,Colegio Fe y Alegría,Colegio Fe y Alegría,TRV 78 C # 6 D - 49,-74.146056,4.635106,46,CASTILLA,inside_source_locality
+8-69,160010869,8,8,Kennedy,69,Colegio Distrital San José de Castilla - Sede A,San Jose de Castilla Sede A,CLL 7 C # 78 F - 20 /CRA 78 F # 7 D - 03,-74.14384,4.638309,46,CASTILLA,inside_source_locality
+13-22,160011322,13,13,Teusaquillo,22,Liceo Parroquial Sara Zapata,Liceo Parroquial Sara Zapata,CRA 22 # 51 - 68,-74.07275263,4.64012933,100,GALERIAS,inside_source_locality
+8-64,160010864,8,8,Kennedy,64,Colegio Distrital Rodrigo Triana Sede A (Paraiso),Colegio Rodrigo Triana,CLL 38 B Sur # 89 - 81 /CLL 38 Sur # 89 - 81,-74.16738579,4.64001021,82,PATIO BONITO,inside_source_locality
+8-65,160010865,8,8,Kennedy,65,Colegio Distrital Darío Echandía,Colegio Darío Echandía,CLL 5 A Sur # 88 B - 08,-74.161696,4.642173,82,PATIO BONITO,inside_source_locality
+8-66,160010866,8,8,Kennedy,66,Colegio Gimnasio Moderno San Francisco El Tintal,San Francisco en el Tintal,CLL 6 D # 90 - 51,-74.15821,4.649993,79,CALANDAIMA,inside_source_locality
+8-67,160010867,8,8,Kennedy,67,Centro Comercial Ciudad Tintal,Centro Comercial Ciudad Tintal,CRA 94 # 6 C - 30 /CRA 93 # 6 B - 50,-74.15974956,4.65277405,78,TINTAL NORTE,inside_source_locality
+8-68,160010868,8,8,Kennedy,68,Universidad Uniagustiniana,Universidad Uniagustiniana,AV Ciudad de Cali # 11 B - 95  /CLL 11 A # 86 - 66,-74.14514654,4.65339506,78,TINTAL NORTE,inside_source_locality
+13-24,160011324,13,13,Teusaquillo,24,Biblioteca Virgilio Barco,Biblioteca Virgilio Barco,AV CRA 60 # 57 - 60,-74.0886788,4.65709427,104,PARQUE SIMON BOLIVAR - CAN,inside_source_locality
+9-21,160010921,9,9,Fontibon,21,Colegio Distrital La Felicidad,La Felicidad,CLL 19 # 79 - 37,-74.1305907,4.65635641,112,GRANJAS DE TECHO,inside_source_locality
+9-22,160010922,9,9,Fontibon,22,Liceo Navarra,Navarra Modelia,CRA 74 # 24 B - 80,-74.117062,4.66582,114,MODELIA,inside_source_locality
+9-23,160010923,9,9,Fontibon,23,Colegio Gimnasio Modelia Real,Modelia Real,CLL 24 D # 82 - 13 /CRA 82 # 24 C - 29,-74.12140296,4.67060209,114,MODELIA,inside_source_locality
+2-17,160010217,2,2,Chapinero,17,Museo del Chico,Museo del Chico,CRA 7 # 93 - 01 / AV CRA 7 # 93 - 51,-74.0433413,4.67288285,88,EL REFUGIO,inside_source_locality
+9-20,160010920,9,9,Fontibon,20,Colegio Santa Teresa Centro,Santa Teresa Centro,CRA 99 # 19 -72,-74.142523,4.673794,75,FONTIBON,inside_source_locality
+12-21,160011221,12,12,Barrios Unidos,21,Polideportivo Polo,Polideportivo Polo,CLL 86 A # 24 - 06,-74.06335675,4.67546585,98,LOS ALCAZARES,inside_source_locality
+2-16,160010216,2,2,Chapinero,16,Centro Comercial de la 93,Centro Comercial de la 93,CLL 93 # 14 - 20 Entrada C,-74.05147767,4.67684229,97,CHICO LAGO,inside_source_locality
+10-52,160011052,10,10,Engativá,52,Colegio Distrital República de Colombia Sede C,San Joaquín,CRA 68 H # 71 A - 01 /CRA 69 # 71 - 16,-74.089027,4.680191,26,LAS FERIAS,inside_source_locality
+9-25,160010925,9,9,Fontibon,25,Colegio Distrital Antonio Van Uden Sede C,Van Uden CLL 13,CRA 124 # 17 - 05,-74.160905,4.688375,76,FONTIBON SAN PABLO,inside_source_locality
+9-24,160010924,9,9,Fontibon,24,Salón Comunal la Aldea,La Aldea,CLL 22 G # 117 A - 38,-74.150029,4.688916,76,FONTIBON SAN PABLO,inside_source_locality
+10-51,160011051,10,10,Engativá,51,Colegio Gimnasio El Lago,Palo Blanco,CLL 74 A # 73 A - 85,-74.095567,4.691378,30,BOYACA REAL,inside_source_locality
+1-22,160010122,1,1,Usaquén,22,Colegio Alessandro Volta,Alessandro Volta,CLL 119 # 4 - 79,-74.02790712,4.6942168,14,USAQUEN,inside_source_locality
+11-55,160011155,11,11,Suba,55,Parque El Batán,El Batán,CLL 123 A # 47 - 34 /CRA 50 # 123 A - 30,-74.0570232,4.70480629,20,LA ALHAMBRA,inside_source_locality
+1-23,160010123,1,1,Usaquén,23,Colegio Distrital Usaquén - Sede A,Colegio Distrital Usaquén Sede A,CLL 127 C # 9 A - 03,-74.03447424,4.70700908,15,COUNTRY CLUB,inside_source_locality
+10-53,160011053,10,10,Engativá,53,Colegio Distrital Simón Bolívar Sede A,Primavera,CRA 92 # 87 A - 60,-74.10000222,4.71113863,29,MINUTO DE DIOS,inside_source_locality
+5-9,160010509,5,5,Usme,9,Colegio Distrital La Aurora,La Aurora,TRV 14 T # 70 - 49 Sur,-74.12113946,4.52168154,57,GRAN YOMASA,inside_source_locality
+5-10,160010510,5,5,Usme,10,Colegio Distrital Chuniza,Chuniza,CRA 1 G Este # 84 A - 42 Sur / CRA 9 # 84 A - 82 Sur,-74.11140449,4.50597277,58,COMUNEROS,inside_source_locality
+5-14,160010514,5,5,Usme,14,Colegio Distrital El Virrey Solís,El Virrey,CRA 7 # 92 A - 31 Sur,-74.11179901,4.50250234,58,COMUNEROS,inside_source_locality
+5-16,160010516,5,5,Usme,16,Colegio Distrital Gabriel García Marquez,Juan José Rondón,CLL 88 F Sur # 12 F - 20 Este,-74.09119912,4.50371957,52,LA FLORA,inside_source_locality
+5-21,160010521,5,5,Usme,21,Colegio Distrital Fabio Lozano Simonelli,La Fiscala,CLL 65 Sur # 5 - 65,-74.11172754,4.53377083,56,DANUBIO,inside_source_locality
+11-47,160011147,11,11,Suba,47,Colegio Distrital Ramón de Subiría - Sede A,Ramon De Zubiria Sede A - IED,DIAG 129 B Bis # 93 B - 51,-74.092143,4.725401,28,EL RINCON,inside_source_locality
+11-46,160011146,11,11,Suba,46,Colegio Distrital Ramón de Subiría - Sede B,Ramon de Zubiria Sede B - IED,CLL 130 D # 88 B - 20,-74.086593,4.727428,28,EL RINCON,inside_source_locality
+11-50,160011150,11,11,Suba,50,Colegio Distrital Nueva Colombia,Nueva Colombia - IED,CLL 128 C # 102 A - 25 / CRA 102 A # 128 A - 40,-74.09984256,4.72853918,28,EL RINCON,inside_source_locality
+11-49,160011149,11,11,Suba,49,Colegio Distrital Gonzalo Arango,Gonzalo Arango - IED,CLL 130 A # 98 - 71,-74.09492315,4.72981232,28,EL RINCON,inside_source_locality
+11-48,160011148,11,11,Suba,48,Colegio Distrital Virginia Gutiérrez de Pineda,Virginia Gutierrez De Pineda - IED,CLL 131 B # 94 F - 31,-74.09174549,4.73105591,28,EL RINCON,inside_source_locality
+1-27,160010127,1,1,Usaquén,27,Colegio Colsubsidio Norte,Colegio Colsubsidio Norte Usaquén,CLL 151 # 15 - 70,-74.040596,4.732726,13,LOS CEDROS,inside_source_locality
+11-58,160011158,11,11,Suba,58,Almacén Éxito la Colina,Almacén Éxito la Colina,AV CLL 147 con AV CRA 72 /AV CLL 147 # 58 C - 91,-74.06607259,4.73471148,23,CASA BLANCA SUBA,inside_source_locality
+1-28,160010128,1,1,Usaquén,28,Parque Alta Blanca,Colegio General Santander Usaquén,CRA 8A # 158 - 04,-74.02905375,4.73448632,11,SAN CRISTOBAL NORTE,inside_source_locality
+11-45,160011145,11,11,Suba,45,Colegio Eucarístico Mercedario,Colegio Eucarístico Mercedario,CLL 137 # 91 - 61 /CRA 91 # 136 - 53,-74.086553,4.735333,28,EL RINCON,inside_source_locality
+11-60,160011160,11,11,Suba,60,Colsubsidio Mazuren,Colsubsidio Mazuren,CLL 152 # 53 A - 05,-74.05456046,4.73538415,19,EL PRADO,inside_source_locality
+11-42,160011142,11,11,Suba,42,Salón Comunal Barrio San Francisco,Salón Comunal San Francisco,CRA 84 A # 145 B -07,-74.080342,4.736659,27,SUBA,inside_source_locality
+1-25,160010125,1,1,Usaquén,25,Colegio Distrital Divino Maestro - Sede A,Colegio Distrital Divino Maestro Sede A,CRA 8 C # 163 B - 20,-74.02774596,4.73985282,11,SAN CRISTOBAL NORTE,inside_source_locality
+1-26,160010126,1,1,Usaquén,26,Colegio Distrital Divino Maestro - Sede B,Colegio Distrital Divino Maestro Sede B,CLL 164 # 7 F - 08 / CRA 7 F # 164 - 51,-74.02522373,4.74025321,11,SAN CRISTOBAL NORTE,inside_source_locality
+11-59,160011159,11,11,Suba,59,Parqueadero Carulla Rincón de la Colina,Carulla Rincón de la Colina,AV CRA 72 # 152 B - 60,-74.06500451,4.74054044,23,CASA BLANCA SUBA,inside_source_locality
+1-24,160010124,1,1,Usaquén,24,Colegio Distrital Cristóbal Colón,Colegio Distrital Cristóbal Colón,CLL 165 # 8 A - 03,-74.025933,4.741343,11,SAN CRISTOBAL NORTE,inside_source_locality
+11-44,160011144,11,11,Suba,44,Colegio Distrital  Simón Bolívar Suba,Simón Bolívar - IED,CRA 92 # 146C - 38,-74.08484849,4.74130635,27,SUBA,inside_source_locality
+1-29,160010129,1,1,Usaquén,29,Colegio Distrital Toberín Sede B,"Colegio Toberín \""B\""",CRA 14 C # 164 - 75,-74.035909,4.743052,12,TOBERIN,inside_source_locality
+11-51,160011151,11,11,Suba,51,Colegio Fe y Alegría,Fe Y alegría Jose Maria Velaz - IED,CRA 131 # 134 - 44 / CRA 131 # 133 - 44,-74.11245528,4.74450804,71,TIBABUYES,inside_source_locality
+11-43,160011143,11,11,Suba,43,Fundación San Felipe Neri,Fundación San Felipe Neri,CRA 90 # 149 - 73,-74.082955,4.746206,27,SUBA,inside_source_locality
+11-52,160011152,11,11,Suba,52,Colegio Privado Pedagógico Dulce Maria,Colegio Pedagógico Dulce Maria,TRV 127 C # 139 B - 48,-74.108241,4.74661,71,TIBABUYES,inside_source_locality
+1-30,160010130,1,1,Usaquén,30,Colegio Distrital Friedrich Nauman Sede A,Colegio Friedrich Nauman Sede A,CLL 171 B # 6 B - 16 /CRA 6 C # 171 - 39,-74.02262572,4.74836357,10,LA URIBE,inside_source_locality
+11-54,160011154,11,11,Suba,54,Colegio Distrital Gerardo Molina Ramírez,Gerardo Molina Ramirez - IED,CRA 143 #142 A - 62,-74.115384,4.748668,71,TIBABUYES,inside_source_locality
+11-61,160011161,11,11,Suba,61,Cancha múltiple Villa Delia,Cancha múltiple Villa Delia,CRA 65 entre la CLL 165 Y 166,-74.06384299,4.74929568,18,BRITALIA,inside_source_locality
+11-53,160011153,11,11,Suba,53,Institución Educativa Compartir Suba,Compartir Sede A - IED,CRA 128 # 146 - 52,-74.10601315,4.75528672,71,TIBABUYES,inside_source_locality
+11-62,160011162,11,11,Suba,62,Biblioteca Julio Mario Santo Domingo,Biblioteca Julio Mario Santo Domingo,AV CLL 170 # 67 - 51,-74.062725,4.756619,18,BRITALIA,inside_source_locality
+1-33,160010133,1,1,Usaquén,33,Colegio Distrital Salud Coop Norte,Colegio Distrital Saludcoop Norte,CLL 181 # 18 B - 83,-74.040412,4.757606,9,VERBENAL,inside_source_locality
+1-31,160010131,1,1,Usaquén,31,Colegio Distrital Friedrich Nauman Sede B,Colegio Friedrich Nauman Sede B,CLL 181 # 6 - 03 /CLL 182 # 6 - 30,-74.02542928,4.75846123,9,VERBENAL,inside_source_locality
+1-32,160010132,1,1,Usaquén,32,Colegio Santa María,Verbenal Santa María,CRA 11 # 185 B - 17,-74.0328493,4.76267244,9,VERBENAL,inside_source_locality
+1-34,160010134,1,1,Usaquén,34,Colegio Distrital Nuevo Horizonte - Sede D Torca,Colegio Nuevo Horizonte - Sede D Torca,KM 12 Carretera Central del Norte 0 0-00 2334 *,-74.03027211,4.80052308,,,outside_upz
+9-26,160010926,9,9,Fontibon,26,Colegio Distrital Atahualpa,Atahualpa,AV CRA 116 # 22I - 56,-74.1483,4.6883,75,FONTIBON,inside_source_locality
+14-13,160011413,14,14,Mártires,13,Colegio Distrital Panamericano,Panamericano,CRA 27 # 24 C - 19,-74.078835,4.62305711,102,LA SABANA,inside_source_locality
+7-47,160010747,7,7,Bosa,47,Colegio Distrital Luis Lopez de Mesa - Sede Nueva,La Acuarela,CRA 77J # 65A - 38 Sur,-74.1818,4.5983,85,BOSA CENTRAL,inside_source_locality
+4-37,160010437,4,4,San Cristóbal,37,Colegio Distrital Altamira Sur Oriental Sede C - República de Israel,La Gloria – Escuela Altamira,CLL 44 Sur # 9 - 23 Este,-74.0893,4.5441,50,LA GLORIA,inside_source_locality
+4-38,160010438,4,4,San Cristóbal,38,Colegio Distrital José Acevedo y Gómez Sede B,Ramajal - Amapolas,CLL 30A Sur # 9A - 78 Este,-74.0829,4.5596,32,SAN BLAS,inside_source_locality
+4-39,160010439,4,4,San Cristóbal,39,Polideportivo Colegio Lorenzo de Alcantuz,El Rodeo Sede B - La Gloria,CLL 44 SUR # 6 - 74 Este / CLL 44 SUR # 6 - 54 ESTE,-74.0928828,4.5460791,50,LA GLORIA,inside_source_locality
+1-35,160010135,1,1,Usaquén,35,Almacén Carulla CLL 140 - Parqueadero,Carulla 140,CRA 11  # 140 - 20 /CLL 140 # 11 - 20,-74.03542254,4.71926086,13,LOS CEDROS,inside_source_locality
+4-40,160010440,4,4,San Cristóbal,40,Colegio Distrital Francisco Javier Matiz Sede B,El Portal,CRA 3B # 30A - 42 Sur,-74.0949,4.5658,34,20 DE JULIO,inside_source_locality
+7-42,160010742,7,7,Bosa,42,Gimnasio Santa Rocio,Villa del Río II,CRA 68D # 54A - 31 Sur,-74.16,4.6024,49,APOGEO,inside_source_locality
+7-43,160010743,7,7,Bosa,43,Colegio Distrital Brasilia Bosa Sede B,Holanda,CRA 87J # 55 - 06 Sur,-74.1856,4.6268,84,BOSA OCCIDENTAL,inside_source_locality
+7-44,160010744,7,7,Bosa,44,Colegio Distrital German Arciniegas Sede A,Portal de Brasil,CRA 88I # 54B - 44 Sur,-74.1851,4.6305,84,BOSA OCCIDENTAL,inside_source_locality
+7-45,160010745,7,7,Bosa,45,Colegio Distrital Alfonso López Michelsen,Recreo – Michelsen,CRA 98B # 74 - 68 Sur,-74.2066,4.6314,87,TINTAL SUR,inside_source_locality
+7-46,160010746,7,7,Bosa,46,Colegio Distrital CEDID San Pablo Sede A,CEDID San Pablo,CRA 77L # 65J - 73 Sur,-74.1876,4.5998,85,BOSA CENTRAL,inside_source_locality
+8-71,160010871,8,8,Kennedy,71,Colegio Privado Jean Piaget,Colegio Jean Piaget,CLL 2B # 70 - 22,-74.13168348,4.62459608,44,AMERICAS,inside_source_locality
+8-72,160010872,8,8,Kennedy,72,Colegio Distrital San Pedro Claver Sede A,Colegio San Pedro Claver Sede A,CRA 79C # 41B - 51 Sur,-74.1611,4.622,47,KENNEDY CENTRAL,inside_source_locality
+8-73,160010873,8,8,Kennedy,73,Colegio Distrital La Magdalena,Colegio La Magdalena,CLL 8A Bis # 94 - 72 / CRA 94 # 8C - 49,-74.1573,4.6572,78,TINTAL NORTE,inside_source_locality
+9-27,160010927,9,9,Fontibon,27,Parqueadero Supermercado JUMBO,Hayuelos - JUMBO,AV CRA 86 # 19A - 50,-74.1323,4.6628,112,GRANJAS DE TECHO,inside_source_locality
+10-58,160011058,10,10,Engativá,58,Colegio Distrital Tomás Cipriano de Mosquera,ALMAZAN - Engativá,TRV 113 # 66 - 95,-74.1345,4.7082,74,ENGATIVA,inside_source_locality
+11-63,160011163,11,11,Suba,63,Colegio Rafael Maya,Colegio Rafael Maya,CLL 134A # 147C - 07,-74.11884997,4.74522142,71,TIBABUYES,inside_source_locality
+11-64,160011164,11,11,Suba,64,Salón Comunal Santa Cecilia,Salón Comunal Santa Cecilia,CRA 158B # 131A - 45,-74.1282,4.7397,71,TIBABUYES,inside_source_locality
+11-65,160011165,11,11,Suba,65,Instituto San Basilio,Instituto San Basilio,CLL 136A # 152A -77,-74.12456902,4.74389645,71,TIBABUYES,inside_source_locality
+13-25,160011325,13,13,Teusaquillo,25,Imprenta Nacional,Imprenta Nacional,CRA 66 # 24 - 09,-74.1054,4.649,109,CIUDAD SALITRE ORIENTAL,inside_source_locality
+14-14,160011414,14,14,Mártires,14,Colegio Distrital Antonio Ricaurte - Sede A,Antonio Ricaurte,CRA 26 # 07 - 61,-74.09318331,4.60549168,102,LA SABANA,inside_source_locality
+14-15,160011415,14,14,Mártires,15,Colegio Distrital Técnico Menorah,Colegio Distrital Técnico Menorah,CRA 19 A # 1 C -56 / CRA 19 A # 1 C -64 /CRA 19 A # 1 C - 19,-74.09278724,4.59398292,37,SANTA ISABEL,inside_source_locality
+15-15,160011515,15,15,Antonio Nariño,15,Salón Comunal San Antonio,Salón Comunal San Antonio,CRA 18A # 4 - 81 Sur / CLL 6 Sur #18A - 04,-74.09567294,4.59087638,38,RESTREPO,inside_source_locality
+16-28,160011628,16,16,Puente Aranda,28,Salón Comunal Colonia Oriental,Colonia Oriental,CLL 4 A # 51 A - 90,-74.1149,4.6183,43,SAN RAFAEL,inside_source_locality
+16-29,160011629,16,16,Puente Aranda,29,Salón Comunal La Trinidad,Salón Comunal La Trinidad,CRA 58 # 4 B - 31,-74.11877986,4.62304051,43,SAN RAFAEL,inside_source_locality
+16-30,160011630,16,16,Puente Aranda,30,Salón Comunal Primavera y Gorgonzola,Primavera y Gorgonzola,CRA 41B # 5 - 57,-74.1077,4.6163,40,CIUDAD MONTES,inside_source_locality
+17-5,160011705,17,17,Candelaria,5,Ministerio de las Tecnologías de la Información,Murillo Toro,CRA 8 # 12 A - 14 / CRA 7 # 12 A - 37,-74.075,4.6001,94,LA CANDELARIA,inside_source_locality
+18-42,160011842,18,18,Rafael Uribe Uribe,42,Colegio Distrital Rafael Delgado Salguero - Sede C,Rafael Delgado Sede C,CLL 41 Sur # 31 - 81 / CLL 41 Bis Sur # 31 - 46,-74.1252,4.5871,39,QUIROGA,inside_source_locality
+18-43,160011843,18,18,Rafael Uribe Uribe,43,Salón Comunal La Paz Naranjos,Salón Comunal La Paz Naranjos,DIAG 54 Sur # 3F - 17,-74.11372139,4.54136446,55,DIANA TURBAY,inside_source_locality
+1-36,160010136,1,1,Usaquén,36,Colegio San Francisco de Asis,Colegio San Francisco CLL 186,CLL 186 # 7 - 52,-74.02816667,4.76286594,9,VERBENAL,inside_source_locality
+1-37,160010137,1,1,Usaquén,37,Colegio Buen Consejo,Colegio Buen Consejo,CLL 104 # 17 - 22entrada por la CLL 105 con CRA 17,-74.04904849,4.68997384,16,SANTA BARBARA,inside_source_locality
+1-38,160010138,1,1,Usaquén,38,Vía Pública Universidad Militar,Universidad Militar,CRA 11 con CLL 101 Esquina,-74.04260519,4.68369768,14,USAQUEN,inside_source_locality
+1-39,160010139,1,1,Usaquén,39,Colegio La Estrellita (antes Don Bosco III),Colegio La Estrellita,CRA 26 # 187 B - 37 /CLL 187C # 4A - 30 /CRA 4 # 187 D - 09,-74.02449416,4.764576,9,VERBENAL,inside_source_locality
+1-40,160010140,1,1,Usaquén,40,Colegio Esclavas del Sagrado Corazón,Colegio Esclavas del Sagrado Corazón,CLL 175 # 20 A - 26Entrada por detrás del CC PANAMA,-74.04309304,4.75565632,10,LA URIBE,inside_source_locality
+1-41,160010141,1,1,Usaquén,41,Colegio Cardenal Sancha,Colegio Cardenal Sancha,CLL 127 B Bis # 21 - 02,-74.05093979,4.709756,15,COUNTRY CLUB,inside_source_locality
+1-42,160010142,1,1,Usaquén,42,Colegio Campestre San José,Colegio Campestre San José,CLL 128 B # 20 - 80,-74.04955778,4.71320782,15,COUNTRY CLUB,inside_source_locality
+1-43,160010143,1,1,Usaquén,43,Colegio PROVINMA,Colegio PROVINMA,CLL 145 # 11 - 40,-74.03497695,4.72377454,13,LOS CEDROS,inside_source_locality
+1-44,160010144,1,1,Usaquén,44,Colegio Eucarístico Guadalupe,Colegio Eucarístico Guadalupe,CLL 170 #17A- 32,-74.04120595,4.75028214,10,LA URIBE,inside_source_locality
+16-6,160011606,16,16,Puente Aranda,6,Colegio Distrital El Jazmín - Sede B,La Primavera,CRA 41 B # 4 C – 27,-74.10939313,4.61551868,40,CIUDAD MONTES,inside_source_locality
+16-7,160011607,16,16,Puente Aranda,7,Colegio Distrital España - Sede B,Cundinamarca,CLL 19 C # 33 - 30,-74.08933232,4.62268993,108,ZONA INDUSTRIAL,inside_source_locality
+16-8,160011608,16,16,Puente Aranda,8,Salón Comunal La Francia,La Francia,DIAG 5 F Bis A # 43 B - 02,-74.10746026,4.62019992,43,SAN RAFAEL,inside_source_locality
+16-9,160011609,16,16,Puente Aranda,9,Colegio Distrital José Joaquín Casas - Sede A,Puente Aranda,CRA 56 # 15 - 41,-74.1088856,4.63202655,111,PUENTE ARANDA,inside_source_locality
+16-10,160011610,16,16,Puente Aranda,10,Colegio Distrital Francisco José de Sucre,Salazar Gómez,CLL 11 # 65 B - 10,-74.11809822,4.63356439,111,PUENTE ARANDA,inside_source_locality
+16-11,160011611,16,16,Puente Aranda,11,Colegio Distrital Silvera Espinosa Rendón - Sede C,La Trinidad,CLL 5 B # 60 - 29,-74.11704188,4.62698828,43,SAN RAFAEL,inside_source_locality
+16-12,160011612,16,16,Puente Aranda,12,Colegio Distrital Silveria Espinosa Rendon - Sede B,La Pradera,CLL 4 B # 65 - 31,-74.12182556,4.62399411,43,SAN RAFAEL,inside_source_locality
+16-13,160011613,16,16,Puente Aranda,13,Colegio José Allamano,Colón,CLL 4 # 56 - 03,-74.11942848,4.62019037,43,SAN RAFAEL,inside_source_locality
+16-14,160011614,16,16,Puente Aranda,14,Colegio Distrital Rafaél Sorrento - Sede B,San Rafael,CLL 4 F # 53 - 55,-74.11365583,4.61991949,43,SAN RAFAEL,inside_source_locality
+16-15,160011615,16,16,Puente Aranda,15,Colegio Distrital Jazmín - Sede A,El Jazmín,CLL 1 H # 40 D - 13,-74.11487267,4.60995944,40,CIUDAD MONTES,inside_source_locality
+16-16,160011616,16,16,Puente Aranda,16,Colegio Distrital Luis Carlos Galán,La Ponderosa,CLL 1 B # 52 A - 02,-74.11908076,4.61149533,40,CIUDAD MONTES,inside_source_locality
+16-17,160011617,16,16,Puente Aranda,17,Colegio Distrital José Manuel Restrepo,Galán,CLL 2 Bis # 56 A - 37,-74.12247563,4.6172609,43,SAN RAFAEL,inside_source_locality
+16-18,160011618,16,16,Puente Aranda,18,Colegio Distrital Luis Vargas Tejada - Sede A,Milenta,CRA 52 C # 19 A - 76 Sur,-74.12565623,4.60953198,40,CIUDAD MONTES,inside_source_locality
+16-20,160011620,16,16,Puente Aranda,20,Colegio Distrital Julio Garavito - Sede A,Alquería,CLL 40 B Sur # 52 C - 60,-74.13425671,4.59975169,41,MUZU,inside_source_locality
+16-21,160011621,16,16,Puente Aranda,21,Colegio Distrital Benjamín Herrera - Sede B,Alcalá,CRA 51 C # 33 - 41 Sur,-74.12717778,4.60197999,41,MUZU,inside_source_locality
+16-22,160011622,16,16,Puente Aranda,22,Colegio Distrital de Cultura Popular - Sede B,Santa Rita,CRA 41 # 34 - 35 Sur,-74.12372763,4.59804775,41,MUZU,inside_source_locality
+16-24,160011624,16,16,Puente Aranda,24,Salón Comunal Villas del Rosario,Los Sauces,TRV 38 # 29 B - 61 Sur,-74.11885339,4.59683856,41,MUZU,inside_source_locality
+16-41,160011641,16,16,Puente Aranda,41,Colegio Distrital Marco Antonio Carreño Sede A,Jorge Gaitán Cortés,CLL 17 B Sur # 34 A - 21 / CRA 34 # 17A - 70 Sur,-74.11216463,4.5975311,40,CIUDAD MONTES,inside_source_locality
+16-42,160011642,16,16,Puente Aranda,42,Centro De Rehabilitación Para Adultos Ciegos - CRAC,Centro Para Ciegos - CRAC,CLL 8 Sur # 31 A - 31 /AV CLL 8 Sur # 31 A - 31,-74.10799993,4.5990106,40,CIUDAD MONTES,inside_source_locality
+17-6,160011706,17,17,Candelaria,6,Colegio Mayor San Bartolomé,Colegio Mayor San Bartolomé,CRA 7 # 9 - 54,-74.07607923,4.5967707,94,LA CANDELARIA,inside_source_locality
+17-7,160011707,17,17,Candelaria,7,Fundación Universidad Autónoma de Colombia,Autónoma de Colombia,CLL 12 B # 4 - 31,-74.07209576,4.59842788,94,LA CANDELARIA,inside_source_locality
+17-8,160011708,17,17,Candelaria,8,Escuela Nacional de Comercio (Sede Bachillerato),Egipto Escuela Quinta Díaz,CLL 9A # 0 - 30 Este / CLL 9 A # 0 - 22 Este,-74.07054776,4.59321681,94,LA CANDELARIA,inside_source_locality
+17-9,160011709,17,17,Candelaria,9,Universidad de La Salle,La Salle Candelaria,CRA 2 # 10 - 70 / CRA 2 # 10 - 52,-74.07107875,4.59490239,94,LA CANDELARIA,inside_source_locality
+18-44,160011844,18,18,Rafael Uribe Uribe,44,Colegio Distrital Integración Rafael Delgado Salguero,Integración Rafael Delgado Salguero,CRA 26 # 35 A - 38 Sur,-74.11932321,4.58398113,39,QUIROGA,inside_source_locality
+18-45,160011845,18,18,Rafael Uribe Uribe,45,Colegio Parroquial San José,Parroquial San José,TRV 13 H # 45 B - 33 Sur /TRV 13 H # 45 F - 33 Sur,-74.122114,4.569197,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-46,160011846,18,18,Rafael Uribe Uribe,46,Colegio Liceo Psicopedagógico Marco Fidel Suárez,Liceo Psicopedagógico Marco Fidel Suárez,DIAG 46 Sur #13 - 40,-74.11835892,4.56789339,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-47,160011847,18,18,Rafael Uribe Uribe,47,Colegio Distrital María Cano,María Cano,TRV 5 U # 48 J - 30 Sur,-74.11541593,4.55925342,54,MARRUECOS,inside_source_locality
+18-48,160011848,18,18,Rafael Uribe Uribe,48,Colegio Distrital Cafam Santa Lucía,CAFAM Santa Lucía,DIAG 36 Sur # 16 B - 26 / CRA 13 G # 37 - 80 Sur,-74.118477,4.574716,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-49,160011849,18,18,Rafael Uribe Uribe,49,Salón Comunal Comuneros,Colegio Distrital Diana Turbay Sede B,DIAG 49 Sur # 2 A - 01CLL 49 Sur # 2 - 15,-74.10746259,4.54531029,55,DIANA TURBAY,inside_source_locality
+18-50,160011850,18,18,Rafael Uribe Uribe,50,Colegio Distrital Alianza Quiroga,Alianza Quiroga,CRA 23 # 35 - 20 Sur,-74.11728743,4.57960324,39,QUIROGA,inside_source_locality
+18-51,160011851,18,18,Rafael Uribe Uribe,51,Colegio Distrital Estados Unidos de América,Estados Unidos de América,CLL 22 Sur # 22 - 65 / CLL 22 Sur # 24 B - 65,-74.10600815,4.58481553,39,QUIROGA,inside_source_locality
+18-52,160011852,18,18,Rafael Uribe Uribe,52,Colegio Distrital El Libertador Sede B,Torre Mayor,CLL 33 Sur # 26 G - 10,-74.11768289,4.58836802,39,QUIROGA,inside_source_locality
+19-49,160011949,19,19,Ciudad Bolívar,49,Colegio Distrital Estrella del Sur Sede B,Las Quintas,CLL 75 Sur # 18 B - 45,-74.14440778,4.54226244,67,LUCERO,inside_source_locality
+19-50,160011950,19,19,Ciudad Bolívar,50,Colegio Distrital Fanny Mikey,Colegio Fanny Mikey,CRA 18 # 70 A - 05 Sur / CRA 18N # 70 A - 51 Sur,-74.15253321,4.54982646,67,LUCERO,inside_source_locality
+19-51,160011951,19,19,Ciudad Bolívar,51,Colegio Distrital Santa Barbara Sur,Marandú,CRA 18 U # 65 - 01 SUR,-74.14606568,4.55756922,67,LUCERO,inside_source_locality
+19-52,160011952,19,19,Ciudad Bolívar,52,Col Dist Arborizadora Alta Sede A,Col Dist Arborizadora Alta Sede A,CRA 43 # 70A - 50 Sur / CRA 42 # 70A - 70 Sur,-74.16021964,4.56845961,70,JERUSALEM,inside_source_locality
+19-53,160011953,19,19,Ciudad Bolívar,53,Centro de Desarrollo Educativo IDIPRON,Balmoral,CRA 70C # 60 B - 05 Sur / AV CRA 70C # 60 B - 05 Sur,-74.16167388,4.59165494,69,ISMAEL PERDOMO,inside_source_locality
+19-54,160011954,19,19,Ciudad Bolívar,54,Liceo Contadora,La Coruña - Liceo Contadora,CLL 59 Sur # 45 D - 15 / CLL 59 C Sur # 45 D - 15,-74.15352523,4.57574502,65,ARBORIZADORA,inside_source_locality
+19-55,160011955,19,19,Ciudad Bolívar,55,Colegio Distrital Sierra Morena Sede A,Tanque - Sierra Morena,CLL 77 Sur # 65 - 01 / CLL 75 C Sur # 71 - 03,-74.16957684,4.57478583,69,ISMAEL PERDOMO,inside_source_locality
+19-56,160011956,19,19,Ciudad Bolívar,56,Colegio Cerro del Sur,ICES Las Brisas,CLL 81 Sur # 42 - 09,-74.17109082,4.56824148,70,JERUSALEM,inside_source_locality
+19-57,160011957,19,19,Ciudad Bolívar,57,Colegio Compartir San Isidro,Altos de La Estancia,CRA 77 C # 59 A - 15 Sur,-74.18192707,4.59173087,69,ISMAEL PERDOMO,inside_source_locality
+19-58,160011958,19,19,Ciudad Bolívar,58,Salón Comunal Los Sauces,Salón Comunal Los Sauces,CRA 19 F # 68 F 34 Sur,-74.15083912,4.56009791,66,SAN FRANCISCO,inside_source_locality
+19-59,160011959,19,19,Ciudad Bolívar,59,Centro Comercial Gran Plaza El Ensueño,Gran Plaza El Ensueño,CRA 51 # 59 C - 93 Sur/ CLL 59 Sur # 51 - 21,-74.15675721,4.58121755,65,ARBORIZADORA,inside_source_locality
+19-60,160011960,19,19,Ciudad Bolívar,60,Conjunto Residencial Casa Linda Del Tunal Unidad 2,Casa Linda Tunal Unidad 2,CLL 60 Sur # 22 B - 55,-74.144705,4.56913903,65,ARBORIZADORA,inside_source_locality
+1-45,160010145,1,1,Usaquén,45,Colegio Anglo Americano,Anglo Americano,CLL 170 # 8 - 80 /CLL 170 # 8 - 70,-74.02898539,4.74796174,10,LA URIBE,inside_source_locality
+1-46,160010146,1,1,Usaquén,46,Colegio Privado Pureza de María,Colegio Pureza de María,CRA 7  # 147 - 02,-74.02603039,4.72254374,13,LOS CEDROS,inside_source_locality
+2-20,160010220,2,2,Chapinero,20,Colegio Bethlemitas,Bethlemitas - CLL 65,CRA 5 # 65 - 55,-74.05779338,4.64885684,90,PARDO RUBIO,inside_source_locality
+2-21,160010221,2,2,Chapinero,21,Universidad Santo Tomás,U. Santo Tomás - Claustro,CRA 9 # 51 - 11,-74.0642537,4.63799437,99,CHAPINERO,inside_source_locality
+2-22,160010222,2,2,Chapinero,22,Universidad Santo Tomás,El Aquinate - U. Santo Tomás,CRA 9 A # 63 - 28,-74.0614139,4.64918087,99,CHAPINERO,inside_source_locality
+2-23,160010223,2,2,Chapinero,23,Colegio Nuevo Gimnasio,Colegio Nuevo Gimnasio,CLL 81  # 11 - 71 / CLL 80 # 11 - 70,-74.05461494,4.66488425,97,CHICO LAGO,inside_source_locality
+2-24,160010224,2,2,Chapinero,24,Universidad Católica de Colombia,Universidad Católica,CRA 14 # 47 - 44,-74.06707902,4.63484898,99,CHAPINERO,inside_source_locality
+2-25,160010225,2,2,Chapinero,25,Universidad de La Salle,Universidad de La Salle,CRA 5 # 59 A - 44,-74.06006505,4.64473188,90,PARDO RUBIO,inside_source_locality
+3-16,160010316,3,3,Santa Fe,16,Centro Comercial El Gran San,El Gran San,CRA 10 # 9 - 37,-74.07912583,4.59866297,93,LAS NIEVES,inside_source_locality
+3-17,160010317,3,3,Santa Fe,17,Colegio Ramón Jimeno,Colegio Ramón Jimeno,CLL 26 # 2 - 44 /CRA 3 # 26A - 04,-74.06499824,4.60948735,92,LA MACARENA,inside_source_locality
+3-18,160010318,3,3,Santa Fe,18,Colegio Distrital la Giralda,Colegio la Giralda,CLL 1 # 3 - 58 /CLL 1 # 3 - 60,-74.07918393,4.58329625,95,LAS CRUCES,inside_source_locality
+3-19,160010319,3,3,Santa Fe,19,Universidad Jorge Tadeo Lozano (Parqueadero),Universidad Jorge Tadeo Lozano,CRA 4 # 22 Int. 1 Ed Módulo 21 / CLL 23 # 4 - 47,-74.06791989,4.6073954,93,LAS NIEVES,inside_source_locality
+3-20,160010320,3,3,Santa Fe,20,Universidad INCCA de Colombia Sede XXX Aniversario,Universidad INCCA de Colombia,CLL 24 A # 13 - 72,-74.07312632,4.61182039,93,LAS NIEVES,inside_source_locality
+4-41,160010441,4,4,San Cristóbal,41,Salón Comunal La Castaña,La Castaña,CLL 20 A Sur # 12 - 20 Este,-74.07984101,4.56659482,32,SAN BLAS,inside_source_locality
+4-42,160010442,4,4,San Cristóbal,42,Salón Comunal Atenas,Salón Comunal Atenas,CRA 1 # 36 H - 12 Sur,-74.09543434,4.55698177,34,20 DE JULIO,inside_source_locality
+4-43,160010443,4,4,San Cristóbal,43,Parque urbanización Villa Javier,Villa Javier La María,Cl 8 A S 5 A 23,-74.08477374,4.58000659,33,SOSIEGO,inside_source_locality
+7-55,160010755,7,7,Bosa,55,Colegio Claretiano El Libertador,Claretiano - El Libertador,CLL 61 Sur # 80 H - 40,-74.18431698,4.61011773,85,BOSA CENTRAL,inside_source_locality
+7-56,160010756,7,7,Bosa,56,Gimnasio Real Americano - Sede B,Gimnasio Real Americano,CLL 62 A Sur # 91 A - 35,-74.19528367,4.62984851,86,EL PORVENIR,inside_source_locality
+7-57,160010757,7,7,Bosa,57,Liceo Ciudad Capital,Liceo Ciudad Capital,CLL 65 Sur # 100 A - 51,-74.20114482,4.63751825,87,TINTAL SUR,inside_source_locality
+7-58,160010758,7,7,Bosa,58,Colegio Distrital Orlando Higuita Rojas Sede B - Juan Maximiliano Ambrosio,Juan Maximiliano Ambrosio,CLL 57 Sur # 86 F - 30,-74.18473898,4.62281827,84,BOSA OCCIDENTAL,inside_source_locality
+7-59,160010759,7,7,Bosa,59,Instituto GUIMARC,Instituto GUIMARC,CLL 71 C Sur # 77 M - 53,-74.19576441,4.60229809,85,BOSA CENTRAL,inside_source_locality
+7-60,160010760,7,7,Bosa,60,Colegio Colsubsidio Chicalá,Colegio Colsubsidio Chicalá,CRA 87 # 53 C - 26 Sur,-74.1810153,4.62522308,84,BOSA OCCIDENTAL,inside_source_locality
+7-61,160010761,7,7,Bosa,61,Colegio Mixto Ciudadanos del Futuro,Colegio Ciudadanos del Futuro,CRA 88 I # 58 A - 12 Sur,-74.19070919,4.62802975,84,BOSA OCCIDENTAL,inside_source_locality
+7-62,160010762,7,7,Bosa,62,Centro Comercial Gran Plaza Bosa,C.C. Gran Plaza Bosa,CLL 65 Sur # 78H - 51,-74.18379218,4.60500273,85,BOSA CENTRAL,inside_source_locality
+8-74,160010874,8,8,Kennedy,74,Colegio Distrital Jackeline Sede B,Colegio Distrital Jackeline,CRA 77 Q # 45 A - 21 Sur,-74.16273182,4.6089903,48,TIMIZA,inside_source_locality
+8-75,160010875,8,8,Kennedy,75,Gimnasio Cristiano Luz y Vida Sede C,Colegio Luz y Vida,CLL 1 Sur  # 86 - 15,-74.15926272,4.63869569,82,PATIO BONITO,inside_source_locality
+8-76,160010876,8,8,Kennedy,76,Colegio Fernando Soto Aparicio Sede B,Fernando Soto Aparicio Sede B,CRA 80 A # 51 B - 29 Sur,-74.172626,4.617238,81,GRAN BRITALIA,inside_source_locality
+8-77,160010877,8,8,Kennedy,77,Salón Comunal Monterrey,Salón Comunal Monterrey,CLL 8 Bis # 81 - 40,-74.14783572,4.6430975,46,CASTILLA,inside_source_locality
+8-78,160010878,8,8,Kennedy,78,Centro Comercial Tintal Plaza,Centro Comercial Tintal Plaza,AV CRA 86 # 6 - 37 /AV Ciudad Cali con Américas,-74.15541178,4.64176922,79,CALANDAIMA,inside_source_locality
+8-79,160010879,8,8,Kennedy,79,Colegio Sagrado Corazón Sede Principal,Sagrado Corazón,CLL 54 Sur # 81 H - 15,-74.1771205,4.62034768,81,GRAN BRITALIA,inside_source_locality
+8-80,160010880,8,8,Kennedy,80,Colegio Distrital CODEMA,Col. Dis. CODEMA,CLL 2 # 93 - 28,-74.16555885,4.64829352,79,CALANDAIMA,inside_source_locality
+8-81,160010881,8,8,Kennedy,81,Salón Comunal Roma IV Segundo Sector,Salón Comunal Roma IV,CRA 78 J # 54 - 16 Sur,-74.17060252,4.61130711,48,TIMIZA,inside_source_locality
+8-82,160010882,8,8,Kennedy,82,Colegio Distrital INEM Francisco de Paula Santander,INEM Francisco de Paula Santander Sede A,CLL 38 C Sur # 79 - 08,-74.15550351,4.62498283,47,KENNEDY CENTRAL,inside_source_locality
+8-83,160010883,8,8,Kennedy,83,Colegio Fernando Soto Aparicio – Nuevo Kennedy,Fernando Soto Aparicio,TRV 73 A Bis B # 36 - 47 Sur,-74.14748937,4.61881404,47,KENNEDY CENTRAL,inside_source_locality
+8-84,160010884,8,8,Kennedy,84,Salón Comunal Carvajal Osorio,Salón Comunal Carvajal Osorio,CRA 68 L  #37 D - 38 Sur /CRA 68 I # 37 D - 02 Sur / CLL 38 Sur # 68 J - 50,-74.138358,4.606929,45,CARVAJAL,inside_source_locality
+8-85,160010885,8,8,Kennedy,85,Salón Comunal Carvajal II Sector,Salón Comunal Carvajal II Sector,CRA 70 B # 24 A 40 Sur,-74.13591236,4.61602325,44,AMERICAS,inside_source_locality
+8-86,160010886,8,8,Kennedy,86,Colegio Nicolás Esguerra,Nicolás Esguerra,CLL 9 C # 68 - 52,-74.12260323,4.63232611,113,BAVARIA,inside_source_locality
+8-87,160010887,8,8,Kennedy,87,Salón Comunal Marsella,Salón Comunal Marsella,CRA 69 # 8 - 28,-74.12702548,4.63297638,113,BAVARIA,inside_source_locality
+8-88,160010888,8,8,Kennedy,88,Colegio Isabel II,Isabel II,DIAG 2 D # 79 C - 83,-74.15294975,4.63356968,46,CASTILLA,inside_source_locality
+8-89,160010889,8,8,Kennedy,89,Liceo Reynel,Liceo Reynel,CLL 39 Sur # 68 F - 15,-74.13856754,4.602634,45,CARVAJAL,inside_source_locality
+8-90,160010890,8,8,Kennedy,90,Colegio OEA Sede  Antonia Santos,Colegio OEA Antonia Santos,CRA 69 # 39 - 27  Sur / CRA 69 Bis # 39 - 30 Sur,-74.14082055,4.60908069,45,CARVAJAL,inside_source_locality
+8-91,160010891,8,8,Kennedy,91,Salón Comunal Boita II Sector,Salón Comunal Boita II Sector,CRA 72 R Bis # 48 - 11 Sur,-74.15639227,4.60408742,48,TIMIZA,inside_source_locality
+8-92,160010892,8,8,Kennedy,92,Salón Comunal Santa Catalina,Salón Comunal Santa Catalina,CRA 72 Q Bis #43 - 06 Sur /CLL 43 Sur # 72Q - 45,-74.15486891,4.6061086,48,TIMIZA,inside_source_locality
+8-93,160010893,8,8,Kennedy,93,Colegio Privado de Integración Moderna,Colegio Integración Moderna,CLL 4 # 71 A - 41,-74.13479142,4.62674213,44,AMERICAS,inside_source_locality
+9-28,160010928,9,9,Fontibon,28,Colegio Distrital Integrado - Sede B,Integrado Sede B,CLL 22 F # 109 B - 29,-74.14624405,4.68311941,75,FONTIBON,inside_source_locality
+9-29,160010929,9,9,Fontibon,29,Jardín Infantil ACUNAR Sabana Grande,ACUNAR,CRA 104 # 13 D - 35 / CRA 106 # 15 A - 32,-74.15744063,4.6680038,77,ZONA FRANCA,inside_source_locality
+9-30,160010930,9,9,Fontibon,30,Casa de Pensamiento Intercultural,Casa Pensamiento Intercultural,DIAG 15 D # 98 - 40,-74.1517436,4.6663529,77,ZONA FRANCA,inside_source_locality
+9-31,160010931,9,9,Fontibon,31,Colegio Distrital Luis Ángel Arango,Colegio Luis Ángel Arango,CLL 23 G # 103 - 60 /CRA 103 # 23 G - 01,-74.13755125,4.68185269,75,FONTIBON,inside_source_locality
+9-32,160010932,9,9,Fontibon,32,Vía Pública Colegio Distrital Villemar El Carmen Sede C,Ferrocaja,CRA 97 # 22 G - 15,-74.13840759,4.6760202,75,FONTIBON,inside_source_locality
+9-33,160010933,9,9,Fontibon,33,Colegio Distrital Antonio Van Üden Sede B,El Charco,CLL 17 F # 128 - 45,-74.16143794,4.69248753,76,FONTIBON SAN PABLO,inside_source_locality
+9-34,160010934,9,9,Fontibon,34,Centro Comercial Multiplaza,Multiplaza,CLL 19 A # 72 - 57,-74.12499242,4.65333024,112,GRANJAS DE TECHO,inside_source_locality
+9-35,160010935,9,9,Fontibon,35,Centro Comercial Salitre Plaza,Salitre Plaza,CRA 68 B # 24 - 39,-74.10918052,4.65271474,110,CIUDAD SALITRE OCCIDENTAL,inside_source_locality
+9-36,160010936,9,9,Fontibon,36,Colegio Distrital Pablo Neruda Sede B,Pablo Neruda,CLL 16 J # 99 - 95,-74.14642966,4.67244864,75,FONTIBON,inside_source_locality
+9-37,160010937,9,9,Fontibon,37,Casa de La Cultura de Fontibón Cacique Hyntiba,Cacique Hyntiba,CLL 17A # 99 - 53,-74.14514482,4.67299671,75,FONTIBON,inside_source_locality
+9-38,160010938,9,9,Fontibon,38,Salón Comunal Tres Estancias,Tres Estancias,CLL 15 # 119 - 14 /CLL 15 # 119 A - 90,-74.16417606,4.68281458,77,ZONA FRANCA,inside_source_locality
+10-59,160011059,10,10,Engativá,59,Centro Comercial Unicentro de Occidente,Unicentro de Occidente,CRA 111 C # 86 - 05,-74.11353947,4.72298132,72,BOLIVIA,inside_source_locality
+10-60,160011060,10,10,Engativá,60,Salón Comunal Álamos,Salón Comunal Álamos,CLL 66 A # 97 - 64 /CLL 66 A # 97 A - 34,-74.11943142,4.69632462,73,GARCES NAVAS,inside_source_locality
+10-61,160011061,10,10,Engativá,61,Colegio Distrital Guillermo León Valencia,León Valencia,CRA 93 A # 75 B - 80 /CRA 92 # 75C - 31,-74.10861136,4.7043113,30,BOYACA REAL,inside_source_locality
+10-62,160011062,10,10,Engativá,62,Salón Comunal Barrio La Clarita,La Clarita,CRA 83 # 70 - 15,-74.10575419,4.69216721,30,BOYACA REAL,inside_source_locality
+10-63,160011063,10,10,Engativá,63,Centro Educativo Scalas,Centro Educativo Scalas,CRA 82 # 68 B - 09,-74.10620784,4.69001481,30,BOYACA REAL,inside_source_locality
+10-64,160011064,10,10,Engativá,64,Colegio Distrital Naciones Unidas Sede B,Naciones Unidas Sede B,CLL 73 A # 69 J - 10,-74.08858585,4.68436628,26,LAS FERIAS,inside_source_locality
+10-65,160011065,10,10,Engativá,65,Colegio Adventista del Norte,Colegio Norte Adventista,CRA 70 G # 71 - 04,-74.09436381,4.6837435,26,LAS FERIAS,inside_source_locality
+10-66,160011066,10,10,Engativá,66,Colegio Distrital Nestor Forero Alcala Sede B,Alcalá Sede B,DIAG 70 # 70 - 40,-74.09316966,4.68199306,26,LAS FERIAS,inside_source_locality
+10-67,160011067,10,10,Engativá,67,Centro Comercial Diverplaza,Diverplaza,TRV 99 Bis # 70A - 89 / AV CRA 96 # 70A - 89,-74.115112,4.700141,73,GARCES NAVAS,inside_source_locality
+10-68,160011068,10,10,Engativá,68,Colegio Margarita Bosco,Margarita Bosco,AV CLL 63 # 73 A - 44,-74.10595589,4.6767078,31,SANTA CECILIA,inside_source_locality
+10-69,160011069,10,10,Engativá,69,Colegio Pedagógico del Espíritu Santo,Colegio COPES,CLL 72 # 102 - 23 / AV CLL 72 # 102 - 23,-74.11810399,4.70498421,73,GARCES NAVAS,inside_source_locality
+11-66,160011166,11,11,Suba,66,Colegio Distrital Jorge Mario Bergoglio,Filarmónico Jorge Mario Bergoglio - IED,CLL 143 A #113 C - 51 /CRA 113C # 142B - 21,-74.103399,4.748823,28,EL RINCON,inside_source_locality
+11-67,160011167,11,11,Suba,67,Colegio Distrital Veintiún Ángeles,Veintiún Ángeles Sede A - IED,CRA 90 # 154 A - 09,-74.08034908,4.74945267,27,SUBA,inside_source_locality
+11-68,160011168,11,11,Suba,68,Colegio Distrital Nicolás Buenaventura Sede B,Chorrillos,Kilometro 7 Via Suba - Cota,-74.091257,4.784889,,,outside_upz
+11-69,160011169,11,11,Suba,69,Colegio Distrital Hunza - Sede A,Hunza Sede A - IED,CRA 84 A # 129 A - 40,-74.08334343,4.72336086,28,EL RINCON,inside_source_locality
+11-70,160011170,11,11,Suba,70,Colegio Máximino Poitiers,Colegio Maximino Poitiers,CLL 152 A # 102 - 51 / CL 152A # 102B - 51,-74.09098674,4.75153606,27,SUBA,inside_source_locality
+11-71,160011171,11,11,Suba,71,Salón Comunal Aures II,Salón Comunal Aures II,CRA 105 B #129 D - 92,-74.10196151,4.73321736,28,EL RINCON,inside_source_locality
+11-72,160011172,11,11,Suba,72,Salón Comunal Villa Maria,Salón Comunal Villa Maria,CRA 111 # 135 - 25,-74.10368114,4.7405871,28,EL RINCON,inside_source_locality
+11-73,160011173,11,11,Suba,73,Salón Comunal Villa Cindy,Salón Comunal Villa Cindy,CLL 137 B #1 57 - 17,-74.12773664,4.74375297,71,TIBABUYES,inside_source_locality
+11-74,160011174,11,11,Suba,74,Centro Comercial Outlet La Floresta,Floresta Outlet,CRA 69 # 98 A - 45,-74.07476325,4.69138154,25,LA FLORESTA,inside_source_locality
+11-75,160011175,11,11,Suba,75,Colegio John Dewey,Colegio John Dewey,TRV 54 # 111 - 85,-74.06397835,4.69878041,20,LA ALHAMBRA,inside_source_locality
+11-76,160011176,11,11,Suba,76,Colegio Externado Caro y Cuervo,Colegio Caro y Cuervo,CLL 150 A # 50 - 57,-74.0536001,4.73337249,19,EL PRADO,inside_source_locality
+11-77,160011177,11,11,Suba,77,Centro Comercial Portoalegre,CC Portoalegre,CRA 58 # 137 B - 01,-74.06481702,4.72771951,24,NIZA,inside_source_locality
+11-78,160011178,11,11,Suba,78,Centro Comercial Parque La Colina,CC Parque La Colina,CRA 58 D # 146 - 51,-74.06549087,4.73251625,23,CASA BLANCA SUBA,inside_source_locality
+11-79,160011179,11,11,Suba,79,Cancha Múltiple Sirena II,Cancha Múltiple Sirena II,CRA 59 Entre CLL 152B y 153 / CRA 59 # 152B - 50,-74.06390974,4.74040236,23,CASA BLANCA SUBA,inside_source_locality
+11-80,160011180,11,11,Suba,80,Fundación Colegio Marymount,Colegio Marymount,CLL 169 B # 74 A - 02,-74.06644192,4.75570227,23,CASA BLANCA SUBA,inside_source_locality
+11-81,160011181,11,11,Suba,81,Colegio Abraham Lincoln Sede Bachillerato,San José Bavaria- Abraham Lincoln,CLL 170 # 65 - 31 /AC 170 # 65 - 31,-74.06104163,4.75661919,18,BRITALIA,inside_source_locality
+11-82,160011182,11,11,Suba,82,Colegio del Bosque - Universidad Antonio Nariño - Sede Bachillerato,Colegio del Bosque,CRA 65 # 170 - 20,-74.0601942,4.75716328,17,SAN JOSE DE BAVARIA,inside_source_locality
+11-83,160011183,11,11,Suba,83,Colegio Santiago Alberioni,Colegio Santiago Alberioni,CRA 62 # 169 A - 14,-74.05983303,4.75328458,18,BRITALIA,inside_source_locality
+4-44,160010444,4,4,San Cristóbal,44,Colegio Distrital Los Libertadores - Sede A,La Belleza,CLL 64 Sur # 10 A 39 Este,-74.09219883,4.53044476,51,LOS LIBERTADORES,inside_source_locality
+4-45,160010445,4,4,San Cristóbal,45,Colegio Distrital Aguas Claras,Aguas Claras,CLL 14 Sur # 25 - 05 Este,-74.06739884,4.56215723,,,outside_upz
+5-34,160010534,5,5,Usme,34,Colegio Distrital Francisco Antonio Zea - Sede B,Usme - Centro,CRA 13 # 137 D - 40 Sur,-74.12533529,4.46954508,61,CIUDAD USME,inside_source_locality
+5-35,160010535,5,5,Usme,35,Colegio Distrital Brazuelos,Brazuelos,CLL 104 Sur # 14 - 90,-74.119874,4.49494885,58,COMUNEROS,inside_source_locality
+5-36,160010536,5,5,Usme,36,Centro de Desarrollo Comunitario Julio César Sánchez,CDC Julio César Sánchez,CLL 91 Sur # 4C - 26,-74.10917209,4.5011028,58,COMUNEROS,inside_source_locality
+5-37,160010537,5,5,Usme,37,Colegio Distrital Federico García Lorca Sede A,Vía al llano,CRA 5 # 83 - 03 Sur,-74.10721803,4.50731238,57,GRAN YOMASA,inside_source_locality
+5-38,160010538,5,5,Usme,38,Colegio Distrital Nuevo San Andrés de Los Altos,Nusadal,CLL 69 A Bis Sur # 14 C - 18,-74.12011325,4.52479675,57,GRAN YOMASA,inside_source_locality
+6-18,160010618,6,6,Tunjuelito,18,Jardín Infantil Isla del Sol,Jardín Infantil Isla del Sol,CLL 67 B Sur # 63 - 15,-74.15247372,4.58943005,42,VENECIA,inside_source_locality
+6-19,160010619,6,6,Tunjuelito,19,Liceo Santa Bernardita,Liceo Santa Bernardita,DIAG 51 A Sur # 54 A - 32,-74.14308346,4.58999042,42,VENECIA,inside_source_locality
+6-20,160010620,6,6,Tunjuelito,20,Colegio Cooperativo Venecia,Colegio Cooperativo Venecia,DIAG 47 A Sur # 53 A - 95,-74.14062679,4.59287891,42,VENECIA,inside_source_locality
+6-21,160010621,6,6,Tunjuelito,21,Colegio Cooperativo Nuevo MUZU,Cooperativo Nuevo MUZU,CRA 59 # 51 B - 46 Sur / CRA 61B # 51B - 46 Sur,-74.14794178,4.5873983,42,VENECIA,inside_source_locality
+6-22,160010622,6,6,Tunjuelito,22,Liceo Campestre CAFAM,Liceo Campestre CAFAM,DIAG 58 Sur # 29 - 26,-74.14339962,4.57795029,42,VENECIA,inside_source_locality
+6-23,160010623,6,6,Tunjuelito,23,Colegio Nuestra Señora de Las Victorias,Nuestra Señora de Las Victorias,CRA 12 B # 57 - 52 Sur,-74.12895936,4.55926802,62,TUNJUELITO,inside_source_locality
+6-24,160010624,6,6,Tunjuelito,24,Colegio Santa Cecilia De Tunjuelito,Santa Cecilia de Tunjuelito,CRA 11 # 52 - 41 Sur,-74.12419151,4.55861651,62,TUNJUELITO,inside_source_locality
+6-25,160010625,6,6,Tunjuelito,25,Casa de Justicia de Tunjuelito,Casa de Justicia de Tunjuelito,CLL 51 Sur # 7 - 35,-74.1216262,4.55609539,62,TUNJUELITO,inside_source_locality
+6-26,160010626,6,6,Tunjuelito,26,Externado Porfirio Barba Jacob,Porfirio Barba Jacob,CRA 18 # 54 - 14 Sur / CRA 18 # 54 - 10 Sur,-74.12999243,4.56588902,62,TUNJUELITO,inside_source_locality
+7-48,160010748,7,7,Bosa,48,Colegio Miguel Ángel Asturias,Miguel Ángel Asturias,CRA 78 D # 59 A - 18 Sur,-74.18020679,4.60357911,85,BOSA CENTRAL,inside_source_locality
+7-49,160010749,7,7,Bosa,49,Coliseo la Palestina,Coliseo la Palestina,CLL 68 Sur # 81 G - 09,-74.19132802,4.61207376,85,BOSA CENTRAL,inside_source_locality
+7-50,160010750,7,7,Bosa,50,Colegio Privado Liceo Alfredo Nóbel,Alfredo Nóbel,TRV 80 B # 65 I - 25 Sur,-74.18766828,4.60616782,85,BOSA CENTRAL,inside_source_locality
+7-51,160010751,7,7,Bosa,51,Liceo Manuel Elkin Patarroyo,Manuel Elkin Patarroyo,CRA 81 A # 82 A - 18 Sur,-74.20602105,4.61319507,85,BOSA CENTRAL,inside_source_locality
+7-52,160010752,7,7,Bosa,52,Parque IDRD,Parque Autopista Sur PAVCO,CRA 72 # 57 H - 94 Sur /CRA 72 # 57 H - 92 Sur,-74.16398014,4.59656913,49,APOGEO,inside_source_locality
+7-53,160010753,7,7,Bosa,53,Jardín Infantil Olarte – SDIS,Jardín Infantil Olarte,CRA 71 D # 54 - 15 Sur,-74.16323479,4.60314889,49,APOGEO,inside_source_locality
+7-54,160010754,7,7,Bosa,54,Gimnasio Los Sauces,Gimnasio Los Sauces,CRA 88 F Bis # 51 C - 01 Sur / CRA 88 I # 51C - 10 Sur,-74.18228625,4.6310038,84,BOSA OCCIDENTAL,inside_source_locality
+11-56,160011156,11,11,Suba,56,Parqueadero Centro Comercial Niza,Niza Centro Comercial Niza,AV CLL 127 # 60 - 30,-74.07303393,4.71125802,24,NIZA,inside_source_locality
+10-56,160011056,10,10,Engativá,56,Colegio Distrital Charry,El Cedro,CRA 109 A # 77 A - 16 /CRA 108 # 77 - 21,-74.120159,4.713627,73,GARCES NAVAS,inside_source_locality
+10-54,160011054,10,10,Engativá,54,Colegio Distrital Rodolfo Llinas,Bolivia,CRA 103 D # 86 A - 72,-74.108315,4.71982,72,BOLIVIA,inside_source_locality
+10-55,160011055,10,10,Engativá,55,Costado Almacén Éxito de Occidente,Gran Granada,CRA 114 A # 78 B -85 /AV CRA 114 # 78 B - 80,-74.12272131,4.72099436,73,GARCES NAVAS,inside_source_locality
+10-57,160011057,10,10,Engativá,57,Colegio Colsubsidio Torquigua,Torquigua,CLL 64 # 128 - 50,-74.14340953,4.72174984,74,ENGATIVA,inside_source_locality
+11-57,160011157,11,11,Suba,57,Parqueadero Centro Comercial Paseo San Rafael,Centro Comercial Paseo San Rafael,AV CLL 134 # 55 - 30/AV CLL 134 # 55 - 32,-74.06227484,4.72302099,24,NIZA,inside_source_locality
+14-16,160011416,14,14,Mártires,16,Centro Memoria,Centro Memoria,CRA 19 B # 24 - 32,-74.07725252,4.61868337,102,LA SABANA,inside_source_locality
+14-17,160011417,14,14,Mártires,17,Salón Comunal Santa Isabel,Salón Comunal Santa Isabel,CLL 1 D Bis # 29 - 92,-74.10290329,4.59974728,37,SANTA ISABEL,inside_source_locality
+15-16,160011516,15,15,Antonio Nariño,16,Colegio Adventista Emmanuel,Colegio Adventista Emmanuel,CLL 10 B Sur # 18 A - 15,-74.09755353,4.58883159,38,RESTREPO,inside_source_locality
+15-17,160011517,15,15,Antonio Nariño,17,Salón Comunal Ciudad Villa Mayor,Salón Comunal Villa Mayor,CRA 34 C # 34 - 18 Sur/CRA 34 C # 32A - 18 Sur,-74.11921228,4.59210865,38,RESTREPO,inside_source_locality
+15-18,160011518,15,15,Antonio Nariño,18,Salón Comunal Cinco de Noviembre,Cinco de Noviembre,CLL 39 A Sur # 39 A - 12/CRA 34F # 39 - 12 Sur,-74.1259134,4.5933814,41,MUZU,inside_different_locality
+15-19,160011519,15,15,Antonio Nariño,19,Casa Comunal Ciudad Jardín,Casa Comunal Ciudad Jardín,CRA 12 F # 19 - 37 Sur,-74.09961816,4.58074491,35,CIUDAD JARDIN,inside_source_locality
+16-31,160011631,16,16,Puente Aranda,31,Salón Comunal Ciudad Montes II,Salón Comunal Ciudad Montes II,CRA 41 # 10 - 06 Sur,-74.11812478,4.60548824,40,CIUDAD MONTES,inside_source_locality
+16-32,160011632,16,16,Puente Aranda,32,Salón Comunal El Remanso Sur,Salón Comunal El Remanso Sur,DIAG 16 Sur # 31 - 75,-74.11132253,4.59812707,40,CIUDAD MONTES,inside_source_locality
+16-33,160011633,16,16,Puente Aranda,33,Salón Comunal Veraguas Central,Salón Comunal Veraguas,CLL 4 A # 32 A - 77 / CLL 4 A # 32 A - 75,-74.10320907,4.60666788,40,CIUDAD MONTES,inside_source_locality
+16-34,160011634,16,16,Puente Aranda,34,Instituto de Integración Cultural,Instituto de Integración Cultural,CLL 5 C # 31 C - 16,-74.10099577,4.60792901,40,CIUDAD MONTES,inside_source_locality
+16-35,160011635,16,16,Puente Aranda,35,Colegio Distrital Sorrento Sede A,Colegio Distrital Sorrento,CLL 5 B # 53 C - 74,-74.11328685,4.62299105,43,SAN RAFAEL,inside_source_locality
+16-36,160011636,16,16,Puente Aranda,36,Colegio Luis Carlos Galán Sarmiento Sede B,Luis Carlos Galán Sarmiento,CLL 2 A # 47 - 59,-74.11809663,4.61187106,40,CIUDAD MONTES,inside_source_locality
+16-37,160011637,16,16,Puente Aranda,37,Colegio Distrital Cultura Popular Sede A,Cultura Popular,CLL 32 Sur # 51 - 12,-74.12538362,4.60140754,41,MUZU,inside_source_locality
+16-38,160011638,16,16,Puente Aranda,38,Colegio Distrital Benjamín Herrera Sede A,San Eusebio,CRA 51 A # 26 - 38 Sur,-74.12382051,4.60340012,41,MUZU,inside_source_locality
+16-39,160011639,16,16,Puente Aranda,39,Colegio Distrital Julio Garavito Sede B,Los Ángeles,CLL 39 Sur # 51 F - 59 / CLL 39 Sur # 51 F - 21,-74.1307584,4.59968002,41,MUZU,inside_source_locality
+16-40,160011640,16,16,Puente Aranda,40,Centro Comercial Outlet Factory,C.C. Outlet Factory,AV CLL 9 # 62 - 84 entrada 1 y 2,-74.1183696,4.62924237,111,PUENTE ARANDA,inside_source_locality
+19-62,160011962,19,19,Ciudad Bolívar,62,Salón Comunal Sierra Morena I,Salón Comunal Sierra Morena I,CRA 73 D # 69 B - 04 Sur,-74.16745589,4.58128537,69,ISMAEL PERDOMO,inside_source_locality
+19-63,160011963,19,19,Ciudad Bolívar,63,Polideportivo La Estancia,Polideportivo La Estancia,CLL 59 Sur # 74 - 19 / CLL 59 Sur # 74C - 06,-74.1737299,4.59281271,69,ISMAEL PERDOMO,inside_source_locality
+19-64,160011964,19,19,Ciudad Bolívar,64,Colegio Distrital Calasanz (Buenavista),Calasanz (Buenavista),CRA 17 F #77 - 75 Sur/CRA 17 F #77A - 11 Sur,-74.1394863,4.54031372,68,EL TESORO,inside_source_locality
+19-65,160011965,19,19,Ciudad Bolívar,65,Salón Comunal San Francisco I Sector,Salón Comunal San Francisco I Sector,CRA 20 D # 63 - 11 Sur,-74.1451581,4.56464086,66,SAN FRANCISCO,inside_source_locality
+8-97,160010897,8,8,Kennedy,97,Colegio Distrital San Rafael Sede A,Colegio San Rafael Sede A,TRV 78 I # 42 B - 81 Sur / CRA 78 L # 42 B - 84 Sur,-74.16240131,4.61757159,47,KENNEDY CENTRAL,inside_source_locality
+8-98,160010898,8,8,Kennedy,98,Salón Comunal Villa Claudia,Salón Comunal Villa Claudia,CLL 9 A Sur # 68 F - 23,-74.12914229,4.617274,44,AMERICAS,inside_source_locality
+8-99,160010899,8,8,Kennedy,99,Colegio Distrital San Pedro Claver Sede B,Colegio San Pedro Claver Sede B,CLL 42 G Sur # 87 - 06,-74.1713998,4.63149688,82,PATIO BONITO,inside_source_locality
+19-67,160011967,19,19,Ciudad Bolívar,67,Colegio Distrital Ciudad Bolívar Argentina,Colegio Ciudad Bolívar Argentina IED,CLL 70 Sur # 54 - 12 /CLL 70 Sur # 56 - 45,-74.1650035,4.57824159,69,ISMAEL PERDOMO,inside_source_locality
+11-98,160011198,11,11,Suba,98,Salón Comunal Suba Compartir 1,Salón Comunal Compartir 1,CRA 136 C # 152 F - 44,-74.1059184,4.76025218,71,TIBABUYES,inside_source_locality
+1-50,160010150,1,1,Usaquén,50,Salón Comunal Tibabita,Salón Comunal Tibabita,CRA 8 B # 191 - 04,-74.02949776,4.76820121,9,VERBENAL,inside_source_locality
+1-51,160010151,1,1,Usaquén,51,Colegio Distrital Aquileo Parra Sede Primaria,I E Aquileo Parra Sede Primaria,TRV 18 B # 187 - 43,-74.03934942,4.76540861,9,VERBENAL,inside_source_locality
+1-52,160010152,1,1,Usaquén,52,Colegio Mayor José Celestino Mutis,Colegio Mayor José Celestino Mutis,CRA 11 # 185 B - 88,-74.03262164,4.763096,9,VERBENAL,inside_source_locality
+1-53,160010153,1,1,Usaquén,53,Colegio María Auxiliadora Norte,Colegio María Auxiliadora Norte,CRA 8 G # 166 - 70,-74.02956341,4.74455852,10,LA URIBE,inside_source_locality
+1-54,160010154,1,1,Usaquén,54,Salón Comunal San Cristóbal Norte,Salón Comunal San Cristóbal Norte,CLL 162 # 7 G - 37,-74.02651206,4.7379043,11,SAN CRISTOBAL NORTE,inside_source_locality
+1-55,160010155,1,1,Usaquén,55,Salón Comunal Villa Nidia,Salón Comunal Villa Nidia,CRA 4 # 160B - 23,-74.02081488,4.73465838,11,SAN CRISTOBAL NORTE,inside_source_locality
+1-56,160010156,1,1,Usaquén,56,Colegio Distrital La Equidad SALUDCOOP,Colegio Distrital La Equidad SALUDCOOP,CRA 1 Este # 163 - 60,-74.01616507,4.73505542,11,SAN CRISTOBAL NORTE,inside_source_locality
+1-57,160010157,1,1,Usaquén,57,Escuela Colombiana de Rehabilitación,Escuela Colombiana de Rehabilitación,AV CRA 15 # 151 - 68,-74.03997241,4.73288405,13,LOS CEDROS,inside_source_locality
+2-29,160010229,2,2,Chapinero,29,Universidad Área Andina,Universidad Área Andina,AV Caracas # 69 - 44,-74.062303,4.65595582,97,CHICO LAGO,inside_source_locality
+2-30,160010230,2,2,Chapinero,30,Parqueadero Chicó CLL 97,Parqueadero Chicó CLL 97,CRA 14 # 96 - 55 /CRA 14 # 96 - 31,-74.04859075,4.6815249,97,CHICO LAGO,inside_source_locality
+2-31,160010231,2,2,Chapinero,31,Universidad Javeriana,Universidad Javeriana,CLL 40 B # 5 - 37,-74.06433564,4.62682834,99,CHAPINERO,inside_source_locality
+4-54,160010454,4,4,San Cristóbal,54,Salón Comunal San Isidro II Sector,Salón Comunal San Isidro II Sector,CRA 7 A # 35 A - 33 Sur,-74.10204284,4.56412389,34,20 DE JULIO,inside_source_locality
+4-55,160010455,4,4,San Cristóbal,55,Colegio Distrital La Victoria Sede A,Colegio La Victoria Sede A,CRA 3 B Este # 38 - 25 Sur,-74.09342703,4.55225704,50,LA GLORIA,inside_source_locality
+5-43,160010543,5,5,Usme,43,Colegio Andrés Escobar,Colegio Andrés Escobar,CRA 3 B 55 B 30 Sur,-74.11464667,4.53838622,56,DANUBIO,inside_source_locality
+5-44,160010544,5,5,Usme,44,Centro Comercial Altavista,Centro Comercial Altavista,CRA 1 # 65 D - 58 SurEntrada del Parqueadero / CLL 65C Sur 11 71,-74.11842796,4.53290072,56,DANUBIO,inside_source_locality
+5-42,160010542,5,5,Usme,42,Colegio José Eustasio Rivera,Colegio José Eustasio Rivera,CRA 3 # 136 - 98 Sur Entrada Parqueadero /CRA 14 135 05 Sur,-74.12277976,4.47531641,61,CIUDAD USME,inside_source_locality
+6-32,160010632,6,6,Tunjuelito,32,Salón Comuna Isla del Sol,Salón Comuna Isla del Sol,CLL 67 B Sur # 62 - 39 / CLL 67 B Sur # 62 - 23,-74.15201445,4.58968821,42,VENECIA,inside_source_locality
+6-33,160010633,6,6,Tunjuelito,33,Jardín Infantil Pablo de Tarso,Jardín Infantil Pablo de Tarso,DIAG 48 Sur # 51 D- 57,-74.13540604,4.59116623,42,VENECIA,inside_source_locality
+7-68,160010768,7,7,Bosa,68,Colegio Distrital Jorge Isaacs,Colegio Jorge Isaacs,CLL 73 Sur # 91- 35 / CLL 73 Sur # 91- 05,-74.20192807,4.62663261,87,TINTAL SUR,inside_source_locality
+7-69,160010769,7,7,Bosa,69,Colegio Privado Garabatos de Colores,Gimnasio Garabatos de Colores,CLL 65 G Sur # 79 B - 20,-74.18643816,4.60581154,85,BOSA CENTRAL,inside_source_locality
+7-70,160010770,7,7,Bosa,70,Colegio Distrital Parques De Bogotá,Parques de Bogotá,CLL 85 Sur # 94 - 55,-74.21173341,4.62609382,87,TINTAL SUR,inside_source_locality
+7-71,160010771,7,7,Bosa,71,Colegio Distrital Bicentenario de La Independencia,Bicentenario de La Independencia,CLL 81 Sur # 81 - 75,-74.20381151,4.61498448,85,BOSA CENTRAL,inside_source_locality
+8-A1,1600108A1,8,8,Kennedy,A1,Colegio Privado Ernesto Guhl,Colegio Ernesto Guhl,CLL 42 G Sur # 87 G - 16,-74.17243267,4.63320807,82,PATIO BONITO,inside_source_locality
+8-A2,1600108A2,8,8,Kennedy,A2,Colegio Privado Ciudad de Fómeque,Colegio Ciudad de Fómeque,CRA 93 B # 42 F -16 Sur /CRA 93 42F - 16 S,-74.17544944,4.64071949,82,PATIO BONITO,inside_source_locality
+8-A3,1600108A3,8,8,Kennedy,A3,Escuela Tecnológica Instituto Técnico Central,Esc.Tecnologica Inst. Tecnico Central,CLL 6 C # 94 A - 25,-74.1614076,4.65394964,78,TINTAL NORTE,inside_source_locality
+8-A4,1600108A4,8,8,Kennedy,A4,Colegio Distrital Ciudad de Techo,Colegio Emma Reyes IED,CRA 80 B # 6 - 71,-74.15085022,4.63672189,46,CASTILLA,inside_source_locality
+8-A5,1600108A5,8,8,Kennedy,A5,Salón Comunal Andalucia II Sector,Salón Comunal Andalucia II Sector,CLL 14 A # 81 - 38,-74.13694454,4.65361825,46,CASTILLA,inside_source_locality
+8-A6,1600108A6,8,8,Kennedy,A6,Salón Comunal Villa Alsacia,Salón Comunal Villa Alsacia,CLL 11 A # 72 D - 20,-74.13615891,4.64346598,46,CASTILLA,inside_source_locality
+8-A7,1600108A7,8,8,Kennedy,A7,Centro Comercial Plaza de Las Américas,CC Plaza de Las Americas,CRA 71 D # 6 - 94 Sur,-74.13720239,4.61844261,44,AMERICAS,inside_source_locality
+8-A9,1600108A9,8,8,Kennedy,A9,Instituto Comercial Loreto de Castilla,Loreto de Castilla,CLL 8 # 78 C - 60,-74.14319127,4.63917075,46,CASTILLA,inside_source_locality
+8-B1,1600108B1,8,8,Kennedy,B1,Polideportivo Castilla,Polideportivo Castilla,CLL 8 B Bis # 73 B - 1 / CRA 75 8 A - 31,-74.13941411,4.63978251,46,CASTILLA,inside_source_locality
+8-A8,1600108A8,8,8,Kennedy,A8,Almacén Metro Alquería,Metro Alqueria,AV CRA 68 # 38 - 87 Sur / CRA 68 # 38A - 15,-74.13464628,4.60267998,45,CARVAJAL,inside_source_locality
+9-42,160010942,9,9,Fontibon,42,Centro Comercial Trebolis,Trebolis,CRA 90 # 17 - 95 /Cl 19A # 91 - 05,-74.13645249,4.66585292,112,GRANJAS DE TECHO,inside_source_locality
+10-82,160011082,10,10,Engativá,82,Salón Comunal El Verdum,Salón Comunal El Verdum,CRA 110 C # 64 D - 03,-74.1312075,4.7024373,74,ENGATIVA,inside_source_locality
+10-83,160011083,10,10,Engativá,83,Colegio Distrital General Santander Sede C,La Faena,CRA 122 A Bis # 69 C - 21,-74.13791883,4.71757545,74,ENGATIVA,inside_source_locality
+10-84,160011084,10,10,Engativá,84,Salón Comunal Bosques de Mariana,Bosques de Mariana,CRA 107 B Bis # 70 F - 50,-74.12430789,4.70785448,73,GARCES NAVAS,inside_source_locality
+10-85,160011085,10,10,Engativá,85,Centro Comercial Nuestro Bogotá,Centro Comercial Nuestro Bogotá,AV CRA 86 # 55 A - 75,-74.11529594,4.68360132,116,ALAMOS,inside_source_locality
+10-86,160011086,10,10,Engativá,86,Universidad De Ciencias Aplicadas Y Ambientales - U.D.C.A.,Universidad UDCA,AV Boyacá # 66 A - 61,-74.09924366,4.68166796,30,BOYACA REAL,inside_source_locality
+10-87,160011087,10,10,Engativá,87,Gimnasio Santa Maria del Alcazar,Gimnasio Santa Maria del Alcazar,CRA 79 # 64 C - 48,-74.1081736,4.68351221,31,SANTA CECILIA,inside_source_locality
+10-88,160011088,10,10,Engativá,88,Colegio Privado RR Oblatas Al Divino Amor,Colegio RR Oblatas Al Divino Amor,CRA 71 B # 52 - 30,-74.10683513,4.66938293,31,SANTA CECILIA,inside_source_locality
+11-99,160011199,11,11,Suba,99,Colegio Distrital Compartir Sede B,Compartir Sede B IED,CLL 149 # 117 - 35,-74.10429048,4.75336116,27,SUBA,inside_source_locality
+11-A1,1600111A1,11,11,Suba,A1,Colegio Distrital Villa Elisa Sede B,Villa Elisa Sede B IED,CLL 135 # 94 C - 57,-74.08876333,4.73449123,28,EL RINCON,inside_source_locality
+11-A2,1600111A2,11,11,Suba,A2,Salón Comunal Ciudad Jardín Norte,Salón Comunal Ciudad Jardín Norte,CRA 59 B BIS # 132 - 53,-74.07045662,4.72486583,24,NIZA,inside_source_locality
+11-A3,1600111A3,11,11,Suba,A3,Centro Comercial BIMA,Centro Comercial BIMA,Autopista Norte # 232 - 35,-74.03807322,4.80644827,3,GUAYMARAL,inside_source_locality
+11-A4,1600111A4,11,11,Suba,A4,Colegio Privado Helvetia,Colegio Helvetia,CLL 128 # 71 A - 91,-74.07644962,4.71510136,24,NIZA,inside_source_locality
+12-32,160011232,12,12,Barrios Unidos,32,Colegio Distrital Rafael Bernal Jimenez Sede A,Rafael Bernal Jimenez Sede A,CRA 53 # 75 - 17,-74.07350124,4.67184754,22,DOCE DE OCTUBRE,inside_source_locality
+13-32,160011332,13,13,Teusaquillo,32,Centro Comercial Galerías,Centro Comercial Galerías,CLL 53 B # 25 - 21,-74.07494142,4.6431628,100,GALERIAS,inside_source_locality
+13-33,160011333,13,13,Teusaquillo,33,Universidad Antonio Nariño,Universidad Antonio Nariño,CLL 58 A Bis # 37 - 94,-74.08236803,4.64993279,106,LA ESMERALDA,inside_source_locality
+14-19,160011419,14,14,Mártires,19,Colegio Privado Bilingüe CEDAM,Colegio Bilingüe CEDAM,CLL 2 B # 27 A - 26,-74.09919004,4.60126812,37,SANTA ISABEL,inside_source_locality
+15-22,160011522,15,15,Antonio Nariño,22,Colegio Privado Comunidad Hermanas de Nuestra Señora de La Paz,Colegio Nuestra Señora de La Paz,AV CRA 27 # 29 - 17 Sur / AV CRA 27 # 29 - 65 Sur,-74.11326543,4.58889525,38,RESTREPO,inside_source_locality
+15-23,160011523,15,15,Antonio Nariño,23,Salón Comunal Ciudad Berna,Salón Comunal Ciudad Berna,CLL 8 Sur # 11 A - 39 / CRA 11 A # 8 - 39 Sur,-74.09086794,4.58533178,35,CIUDAD JARDIN,inside_source_locality
+15-21,160011521,15,15,Antonio Nariño,21,Salón Comunal Eduardo Frei,Salón Comunal Eduardo Frei,CL 32 Sur 29A # 75,-74.11702178,4.59077097,38,RESTREPO,inside_source_locality
+16-45,160011645,16,16,Puente Aranda,45,Salón Comunal Torremolinos I,Salón Comunal Torremolinos I,CRA 52 Bis # 19 - 53 / Cl 19A Sur # 52A - 51,-74.12350126,4.60868864,40,CIUDAD MONTES,inside_source_locality
+16-46,160011646,16,16,Puente Aranda,46,Salón Comunal José Antonio Galán,Salón Comunal José Antonio Galán,DIAG 2 # 57 - 39,-74.12330055,4.61780966,43,SAN RAFAEL,inside_source_locality
+16-47,160011647,16,16,Puente Aranda,47,Salón Comunal Rafael Eucaliptos,Salón Comunal Rafael Eucaliptos,CRA 53 B Bis # 4 C - 04,-74.11451811,4.61952481,43,SAN RAFAEL,inside_source_locality
+16-48,160011648,16,16,Puente Aranda,48,Salón Comunal Nueva Primavera,Salón Comunal Nueva Primavera,CRA 43 B # 4 - 26 /CRA 43 # 4 B - 72,-74.11017335,4.61783849,43,SAN RAFAEL,inside_source_locality
+16-49,160011649,16,16,Puente Aranda,49,Salón Comunal Villa Inés,Salón Comunal Villa Inés,CRA 38 A # 1 D - 30,-74.11175212,4.60637107,40,CIUDAD MONTES,inside_source_locality
+16-50,160011650,16,16,Puente Aranda,50,Salón Comunal Bochica Central,Salón Comunal Bochica Central,CRA 35 # 1 C - 30,-74.10840605,4.60302803,40,CIUDAD MONTES,inside_source_locality
+18-57,160011857,18,18,Rafael Uribe Uribe,57,IDIPRON UPI Molinos (Unidad de Prevención Infantil),IDIPRON UPI Molinos,CRA 5 A Bis # 48N-48 Sur,-74.10886905,4.55316819,54,MARRUECOS,inside_source_locality
+18-58,160011858,18,18,Rafael Uribe Uribe,58,Colegio Distrital Alfredo Iriarte Sede B,El Mirador,DIAG 48 J Sur # 9 - 14,-74.11626097,4.55966006,54,MARRUECOS,inside_source_locality
+18-59,160011859,18,18,Rafael Uribe Uribe,59,Salón Comunal Diana T Sector Ayacucho,Salón Comunal Diana T Sector Ayacucho,CLL 48 X Sur # 2 - 13 Este,-74.10465479,4.54369487,55,DIANA TURBAY,inside_source_locality
+19-68,160011968,19,19,Ciudad Bolívar,68,Colegio Distrital Rogelio Salmona,Rogelio Salmona,CLL 59 Sur # 65 - 42,-74.15492848,4.58734273,65,ARBORIZADORA,inside_source_locality
+19-69,160011969,19,19,Ciudad Bolívar,69,Jardín Infantil Lara Bonilla,Jardín Infantil Lara Bonilla,TRV 49 # 59 C - 15 Sur,-74.15479066,4.57844477,65,ARBORIZADORA,inside_source_locality
+20-6,160012006,20,20,Sumapaz,6,Salón Comunal Nueva Granada,Nueva Granada,Centro Poblado Nueva Granada,-74.358317,3.89036724,,,outside_upz
+11-84,160011184,11,11,Suba,84,Colegio Vista Bella,Colegio Vista Bella,CRA 58 # 167 - 20 / AV CRA 58 # 167 - 20,-74.05878126,4.75009916,18,BRITALIA,inside_source_locality
+11-85,160011185,11,11,Suba,85,Colegio Nueva Zelandia Sede B,Mirandela - Nueva Zelandia,CLL 187 # 49 - 42,-74.04692983,4.76552213,17,SAN JOSE DE BAVARIA,inside_source_locality
+11-86,160011186,11,11,Suba,86,Centro Comercial Santafé,Centro Comercial Santafé,CLL 185 # 45 - 03,-74.04545499,4.76321953,17,SAN JOSE DE BAVARIA,inside_source_locality
+12-22,160011222,12,12,Barrios Unidos,22,Centro Comercial ISERRA 100,ISERRA 100,TRV 55 # 98 A - 66,-74.06459722,4.68782072,21,LOS ANDES,inside_source_locality
+12-23,160011223,12,12,Barrios Unidos,23,Colegio Distrital Jorge Eliecer Gaitán - Sede A,San Miguel,CLL 66 A # 43 - 25 / CLL 66 A # 56 - 25,-74.08108761,4.66505763,22,DOCE DE OCTUBRE,inside_source_locality
+12-24,160011224,12,12,Barrios Unidos,24,Plaza de Los Artesanos,Plaza de Los Artesanos,CRA 60 # 63 A - 52/AV CRA 60 # 63 - 64,-74.08583787,4.66419499,103,PARQUE SALITRE,inside_source_locality
+12-25,160011225,12,12,Barrios Unidos,25,Centro Comercial CAFAM Floresta,CAFAM AV 68,AV CRA 68 # 96 - 50 /AV CRA 68 # 90 - 88,-74.07401912,4.68727792,21,LOS ANDES,inside_source_locality
+13-26,160011326,13,13,Teusaquillo,26,Colegio Nuestra Señora del Pilar,Colegio del Pilar,CLL 62 # 27 A - 12,-74.07527644,4.65073523,100,GALERIAS,inside_source_locality
+13-27,160011327,13,13,Teusaquillo,27,Universidad ECCI - Sede G,Universidad ECCI - Sede G,CRA 19 # 48 - 32,-74.07135073,4.63679985,101,TEUSAQUILLO,inside_source_locality
+13-28,160011328,13,13,Teusaquillo,28,Colegio Santa Clara,Colegio Santa Clara,AV CRA 28 # 35 - 35,-74.07672482,4.624981,101,TEUSAQUILLO,inside_source_locality
+20-5,160012005,20,20,Sumapaz,5,Colegio Campestre Jaime Garzón Sede Santa Rosa,La YE Santa Rosa,Centro Poblado Corregimiento de Santa Rosa,-74.1715042,4.17067321,,,outside_upz
+1-47,160010147,1,1,Usaquén,47,Centro Comercial Belaire Plaza,Centro Comercial Belaire Plaza,CRA 7 # 152 - 54,-74.0244567,4.72691406,13,LOS CEDROS,inside_source_locality
+1-48,160010148,1,1,Usaquén,48,Centro Comercial Palatino,Centro Comercial Palatino,CRA 7 # 138 - 33,-74.02903811,4.71529894,13,LOS CEDROS,inside_source_locality
+1-49,160010149,1,1,Usaquén,49,Fundación Ana Restrepo del Corral,Fundación Ana Restrepo del Corral,CLL 130 # 1 – 10 Este,-74.02224768,4.70502253,14,USAQUEN,inside_source_locality
+2-26,160010226,2,2,Chapinero,26,Colegio Liceo de Cervantes El Retiro,Colegio Liceo de Cervantes El Retiro,CRA 8 # 83 - 29 /CRA 8 # 84A - 37,-74.04943288,4.6645759,88,EL REFUGIO,inside_source_locality
+2-27,160010227,2,2,Chapinero,27,Colegio del Rosario de Santo Domingo,Colegio del Rosario de Santo Domingo,CLL 68 # 0 - 51 Este /CLL 68 # 1 - 51 Este,-74.05235527,4.64758397,90,PARDO RUBIO,inside_source_locality
+2-28,160010228,2,2,Chapinero,28,Parqueadero Chicó CLL 90,Parqueadero Chicó CLL 90,CRA 16 # 90 - 06,-74.05370365,4.6749252,97,CHICO LAGO,inside_source_locality
+3-21,160010321,3,3,Santa Fe,21,Centro Comercial San Martín,Centro Comercial San Martín,CRA 7 # 32 - 84 / CLL 33 # 6B - 95,-74.0676718,4.61965599,91,SAGRADO CORAZON,inside_source_locality
+3-22,160010322,3,3,Santa Fe,22,Universidad Antonio Nariño,Universidad Antonio Nariño Santa Fé,CRA 7 # 16 -75 Sede Iberia,-74.07257023,4.60325102,93,LAS NIEVES,inside_source_locality
+3-23,160010323,3,3,Santa Fe,23,Universidad Central,Universidad Central,CRA 5 # 21 - 38,-74.06934482,4.60637405,93,LAS NIEVES,inside_source_locality
+4-46,160010446,4,4,San Cristóbal,46,Salón Comunal La Roca,Salón Comunal La Roca,CLL 6 B Bis Sur # 5 - 29 Este,-74.07772638,4.57792443,32,SAN BLAS,inside_source_locality
+4-47,160010447,4,4,San Cristóbal,47,Colegio Distrital San Cristóbal Sur - Sede A,Las Mercedes II,CRA 10 D Este # 17 B - 46 Sur,-74.07942862,4.56965907,32,SAN BLAS,inside_source_locality
+4-48,160010448,4,4,San Cristóbal,48,Colegio Distrital Montebello Sede B,Montebello Sede B,CLL 28 Sur # 1 A - 37 Este,-74.08962597,4.56375725,34,20 DE JULIO,inside_source_locality
+4-49,160010449,4,4,San Cristóbal,49,Colegio Distrital El Rodeo Sede A,El Rodeo Sede A,CLL 40 A Sur # 2 - 56 Este,-74.09524106,4.55132533,50,LA GLORIA,inside_source_locality
+4-50,160010450,4,4,San Cristóbal,50,Colegio Distrital Moralba Sede A,Moralba,CRA 16 A Este # 42 C - 80 Sur,-74.08128968,4.54302155,50,LA GLORIA,inside_source_locality
+4-51,160010451,4,4,San Cristóbal,51,Colegio Distrital Nueva Delhi,Nueva Delhi,CLL 62 A Sur # 14 I - 33 Este,-74.08716431,4.52816405,51,LOS LIBERTADORES,inside_source_locality
+4-52,160010452,4,4,San Cristóbal,52,Colegio Distrital Tomás Rueda Vargas Sede B,Tomás Rueda Vargas Sede B,CRA 5 Este # 29 A - 25 Sur,-74.088328,4.56155381,32,SAN BLAS,inside_source_locality
+4-53,160010453,4,4,San Cristóbal,53,Colegio Distrital Entre Nubes Sur  Oriental Sede A - Anibal Fernández de Soto,Entre Nubes Sede A,CRA 1 D Este # 43 B - 28 Sur,-74.09763958,4.54774293,50,LA GLORIA,inside_source_locality
+5-39,160010539,5,5,Usme,39,Jardín Infantil la Fortaleza del Oso,Jardín Infantil la Fortaleza del Oso,CLL 71 D Sur # 14 - 64,-74.1182848,4.52047462,57,GRAN YOMASA,inside_source_locality
+5-40,160010540,5,5,Usme,40,Colegio Distrital Rural El Uval,Colegio Rural El Uval,Vereda el Uval Km. 8 Autopista al Llano,-74.10525,4.47759,61,CIUDAD USME,inside_source_locality
+5-41,160010541,5,5,Usme,41,Jardín Infantil Entre Nubes,Bolonia,CLL 79 Sur # 10 - 50 Este,-74.09865009,4.51101155,57,GRAN YOMASA,inside_source_locality
+6-27,160010627,6,6,Tunjuelito,27,Colegio Distrital San Benito Abad,San Benito Abad,CLL 58 # 19 B - 67 Sur / CLL 58 # 19 B - 63 Sur,-74.13704436,4.56659538,62,TUNJUELITO,inside_source_locality
+6-28,160010628,6,6,Tunjuelito,28,Colegio Distrital Ciudad de Bogotá Sede B,Ciudad de Bogotá Sede B,CRA 25 # 55 A - 18 Sur / CRA 27 # 55 A - 18 Sur,-74.14025,4.57746,42,VENECIA,inside_source_locality
+6-29,160010629,6,6,Tunjuelito,29,Colegio Privado Parroquial San Carlos,Parroquial San Carlos,CRA 18 A # 53 - 54 Sur,-74.13012683,4.56644776,62,TUNJUELITO,inside_source_locality
+6-30,160010630,6,6,Tunjuelito,30,Jardín Infantil Carmen Sur,Jardín Infantil Carmen Sur,CRA 28 # 48 A - 17 Sur,-74.1317017,4.58283946,42,VENECIA,inside_source_locality
+6-31,160010631,6,6,Tunjuelito,31,Colegio Distrital Instituto Técnico Piloto Sede C,Instituto Técnico Piloto Sede C,CLL 54 Sur # 37 A - 37,-74.14222783,4.58682229,42,VENECIA,inside_source_locality
+7-63,160010763,7,7,Bosa,63,Colegio Distrital La Concepción Sede C,La Concepción,CRA 87 C # 67 - 18 Sur,-74.19331434,4.62169103,84,BOSA OCCIDENTAL,inside_source_locality
+7-64,160010764,7,7,Bosa,64,Colegio Distrital Villas del Progreso,Villas del Progreso,CRA 89 Bis A # 72 A - 13 Sur,-74.20077283,4.62514943,84,BOSA OCCIDENTAL,inside_source_locality
+7-65,160010765,7,7,Bosa,65,Colegio Privado Liceo Cultural López Osorio,Liceo López Osorio,CLL 71 Sur # 87N-15 /CLL 71 Sur # 87N - 21,-74.19814927,4.62233926,84,BOSA OCCIDENTAL,inside_source_locality
+7-66,160010766,7,7,Bosa,66,Colegio Distrital Soledad Acosta de Samper,Soledad Acosta de Samper,CLL 50 Sur # 98 B - 70,-74.18609409,4.64322132,86,EL PORVENIR,inside_source_locality
+7-67,160010767,7,7,Bosa,67,Colegio Distrital La Bici,Clarelandia,CRA 81 A # 58 J - 45 Sur,-74.18236763,4.61373631,85,BOSA CENTRAL,inside_source_locality
+8-94,160010894,8,8,Kennedy,94,Colegio Privado Cooperativo de Timiza,Colegio Cooperativo Timiza,CRA 72 M # 40 F - 18 Sur,-74.15073441,4.60865293,48,TIMIZA,inside_source_locality
+8-95,160010895,8,8,Kennedy,95,Colegio Distrital La Floresta Sur Sede B,Floresta Sur Sede B,CLL 2 # 68 B - 08 Sur / CLL 2 # 68 B - 82 Sur,-74.12772213,4.62047855,44,AMERICAS,inside_source_locality
+8-96,160010896,8,8,Kennedy,96,Colegio Distrital Carlos Arango Vélez Sede A,Carlos Arango Vélez Sede A,TRV 68 G # 35 A - 42 Sur,-74.13534321,4.60780037,45,CARVAJAL,inside_source_locality
+9-39,160010939,9,9,Fontibon,39,Colegio Privado Parroquial San José,San José,CRA 100 # 24 - 60,-74.13355041,4.68171474,115,CAPELLANIA,inside_source_locality
+9-40,160010940,9,9,Fontibon,40,Salón Comunal San José - El Jardín,El Jardín,CRA 100 # 24 D - 65,-74.13252332,4.68324864,115,CAPELLANIA,inside_source_locality
+9-41,160010941,9,9,Fontibon,41,Jardín Infantil Villa Andrea,Villa Andrea,CLL 17 C # 134 - 70 Manzana 1,-74.16663542,4.69540226,76,FONTIBON SAN PABLO,inside_source_locality
+10-70,160011070,10,10,Engativá,70,Colegio Distrital San José Norte Sede B,Soledad Norte,CRA 83 # 73 A - 80 / CLL 74 # 82 - 37,-74.102306,4.69603977,30,BOYACA REAL,inside_source_locality
+10-71,160011071,10,10,Engativá,71,Colegio Distrital Jorge Gaitán Sede A,Sidauto,CRA 89 A # 86 - 38,-74.09904224,4.70901795,29,MINUTO DE DIOS,inside_source_locality
+10-72,160011072,10,10,Engativá,72,Colegio Distrital Jorge Gaitán Sede B,Paris Gaitán,CRA 84 # 83 - 71,-74.09788414,4.70480579,29,MINUTO DE DIOS,inside_source_locality
+10-73,160011073,10,10,Engativá,73,Colegio Distrital La Palestina Sede A - Centro de Estudios del Niño,La Palestina,CRA 76 # 79 - 40,-74.093553,4.69715964,30,BOYACA REAL,inside_source_locality
+10-74,160011074,10,10,Engativá,74,Salón Comunal de Villaluz,El Encanto,CRA 77 A # 64 B - 03,-74.10735813,4.68172946,31,SANTA CECILIA,inside_source_locality
+10-75,160011075,10,10,Engativá,75,Colegio Distrital Robert Kennedy Sede B,El Real,CLL 65 A # 76 - 53,-74.10434447,4.68314016,31,SANTA CECILIA,inside_source_locality
+10-76,160011076,10,10,Engativá,76,Salón Comunal Protecho Villa Amalia,Salón Comunal Protecho Villa Amalia,AV CLL 72 # 110 - 13,-74.12517639,4.71060631,73,GARCES NAVAS,inside_source_locality
+10-77,160011077,10,10,Engativá,77,Colegio Privado Centro Lestonac Compañía de María,Colegio Lestonac,CRA 87 A # 84 A - 81,-74.09906524,4.70803296,29,MINUTO DE DIOS,inside_source_locality
+10-78,160011078,10,10,Engativá,78,Colegio Distrital Fe y Alegría,Comunidad Colegio Fe y Alegría,CRA 105 A # 74 A - 15,-74.11897249,4.70819928,73,GARCES NAVAS,inside_source_locality
+10-79,160011079,10,10,Engativá,79,Centro Comercial Punto 72,Centro Comercial Punto 72,CLL 72 A # 86 - 49 Parqueadero,-74.10605958,4.69691933,30,BOYACA REAL,inside_source_locality
+10-80,160011080,10,10,Engativá,80,Universidad Minuto de Dios,Uniminuto Escuela de Convenciones,CLL 89 # 87 A - 50,-74.09691179,4.7107497,29,MINUTO DE DIOS,inside_source_locality
+10-81,160011081,10,10,Engativá,81,Coliseo Parque San Andrés,Parque San Andrés,CLL 82 # 100 A - 91,-74.1100201,4.71339411,72,BOLIVIA,inside_source_locality
+11-87,160011187,11,11,Suba,87,Colegio Distrital Tibabuyes Universal Sede B,Tibabuyes Universal Sede B - IED,CRA 118 # 136 -14,-74.10474296,4.74180864,28,EL RINCON,inside_source_locality
+11-88,160011188,11,11,Suba,88,Colegio Distrital La Toscana Lisboa,La Toscana Lisboa Sede A - IED,CLL 132 D Bis # 132 - 05,-74.11344447,4.74352781,71,TIBABUYES,inside_source_locality
+11-89,160011189,11,11,Suba,89,Centro Comercial Centro Suba,Centro Comercial Centro Suba,CLL 145 # 91 - 19,-74.08555759,4.73765594,28,EL RINCON,inside_source_locality
+11-90,160011190,11,11,Suba,90,Colegio Distrital Álvaro Gómez Hurtado Sede B,Alvaro Gomez Hurtado Sede B - IED,CLL 133 # 98 B -24,-74.0933757,4.73526197,28,EL RINCON,inside_source_locality
+11-91,160011191,11,11,Suba,91,Colegio Distrital Juan Lozano y Lozano Sede B,Juan Lozano y Lozano Sede B - IED,CRA 99 # 154 - 26,-74.08667298,4.75349572,27,SUBA,inside_source_locality
+11-92,160011192,11,11,Suba,92,Colegio Distrital La Gaitana Sede B,La Gaitana Sede B - IED,CLL 132 D # 123 B - 65 / CRA 124 # 132B - 02,-74.10669834,4.73971803,71,TIBABUYES,inside_source_locality
+11-93,160011193,11,11,Suba,93,Colegio Elisa Mujica Velasquez,Colegio Elisa Mujica Velasquez,CLL 131 C # 126 - 48,-74.11198906,4.73930339,71,TIBABUYES,inside_source_locality
+11-94,160011194,11,11,Suba,94,Colegio Distrital República Dominicana Sede B,República Dominicana Sede B - IED,CRA 123 # 129 D - 22 / CRA 123 # 129 D - 55,-74.10777579,4.73490332,71,TIBABUYES,inside_source_locality
+11-95,160011195,11,11,Suba,95,Centro Comercial Plaza Imperial,Centro Comercial Plaza Imperial,CRA 104 # 148 - 07,-74.09552227,4.74869891,27,SUBA,inside_source_locality
+11-96,160011196,11,11,Suba,96,Salón Comunal El Solar 1,Salón Comunal El Solar,CRA 109 B # 141 A - 36 / CRA 109 B # 141 A 56,-74.09980173,4.74583368,28,EL RINCON,inside_source_locality
+11-97,160011197,11,11,Suba,97,Salón Comunal San Pedro de Tibabuyes,Salón Comunal San Pedro de Tibabuyes,CLL 137 # 145 B - 12,-74.1179344,4.74635541,71,TIBABUYES,inside_source_locality
+12-26,160011226,12,12,Barrios Unidos,26,Colegio Distrital Jorge Eliecer Gaitán - Sede B,Jorge Eliecer Gaitán Sede B Primaria,AV CLL 72 # 58 - 75,-74.0798393,4.67251788,22,DOCE DE OCTUBRE,inside_source_locality
+12-27,160011227,12,12,Barrios Unidos,27,Colegio Distrital República de Panamá - Sede C,República de Panamá Sede C,CLL 78 # 58 - 60,-74.07657953,4.67640876,22,DOCE DE OCTUBRE,inside_source_locality
+12-28,160011228,12,12,Barrios Unidos,28,Colegio Distrital Lorencita Villegas de Santos,Lorencita Villegas de Santos,CRA 52 # 76 - 63,-74.07196112,4.67264018,22,DOCE DE OCTUBRE,inside_source_locality
+12-29,160011229,12,12,Barrios Unidos,29,Colegio Distrital Heladía Mejía Sede A,Heladia Mejía Sede A,CLL 65 A # 15 - 64 / CLL 65 A # 15A - 02,-74.06566703,4.65312352,98,LOS ALCAZARES,inside_source_locality
+12-30,160011230,12,12,Barrios Unidos,30,Colegio Distrital Domingo Faustino Sarmiento Sede B,Domingo Faustino Sarmiento Sede B,CLL 91 A # 60 - 01,-74.06668701,4.68052683,21,LOS ANDES,inside_source_locality
+12-31,160011231,12,12,Barrios Unidos,31,Jardín Infantil Santa Sofía,11 de Noviembre,CRA 28 B #75 - 11,-74.06914314,4.6685027,98,LOS ALCAZARES,inside_source_locality
+13-29,160011329,13,13,Teusaquillo,29,Teatro Bernardo Romero Lozano,Círculo Colombiano de Artistas,CLL 46 # 28 - 30,-74.07842897,4.63613678,100,GALERIAS,inside_source_locality
+13-30,160011330,13,13,Teusaquillo,30,Universidad Nacional - Auditorio Alfonso López Pumarejo,Universidad Nacional Aud Alfonso López,CRA 45 # 26 - 85,-74.08986528,4.63949319,104,PARQUE SIMON BOLIVAR - CAN,inside_source_locality
+13-31,160011331,13,13,Teusaquillo,31,Sistema Distrital de Servicio a la Ciudadanía - Supercade CAD,Supercade CAD,CRA 30 # 25 - 90,-74.08150577,4.62553234,101,TEUSAQUILLO,inside_source_locality
+14-18,160011418,14,14,Mártires,18,Centro Comercial Mallplaza,Mallplaza,AV NQS con 19 /CRA 30 20 54,-74.08655261,4.61922697,102,LA SABANA,inside_source_locality
+15-20,160011520,15,15,Antonio Nariño,20,Salón Comunal Sevilla Sur,Salón Comunal Sevilla Sur,CLL 2 Sur # 13 A - 16,-74.09024812,4.59027577,35,CIUDAD JARDIN,inside_source_locality
+16-43,160011643,16,16,Puente Aranda,43,Colegio Distrital José Joaquín Casas Sede B,José Joaquín Casas Sede B,CRA 56 # 17 - 11,-74.1084016,4.63260621,111,PUENTE ARANDA,inside_source_locality
+16-44,160011644,16,16,Puente Aranda,44,Colegio Distrital Centro Educativo España,Centro Educativo Distrital España,CLL 18 # 35 - 25,-74.09303402,4.62180608,108,ZONA INDUSTRIAL,inside_source_locality
+18-53,160011853,18,18,Rafael Uribe Uribe,53,Colegio Distrital Liceo Femenino Mercedes Nariño,Liceo Femenino Mercedes Nariño,AV CRA 14 # 23 - 24 Sur /CRA 14 # 22A - 24 Sur,-74.10338391,4.58055906,36,SAN JOSE,inside_source_locality
+18-54,160011854,18,18,Rafael Uribe Uribe,54,Colegio Distrital Toribio de Mogrovejo,Colegio Toribio de Mogrovejo,CLL 49 A Sur # 5 A - 37,-74.11225629,4.54735337,55,DIANA TURBAY,inside_source_locality
+18-55,160011855,18,18,Rafael Uribe Uribe,55,Colegio Distrital José Marti Sede A -  Luis López de Mesa,Colegio José Marti  Luis López de Mesa,CRA 13 A # 32 A - 36 Sur / CRA 13 A # 32 A - 96 Sur,-74.11197878,4.57316448,53,MARCO FIDEL SUAREZ,inside_source_locality
+18-56,160011856,18,18,Rafael Uribe Uribe,56,Colegio Distrital  Restrepo Millán Sede A,Colegio  Restrepo Millán Sede A,CLL 40 Sur # 23 - 25,-74.12087787,4.5793017,39,QUIROGA,inside_source_locality
+19-66,160011966,19,19,Ciudad Bolívar,66,Casa de la Cultura Ciudad Bolívar,Casa de la Cultura Ciudad Bolívar,CRA 38 # 59 B - 43 Sur / CL 59B Bis Sur # 38 - 05,-74.15093495,4.57298284,65,ARBORIZADORA,inside_source_locality
+19-61,160011961,19,19,Ciudad Bolívar,61,Salón Comunal Arborizadora Baja,Arborizadora Baja Salón Comunal,CLL 59 A Sur # 42 - 20,-74.15135666,4.5740081,65,ARBORIZADORA,inside_source_locality
+1-58,160010158,1,1,Usaquén,58,Universidad de America Sede Posgrados,Universidad de America Sede Posgrados,CLL 106 # 19 - 18,-74.05121914,4.69290432,16,SANTA BARBARA,inside_source_locality
+1-59,160010159,1,1,Usaquén,59,Colegio Usaquén Sede B,Colegio Usaquén Sede B,AV CRA 9 # 146 - 40,-74.03213259,4.72438417,13,LOS CEDROS,inside_source_locality
+1-60,160010160,1,1,Usaquén,60,Colegio Anglo Colombiano,Colegio Anglo Colombiano,AV CRA 19 # 152 A - 48,-74.0439264,4.73514611,13,LOS CEDROS,inside_source_locality
+1-61,160010161,1,1,Usaquén,61,The English School,The English School,CLL 170 # 15 - 68,-74.03846603,4.74955976,10,LA URIBE,inside_source_locality
+1-62,160010162,1,1,Usaquén,62,Unisanitas 170,Unisanitas 170,CLL 170 # 8 - 41,-74.02720538,4.74727343,10,LA URIBE,inside_source_locality
+2-32,160010232,2,2,Chapinero,32,Centro Felicidad Chapinero,Centro Felicidad Chapinero,CLL 82 # 10 - 69,-74.05270784,4.66546184,88,EL REFUGIO,inside_source_locality
+2-33,160010233,2,2,Chapinero,33,Salón Comunal San Isidro,Salón Comunal San Isidro,CRA 12A Este # 97 - 61,-74.01814591,4.66798957,89,SAN ISIDRO - PATIOS,inside_source_locality
+2-34,160010234,2,2,Chapinero,34,Universidad San Martín,Universidad San Martín,CRA 19 # 80 - 56 Torre 5,-74.05884057,4.6681738,97,CHICO LAGO,inside_source_locality
+2-35,160010235,2,2,Chapinero,35,Colegio Campestre Monteverde,Colegio Campestre Monteverde Sede B,AV CLL 100 # 2 - 87 Este /CRA 1 Este # 101A - 27,-74.03014808,4.67519391,,,outside_upz
+2-36,160010236,2,2,Chapinero,36,Colegio San Martin de Porres Sede A,Colegio San Martin de Porres Sede A,CLL 43 # 3 - 35 Este,-74.05914131,4.62954572,,,outside_upz
+2-37,160010237,2,2,Chapinero,37,Compensar CLL 94,Compensar CLL 94,CLL 94 # 23 - 43,-74.05757925,4.68150943,97,CHICO LAGO,inside_source_locality
+3-24,160010324,3,3,Santa Fe,24,Colegio Los Pinos I.E.D. Sede A,Colegio Los Pinos I.E.D. Sede A,DIAG 4 A # 5 B - 93 Este,-74.06810448,4.5877027,96,LOURDES,inside_source_locality
+4-56,160010456,4,4,San Cristóbal,56,Colegio Atenas I.E.D.,Colegio Atenas I.E.D.,CLL 36 H # Sur 2 -15 Este,-74.09371541,4.55672463,34,20 DE JULIO,inside_source_locality
+4-57,160010457,4,4,San Cristóbal,57,Institución Educativa Distrital I.E.D Rafael Núñez Sede B,Colegio Rafael Núñez IED Sede B,CRA 9A # 22 B - 30 Sur,-74.09540249,4.57399682,34,20 DE JULIO,inside_source_locality
+4-58,160010458,4,4,San Cristóbal,58,IED Gloria Valencia de Castaño,IED Gloria Valencia de Castaño,CRA 15 Este # 63-30 Sur,-74.08698985,4.52702695,51,LOS LIBERTADORES,inside_source_locality
+5-45,160010545,5,5,Usme,45,Santa Librada 2,Santa Librada 2,CLL 75B Sur # 9B - 06,-74.11310003,4.51386644,57,GRAN YOMASA,inside_source_locality
+5-46,160010546,5,5,Usme,46,Colegio Miravalle I.E.D.,Miravalle,DIAG 76 Sur # 3B -30 / DIAG 76 Sur # 14P - 10,-74.11973148,4.51326776,57,GRAN YOMASA,inside_source_locality
+5-47,160010547,5,5,Usme,47,Salón Comunal Nuevo Porvenir,Nuevo Porvenir,CRA 5 B Este 98 B 10 Sur,-74.10432084,4.49268395,59,ALFONSO LOPEZ,inside_source_locality
+5-48,160010548,5,5,Usme,48,Centro Comunitario Alfonso Lopez 1 y 2,Salón Comunal Alfonso Lopez 1 y 2,CRA 6C Este # 89 - 57 Sur,-74.10197504,4.50099038,59,ALFONSO LOPEZ,inside_source_locality
+5-49,160010549,5,5,Usme,49,Salón Comunal Los Comuneros,Salón Comunal Los Comuneros,CRA 2 A Bis # 91 C - 35 Sur,-74.10881431,4.49828299,58,COMUNEROS,inside_source_locality
+5-50,160010550,5,5,Usme,50,Salón Comunal Urbanización Nueva Costarica,Salón Comunal Urbanización Nueva Costarica,CLL 69D # 3 - 15 Sur / CRA 3 Sur # 69D - 21 / CRA 14 L 69C - 13 Sur,-74.12039354,4.52377219,57,GRAN YOMASA,inside_source_locality
+5-51,160010551,5,5,Usme,51,Salón Comunal Central Santamarta,Salón Comunal Central Santamarta,CRA 9 # 68 B 44 Sur,-74.11574948,4.52617861,57,GRAN YOMASA,inside_source_locality
+5-52,160010552,5,5,Usme,52,Salón Comunal y Cultural Danubio Azul,Salón Comunal Danubio Azul,CRA 4 C # 56 30 Sur,-74.11721371,4.53976097,56,DANUBIO,inside_source_locality
+5-53,160010553,5,5,Usme,53,Colegio Isidro Molina,Colegio Isidro Molina,CRA 8 B Bis # 77 - 40 Sur,-74.11076786,4.51081488,57,GRAN YOMASA,inside_source_locality
+6-34,160010634,6,6,Tunjuelito,34,Colegio Distrital Marco Fidel Suarez,Colegio Distrital Marco Fidel Suarez,CRA 25 # 52 C - 92 Sur,-74.13543211,4.57866709,42,VENECIA,inside_source_locality
+6-35,160010635,6,6,Tunjuelito,35,Colegio Distrital Agustín Codazzi,Colegio Distrital Agustín Codazzi,CLL 48 B Sur # 28 - 56,-74.13202585,4.58302746,42,VENECIA,inside_source_locality
+6-36,160010636,6,6,Tunjuelito,36,Salón Comunal Venecia,Salón Comunal Venecia,DIAG 49 # 53 B -02 Sur,-74.14074181,4.59205244,42,VENECIA,inside_source_locality
+6-37,160010637,6,6,Tunjuelito,37,Centro Felicidad,Centro Felicidad,CLL 58 A Sur # 19C - 66,-74.1387346,4.57063788,42,VENECIA,inside_source_locality
+7-72,160010772,7,7,Bosa,72,Institución Educativa Distrital Esmeralda Arboleda Cadavid I.E.D.,Esmeralda Arboleda,CLL 71A Sur # 83B - 30,-74.194898,4.61591686,85,BOSA CENTRAL,inside_source_locality
+7-73,160010773,7,7,Bosa,73,Institución Educativa Distrital El Motorista,El Motorista,CLL 57 Ñ Sur # 75 F - 27,-74.17560885,4.59789475,49,APOGEO,inside_source_locality
+7-74,160010774,7,7,Bosa,74,Institución Educativa Distrital Grancolombiano Sede Charles de Gaulle I.E.D.,Charles de Gaulle,DIAG 73 D Bis Sur # 79 - 23,-74.20165965,4.60642531,85,BOSA CENTRAL,inside_source_locality
+7-75,160010775,7,7,Bosa,75,Institución Educativa Distrital Laura Herrera de Varela I.E.D.,Laura Herrera,CRA 89 B # 54 F 20 Sur- Bosa Brasil,-74.18737622,4.63158813,84,BOSA OCCIDENTAL,inside_source_locality
+7-76,160010776,7,7,Bosa,76,Institución Educativa Distrital Nuevo Chile I.E.D. Sede B,Rodrigo de Bastidas,CLL 56 A Sur # 72 A 54,-74.16482198,4.6016548,49,APOGEO,inside_source_locality
+7-77,160010777,7,7,Bosa,77,Institución Educativa Distrital Ciudadela El Recreo Sonia Osorio de Saint-Malo I.E.D.,Sonia Osorio,CRA 97 C # 65-02 Sur,-74.19915536,4.63395465,87,TINTAL SUR,inside_source_locality
+7-78,160010778,7,7,Bosa,78,Colegio I.E.D. Villas del Progreso Sede Primera Infancia,Villas del Progreso Primera Infancia,CLL 55 Sur # 103-96,-74.19398736,4.64360905,86,EL PORVENIR,inside_source_locality
+7-79,160010779,7,7,Bosa,79,Institución Educativa Distrital Brasilia Bosa Sede D I.E.D.,Senderos de Porvenir Primera Infancia,CRA 98 # 54C-04 Sur,-74.18989757,4.63901354,86,EL PORVENIR,inside_source_locality
+7-80,160010780,7,7,Bosa,80,Almacén Jumbo Autopista Sur,Jumbo Autopista Sur,CLL 57R Sur # 72-20,-74.16633853,4.59620809,49,APOGEO,inside_source_locality
+8-B2,1600108B2,8,8,Kennedy,B2,Colegio Feliza Bursztyn,Colegio Feliza Bursztyn IED,CLL 1 # 69 A - 07,-74.12948388,4.62184807,44,AMERICAS,inside_source_locality
+8-B3,1600108B3,8,8,Kennedy,B3,Colegio María Betsabe Espinal IED,Colegio María Betsabe Espinal IED,CLL 45 Sur # 72Q - 20,-74.15503552,4.60512063,48,TIMIZA,inside_source_locality
+8-B4,1600108B4,8,8,Kennedy,B4,Colegio El Ferrol La Paz IED,Colegio El Ferrol La Paz IED,CRA 69 # 9C -30 / CRA 69 # 9C - 60 / CRA 69 # 9C - 52,-74.12634346,4.63480431,113,BAVARIA,inside_source_locality
+8-B5,1600108B5,8,8,Kennedy,B5,Liceo Samario,Liceo Samario,CRA 74 # 42C - 80 Sur,-74.15777124,4.61058309,48,TIMIZA,inside_source_locality
+8-B6,1600108B6,8,8,Kennedy,B6,Salón INSTMAR - Instituto Marsella,Salón INSTMAR - Instituto Marsella,CRA 70 # 6 C - 50,-74.13063682,4.63154556,113,BAVARIA,inside_source_locality
+8-B7,1600108B7,8,8,Kennedy,B7,Colegio Gimnasio Moderno Castilla,Gimnasio Moderno Castilla,AV CLL 8 # 78C - 04,-74.14266834,4.638837,46,CASTILLA,inside_source_locality
+8-B8,1600108B8,8,8,Kennedy,B8,Salón Comunal Las Américas,Salón Comunal Las Américas,CLL 3 A # 69 B - 19,-74.12952597,4.62539796,44,AMERICAS,inside_source_locality
+8-B9,1600108B9,8,8,Kennedy,B9,Salón Comunal Valencia y Bombay,Salón Comunal Valencia y Bombay,CRA 72G # 39C Sur - 02 / CRA 72G # 39C - 20 Sur,-74.14430068,4.60637257,45,CARVAJAL,inside_source_locality
+8-C1,1600108C1,8,8,Kennedy,C1,Salón Comunal Nuevas Delicias,Salón Comunal Nuevas Delicias,CLL 44 F Sur # 72 B - 36,-74.14703322,4.59951215,45,CARVAJAL,inside_source_locality
+8-C2,1600108C2,8,8,Kennedy,C2,Liceo Carmelitas,Liceo Carmelitas,CRA 77 K # 57 D - 23 Sur,-74.17329448,4.60624128,48,TIMIZA,inside_source_locality
+8-C3,1600108C3,8,8,Kennedy,C3,Salón Comunal Casablanca,Casablanca I,CRA 79B # 50 - 00 / CRA 79B # 50 - 51 Sur,-74.16994461,4.61603145,47,KENNEDY CENTRAL,inside_source_locality
+8-C4,1600108C4,8,8,Kennedy,C4,Salón Comunal Casablanca 33,Casablanca 33,CRA 79 B # 46 - 70 Sur / CRA 79B # 46 - 16 S,-74.16714107,4.61804008,47,KENNEDY CENTRAL,inside_source_locality
+8-C5,1600108C5,8,8,Kennedy,C5,Colegio San Jose - Sede B,IED Colegio San Jose Sede B,CRA 78 N Bis # 45 - 60 Sur,-74.16573839,4.61651776,47,KENNEDY CENTRAL,inside_source_locality
+8-C6,1600108C6,8,8,Kennedy,C6,Colegio Gustavo Rojas Pinilla -Sede B,Col. Gustavo Rojas Pinilla -Sede B,CRA 84 D # 13 - 65 / CRA 81 D # 13 - 65,-74.1394833,4.65259737,46,CASTILLA,inside_source_locality
+9-44,160010944,9,9,Fontibon,44,Colegio San Gabriel Modelia,Colegio San Gabriel Modelia,CLL 22F # 85 -05 /CLL 22F # 85 - 09,-74.12752524,4.66723486,114,MODELIA,inside_source_locality
+9-45,160010945,9,9,Fontibon,45,Institución Educativa Gimnasio Fidel Cano,Gimnasio Fidel Cano Modelia,CLL 23 # 81 D - 11,-74.12582192,4.6659374,114,MODELIA,inside_source_locality
+9-46,160010946,9,9,Fontibon,46,Institución Educativa Distrital Integrado Sede D,Integrado Sede D Palestina,CRA 113 # 19 A - 80,-74.15004414,4.68385681,75,FONTIBON,inside_source_locality
+9-47,160010947,9,9,Fontibon,47,Institución Educativa Distrital Maria J. Canelones,IED Maria J. Canelones,CLL 16C # 78 - 80 /CLL 16C # 78 - 82,-74.13154579,4.65095708,112,GRANJAS DE TECHO,inside_source_locality
+9-48,160010948,9,9,Fontibon,48,Salón Comunal Puerta de Teja,Salón Comunal Puerta de Teja,CRA 96 A # 25 G - 26,-74.12673708,4.68416695,115,CAPELLANIA,inside_source_locality
+9-43,160010943,9,9,Fontibon,43,Salón Comunal Ferrocaja,Salón Comunal Ferrocaja,CLL 22 H # 96 D - 50,-74.13608561,4.67361438,75,FONTIBON,inside_source_locality
+10-89,160011089,10,10,Engativá,89,Colegio Antonio Nariño Sede 2,Colegio Antonio Nariño Sede 2,CLL 67 # 73 A - 15,-74.10069275,4.68299409,30,BOYACA REAL,inside_source_locality
+10-90,160011090,10,10,Engativá,90,CUR de Compensar,CUR de Compensar,AV CRA 68 # 49A - 47,-74.09856682,4.66017108,105,JARDIN BOTANICO,inside_source_locality
+10-91,160011091,10,10,Engativá,91,Colegio Garces Navas Sede B,Colegio Garces Navas Sede B,CRA 104 A # 77 C - 50,-74.11645032,4.71156654,73,GARCES NAVAS,inside_source_locality
+10-92,160011092,10,10,Engativá,92,Colegio Floridablanca (IED) Sede B,Colegio Floridablanca (IED) Sede B,CRA 89 # 66 A - 14,-74.11149035,4.69153126,30,BOYACA REAL,inside_source_locality
+10-93,160011093,10,10,Engativá,93,Colegio Instituto Técnico Laureano Gomez (IED) Sede A,Col. Inst Tec Laureano Gomez (IED) Sede A,CLL 90 A # 95 A - 56 /CL 90 A # 95 D – 56,-74.10140051,4.71800307,29,MINUTO DE DIOS,inside_source_locality
+10-94,160011094,10,10,Engativá,94,Colegio Lucila Rubio de Laverde (IED),Colegio Lucila Rubio de Laverde (IED),CLL 77B # 129 - 80 / DG 77 B # 129 - 80,-74.13652519,4.72447928,73,GARCES NAVAS,inside_source_locality
+10-95,160011095,10,10,Engativá,95,Salón Comunal Villas de Granada,Salón Comunal Villas de Granada,CLL 77C # 111 - 51 / CL 78 # 111 - 51,-74.1212358,4.71637033,73,GARCES NAVAS,inside_source_locality
+10-96,160011096,10,10,Engativá,96,Colegio Antonio Villavicencio Sede B,Colegio Antonio Villavicencio Sede B,CRA 113 C # 63 F - 18,-74.14034227,4.7092171,74,ENGATIVA,inside_source_locality
+10-97,160011097,10,10,Engativá,97,Colegio Floridablanca (IED) Sede C,Colegio Floridablanca (IED) Sede C,CRA 90 B # 71-12 / CRA 90B # 71 - 50,-74.11024991,4.69701278,30,BOYACA REAL,inside_source_locality
+10-98,160011098,10,10,Engativá,98,Colegio Distrital Rodolfo Llinas (IED) Sede B,Colegio Distrital Rodolfo Llinas Sede B,CLL 87 # 102 - 55,-74.10704418,4.71907212,72,BOLIVIA,inside_source_locality
+11-A5,1600111A5,11,11,Suba,A5,Centro de Felicidad Las Cometas,Centro de Felicidad Las Cometas,AV SUBA RINCON DIAG 127A # 81 - 26 / AV SUBA RINCON DIAG 127A # 81 - 36,-74.08610222,4.71333618,24,NIZA,inside_source_locality
+11-A6,1600111A6,11,11,Suba,A6,Colegio Distrital Veintiún Ángeles Sede B,Tuna Alta,CLL 155A # 88 - 05,-74.07865152,4.74990585,27,SUBA,inside_source_locality
+11-A7,1600111A7,11,11,Suba,A7,Coliseo Tibabuyes,Coliseo Tibabuyes,CLL 139 # 127 C - 48,-74.1102329,4.74597363,71,TIBABUYES,inside_source_locality
+11-A8,1600111A8,11,11,Suba,A8,Centro Felicidad Fontanar del Río,Centro Felicidad Fontanar del Río,DIAG 145 # 138 A - 10,-74.11067523,4.75417983,71,TIBABUYES,inside_source_locality
+11-A9,1600111A9,11,11,Suba,A9,Colegio Jaime Niño Diez,Colegio Jaime Niño Diez,AV CRA 109 B # 145 - 17,-74.09904508,4.74885575,27,SUBA,inside_source_locality
+11-B1,1600111B1,11,11,Suba,B1,Salón Comunal Alcaparros,Salón Comunal Alcaparros,CLL 132 B Bis # 105 - 00 / CL 132 # 105 B - 00,-74.10094384,4.73675735,28,EL RINCON,inside_source_locality
+11-B2,1600111B2,11,11,Suba,B2,Salón Comunal Amberes,Salón Comunal Amberes,CRA 92 # 128 B - 41,-74.09103835,4.72279088,28,EL RINCON,inside_source_locality
+11-B3,1600111B3,11,11,Suba,B3,Salón Comunal Bilbao,Salón Comunal Bilbao,CLL 144 # 147 A - 13,-74.11774138,4.75277352,71,TIBABUYES,inside_source_locality
+11-B4,1600111B4,11,11,Suba,B4,Salón Comunal Lisboa,Salón Comunal Lisboa,CRA 151 Bis #132 A-05,-74.12137761,4.74348269,71,TIBABUYES,inside_source_locality
+11-B5,1600111B5,11,11,Suba,B5,Salón Comunal El Pórtico,Salón Comunal El Pórtico,CLL 141 A # 99 B - 02,-74.09183928,4.74277456,28,EL RINCON,inside_source_locality
+11-B6,1600111B6,11,11,Suba,B6,Salón Comunal Villa Hermosa,Salón Comunal Villa Hermosa,CRA 101 # 158 - 43,-74.0874261,4.75735646,27,SUBA,inside_source_locality
+12-33,160011233,12,12,Barrios Unidos,33,Corporación Universitaria UNITEC,UNITEC,CLL 73 # 20A - 52,-74.06288721,4.66174213,98,LOS ALCAZARES,inside_source_locality
+12-34,160011234,12,12,Barrios Unidos,34,Colegio Alexander Humboldt,Colegio Alexander Humboldt,CRA 57 A # 71 - 28 /CRA 57 A # 71 - 36,-74.07840806,4.67097095,22,DOCE DE OCTUBRE,inside_source_locality
+12-35,160011235,12,12,Barrios Unidos,35,Colegio Liceo de Formación Albert Schweitzer,Colegio Liceo de Formación Albert Schweitzer,CRA 49 C # 91 - 55,-74.06373268,4.68019353,21,LOS ANDES,inside_source_locality
+12-36,160011236,12,12,Barrios Unidos,36,Fundación Universitaria Los Libertadores,Fundación Universitaria Los Libertadores,CRA 16 # 63 A - 68,-74.06636836,4.65156143,98,LOS ALCAZARES,inside_source_locality
+12-37,160011237,12,12,Barrios Unidos,37,Casa Comunal y Cultural Rionegro,Casa Comunal y Cultural Rionegro,CLL 94 # 59 - 17,-74.06604031,4.68283081,21,LOS ANDES,inside_source_locality
+13-34,160011334,13,13,Teusaquillo,34,UNIEMPRESARIAL,UNIEMPRESARIAL,CRA 33 A # 30 - 20,-74.08094667,4.63236152,107,QUINTA PAREDES,inside_source_locality
+13-35,160011335,13,13,Teusaquillo,35,Centro de Integración Social,Centro de Integración Social,CLL 39 # 17 - 48,-74.07169017,4.62730416,101,TEUSAQUILLO,inside_source_locality
+13-36,160011336,13,13,Teusaquillo,36,Jardin Infantil Orixas,Jardin Infantil Orixas,CLL 45 C # 24 - 42,-74.07542977,4.63596503,100,GALERIAS,inside_source_locality
+13-37,160011337,13,13,Teusaquillo,37,Universidad UNINPAHU,UNINPAHU,DIAG 40 A # 15 - 59,-74.06999031,4.62898237,101,TEUSAQUILLO,inside_source_locality
+13-38,160011338,13,13,Teusaquillo,38,Universidad de Antioquia,Universidad de Antioquia,CRA 21 # 35 - 53,-74.07488557,4.62537071,101,TEUSAQUILLO,inside_source_locality
+13-39,160011339,13,13,Teusaquillo,39,Salón Comunal La Esmeralda,Salón Comunal La Esmeralda,CLL 45 # 54 - 91,-74.09104758,4.64799651,106,LA ESMERALDA,inside_source_locality
+14-20,160011420,14,14,Mártires,20,Salón Comunal Samper Mendoza,Salón Comunal Samper Mendoza,CRA 26 # 22A - 16,-74.08317054,4.61883487,102,LA SABANA,inside_source_locality
+14-21,160011421,14,14,Mártires,21,Salón Comunal Usatama,Salón Comunal Usatama,CLL 23 Bis # 29A - 40,-74.08347249,4.62300155,102,LA SABANA,inside_source_locality
+14-22,160011422,14,14,Mártires,22,Fundación Universitaria San Mateo,Fundación Universitaria San Mateo,TRV  17 # 25 - 25 / TRV  17 # 25 - 45,-74.07399861,4.61474986,102,LA SABANA,inside_source_locality
+14-23,160011423,14,14,Mártires,23,San Vicente Plaza,San Vicente Plaza,CRA 21 # 9- 31,-74.08936339,4.60509606,102,LA SABANA,inside_source_locality
+14-25,160011425,14,14,Mártires,25,Colegio San Jose,Col San Jose Mártires,CRA 29 # 12 - 83,-74.09219756,4.61235959,102,LA SABANA,inside_source_locality
+14-24,160011424,14,14,Mártires,24,El Castillo de Las Artes,El Castillo de Las Artes,CLL 23 # 14 - 19,-74.07505896,4.61178263,102,LA SABANA,inside_source_locality
+15-24,160011524,15,15,Antonio Nariño,24,Colegio Atanasio Girardot Sede B,Colegio Atanasio Girardot Sede B,CRA 24 B # 4 04 Sur,-74.09777202,4.59329145,38,RESTREPO,inside_source_locality
+16-51,160011651,16,16,Puente Aranda,51,SENA Centro Nacional de Hotelería,SENA Cra 30 Hotel,CRA 30 # 15 - 53,-74.09076132,4.61593842,108,ZONA INDUSTRIAL,inside_source_locality
+16-52,160011652,16,16,Puente Aranda,52,Colegio Distrital Julio Garavito Sede C,Julio Garavito Sede C,CRA 52 # 37 - 05 Sur/ CRA 52 # 37 - 95 Sur,-74.12954271,4.60193713,41,MUZU,inside_source_locality
+16-53,160011653,16,16,Puente Aranda,53,Colegio Benjamín Herrera Sede C,Benjamín Herrera Sede C,CLL 29 Sur # 41A - 42,-74.12139031,4.60140879,41,MUZU,inside_source_locality
+16-54,160011654,16,16,Puente Aranda,54,Coliseo El jazmín,Coliseo El jazmín,CLL 1G # 41A - 39,-74.11639178,4.61016518,40,CIUDAD MONTES,inside_source_locality
+16-55,160011655,16,16,Puente Aranda,55,Salón Comunal El Jazmín,Salón Comunal El Jazmín,AV CRA 50 # 1 D - 28,-74.11672786,4.61024273,40,CIUDAD MONTES,inside_source_locality
+16-56,160011656,16,16,Puente Aranda,56,Salón Comunal Ciudad Montes III,Salón Comunal Ciudad Montes III,CRA 41 # 10 - 06,-74.10316892,4.61763274,108,ZONA INDUSTRIAL,inside_source_locality
+16-57,160011657,16,16,Puente Aranda,57,Movilidad Cll 13,Movilidad Cll 13,AV CLL13 # 37 - 35 ENTRADA CRA 37,-74.09793514,4.61928338,108,ZONA INDUSTRIAL,inside_source_locality
+16-58,160011658,16,16,Puente Aranda,58,Universidad Distrital CLL 13,Universidad Distrital CLL 13,AV CLL 13 # 31 - 75,-74.09323047,4.61517961,108,ZONA INDUSTRIAL,inside_source_locality
+16-59,160011659,16,16,Puente Aranda,59,Salón Comunal Salazar Gomez,Salón Comunal Salazar Gomez,CLL 9 # 65 - 90,-74.11933214,4.62807389,43,SAN RAFAEL,inside_source_locality
+16-60,160011660,16,16,Puente Aranda,60,Salón Comunal Milenta,Salón Comunal Milenta,CRA 56 # 14 - 48 Sur,-74.12518062,4.61479443,43,SAN RAFAEL,inside_source_locality
+16-61,160011661,16,16,Puente Aranda,61,Salón Comunal Cundinamarca,Salón Comunal Cundinamarca,CLL 19c # 34 - 48,-74.09046101,4.62342603,108,ZONA INDUSTRIAL,inside_source_locality
+16-62,160011662,16,16,Puente Aranda,62,Casa de La Cultura La Asunción,Casa de La Cultura La Asunción,CLL 1 H # 32 - 04,-74.10566023,4.60348443,40,CIUDAD MONTES,inside_source_locality
+16-63,160011663,16,16,Puente Aranda,63,Salón Comunal Santa Rita,Salón Comunal Santa Rita,CLL 37A Sur # 39B - 35,-74.12380374,4.59570166,41,MUZU,inside_source_locality
+17-10,160011710,17,17,Candelaria,10,Centro Comercial NEOS,Neos Centro,AV Jimenez CRA 10 ESQ CC NEOS / CLL 12 B # 9 - 40,-74.07637026,4.60144727,94,LA CANDELARIA,inside_source_locality
+18-60,160011860,18,18,Rafael Uribe Uribe,60,Colegio Parroquial Inmaculado Corazón de Maria,Colegio Parroquial Inmaculado Corazón de Maria,CLL 44 Sur # 28-61 / CLL 44 Sur # 27-75,-74.12772884,4.58449033,39,QUIROGA,inside_source_locality
+18-61,160011861,18,18,Rafael Uribe Uribe,61,Instituto San Antonio de Padua,Instituto San Antonio de Padua,CRA 20 # 42A-56 Sur,-74.12304364,4.57578764,39,QUIROGA,inside_source_locality
+18-62,160011862,18,18,Rafael Uribe Uribe,62,Centro Comunitario Champagnat,Centro Comunitario Champagnat,DIAG 54 B Sur # 3F-18,-74.113678,4.54090284,55,DIANA TURBAY,inside_source_locality
+18-63,160011863,18,18,Rafael Uribe Uribe,63,Polideportivo Molinos II,Polideportivo Molinos II,CLL 48 P Bis C Sur # 4 - 30 /CRA 5 # 48P - 10 Sur,-74.10774668,4.55160668,55,DIANA TURBAY,inside_source_locality
+18-64,160011864,18,18,Rafael Uribe Uribe,64,Colegio La Paz IED Sede B Fe y Alegría,Colegio La Paz IED Sede B Fe y Alegría,CRA 4B # 51A-02 Sur,-74.11336783,4.54456211,55,DIANA TURBAY,inside_source_locality
+19-70,160011970,19,19,Ciudad Bolívar,70,Centro Comercial Paseo del Rio,Centro Comercial Paseo del Rio,CRA 57 C Sur # 62 - 60,-74.15391862,4.59863355,65,ARBORIZADORA,inside_source_locality
+19-71,160011971,19,19,Ciudad Bolívar,71,Jardín Infantil Candelaria La Nueva,Jardín Infantil Candelaria La Nueva,CRA 49 C Bis A  # 68 B - 07 Sur,-74.1576008,4.57858515,70,JERUSALEM,inside_source_locality
+19-72,160011972,19,19,Ciudad Bolívar,72,Salón Comunal Las Huertas,Salón Comunal Las Huertas,CRA 75K # 62 D - 42 / CRA 75K # 62 D - 48 Sur,-74.17799174,4.58913008,69,ISMAEL PERDOMO,inside_source_locality
+19-73,160011973,19,19,Ciudad Bolívar,73,Colegio Distrital El Nogal,Colegio Distrital El Nogal,TRV 54 # 71-09 Sur,-74.1645965,4.57644717,69,ISMAEL PERDOMO,inside_source_locality
+19-75,160011975,19,19,Ciudad Bolívar,75,Universidad Minuto de Dios Sede Sur,Universidad Minuto de Dios Sede Sur,CRA 72 # 57 R - 49 Sur / CRA 72 # 57 R - 41 Sur,-74.16738176,4.59356319,69,ISMAEL PERDOMO,inside_source_locality
+19-76,160011976,19,19,Ciudad Bolívar,76,Salón Comunal La Estancia,Salón Comunal La Estancia,CLL 59 # 74 G 55 Sur,-74.17478402,4.59303837,69,ISMAEL PERDOMO,inside_source_locality
+19-77,160011977,19,19,Ciudad Bolívar,77,Col Dist Paradiso Manuela Beltran Sede B,Col Dist Paradiso Manuela Beltran Sede B,CRA 46 A # 71-10 Sur / CRA 46 A # 71-21 Sur,-74.16124981,4.57163092,70,JERUSALEM,inside_source_locality
+19-74,160011974,19,19,Ciudad Bolívar,74,Col Dist Paraíso Mirador Sede Casetas,Col Dist Paraíso Mirador Sede Casetas,CRA 27 Q #71 N - 02 Sur / CLL 71P S # 27P - 08,-74.16399874,4.54968889,67,LUCERO,inside_source_locality

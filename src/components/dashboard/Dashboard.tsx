@@ -60,7 +60,6 @@ export default function Dashboard() {
   const [scrolled, setScrolled] = useState(false);
   const elections = useDashboardStore((s) => s.elections);
   const visible = useDashboardStore((s) => s.visible);
-  const geo = useDashboardStore((s) => s.geo);
   const ensurePreloadedData = useDashboardStore((s) => s.ensurePreloadedData);
   const loadPreloadedConcejo = useDashboardStore((s) => s.loadPreloadedConcejo);
   const { scrollY, scrollYProgress } = useScroll();
@@ -148,7 +147,7 @@ export default function Dashboard() {
               <div className="absolute inset-0 z-0"><MapCanvas /></div>
               <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-ink-950/60 via-transparent to-ink-950/10" />
               <div className="pointer-events-none absolute left-5 top-5 z-[700] hidden rounded-full border border-white/10 bg-ink-950/70 px-3 py-2 text-[10px] uppercase tracking-[.18em] text-mist-900 backdrop-blur md:block"><span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-signal shadow-[0_0_14px_#c4b5fd]" />Live territory canvas</div>
-              <div className="relative z-[800]"><ControlDeck /></div>
+              <div className="pointer-events-none absolute inset-0 z-[800]"><ControlDeck /></div>
             </div>
           </div>
         </section>

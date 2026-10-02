@@ -3,7 +3,7 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import {
-  Election, MapMode, ThemeName, Puesto, GeoFC,
+  Election, MapMode, MarginMetric, ThemeName, Puesto, GeoFC,
   newElection, ensureCand, locKey, parseCSV, pick, toVotes, toCoord,
   puestoKey, simpleName, norm, NON_CANDIDATES, LOC_NAMES,
   loadLocalidadesGeoJSON,
@@ -20,6 +20,8 @@ type State = {
   editing: string;
   mode: MapMode;
   opacity: number;
+  marginMetric: MarginMetric;
+  territoryLevel: "localidades" | "upz" | "puestos";
   geo: GeoFC | null;
   nameProp: string | null;
   theme: ThemeName;
@@ -34,6 +36,8 @@ type Actions = {
   setEditing: (id: string) => void;
   setMode: (m: MapMode) => void;
   setOpacity: (v: number) => void;
+  setMarginMetric: (metric: MarginMetric) => void;
+  setTerritoryLevel: (level: "localidades" | "upz" | "puestos") => void;
   setResultView: (electionId: string, view: "party" | "candidate") => void;
   loadPreloadedConcejo: () => Promise<void>;
   addJournalTopic: (title: string, description?: string) => string | null;
@@ -76,6 +80,8 @@ export const useDashboardStore = create<State & Actions>()(
       editing: "alcaldia",
       mode: "winner",
       opacity: 0.3,
+      marginMetric: "absolute",
+      territoryLevel: "localidades",
       geo: null,
       nameProp: null,
       theme: "tokyo",
@@ -132,6 +138,8 @@ export const useDashboardStore = create<State & Actions>()(
       setEditing: (id) => set({ editing: id }),
       setMode: (m) => set({ mode: m }),
       setOpacity: (v) => set({ opacity: v }),
+      setMarginMetric: (metric) => set({ marginMetric: metric }),
+      setTerritoryLevel: (level) => set({ territoryLevel: level }),
       setResultView: (electionId, view) => set((s) => ({ resultViewByElection: { ...s.resultViewByElection, [electionId]: view } })),
       loadPreloadedConcejo: async () => {
         const current = get().elections.find((e) => e.id === "concejo");
@@ -358,12 +366,18 @@ export const useDashboardStore = create<State & Actions>()(
           return e;
         });
         const isOldEmptySession = !hasAlcaldiaData && saved.visible?.length === 1 && saved.visible[0] === "pres1";
+        const savedMode = (saved as any).mode;
+        const savedTerritoryLevel = (saved as any).territoryLevel;
+        const savedMarginMetric = (saved as any).marginMetric;
         return {
           ...current,
           ...saved,
           elections,
           visible: isOldEmptySession ? ["alcaldia"] : (saved.visible || current.visible),
           editing: isOldEmptySession ? "alcaldia" : (saved.editing || current.editing),
+          mode: savedMode === "split" ? "split" : "winner",
+          territoryLevel: savedTerritoryLevel === "upz" ? "upz" : savedTerritoryLevel === "puestos" || savedMode === "puestos" ? "puestos" : "localidades",
+          marginMetric: savedMarginMetric === "percentage" ? "percentage" : "absolute",
           journalTopics: Array.isArray(saved.journalTopics) ? saved.journalTopics : current.journalTopics,
         };
       },

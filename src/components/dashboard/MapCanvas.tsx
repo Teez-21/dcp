@@ -7,7 +7,8 @@ import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useDashboardStore } from "@/store/useDashboardStore";
-import { Election, colorOf, nameOf, ranking, sumVotes, locKey, locLabel, ResultView, displayColor, displayLocalityVotes, displayName, displayPuestoVotes } from "@/lib/electoral";
+import { Election, GeoFC, ranking, sumVotes, locKey, locLabel, ResultView, displayColor, displayLocalityVotes, displayName, displayPuestoVotes } from "@/lib/electoral";
+import { pollingStationSummary, stationForPuesto } from "@/lib/pollingStations";
 import { MapPin, Info } from "lucide-react";
 
 const CARTO_KEY = "cb1_3vso_1_1dd6b9651234441adf3d9aef";
@@ -27,8 +28,24 @@ function popupHTML(e: Election, votes: Record<string, number>, title: string, ex
 const escapeHtml = (s: string) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c] as string));
 const fmtN = (n: number) => Number(n).toLocaleString("es-CO");
 const uidL = () => "g" + Math.random().toString(36).slice(2, 9);
+const marginValue = (votes: Record<string, number>, metric: "absolute" | "percentage") => {
+  const ranked = ranking(votes);
+  if (!ranked.length) return 0;
+  const difference = ranked[0][1] - (ranked[1]?.[1] || 0);
+  return metric === "absolute" ? difference : (sumVotes(votes) ? difference / sumVotes(votes) : 0);
+};
 
 type LegendData = { election: Election; hint?: string }[];
+
+async function fetchFeatureCollection(path: string): Promise<GeoFC> {
+  const response = await fetch(path);
+  if (!response.ok) throw new Error(`No se pudo cargar ${path}`);
+  const data = await response.json() as GeoFC;
+  if (data?.type !== "FeatureCollection" || !Array.isArray(data.features)) {
+    throw new Error("La capa geográfica no tiene un GeoJSON válido.");
+  }
+  return data;
+}
 
 export default function MapCanvas() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -37,10 +54,15 @@ export default function MapCanvas() {
   const layersRef = useRef<any[]>([]);
   const svgRef = useRef<any>(null);
   const defsRef = useRef<SVGDefsElement | null>(null);
-  const prevGeo = useRef<unknown>(null);
-  const prevPtsCount = useRef(0);
+  const fittedLayerRef = useRef<string | null>(null);
+  const upzLoadStarted = useRef(false);
 
   const [ready, setReady] = useState(false);
+  const [localitiesGeo, setLocalitiesGeo] = useState<GeoFC | null>(null);
+  const [upzGeo, setUpzGeo] = useState<GeoFC | null>(null);
+  const [localitiesError, setLocalitiesError] = useState<string | null>(null);
+  const [upzError, setUpzError] = useState<string | null>(null);
+  const [upzLoading, setUpzLoading] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
   const [legend, setLegend] = useState<LegendData>([]);
   const [legendHint, setLegendHint] = useState<string | null>(null);
@@ -49,16 +71,11 @@ export default function MapCanvas() {
   const visible = useDashboardStore((s) => s.visible);
   const mode = useDashboardStore((s) => s.mode);
   const opacity = useDashboardStore((s) => s.opacity);
-  const geo = useDashboardStore((s) => s.geo);
-  const nameProp = useDashboardStore((s) => s.nameProp);
+  const marginMetric = useDashboardStore((s) => s.marginMetric);
+  const territoryLevel = useDashboardStore((s) => s.territoryLevel);
   const resultViewByElection = useDashboardStore((s) => s.resultViewByElection);
 
   const getE = (id: string) => elections.find((e) => e.id === id);
-  const primary = useMemo(() => {
-    const id = visible[visible.length - 1];
-    return id ? getE(id) : undefined;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [visible, elections]);
 
   // --- Inicializar el mapa una sola vez ---
   useEffect(() => {
@@ -93,13 +110,39 @@ export default function MapCanvas() {
     };
   }, []);
 
-  function featName(props: Record<string, unknown> | null): string {
-    return locKey((props || {})[nameProp || ""]);
+  useEffect(() => {
+    let cancelled = false;
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+    fetchFeatureCollection(`${basePath}/data/localidades.geojson`)
+      .then((collection) => { if (!cancelled) setLocalitiesGeo(collection); })
+      .catch((error: unknown) => { if (!cancelled) setLocalitiesError(error instanceof Error ? error.message : "No se pudo cargar la capa de localidades."); });
+    return () => { cancelled = true; };
+  }, []);
+
+  useEffect(() => {
+    if (territoryLevel !== "upz" || upzGeo || upzLoadStarted.current) return;
+    upzLoadStarted.current = true;
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+    setUpzLoading(true);
+    fetchFeatureCollection(`${basePath}/data/upz-localidades.geojson`)
+      .then((collection) => { setUpzGeo(collection); })
+      .catch((error: unknown) => {
+        upzLoadStarted.current = false;
+        setUpzError(error instanceof Error ? error.message : "No se pudo cargar la capa de UPZ.");
+      })
+      .finally(() => { setUpzLoading(false); });
+  }, [territoryLevel, upzGeo]);
+
+  function localityKey(props: Record<string, unknown> | null): string {
+    return locKey((props || {}).NOMBRE_LOCALIDAD ?? (props || {}).CODIGO_LOCALIDAD);
   }
-  function featLabel(props: Record<string, unknown> | null): string {
-    const raw = (props || {})[nameProp || ""];
-    const k = locKey(raw);
-    return /^L\d+$/.test(k) ? locLabel(raw) : String(raw ?? "Sin nombre");
+  function localityLabel(props: Record<string, unknown> | null): string {
+    return locLabel((props || {}).NOMBRE_LOCALIDAD ?? (props || {}).CODIGO_LOCALIDAD);
+  }
+  function upzLabel(props: Record<string, unknown> | null): string {
+    const code = String((props || {}).CODIGO_UPZ ?? "");
+    const name = String((props || {}).NOMBRE ?? "UPZ sin nombre");
+    return `${code ? `UPZ ${code} · ` : ""}${name}`;
   }
 
   function clearLayers() {
@@ -109,22 +152,28 @@ export default function MapCanvas() {
     if (svgRef.current) { map.removeLayer(svgRef.current); svgRef.current = null; defsRef.current = null; }
   }
 
-  function addLocalidades(e: Election, L: any) {
-    const map = mapRef.current;
-    const view = resultViewByElection?.[e.id] || "candidate";
-    const svg = L.svg({ padding: 0.5 }).addTo(map);
+  function ensureSvgRenderer(L: any) {
+    if (svgRef.current) return svgRef.current;
+    const svg = L.svg({ padding: 0.5 }).addTo(mapRef.current);
     svgRef.current = svg;
     const svgEl: SVGSVGElement = svg._container;
     const defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
     svgEl.insertBefore(defs, svgEl.firstChild);
     defsRef.current = defs;
+    return svg;
+  }
 
-    const layer = L.geoJSON(geo, {
+  function addLocalidades(e: Election, L: any, geoData: GeoFC) {
+    const map = mapRef.current;
+    const view = resultViewByElection?.[e.id] || "candidate";
+    const svg = ensureSvgRenderer(L);
+
+    const layer = L.geoJSON(geoData, {
       renderer: svg,
       style: (f: any) => {
-        const votes = displayLocalityVotes(e, featName(f.properties), view);
+        const votes = displayLocalityVotes(e, localityKey(f.properties), view);
         const rk = ranking(votes);
-        const base = { color: getComputedStyle(document.documentElement).getPropertyValue("--fg").trim(), weight: 1.4, fillOpacity: 0.8 };
+        const base = { color: getComputedStyle(document.documentElement).getPropertyValue("--fg").trim(), weight: 1.25, opacity: 0.78, fillOpacity: opacity };
         if (!rk.length) return { ...base, fillColor: "#999", fillOpacity: 0.12, dashArray: "4 3" };
         if (mode === "winner") return { ...base, fillColor: displayColor(e, rk[0][0], view) };
         const gid = "g-" + uidL();
@@ -142,8 +191,8 @@ export default function MapCanvas() {
         return { ...base, fillColor: `url(#${gid})` };
       },
       onEachFeature: (f: any, l: any) => {
-        const votes = displayLocalityVotes(e, featName(f.properties), view);
-        const label = featLabel(f.properties);
+        const votes = displayLocalityVotes(e, localityKey(f.properties), view);
+        const label = localityLabel(f.properties);
         l.bindTooltip(escapeHtml(label), { sticky: true });
         l.bindPopup(
           votes && ranking(votes).length
@@ -152,6 +201,103 @@ export default function MapCanvas() {
         );
         l.on("mouseover", () => l.setStyle({ weight: 3 }));
         l.on("mouseout", () => layer.resetStyle(l));
+      },
+    }).addTo(map);
+    layersRef.current.push(layer);
+  }
+
+  function upzVotesForElection(e: Election, view: ResultView): Record<string, Record<string, number>> {
+    const totals: Record<string, Record<string, number>> = {};
+    e.puestos.forEach((puesto) => {
+      const station = stationForPuesto(puesto);
+      if (!station?.upz_code) return;
+      const votes = displayPuestoVotes(e, puesto, view);
+      if (!ranking(votes).length) return;
+      const target = totals[station.upz_code] || (totals[station.upz_code] = {});
+      Object.entries(votes).forEach(([candidate, count]) => {
+        target[candidate] = (target[candidate] || 0) + count;
+      });
+    });
+    return totals;
+  }
+
+  function addUpz(e: Election, L: any, geoData: GeoFC) {
+    const map = mapRef.current;
+    const view = resultViewByElection?.[e.id] || "candidate";
+    const votesByUpz = upzVotesForElection(e, view);
+    const svg = ensureSvgRenderer(L);
+    const layer = L.geoJSON(geoData, {
+      renderer: svg,
+      style: (feature: any) => {
+        const props = feature.properties || {};
+        const code = String(props.CODIGO_UPZ ?? "");
+        const stationCount = Number(props.PUESTOS_GEOJSON_COUNT ?? 0);
+        const votes = votesByUpz[code] || {};
+        const ranked = ranking(votes);
+        const base = { color: getComputedStyle(document.documentElement).getPropertyValue("--fg").trim(), weight: 1.05, opacity: 0.8, fillOpacity: opacity };
+        if (!stationCount) return { ...base, color: "#626a78", fillColor: "#858b99", weight: 1.15, fillOpacity: Math.max(0.72, opacity) };
+        if (!ranked.length) return { ...base, fillColor: "#8b93a0", fillOpacity: 0.12, dashArray: "4 3" };
+        if (mode === "winner") return { ...base, fillColor: displayColor(e, ranked[0][0], view) };
+
+        const gid = "g-" + uidL();
+        const total = sumVotes(votes);
+        let cumulative = 0, stops = "";
+        ranked.forEach(([candidate, count]) => {
+          const start = cumulative / total, end = (cumulative + count) / total;
+          const color = displayColor(e, candidate, view);
+          stops += `<stop offset="${start}" stop-color="${color}"/><stop offset="${end}" stop-color="${color}"/>`;
+          cumulative += count;
+        });
+        const gradient = document.createElementNS("http://www.w3.org/2000/svg", "linearGradient");
+        gradient.setAttribute("id", gid); gradient.setAttribute("x1", "0"); gradient.setAttribute("x2", "1"); gradient.setAttribute("y1", "0"); gradient.setAttribute("y2", "0");
+        gradient.innerHTML = stops;
+        defsRef.current!.appendChild(gradient);
+        return { ...base, fillColor: `url(#${gid})` };
+      },
+      onEachFeature: (feature: any, featureLayer: any) => {
+        const props = feature.properties || {};
+        const code = String(props.CODIGO_UPZ ?? "");
+        const label = upzLabel(props);
+        const locality = String(props.NOMBRE_LOCALIDAD || "Localidad sin asignar");
+        const stationCount = Number(props.PUESTOS_GEOJSON_COUNT ?? 0);
+        const votes = votesByUpz[code] || {};
+        const ranked = ranking(votes);
+        featureLayer.bindTooltip(`${escapeHtml(label)} · ${stationCount} puesto${stationCount === 1 ? "" : "s"}`, { sticky: true });
+        featureLayer.bindPopup(
+          !stationCount
+            ? `<div class="dossier-pop"><h4>${escapeHtml(label)}</h4><div class="hint">${escapeHtml(locality)}</div><p>Sin puestos de votación en la fuente geográfica; esta UPZ aparece en gris.</p></div>`
+            : ranked.length
+              ? popupHTML(e, votes, label, ` · ${stationCount} puestos · ${escapeHtml(locality)}`, view)
+              : `<div class="dossier-pop"><h4>${escapeHtml(label)}</h4><div class="hint">${escapeHtml(locality)} · ${stationCount} puestos</div><p>Sin resultados para esta elección.</p></div>`
+        );
+        featureLayer.on("mouseover", () => featureLayer.setStyle({ weight: 2.6 }));
+        featureLayer.on("mouseout", () => layer.resetStyle(featureLayer));
+      },
+    }).addTo(map);
+    layersRef.current.push(layer);
+  }
+
+  function addTerritoryBoundaries(geoData: GeoFC, L: any, level: "localidades" | "upz", emphasize = false) {
+    const map = mapRef.current;
+    const stroke = level === "upz" ? "#b89afc" : "#b5c3d5";
+    const layer = L.geoJSON(geoData, {
+      style: (feature: any) => ({
+        color: stroke,
+        weight: level === "upz" ? 0.85 : 1.1,
+        opacity: 0.9,
+        fillColor: stroke,
+        fillOpacity: emphasize ? 0.13 : 0.025,
+        dashArray: level === "upz" && String(feature?.properties?.ESTADO_CRUCE || "").toLowerCase().includes("parcial") ? "3 2" : undefined,
+      }),
+      onEachFeature: (feature: any, featureLayer: any) => {
+        const props = feature.properties || {};
+        const title = level === "upz" ? upzLabel(props) : localityLabel(props);
+        const locality = level === "upz" ? String(props.NOMBRE_LOCALIDAD || "Localidad no asignada") : "Bogotá D.C.";
+        const note = level === "upz" ? `${Number(props.PUESTOS_GEOJSON_COUNT ?? 0)} puestos georreferenciados.` : "Límite de localidad.";
+        featureLayer.bindTooltip(escapeHtml(title), { sticky: true });
+        featureLayer.bindPopup(`<div class="dossier-pop"><h4>${escapeHtml(title)}</h4><div class="hint">${escapeHtml(locality)}</div><p>${escapeHtml(note)}</p></div>`);
+        featureLayer.on("mouseover", () => featureLayer.setStyle({ weight: level === "upz" ? 2.2 : 2.6 }));
+        featureLayer.on("mouseout", () => layer.resetStyle(featureLayer));
       },
     }).addTo(map);
     layersRef.current.push(layer);
@@ -166,22 +312,32 @@ export default function MapCanvas() {
     let inner = "";
     if (rk[1]) {
       const c2 = displayColor(e, rk[1][0], view);
-      const share = rk[1][1] / rk[0][1];
-      const r2 = R * (0.3 + 0.35 * share);
-      inner = `<circle cx="${R}" cy="${R}" r="${r2}" fill="${c2}" fill-opacity="${op}" stroke="${c2}" stroke-width="1.5"/>`;
+      const r2 = R * 0.4;
+      inner = `<circle cx="${R}" cy="${R}" r="${r2}" fill="${c2}" fill-opacity="${op}" stroke="${c2}" stroke-width="1.25" stroke-opacity="${op}"/>`;
     }
     const html =
-      `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><circle cx="${R}" cy="${R}" r="${R - 1.5}" fill="${c1}" fill-opacity="${op}" stroke="${c1}" stroke-width="1.5" stroke-dasharray="${dash}"/>${inner}</svg>` +
+      `<svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}"><circle cx="${R}" cy="${R}" r="${R - 1.5}" fill="${c1}" fill-opacity="${op}" stroke="${c1}" stroke-width="1.5" stroke-opacity="${op}" stroke-dasharray="${dash}"/>${inner}</svg>` +
       (count ? `<span class="cnt">${count}</span>` : "");
     return L.divIcon({ html, className: "dp-icon", iconSize: [size, size], iconAnchor: [size / 2, size / 2] });
   }
 
-  function addPuestos(e: Election, idx: number, L: any) {
+  function addPuestos(e: Election, idx: number, L: any, maxMargin: number) {
     const map = mapRef.current;
     const view = resultViewByElection?.[e.id] || "candidate";
-    const pts = e.puestos.filter((p) => Number.isFinite(p.lat) && Number.isFinite(p.lng));
+    const pts = e.puestos.flatMap((puesto) => {
+      const station = stationForPuesto(puesto);
+      const lat = Number.isFinite(puesto.lat) ? puesto.lat : station?.latitude;
+      const lng = Number.isFinite(puesto.lng) ? puesto.lng : station?.longitude;
+      return Number.isFinite(lat) && Number.isFinite(lng)
+        ? [{ puesto, station, lat: Number(lat), lng: Number(lng) }]
+        : [];
+    });
     if (!pts.length) return 0;
-    const maxTot = Math.max(1, ...pts.map((p) => sumVotes(p.votes)));
+    const sizeForVotes = (votes: Record<string, number>) => {
+      const margin = marginValue(votes, marginMetric);
+      const scaled = maxMargin > 0 ? Math.min(1, margin / maxMargin) : 0;
+      return Math.round(16 + 38 * Math.sqrt(scaled));
+    };
     const group = L.markerClusterGroup({
       maxClusterRadius: 55,
       showCoverageOnHover: false,
@@ -193,17 +349,21 @@ export default function MapCanvas() {
           n++;
           for (const k in m.options.votes) agg[k] = (agg[k] || 0) + m.options.votes[k];
         });
-        const size = Math.min(76, Math.round(22 + 9 * Math.log2(1 + sumVotes(agg) / maxTot)));
+        const size = sizeForVotes(agg);
         return pointIcon(L, e, agg, size, idx, n, view);
       },
     });
-    pts.forEach((p) => {
-      const votes = displayPuestoVotes(e, p, view);
-      const size = Math.round(14 + 26 * Math.sqrt(sumVotes(votes) / maxTot));
-      const m = L.marker([p.lat, p.lng], { icon: pointIcon(L, e, votes, size, idx, 0), votes });
-      m.bindTooltip(escapeHtml(p.name));
-      m.bindPopup(popupHTML(e, votes, p.name, p.localidad ? " · " + escapeHtml(p.localidad) : "", view));
-      group.addLayer(m);
+    pts.forEach(({ puesto, station, lat, lng }) => {
+      const votes = displayPuestoVotes(e, puesto, view);
+      const size = sizeForVotes(votes);
+      const marker = L.marker([lat, lng], { icon: pointIcon(L, e, votes, size, idx, 0, view), votes });
+      const locality = puesto.localidad || station?.locality_name || "Localidad sin dato";
+      const place = station?.upz_code ? `UPZ ${station.upz_code} · ${station.upz_name}` : station ? "Fuera de los polígonos UPZ" : "Coordenada manual";
+      const margin = marginValue(votes, marginMetric);
+      const marginLabel = marginMetric === "absolute" ? `${fmtN(margin)} votos` : `${(margin * 100).toFixed(1)}%`;
+      marker.bindTooltip(`${escapeHtml(puesto.name)} · ${escapeHtml(place)}`);
+      marker.bindPopup(popupHTML(e, votes, puesto.name, ` · ${escapeHtml(locality)} · ${escapeHtml(place)} · Ventaja: ${marginLabel}`, view));
+      group.addLayer(marker);
     });
     group.addTo(map);
     layersRef.current.push(group);
@@ -216,50 +376,97 @@ export default function MapCanvas() {
     const L = LRef.current;
     clearLayers();
     const vis = visible.map(getE).filter(Boolean) as Election[];
+    const outsideWithVotes = new Set<string>();
+    vis.forEach((e) => {
+      const view = resultViewByElection?.[e.id] || "candidate";
+      e.puestos.forEach((puesto) => {
+        const station = stationForPuesto(puesto);
+        if (station && !station.upz_code && sumVotes(displayPuestoVotes(e, puesto, view)) > 0) outsideWithVotes.add(station.station_key);
+      });
+    });
 
     if (!vis.length) {
       setNotice("Activa al menos una votación en el menú «Elecciones».");
-    } else if (mode === "puestos") {
+    } else if (territoryLevel === "puestos") {
+      if (localitiesGeo) addTerritoryBoundaries(localitiesGeo, L, "localidades", false);
+      const margins = vis.flatMap((e) => {
+        const view = resultViewByElection?.[e.id] || "candidate";
+        return e.puestos.flatMap((puesto) => {
+          const station = stationForPuesto(puesto);
+          const hasCoordinates = Number.isFinite(puesto.lat) && Number.isFinite(puesto.lng) || Boolean(station);
+          return hasCoordinates ? [marginValue(displayPuestoVotes(e, puesto, view), marginMetric)] : [];
+        });
+      });
+      const maxMargin = Math.max(0, ...margins);
       let total = 0;
-      vis.forEach((e) => { total += addPuestos(e, elections.indexOf(e), L); });
-      setNotice(total ? null : "Aún no hay puestos con coordenadas. Impórtalos en «Cargar datos».");
+      vis.forEach((e) => { total += addPuestos(e, elections.indexOf(e), L, maxMargin); });
+      setNotice(total
+        ? outsideWithVotes.size
+          ? `${outsideWithVotes.size} puesto${outsideWithVotes.size === 1 ? "" : "s"} con votos queda${outsideWithVotes.size === 1 ? "" : "n"} fuera de los polígonos UPZ.`
+          : null
+        : "Esta votación aún no tiene puestos vinculados a la capa geográfica.");
+    } else if (territoryLevel === "localidades") {
+      if (!localitiesGeo) setNotice(localitiesError || "Cargando la capa de localidades…");
+      else {
+        setNotice(null);
+        vis.forEach((e) => addLocalidades(e, L, localitiesGeo));
+      }
     } else {
-      if (!geo) setNotice("Carga el GeoJSON de las localidades de Bogotá en «Cargar datos» para ver este modo.");
-      else { setNotice(null); if (primary) addLocalidades(primary, L); }
+      if (!upzGeo) setNotice(upzError || (upzLoading ? "Cargando los límites de UPZ…" : "Preparando la capa de UPZ…"));
+      else {
+        vis.forEach((e) => addUpz(e, L, upzGeo));
+        setNotice(`${pollingStationSummary.upz_without_stations} UPZ sin puestos se muestran en gris.${outsideWithVotes.size ? ` ${outsideWithVotes.size} puesto${outsideWithVotes.size === 1 ? "" : "s"} con votos queda${outsideWithVotes.size === 1 ? "" : "n"} fuera de estos polígonos y no se suma a una UPZ.` : ""}`);
+      }
     }
 
-    const shown = mode === "puestos" ? vis : primary ? [primary] : [];
-    setLegend(shown.map((e) => ({ election: e })));
+    setLegend(vis.map((e) => ({ election: e })));
     setLegendHint(
-      mode === "puestos"
-        ? "Círculo grande: ganador · círculo pequeño: segundo lugar · tamaño según votos · número: puestos agrupados"
-        : mode === "split"
-        ? "Cada localidad se divide en franjas proporcionales a los votos"
-        : null
+      territoryLevel === "puestos"
+        ? `Círculo exterior: ganador · interior: segundo lugar · tamaño según ${marginMetric === "absolute" ? "diferencia absoluta de votos" : "diferencia porcentual del total"} · número: puestos agrupados.`
+        : territoryLevel === "upz"
+          ? `Los votos de los puestos se suman por UPZ; cada elección es una capa transparente. Las UPZ sin puestos tienen relleno gris.`
+          : mode === "split"
+            ? "Cada localidad se divide en franjas proporcionales; las elecciones se superponen con transparencia."
+            : "Cada elección seleccionada se superpone con transparencia; los colores se mezclan en las zonas compartidas."
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, visible, mode, opacity, geo, nameProp, elections, primary, resultViewByElection]);
+  }, [ready, visible, mode, opacity, marginMetric, territoryLevel, localitiesGeo, upzGeo, localitiesError, upzError, upzLoading, elections, resultViewByElection]);
 
-  // --- Encuadrar automáticamente al cargar un GeoJSON nuevo ---
+  // --- Encuadrar automáticamente al cambiar de capa territorial ---
   useEffect(() => {
-    if (!ready || !geo || geo === prevGeo.current) return;
-    prevGeo.current = geo;
-    try { mapRef.current.fitBounds(LRef.current.geoJSON(geo).getBounds()); } catch {}
-  }, [ready, geo]);
+    const geoData = territoryLevel === "upz" ? upzGeo : localitiesGeo;
+    const key = `${territoryLevel}:${geoData?.features.length ?? 0}`;
+    if (!ready || territoryLevel === "puestos" || !geoData || fittedLayerRef.current === key) return;
+    fittedLayerRef.current = key;
+    try { mapRef.current.fitBounds(LRef.current.geoJSON(geoData).getBounds().pad(0.035)); } catch {}
+  }, [ready, territoryLevel, localitiesGeo, upzGeo]);
 
-  // --- Encuadrar cuando aparecen puestos geolocalizados nuevos ---
-  const geocodedCount = useMemo(
-    () => elections.reduce((acc, e) => acc + e.puestos.filter((p) => Number.isFinite(p.lat) && Number.isFinite(p.lng)).length, 0),
-    [elections]
-  );
+  // --- Encuadrar los puestos disponibles de las elecciones seleccionadas ---
+  const visibleGeographyPoints = useMemo(() => {
+    const points: [number, number][] = [];
+    const seen = new Set<string>();
+    visible.forEach((id) => {
+      const election = elections.find((item) => item.id === id);
+      election?.puestos.forEach((puesto) => {
+        const station = stationForPuesto(puesto);
+        const lat = Number.isFinite(puesto.lat) ? puesto.lat : station?.latitude;
+        const lng = Number.isFinite(puesto.lng) ? puesto.lng : station?.longitude;
+        if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+        const key = `${lat},${lng}`;
+        if (seen.has(key)) return;
+        seen.add(key);
+        points.push([Number(lat), Number(lng)]);
+      });
+    });
+    return points;
+  }, [visible, elections]);
   useEffect(() => {
-    if (!ready || mode !== "puestos" || geocodedCount === 0 || geocodedCount === prevPtsCount.current) return;
-    prevPtsCount.current = geocodedCount;
-    const pts: [number, number][] = [];
-    elections.forEach((e) => e.puestos.forEach((p) => Number.isFinite(p.lat) && Number.isFinite(p.lng) && pts.push([p.lat!, p.lng!])));
-    if (pts.length) try { mapRef.current.fitBounds(LRef.current.latLngBounds(pts).pad(0.05)); } catch {}
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, mode, geocodedCount]);
+    if (!ready || territoryLevel !== "puestos" || !visibleGeographyPoints.length) return;
+    const key = `puestos:${visible.join(",")}:${visibleGeographyPoints.length}`;
+    if (fittedLayerRef.current === key) return;
+    fittedLayerRef.current = key;
+    try { mapRef.current.fitBounds(LRef.current.latLngBounds(visibleGeographyPoints).pad(0.05)); } catch {}
+  }, [ready, territoryLevel, visible, visibleGeographyPoints]);
 
   return (
     <div className="relative h-full w-full">
@@ -296,21 +503,32 @@ export default function MapCanvas() {
           animate={{ opacity: 1, x: 0 }}
           className="glass-panel absolute bottom-6 right-4 z-[500] max-h-[42%] max-w-[15.5rem] overflow-auto rounded-2xl p-3.5 text-[12px] shadow-dossier-lg"
         >
-          {legend.map(({ election }) => (
-            <div key={election.id} className="mb-2 last:mb-0">
-              <b className="mb-1 flex items-center gap-1.5 font-display text-[13px]"><MapPin className="h-3 w-3 text-accent" />{election.name}</b>
-              {election.candidates.length ? (
-                election.candidates.map((c) => (
-                  <div key={c.id} className="flex items-center gap-1.5 py-0.5">
-                    <span className="h-2 w-2 rounded-full shadow-[inset_0_0_0_1px_rgba(0,0,0,.18)]" style={{ background: c.color }} />
-                    {c.name}
-                  </div>
-                ))
-              ) : (
-                <div className="text-muted">Sin candidatos</div>
-              )}
+          {legend.map(({ election }) => {
+            const view = resultViewByElection?.[election.id] || "candidate";
+            const items = election.partyMode && view === "party"
+              ? Array.from(new Set(election.candidates.map((candidate) => candidate.party || candidate.name))).map((name) => ({ id: name, name, color: displayColor(election, name, view) }))
+              : election.candidates.map((candidate) => ({ id: candidate.id, name: candidate.name, color: candidate.color }));
+            return (
+              <div key={election.id} className="mb-2 last:mb-0">
+                <b className="mb-1 flex items-center gap-1.5 font-display text-[13px]"><MapPin className="h-3 w-3 text-accent" />{election.name}</b>
+                {items.length ? (
+                  items.map((item) => (
+                    <div key={item.id} className="flex items-center gap-1.5 py-0.5">
+                      <span className="h-2 w-2 rounded-full shadow-[inset_0_0_0_1px_rgba(0,0,0,.18)]" style={{ background: item.color }} />
+                      {item.name}
+                    </div>
+                  ))
+                ) : (
+                  <div className="text-muted">Sin candidatos</div>
+                )}
+              </div>
+            );
+          })}
+          {territoryLevel === "upz" && (
+            <div className="mt-1 flex items-center gap-1.5 border-t border-border-soft pt-1.5 text-[11px] text-muted">
+              <span className="h-2.5 w-2.5 rounded-sm" style={{ background: "#858b99" }} />Sin puestos en la fuente
             </div>
-          ))}
+          )}
           {legendHint && <div className="mt-1.5 border-t border-border-soft pt-1.5 text-[11px] text-muted">{legendHint}</div>}
         </motion.div>
       )}
