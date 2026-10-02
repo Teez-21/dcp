@@ -88,10 +88,29 @@ export const useDashboardStore = create<State & Actions>()(
         set((s) => {
           const alcaldia = s.elections.find((e) => e.id === "alcaldia");
           if (!alcaldia) return {};
-          const hasAlcaldiaData = Object.keys(alcaldia.localidades).length > 0;
+          const preloadedAlcaldiaData = preloadedAlcaldia as Election;
+          const needsAlcaldiaRefresh = alcaldia.dataVersion !== preloadedAlcaldiaData.dataVersion;
           const presidencia = s.elections.find((e) => e.id === "pres1");
           const elections = s.elections.map((e) => {
-            if (e.id === "alcaldia" && !hasAlcaldiaData) return preloadedAlcaldia as Election;
+            if (e.id === "alcaldia" && needsAlcaldiaRefresh) {
+              const savedById = new Map(e.candidates.map((candidate) => [candidate.id, candidate]));
+              const sourceIds = new Set(preloadedAlcaldiaData.candidates.map((candidate) => candidate.id));
+              return {
+                ...e,
+                candidates: [
+                  ...preloadedAlcaldiaData.candidates.map((candidate) => {
+                    const saved = savedById.get(candidate.id);
+                    return saved
+                      ? { ...candidate, name: saved.name, color: saved.color, party: saved.party ?? candidate.party }
+                      : candidate;
+                  }),
+                  ...e.candidates.filter((candidate) => !sourceIds.has(candidate.id)),
+                ],
+                localidades: preloadedAlcaldiaData.localidades,
+                puestos: preloadedAlcaldiaData.puestos,
+                dataVersion: preloadedAlcaldiaData.dataVersion,
+              };
+            }
             if (e.id === "pres1" && (!presidencia || !Object.keys(presidencia.localidades).length)) return preloadedPresidencial as Election;
             return e;
           });
@@ -117,7 +136,8 @@ export const useDashboardStore = create<State & Actions>()(
       loadPreloadedConcejo: async () => {
         const current = get().elections.find((e) => e.id === "concejo");
         if (current && Object.keys(current.localidades).length) return;
-        const response = await fetch("/data/concejo-2023.json");
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+        const response = await fetch(`${basePath}/data/concejo-2023.json`);
         if (!response.ok) throw new Error("No se pudo cargar el Concejo precargado");
         const election = await response.json() as Election;
         set((s) => ({ elections: s.elections.map((e) => e.id === "concejo" ? election : e) }));

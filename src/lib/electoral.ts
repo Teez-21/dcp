@@ -22,6 +22,7 @@ export type Puesto = {
 export type Election = {
   id: string;
   name: string;
+  dataVersion?: string;
   candidates: Candidate[];
   /** votos agregados por localidad, clave 'L1'..'L20' u otra normalizada */
   localidades: Record<string, Record<string, number>>;

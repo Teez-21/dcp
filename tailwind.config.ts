@@ -35,6 +35,10 @@ const config: Config = {
         xl: "1rem",
         "2xl": "1.25rem",
       },
+      boxShadow: {
+        dossier: "0 10px 28px rgb(139 92 246 / 0.18)",
+        "dossier-lg": "0 24px 70px rgb(139 92 246 / 0.19)",
+      },
       keyframes: {
         sheen: { to: { transform: "rotate(360deg)" } },
         "fade-up": { from: { opacity: "0", transform: "translateY(8px)" }, to: { opacity: "1", transform: "translateY(0)" } },

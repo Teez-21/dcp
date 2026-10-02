@@ -26,12 +26,12 @@ Base casi negra `#04040a`, superficies ink azul-violeta y un único acento de al
 - **Señales:** métricas y tarjetas bento que convierten el estado del proyecto en una lectura visual.
 - **Territorio:** mapa grande dentro de una escena dedicada, con ControlDeck superpuesto.
 - **Sistema:** seis módulos en una grilla responsive, todos en el mismo flujo.
-- **Notas/cierre:** CTA final, identidad y retorno al territorio.
+- **Sugerencias/cierre:** CTA final, identidad y retorno al territorio.
 - **Navegación:** barra fija superior con marca abstracta e iconos con tooltip.
 - **Regreso:** botón circular con flecha fijo en la esquina inferior mientras el usuario ha avanzado en el scroll.
 
 ### Elementos de firma
-- Barra de progreso lima en el borde superior.
+- Barra de progreso morada en el borde superior.
 - Marca abstracta de tres barras en la navegación.
 - Titulares display masivos y tratamiento de texto destacado.
 - Marquee horizontal con palabras clave y separadores geométricos.
