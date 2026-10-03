@@ -52,6 +52,7 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: /dcp
           NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
           NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
+          NEXT_PUBLIC_GEOAPIFY_API_KEY: ${{ secrets.NEXT_PUBLIC_GEOAPIFY_API_KEY }}
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -28,6 +28,8 @@ export type Election = {
   localidades: Record<string, Record<string, number>>;
   puestos: Puesto[];
   partyVotes?: Record<string, Record<string, number>>;
+  /** Colores por partido, incluidos los partidos con sólo votos no preferentes de lista. */
+  partyColors?: Record<string, string>;
   /** Para corporaciones como Concejo: muestra partidos por defecto y permite alternar a candidato. */
   partyMode?: boolean;
 };
@@ -153,6 +155,8 @@ export function displayPuestoVotes(e: Election, puesto: Puesto, view: ResultView
 
 export function displayColor(e: Election, key: string, view: ResultView = "candidate"): string {
   if (!e.partyMode || view === "candidate") return colorOf(e, key);
+  const partyColor = e.partyColors?.[key];
+  if (partyColor) return partyColor;
   const candidate = e.candidates.find((c) => c.party === key);
   return candidate?.color ?? "#888";
 }

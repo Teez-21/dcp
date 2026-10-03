@@ -40,6 +40,8 @@ type Actions = {
   setTerritoryLevel: (level: "localidades" | "upz" | "puestos") => void;
   setResultView: (electionId: string, view: "party" | "candidate") => void;
   loadPreloadedConcejo: () => Promise<void>;
+  loadPreloadedCamara: () => Promise<void>;
+  focusElection: (id: string) => void;
   addJournalTopic: (title: string, description?: string) => string | null;
   addJournalEntry: (topicId: string, title: string, body: string) => void;
   updateJournalTopic: (topicId: string, patch: Partial<Pick<JournalTopic, "title" | "description">>) => void;
@@ -67,7 +69,7 @@ type Actions = {
 const defaultElections = (): Election[] => [
   preloadedPresidencial as Election,
   newElection("pres2", "Presidencial · 2ª vuelta"),
-  newElection("camara", "Cámara de Representantes 2026-2030"),
+  { ...newElection("camara", "Cámara de Representantes · Bogotá 2026–2030"), partyMode: true },
   preloadedAlcaldia as Election,
   { ...newElection("concejo", "Concejo de Bogotá 2023-2027"), partyMode: true },
 ];
@@ -85,7 +87,7 @@ export const useDashboardStore = create<State & Actions>()(
       geo: null,
       nameProp: null,
       theme: "tokyo",
-      resultViewByElection: { concejo: "party" },
+      resultViewByElection: { camara: "party", concejo: "party" },
       journalTopics: [],
 
       setTheme: (t) => set({ theme: t }),
@@ -150,6 +152,31 @@ export const useDashboardStore = create<State & Actions>()(
         const election = await response.json() as Election;
         set((s) => ({ elections: s.elections.map((e) => e.id === "concejo" ? election : e) }));
       },
+      loadPreloadedCamara: async () => {
+        const version = "camara-bogota-mmv-2026-v1";
+        const current = get().elections.find((e) => e.id === "camara");
+        if (current?.dataVersion === version) return;
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+        const response = await fetch(`${basePath}/data/camara-2026.json`);
+        if (!response.ok) throw new Error("No se pudo cargar el MMV de Cámara precargado");
+        const election = await response.json() as Election;
+        set((s) => ({
+          elections: s.elections.map((saved) => {
+            if (saved.id !== "camara") return saved;
+            const savedById = new Map(saved.candidates.map((candidate) => [candidate.id, candidate]));
+            return {
+              ...election,
+              name: saved.name === "Cámara de Representantes 2026-2030" ? election.name : saved.name,
+              candidates: election.candidates.map((candidate) => {
+                const previous = savedById.get(candidate.id);
+                return previous ? { ...candidate, name: previous.name, color: previous.color } : candidate;
+              }),
+            };
+          }),
+          resultViewByElection: { ...s.resultViewByElection, camara: s.resultViewByElection.camara || "party" },
+        }));
+      },
+      focusElection: (id) => set((s) => s.elections.some((e) => e.id === id) ? { visible: [id], editing: id } : {}),
       addJournalTopic: (title, description = "") => {
         const clean = title.trim();
         if (!clean) return null;
@@ -365,6 +392,10 @@ export const useDashboardStore = create<State & Actions>()(
           if (e.id === "pres1" && !hasPresidencialData) return current.elections.find((base) => base.id === "pres1")!;
           return e;
         });
+        if (!elections.some((e) => e.id === "camara")) {
+          const currentCamara = current.elections.find((e) => e.id === "camara");
+          if (currentCamara) elections.push(currentCamara);
+        }
         const isOldEmptySession = !hasAlcaldiaData && saved.visible?.length === 1 && saved.visible[0] === "pres1";
         const savedMode = (saved as any).mode;
         const savedTerritoryLevel = (saved as any).territoryLevel;
@@ -375,6 +406,7 @@ export const useDashboardStore = create<State & Actions>()(
           elections,
           visible: isOldEmptySession ? ["alcaldia"] : (saved.visible || current.visible),
           editing: isOldEmptySession ? "alcaldia" : (saved.editing || current.editing),
+          resultViewByElection: { camara: "party", concejo: "party", ...(saved.resultViewByElection || {}) },
           mode: savedMode === "split" ? "split" : "winner",
           territoryLevel: savedTerritoryLevel === "upz" ? "upz" : savedTerritoryLevel === "puestos" || savedMode === "puestos" ? "puestos" : "localidades",
           marginMetric: savedMarginMetric === "percentage" ? "percentage" : "absolute",

@@ -46,7 +46,7 @@ const ANCHORS: Anchor[] = [
 type DashboardModule = { number: string; title: string; description: string; icon: LucideIcon; tone: string; href?: string };
 
 const MODULES: DashboardModule[] = [
-  { number: "01", title: "Intención de voto", description: "Lecturas de tendencia, pertenencia y cambio convertidas en señales que se pueden explorar.", icon: BarChart3, tone: "lime" },
+  { number: "01", title: "Datos sobre el Concejo de Bogotá", description: "Lecturas de tendencia, proposiciones, bancadas formales e informales, proyectos de acuerdo propuestos, entre otros.", icon: BarChart3, tone: "lime", href: "/concejo/" },
   { number: "02", title: "Espectro del voto", description: "Contrasta elecciones, territorios y escenarios en una misma superficie de lectura.", icon: Layers3, tone: "violet" },
   { number: "03", title: "Personajes importantes", description: "Ordena actores, alianzas y movimientos con una vista que se adapta al contexto.", icon: Activity, tone: "orange", href: "/personajes/" },
   { number: "04", title: "Temas ciudadanos", description: "Conecta conversaciones, prioridades y territorio para encontrar lo que está moviendo la agenda.", icon: MessageCircle, tone: "cyan" },
@@ -65,6 +65,7 @@ export default function Dashboard() {
   const visible = useDashboardStore((s) => s.visible);
   const ensurePreloadedData = useDashboardStore((s) => s.ensurePreloadedData);
   const loadPreloadedConcejo = useDashboardStore((s) => s.loadPreloadedConcejo);
+  const loadPreloadedCamara = useDashboardStore((s) => s.loadPreloadedCamara);
   const { scrollY, scrollYProgress } = useScroll();
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 30, restDelta: 0.001 });
   const heroOpacity = useTransform(scrollY, [0, 650], [1, 0.2]);
@@ -87,6 +88,18 @@ export default function Dashboard() {
   useEffect(() => {
     loadPreloadedConcejo().catch(() => undefined);
   }, [loadPreloadedConcejo]);
+
+  useEffect(() => {
+    loadPreloadedCamara().catch(() => undefined);
+  }, [loadPreloadedCamara]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("election") !== "concejo") return;
+    useDashboardStore.getState().focusElection("concejo");
+    window.setTimeout(() => scrollToId("territorio"), 350);
+    window.history.replaceState({}, "", `${window.location.pathname}${window.location.hash}`);
+  }, []);
 
   const summary = useMemo(() => {
     const active = elections.filter((e) => visible.includes(e.id));

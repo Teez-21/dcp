@@ -623,3 +623,78 @@ select:focus-visible {
 @media (min-width: 1024px) { .character-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; } }
 @media (max-width: 639px) { .character-photo { height: 230px; } .character-modal { padding: 17px; } }
 @media (prefers-reduced-motion: reduce) { .character-card { animation: none; } }
+
+
+/* Sitios de interés: búsqueda y marcación independiente de las capas de votación. */
+.interest-overlay { max-height: calc(100% - 2rem); overflow: visible; font-family: var(--font-sans); }
+.interest-search-card { max-height: min(70vh, 620px); overflow: auto; border: 1px solid rgb(196 181 253 / .2); border-radius: 18px; background: rgb(7 7 17 / .94); padding: 13px; box-shadow: 0 18px 55px rgb(0 0 0 / .42), 0 0 36px rgb(124 58 237 / .08); backdrop-filter: blur(18px); }
+.interest-panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.interest-kicker { display: flex; align-items: center; gap: 6px; color: #d6caff; font: 600 9px var(--font-mono); letter-spacing: .13em; text-transform: uppercase; }
+.interest-count { margin-top: 4px; color: #8d8da5; font-size: 10px; }
+.interest-icon-button { display: grid; width: 34px; height: 34px; flex: 0 0 auto; place-items: center; border: 1px solid rgb(196 181 253 / .16); border-radius: 10px; color: #d6caff; background: rgb(196 181 253 / .06); }
+.interest-icon-button:hover { border-color: rgb(196 181 253 / .45); background: rgb(196 181 253 / .13); }
+.interest-search-form { display: flex; align-items: center; gap: 6px; margin-top: 11px; border: 1px solid rgb(196 181 253 / .17); border-radius: 11px; background: rgb(2 2 8 / .72); padding: 4px; }
+.interest-search-form:focus-within { border-color: #c4b5fd; box-shadow: 0 0 0 3px rgb(196 181 253 / .08); }
+.interest-search-form input { width: 100%; min-width: 0; border: 0; outline: 0; color: #f4f0ff; background: transparent; padding: 8px 8px; font-size: 11px; }
+.interest-search-form input::placeholder { color: #777791; }
+.interest-search-form button { display: grid; width: 34px; height: 32px; flex: 0 0 auto; place-items: center; border-radius: 8px; color: #191124; background: #c4b5fd; }
+.interest-search-form button:disabled { cursor: not-allowed; opacity: .5; }
+.interest-search-caption { margin: 7px 2px 0; color: #85859d; font-size: 9px; line-height: 1.45; }
+.interest-search-caption a { color: #d4c9ff; text-decoration: underline; text-underline-offset: 2px; }
+.interest-search-results { display: grid; max-height: 224px; gap: 4px; overflow-y: auto; margin-top: 8px; border-top: 1px solid rgb(255 255 255 / .08); padding-top: 7px; }
+.interest-search-result { display: flex; min-width: 0; align-items: flex-start; gap: 8px; border: 1px solid transparent; border-radius: 9px; color: #e5e3ef; background: rgb(255 255 255 / .025); padding: 8px; text-align: left; transition: border-color .18s ease, background .18s ease; }
+.interest-search-result:hover { border-color: rgb(196 181 253 / .22); background: rgb(196 181 253 / .07); }
+.interest-search-result b { display: block; overflow: hidden; font-size: 10px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.interest-search-result small { display: block; overflow: hidden; margin-top: 3px; color: #8f8fa5; font-size: 9px; line-height: 1.4; text-overflow: ellipsis; }
+.interest-result-icon { display: grid; width: 22px; height: 22px; flex: 0 0 auto; place-items: center; border-radius: 7px; color: #d6caff; background: rgb(196 181 253 / .12); }
+.interest-inline-note, .interest-inline-error { margin-top: 8px; border-radius: 9px; padding: 8px 9px; font-size: 9px; line-height: 1.5; }
+.interest-inline-note { color: #b4adc9; background: rgb(196 181 253 / .055); }
+.interest-inline-error { color: #fecdd3; background: rgb(251 113 133 / .08); }
+.interest-picking-banner { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 9px; border: 1px solid rgb(196 181 253 / .3); border-radius: 10px; color: #eee8ff; background: rgb(124 58 237 / .17); padding: 8px 10px; font-size: 10px; }
+.interest-picking-banner button { color: #d6caff; font-size: 9px; text-decoration: underline; text-underline-offset: 2px; }
+.interest-actions { display: grid; gap: 7px; margin-top: 10px; }
+.interest-propose-button { display: inline-flex; min-height: 36px; align-items: center; justify-content: center; gap: 7px; border: 1px solid rgb(196 181 253 / .35); border-radius: 10px; color: #eee8ff; background: linear-gradient(105deg, rgb(139 92 246 / .28), rgb(196 181 253 / .1)); padding: 8px 10px; font-size: 10px; font-weight: 650; transition: border-color .2s ease, background .2s ease; }
+.interest-propose-button:hover { border-color: rgb(196 181 253 / .65); background: rgb(139 92 246 / .32); }
+.interest-editor-actions { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; }
+.interest-editor-button { display: inline-flex; min-height: 28px; align-items: center; gap: 5px; border: 1px solid rgb(255 255 255 / .1); border-radius: 8px; color: #b8b7c9; background: rgb(255 255 255 / .025); padding: 5px 8px; font-size: 9px; }
+.interest-editor-button:hover { border-color: rgb(196 181 253 / .35); color: #eee8ff; }
+.interest-editor-button:disabled { opacity: .55; }
+.interest-editor-button span, .interest-review-panel h3 span { display: inline-grid; min-width: 17px; height: 17px; place-items: center; border-radius: 999px; color: #171022; background: #c4b5fd; padding: 0 4px; font: 700 9px var(--font-mono); }
+.interest-notice { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-top: 8px; border: 1px solid rgb(255 255 255 / .12); border-radius: 11px; padding: 9px 10px; font-size: 10px; line-height: 1.5; box-shadow: 0 12px 32px rgb(0 0 0 / .3); backdrop-filter: blur(14px); }
+.interest-notice button { flex: 0 0 auto; color: currentColor; }
+.interest-notice-info { border-color: rgb(196 181 253 / .2); color: #ded5ff; background: rgb(34 23 58 / .93); }
+.interest-notice-success { border-color: rgb(74 222 128 / .24); color: #bbf7d0; background: rgb(8 38 23 / .94); }
+.interest-notice-error { border-color: rgb(251 113 133 / .24); color: #fecdd3; background: rgb(52 13 23 / .95); }
+.interest-review-panel { max-height: 42vh; overflow: hidden; margin-top: 8px; border: 1px solid rgb(196 181 253 / .2); border-radius: 15px; background: rgb(7 7 17 / .96); padding: 12px; box-shadow: 0 18px 48px rgb(0 0 0 / .4); backdrop-filter: blur(18px); }
+.interest-review-panel > div:first-child { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #eee8ff; }
+.interest-review-panel h3 { display: flex; align-items: center; gap: 7px; font-size: 11px; }
+.interest-review-panel > div:first-child button { color: #9b9aaf; }
+.interest-review-list { display: grid; max-height: calc(42vh - 48px); gap: 8px; overflow-y: auto; margin-top: 10px; padding-right: 2px; }
+.interest-review-empty { margin-top: 10px; border: 1px dashed rgb(255 255 255 / .12); border-radius: 10px; color: #9998aa; padding: 15px; text-align: center; font-size: 10px; }
+.interest-review-card { border: 1px solid rgb(255 255 255 / .09); border-radius: 11px; background: rgb(255 255 255 / .025); padding: 10px; }
+.interest-review-card h4 { color: #f1eff8; font-size: 11px; }
+.interest-review-card > div:first-child span { max-width: 45%; overflow: hidden; border: 1px solid rgb(196 181 253 / .16); border-radius: 999px; color: #d6caff; padding: 4px 7px; font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
+.interest-review-card p { margin-top: 7px; color: #b2b1c1; font-size: 10px; line-height: 1.5; }
+.interest-review-card small { display: block; margin-top: 5px; color: #85859d; font-size: 8px; line-height: 1.4; overflow-wrap: anywhere; }
+.interest-approve-button, .interest-reject-button { display: inline-flex; min-height: 30px; align-items: center; gap: 5px; border: 1px solid rgb(196 181 253 / .25); border-radius: 8px; color: #eee8ff; background: rgb(139 92 246 / .18); padding: 6px 8px; font-size: 9px; }
+.interest-reject-button { border-color: rgb(251 113 133 / .18); color: #fecdd3; background: rgb(251 113 133 / .045); }
+.interest-approve-button:disabled, .interest-reject-button:disabled { opacity: .5; }
+.interest-proposal-form { display: grid; gap: 13px; margin-top: 20px; }
+.interest-proposal-form select { appearance: auto; }
+.interest-modal { max-height: calc(100vh - 26px); }
+.interest-privacy-note { border-left: 2px solid rgb(196 181 253 / .5); color: #9695a8; padding: 4px 0 4px 9px; font-size: 10px; line-height: 1.5; }
+.interest-map-pin-shell, .interest-search-pin-shell { border: 0 !important; background: transparent !important; }
+.interest-map-pin { display: grid; width: 30px; height: 36px; place-items: start center; filter: drop-shadow(0 2px 5px rgb(0 0 0 / .5)); }
+.interest-map-pin > span { position: relative; display: block; width: 22px; height: 22px; transform: rotate(-45deg); border: 2px solid #f5f0ff; border-radius: 50% 50% 50% 0; background: #a78bfa; box-shadow: 0 0 16px rgb(167 139 250 / .75); }
+.interest-map-pin > span::after { position: absolute; top: 5px; left: 5px; width: 8px; height: 8px; border-radius: 50%; background: #1a1328; content: ""; }
+.interest-search-pin-shell { z-index: 700; }
+.interest-search-pin { display: block; width: 21px; height: 21px; transform: rotate(-45deg); border: 2px solid #fff; border-radius: 50% 50% 50% 0; background: #f472b6; box-shadow: 0 0 0 5px rgb(244 114 182 / .24), 0 0 19px rgb(244 114 182 / .72); }
+
+/* Página editorial del Concejo. */
+.council-hero { border-bottom: 1px solid rgb(255 255 255 / .1); }
+.council-grid { display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 14px; }
+.council-card { min-height: 220px; border: 1px solid rgb(255 255 255 / .09); border-radius: 20px; background: linear-gradient(145deg, rgb(19 19 38 / .9), rgb(7 7 16 / .94)); padding: 20px; box-shadow: 0 18px 48px rgb(0 0 0 / .15); transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+.council-card:hover { transform: translateY(-3px); border-color: rgb(196 181 253 / .3); box-shadow: 0 23px 58px rgb(0 0 0 / .25); }
+.council-status { display: inline-flex; margin-top: 17px; border: 1px solid rgb(196 181 253 / .19); border-radius: 999px; color: #d4caff; background: rgb(196 181 253 / .06); padding: 5px 8px; font: 600 8px var(--font-mono); letter-spacing: .1em; text-transform: uppercase; }
+@media (min-width: 720px) { .council-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; } .council-card { min-height: 245px; padding: 24px; } }
+@media (max-width: 639px) { .interest-overlay { right: 10px; top: 10px; width: min(21rem, calc(100% - 20px)); } .interest-search-card { max-height: min(56vh, 470px); padding: 11px; } .interest-review-panel { max-height: 38vh; } .interest-review-list { max-height: calc(38vh - 48px); } .interest-notice { font-size: 9px; } }

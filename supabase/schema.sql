@@ -276,3 +276,11 @@ commit;
 -- insert into private.character_editors (user_id)
 -- select id from auth.users where lower(email) = lower('TU_CORREO')
 -- on conflict (user_id) do nothing;
+
+
+-- ===========================
+-- Sitios de interés (2026-10)
+-- ===========================
+-- La migración completa e idempotente está en:
+-- supabase/migrations/20261003_interest_sites.sql
+-- Se conserva aquí el esquema para consulta del proyecto; ejecutar el archivo de migración para aplicarlo.

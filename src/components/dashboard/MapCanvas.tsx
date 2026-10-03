@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useDashboardStore } from "@/store/useDashboardStore";
 import { Election, GeoFC, ranking, sumVotes, locKey, locLabel, ResultView, displayColor, displayLocalityVotes, displayName, displayPuestoVotes } from "@/lib/electoral";
 import { pollingStationSummary, stationForPuesto } from "@/lib/pollingStations";
+import InterestSitesOverlay from "./InterestSitesOverlay";
 import { MapPin, Info } from "lucide-react";
 
 const CARTO_KEY = "cb1_3vso_1_1dd6b9651234441adf3d9aef";
@@ -66,6 +67,9 @@ export default function MapCanvas() {
   const [notice, setNotice] = useState<string | null>(null);
   const [legend, setLegend] = useState<LegendData>([]);
   const [legendHint, setLegendHint] = useState<string | null>(null);
+  const [selectingInterestPoint, setSelectingInterestPoint] = useState(false);
+  const [pickedInterestPoint, setPickedInterestPoint] = useState<{ latitude: number; longitude: number } | null>(null);
+  const selectingInterestPointRef = useRef(false);
 
   const elections = useDashboardStore((s) => s.elections);
   const visible = useDashboardStore((s) => s.visible);
@@ -109,6 +113,23 @@ export default function MapCanvas() {
       mapRef.current = null;
     };
   }, []);
+
+  useEffect(() => {
+    selectingInterestPointRef.current = selectingInterestPoint;
+  }, [selectingInterestPoint]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!ready || !map) return;
+    const onMapClick = (event: any) => {
+      if (!selectingInterestPointRef.current) return;
+      selectingInterestPointRef.current = false;
+      setSelectingInterestPoint(false);
+      setPickedInterestPoint({ latitude: event.latlng.lat, longitude: event.latlng.lng });
+    };
+    map.on("click", onMapClick);
+    return () => map.off("click", onMapClick);
+  }, [ready]);
 
   useEffect(() => {
     let cancelled = false;
@@ -469,14 +490,26 @@ export default function MapCanvas() {
   }, [ready, territoryLevel, visible, visibleGeographyPoints]);
 
   return (
-    <div className="relative h-full w-full">
+    <div className={`relative h-full w-full ${selectingInterestPoint ? "cursor-crosshair" : ""}`}>
       <div ref={containerRef} className="absolute inset-0" />
+
+      {ready && mapRef.current && LRef.current && (
+        <InterestSitesOverlay
+          map={mapRef.current}
+          leaflet={LRef.current}
+          selectingPoint={selectingInterestPoint}
+          pickedPoint={pickedInterestPoint}
+          onPickRequest={() => { setPickedInterestPoint(null); setSelectingInterestPoint(true); }}
+          onCancelPick={() => setSelectingInterestPoint(false)}
+          onClearPickedPoint={() => setPickedInterestPoint(null)}
+        />
+      )}
 
       <motion.div
         initial={{ opacity: 0, y: -8 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.18, duration: 0.4 }}
-        className="glass-panel pointer-events-none absolute right-4 top-4 z-[500] hidden items-center gap-2 rounded-full px-3 py-2 text-[10px] text-muted shadow-dossier sm:flex"
+        className="glass-panel pointer-events-none absolute right-[24rem] top-4 z-[500] hidden items-center gap-2 rounded-full px-3 py-2 text-[10px] text-muted shadow-dossier xl:flex"
       >
         <span className="signal-dot h-1.5 w-1.5 rounded-full bg-signal" />
         <span className="font-semibold uppercase tracking-[0.16em] text-fg">Exploración territorial</span>
@@ -506,7 +539,12 @@ export default function MapCanvas() {
           {legend.map(({ election }) => {
             const view = resultViewByElection?.[election.id] || "candidate";
             const items = election.partyMode && view === "party"
-              ? Array.from(new Set(election.candidates.map((candidate) => candidate.party || candidate.name))).map((name) => ({ id: name, name, color: displayColor(election, name, view) }))
+              ? Array.from(new Set([
+                  ...election.candidates.map((candidate) => candidate.party || candidate.name),
+                  ...Object.keys(election.partyColors || {}),
+                  ...Object.values(election.partyVotes || {}).flatMap((votes) => Object.keys(votes)),
+                  ...election.puestos.flatMap((puesto) => Object.keys(puesto.partyVotes || {})),
+                ])).map((name) => ({ id: name, name, color: displayColor(election, name, view) }))
               : election.candidates.map((candidate) => ({ id: candidate.id, name: candidate.name, color: candidate.color }));
             return (
               <div key={election.id} className="mb-2 last:mb-0">
