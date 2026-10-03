@@ -1,10 +1,10 @@
 # Avance del proyecto — Datos a tener en cuenta
 
-**Corte:** 2 de octubre de 2026. **Estado vigente:** el dashboard base sigue publicado en GitHub Pages. El proyecto Supabase DCP está activo en plan Free; el esquema está aplicado y la única cuenta Auth permanente existente quedó registrada como editora. La usuaria confirmó que desactivó el registro público de Auth y configuró los dos secrets de Actions; el código todavía no se ha enviado a `main`.
+**Corte:** 3 de octubre de 2026. **Estado vigente:** el dashboard y el Hub de personajes están publicados en GitHub Pages. El proyecto Supabase DCP está activo en plan Free; el esquema está aplicado, hay una sola cuenta editorial y la usuaria confirmó que desactivó el registro público de Auth y configuró los dos secrets de Actions.
 
 ## Resumen
 
-Se conservaron los cambios visuales solicitados, se reemplazó la base de Alcaldía por el MMV adjunto y se integraron los niveles Localidad/UPZ/Puesto en el mapa. La versión base está publicada en <https://teez-21.github.io/dcp/>. El Hub `/personajes/` y la base Supabase Free están listos; los ajustes de Auth y Actions Secrets se confirmaron y el siguiente paso es publicar el código en `main`.
+Se conservaron los cambios visuales solicitados, se reemplazó la base de Alcaldía por el MMV adjunto y se integraron los niveles Localidad/UPZ/Puesto en el mapa. La versión base está publicada en <https://teez-21.github.io/dcp/>. El Hub `/personajes/` ya está publicado y conectado a Supabase Free.
 
 ## Interfaz
 
@@ -12,7 +12,7 @@ Se conservaron los cambios visuales solicitados, se reemplazó la base de Alcald
 |---|---|
 | Hecho | Se restauraron los estilos globales y el diseño oscuro editorial; el acento es morado `#c4b5fd`. Se retiró la frase final. **Bitácora** se convirtió en **Sugerencias**, con temas y entradas persistentes. |
 | Hecho | Se conectaron las capas estáticas de localidades y UPZ con el selector Localidad/UPZ/Puesto; la vista Puesto usa marcadores con primer y segundo lugar y diferenciación absoluta/porcentual. |
-| En curso | Se creó la ruta `/personajes/` y el enlace desde la tarjeta. Cualquier visitante puede proponer fichas sin cuenta; quedan privadas hasta que la única cuenta editorial las apruebe o rechace. El esquema real ya está en DCP; el sitio de GitHub Pages todavía no usa las claves. |
+| Hecho | Se creó y publicó `/personajes/` y el enlace desde la tarjeta. Cualquier visitante puede proponer fichas sin cuenta; quedan privadas hasta que la única cuenta editorial las apruebe o rechace. El sitio usa el esquema real de DCP. |
 
 ## Base de Alcaldía
 
@@ -54,14 +54,14 @@ La integración está aplicada en el proyecto Supabase DCP, cuyo plan de organiz
 
 ## Validación y publicación
 
-`NEXT_PUBLIC_BASE_PATH=/dcp npm run build` pasó con compilación, verificación de tipos y exportación de `/` y `/personajes/`; la vista previa temporal sirvió la ruta y assets con HTTP 200. El validador de claves superó siete casos. El esquema y las pruebas pgTAP pasan el análisis sintáctico; el plan actualizado de propuestas tiene 34 aserciones, pero `supabase test db` no se ejecutó porque aquí no están instalados CLI/Docker. El asesor de seguridad dejó dos avisos intencionales sobre RPC `SECURITY DEFINER` con comprobación editorial y `search_path` vacío, más un aviso de protección contra contraseñas filtradas desactivada; no reporta ahora tablas con RLS sin política. El cruce espacial previo sigue validado: 112 códigos únicos, 112 filas CSV y 112 geometrías válidas.
+`NEXT_PUBLIC_BASE_PATH=/dcp npm run build` pasó con compilación, verificación de tipos y exportación de `/` y `/personajes/`; el workflow de Pages para el commit `8ea0553` terminó correctamente. En producción, `/dcp/personajes/`, ocho assets muestreados y la API pública de Supabase respondieron HTTP 200; la tabla está vacía, como se esperaba. El validador de claves superó siete casos. El esquema y las pruebas pgTAP pasan el análisis sintáctico; el plan actualizado de propuestas tiene 34 aserciones, pero `supabase test db` no se ejecutó porque aquí no están instalados CLI/Docker. El asesor de seguridad dejó dos avisos intencionales sobre RPC `SECURITY DEFINER` con comprobación editorial y `search_path` vacío, más un aviso de protección contra contraseñas filtradas desactivada; no reporta ahora tablas con RLS sin política. El workflow mostró avisos no bloqueantes de obsolescencia de Node 20 en Actions y futura migración de `ubuntu-latest`. El cruce espacial previo sigue validado: 112 códigos únicos, 112 filas CSV y 112 geometrías válidas.
 
 La auditoría `npm audit` reportó **2 avisos en dependencias existentes**: uno crítico en Next.js y uno alto en PostCSS. La última versión publicada de Next 14 sigue siendo 14.2.35; npm propone Next.js 16.3.8 como corrección automática, un cambio de versión mayor que requiere pruebas separadas. Este proyecto usa `output: "export"` y publica sólo HTML/CSS/JS estáticos, sin servidor Next.js ni API de optimización de imágenes en ejecución; los avisos asociados a esos endpoints no están expuestos en el sitio de Pages. Aun así, la dependencia no está actualizada y deberá revisarse antes de migrar a un despliegue con servidor.
 
-La versión base continúa publicada en GitHub Pages; el Hub todavía no está publicado. El intento de leer los secrets del repositorio respondió **HTTP 403** (`Resource not accessible by integration`); por eso no se pudieron verificar sus valores y no se intentó eludir ese permiso. La usuaria confirmó que los configuró desde GitHub y desactivó `Allow new users to sign up` en Supabase Auth. La vista previa temporal de Sandbox está conectada al backend DCP; la API pública respondió HTTP 200 con el directorio vacío. Toda propuesta enviada desde esa vista previa queda en la base real.
+El Hub está publicado en <https://teez-21.github.io/dcp/personajes/> desde el commit `8ea0553`; la ejecución de Pages está en <https://github.com/TeeZ-21/dcp/actions/runs/37133861732>. El intento de leer los secrets del repositorio respondió **HTTP 403** (`Resource not accessible by integration`), por lo que no se verificaron sus valores ni se intentó eludir ese permiso; la usuaria confirmó que los configuró desde GitHub. También confirmó que desactivó `Allow new users to sign up` en Supabase Auth. La vista previa temporal y el sitio publicado están conectados al backend DCP. El directorio aprobado está vacío; toda propuesta enviada desde la web queda en la base real, pendiente de moderación.
 
 ## Siguientes pasos
 
-1. Integrar y publicar el código en `main`; comprobar el workflow de GitHub Pages y la URL publicada.
-2. Probar envío sin cuenta, lectura de propuestas sólo para la editora, aprobación/rechazo y carga de foto.
-3. Ejecutar `supabase test db` con CLI/Docker en un entorno adecuado; habilitar protección contra contraseñas filtradas si está disponible en el plan Free y elegir una contraseña fuerte.
+1. Probar el flujo real de envío anónimo, moderación editorial, aprobación/rechazo y carga de foto.
+2. Ejecutar `supabase test db` con CLI/Docker en un entorno adecuado y habilitar protección contra contraseñas filtradas si está disponible en el plan Free.
+3. Planear la actualización mayor de Next.js antes de migrar a un hosting con servidor; para Pages se publica una exportación estática.
