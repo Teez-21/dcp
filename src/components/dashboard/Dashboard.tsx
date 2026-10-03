@@ -2,6 +2,7 @@
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import {
   Activity,
   ArrowDown,
@@ -42,10 +43,12 @@ const ANCHORS: Anchor[] = [
   { id: "sugerencias", label: "Sugerencias", icon: NotebookPen },
 ];
 
-const MODULES = [
+type DashboardModule = { number: string; title: string; description: string; icon: LucideIcon; tone: string; href?: string };
+
+const MODULES: DashboardModule[] = [
   { number: "01", title: "Intención de voto", description: "Lecturas de tendencia, pertenencia y cambio convertidas en señales que se pueden explorar.", icon: BarChart3, tone: "lime" },
   { number: "02", title: "Espectro del voto", description: "Contrasta elecciones, territorios y escenarios en una misma superficie de lectura.", icon: Layers3, tone: "violet" },
-  { number: "03", title: "Personajes importantes", description: "Ordena actores, alianzas y movimientos con una vista que se adapta al contexto.", icon: Activity, tone: "orange" },
+  { number: "03", title: "Personajes importantes", description: "Ordena actores, alianzas y movimientos con una vista que se adapta al contexto.", icon: Activity, tone: "orange", href: "/personajes/" },
   { number: "04", title: "Temas ciudadanos", description: "Conecta conversaciones, prioridades y territorio para encontrar lo que está moviendo la agenda.", icon: MessageCircle, tone: "cyan" },
   { number: "05", title: "Temas del candidato", description: "Contrasta el discurso con la reacción y deja cada dato en su contexto.", icon: MousePointer2, tone: "pink" },
   { number: "06", title: "Sugerencias", description: "Agrupa temas y añade entradas para conservar ideas, decisiones y hallazgos.", icon: FileText, tone: "blue" },
@@ -179,9 +182,11 @@ function MetricCard({ label, value, detail, icon: Icon, accent, className = "" }
   return <Reveal className={`metric-card ${className}`}><div className={`metric-icon metric-${accent}`}><Icon className="h-5 w-5" /></div><p className="eyebrow mt-10">{label}</p><p className="mt-3 font-display text-5xl font-semibold tracking-[-.05em] text-mist-100">{value}</p><p className="mt-2 text-xs text-mist-900">{detail}</p></Reveal>;
 }
 
-function ModuleCard({ module, index }: { module: (typeof MODULES)[number]; index: number }) {
+function ModuleCard({ module, index }: { module: DashboardModule; index: number }) {
   const Icon = module.icon;
-  return <Reveal delay={index * 0.06} className={`module-card module-${module.tone}`}><div className="flex items-start justify-between"><span className="font-mono text-xs text-mist-900">{module.number}</span><Icon className="h-5 w-5 text-signal" strokeWidth={1.6} /></div><div className="mt-20"><h3 className="font-display text-2xl leading-tight tracking-tight text-mist-100">{module.title}</h3><p className="mt-3 text-sm leading-relaxed text-mist-900">{module.description}</p><span className="module-link mt-7">Explorar <ChevronRight className="h-4 w-4" /></span></div></Reveal>;
+  const cardClass = `module-card module-${module.tone}${module.href ? " module-card-action" : ""}`;
+  const content = <><div className="flex items-start justify-between"><span className="font-mono text-xs text-mist-900">{module.number}</span><Icon className="h-5 w-5 text-signal" strokeWidth={1.6} /></div><div className="mt-20"><h3 className="font-display text-2xl leading-tight tracking-tight text-mist-100">{module.title}</h3><p className="mt-3 text-sm leading-relaxed text-mist-900">{module.description}</p><span className="module-link mt-7">Explorar <ChevronRight className="h-4 w-4" /></span></div></>;
+  return <Reveal delay={index * 0.06}>{module.href ? <Link href={module.href} aria-label={`Abrir ${module.title}`} className={cardClass}>{content}</Link> : <article className={cardClass}>{content}</article>}</Reveal>;
 }
 
 function Reveal({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {

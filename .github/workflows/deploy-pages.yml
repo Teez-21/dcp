@@ -29,10 +29,29 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install dependencies
         run: npm ci
+      - name: Require Supabase config before publishing
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
+        run: |
+          if [[ -z "$NEXT_PUBLIC_SUPABASE_URL" || -z "$NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY" ]]; then
+            echo "::error::Configure NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY in GitHub Actions Secrets before deploying the shared characters hub."
+            exit 1
+          fi
+          if [[ "$NEXT_PUBLIC_SUPABASE_URL" != https://* ]]; then
+            echo "::error::NEXT_PUBLIC_SUPABASE_URL must be an HTTPS URL."
+            exit 1
+          fi
+          if [[ "$NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY" != sb_publishable_* && "$NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY" != eyJ* ]]; then
+            echo "::error::Use a Supabase publishable key or legacy anon key, never a service/secret key."
+            exit 1
+          fi
       - name: Build static site
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /dcp
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
