@@ -1,112 +1,86 @@
 /* Branding global: los tokens se escriben en html para que sobrevivan a las rutas exportadas. */
 :root {
   --brand-primary: #c4b5fd;
+  --brand-secondary: #a78bfa;
   --brand-bg: #04040a;
+  --brand-surface: #0c0c17;
   --brand-action: #8b5cf6;
   --brand-text: #f0f0f8;
   --brand-support: #a78bfa;
+  --brand-highlight: #c4b5fd;
+  --brand-border: #c4b5fd;
 }
 
-.branding-section {
-  background: radial-gradient(ellipse at 18% 15%, color-mix(in srgb, var(--brand-primary) 13%, transparent), transparent 34rem), var(--bg);
-}
+.branding-section { background: radial-gradient(ellipse at 18% 15%, color-mix(in srgb, var(--brand-primary) 13%, transparent), transparent 34rem), var(--bg); }
+.palette-card { overflow: hidden; border: 1px solid var(--border-soft); border-radius: 1.25rem; background: linear-gradient(145deg, color-mix(in srgb, var(--brand-primary) 13%, var(--panel)), var(--panel)); transition: border-color .25s ease, box-shadow .25s ease, background .25s ease; }
+.palette-card:hover, .palette-card-active { border-color: color-mix(in srgb, var(--brand-primary) 66%, transparent); box-shadow: 0 18px 50px color-mix(in srgb, var(--brand-primary) 13%, transparent); }
+.palette-card-trigger { display: flex; width: 100%; min-height: 104px; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.1rem 1.2rem; color: var(--fg); text-align: left; cursor: pointer; }
+.palette-mini-swatch { display: block; width: 3.5rem; height: 3.5rem; flex: 0 0 auto; border: 1px solid rgb(255 255 255 / .16); border-radius: .85rem; box-shadow: inset 0 0 0 1px rgb(0 0 0 / .12); }
+.palette-card-details { max-height: 0; overflow: hidden; opacity: 0; padding: 0 1.2rem; transition: max-height .35s ease, opacity .25s ease, padding .35s ease; }
+.palette-card-expanded .palette-card-details { max-height: 60rem; opacity: 1; padding-bottom: 1.25rem; }
+.palette-swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(72px, 1fr)); gap: .65rem; border-top: 1px solid var(--border-soft); padding-top: 1.1rem; }
+.palette-color-block { display: block; height: 3.8rem; border: 1px solid rgb(255 255 255 / .17); border-radius: .7rem; box-shadow: inset 0 0 0 1px rgb(0 0 0 / .08); }
+.palette-creator { margin-top: 1.25rem; border: 1px solid var(--border); border-radius: 1.25rem; background: linear-gradient(145deg, color-mix(in srgb, var(--brand-primary) 16%, var(--panel)), var(--panel)); padding: clamp(1rem, 3vw, 1.5rem); }
+.palette-field { display: grid; gap: .45rem; color: var(--muted); font-size: 11px; }
+.palette-editor-color { display: grid; gap: .45rem; border: 1px solid var(--border-soft); border-radius: .8rem; background: color-mix(in srgb, var(--brand-surface) 72%, transparent); padding: .65rem; }
+.palette-editor-color input[type="color"] { width: 100%; height: 2.7rem; border: 0; border-radius: .5rem; background: transparent; cursor: pointer; }
+.palette-hex, .palette-role-select { width: 100%; border: 1px solid var(--border-soft); border-radius: .5rem; color: var(--fg); background: var(--panel); padding: .45rem .5rem; font: 10px var(--font-mono); }
+.palette-role-select { font-family: var(--font-sans); }
+.palette-remove { display: inline-flex; align-items: center; justify-content: center; gap: .35rem; color: var(--muted); font-size: 10px; }
+.palette-remove:hover:not(:disabled) { color: var(--brand-action); }
+.palette-remove:disabled { cursor: not-allowed; opacity: .35; }
 
-.palette-card {
-  overflow: hidden;
-  border: 1px solid var(--border-soft);
-  border-radius: 1.25rem;
-  background: linear-gradient(145deg, color-mix(in srgb, var(--brand-primary) 13%, var(--panel)), var(--panel));
-  transition: border-color .25s ease, box-shadow .25s ease, background .25s ease;
-}
-
-.palette-card:hover,
-.palette-card-active {
-  border-color: color-mix(in srgb, var(--brand-primary) 66%, transparent);
-  box-shadow: 0 18px 50px color-mix(in srgb, var(--brand-primary) 13%, transparent);
-}
-
-.palette-card-trigger {
-  display: flex;
-  width: 100%;
-  min-height: 104px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.1rem 1.2rem;
-  color: var(--fg);
-  text-align: left;
-  cursor: pointer;
-}
-
-.palette-mini-swatch {
-  display: block;
-  width: 3.5rem;
-  height: 3.5rem;
-  flex: 0 0 auto;
-  border: 1px solid rgb(255 255 255 / .16);
-  border-radius: .85rem;
-  box-shadow: inset 0 0 0 1px rgb(0 0 0 / .12);
-}
-
-.palette-card-details {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  padding: 0 1.2rem;
-  transition: max-height .35s ease, opacity .25s ease, padding .35s ease;
-}
-
-.palette-card-expanded .palette-card-details {
-  max-height: 28rem;
-  opacity: 1;
-  padding-bottom: 1.25rem;
-}
-
-.palette-swatches {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
-  gap: .65rem;
-  border-top: 1px solid var(--border-soft);
-  padding-top: 1.1rem;
-}
-
-.palette-color-block {
-  display: block;
-  height: 3.8rem;
-  border: 1px solid rgb(255 255 255 / .17);
-  border-radius: .7rem;
-  box-shadow: inset 0 0 0 1px rgb(0 0 0 / .08);
-}
-
+/* Every major visual surface reads from the active palette rather than the Tokyo defaults. */
+html[data-theme^="palette-"] body,
 html[data-theme^="palette-"] .nexus-page,
 html[data-theme^="palette-"] .character-page,
-html[data-theme^="palette-"] .council-page,
-html[data-theme^="palette-"] body {
-  background: var(--bg);
-  color: var(--fg);
-}
-
-html[data-theme^="palette-"] .nexus-page {
-  background: radial-gradient(ellipse at 50% -18%, color-mix(in srgb, var(--brand-primary) 18%, transparent), transparent 48rem), var(--bg);
-}
-
-html[data-theme^="palette-"] .nexus-nav,
-html[data-theme^="palette-"] .glass-panel {
-  border-color: var(--border);
-  background: color-mix(in srgb, var(--panel) 84%, transparent);
-}
-
+html[data-theme^="palette-"] .council-page { background: var(--bg) !important; color: var(--fg) !important; }
+html[data-theme^="palette-"] .nexus-page { background: radial-gradient(ellipse at 50% -18%, color-mix(in srgb, var(--brand-primary) 18%, transparent), transparent 48rem), var(--bg) !important; }
+html[data-theme^="palette-"] .nexus-section,
+html[data-theme^="palette-"] .nexus-map-section,
+html[data-theme^="palette-"] .journal-section,
+html[data-theme^="palette-"] .branding-section { background: linear-gradient(180deg, color-mix(in srgb, var(--brand-bg) 88%, var(--brand-primary)), var(--bg) 56%, var(--brand-bg)) !important; }
+html[data-theme^="palette-"] .marquee-strip { background: color-mix(in srgb, var(--brand-surface) 92%, var(--brand-primary)) !important; border-color: var(--border) !important; }
+html[data-theme^="palette-"] .map-shell { background: var(--brand-surface) !important; border-color: var(--border) !important; }
+html[data-theme^="palette-"] .map-shell .leaflet-container { background: var(--brand-surface) !important; }
 html[data-theme^="palette-"] .bento-card,
 html[data-theme^="palette-"] .metric-card,
 html[data-theme^="palette-"] .module-card,
+html[data-theme^="palette-"] .journal-compose,
+html[data-theme^="palette-"] .journal-topic,
+html[data-theme^="palette-"] .journal-empty,
 html[data-theme^="palette-"] .character-card,
-html[data-theme^="palette-"] .council-card {
-  border-color: var(--border-soft);
-  background: linear-gradient(145deg, color-mix(in srgb, var(--brand-primary) 12%, var(--panel)), var(--panel));
-}
+html[data-theme^="palette-"] .council-card,
+html[data-theme^="palette-"] .character-review-section { border-color: var(--border-soft) !important; background: linear-gradient(145deg, color-mix(in srgb, var(--brand-primary) 13%, var(--brand-surface)), var(--brand-bg)) !important; }
+html[data-theme^="palette-"] .bento-card-signal,
+html[data-theme^="palette-"] .magnetic-button-primary { color: var(--on-accent) !important; background: linear-gradient(135deg, var(--brand-primary), var(--brand-action) 72%, var(--brand-highlight)) !important; border-color: var(--brand-primary) !important; }
+html[data-theme^="palette-"] .magnetic-button { color: var(--fg); border-color: var(--border); background: color-mix(in srgb, var(--brand-surface) 72%, transparent); }
+html[data-theme^="palette-"] .magnetic-button:hover,
+html[data-theme^="palette-"] .nexus-icon-button:hover { color: var(--brand-primary); border-color: var(--brand-primary); background: color-mix(in srgb, var(--brand-primary) 16%, transparent); }
+html[data-theme^="palette-"] .text-signal,
+html[data-theme^="palette-"] .module-link,
+html[data-theme^="palette-"] .eyebrow,
+html[data-theme^="palette-"] .journal-number { color: var(--brand-primary) !important; }
+html[data-theme^="palette-"] .text-mist-100 { color: var(--fg) !important; }
+html[data-theme^="palette-"] .text-mist-900,
+html[data-theme^="palette-"] .text-muted { color: var(--muted) !important; }
+html[data-theme^="palette-"] .text-stroke { -webkit-text-stroke-color: color-mix(in srgb, var(--fg) 64%, transparent); text-shadow: 0 0 32px color-mix(in srgb, var(--brand-primary) 16%, transparent); }
+html[data-theme^="palette-"] .status-dot,
+html[data-theme^="palette-"] .signal-dot { background: var(--brand-primary) !important; box-shadow: 0 0 14px color-mix(in srgb, var(--brand-primary) 76%, transparent); }
+html[data-theme^="palette-"] .nexus-nav,
+html[data-theme^="palette-"] .glass-panel,
+html[data-theme^="palette-"] .interest-search-card,
+html[data-theme^="palette-"] .character-modal { border-color: var(--border) !important; background: color-mix(in srgb, var(--brand-surface) 88%, transparent) !important; }
+html[data-theme^="palette-"] .character-glow,
+html[data-theme^="palette-"] .hero-orb-one,
+html[data-theme^="palette-"] .hero-orb-two { border-color: color-mix(in srgb, var(--brand-primary) 35%, transparent); background: radial-gradient(circle, color-mix(in srgb, var(--brand-primary) 20%, transparent), transparent 70%); }
+html[data-theme^="palette-"] [class*="bg-ink-"] { background-color: var(--brand-bg) !important; }
+html[data-theme^="palette-"] [class*="border-white"] { border-color: var(--border-soft) !important; }
+html[data-theme^="palette-"] .journal-input,
+html[data-theme^="palette-"] .character-input { color: var(--fg); background: color-mix(in srgb, var(--brand-bg) 76%, transparent); border-color: var(--border); }
+html[data-theme^="palette-"] .journal-entry { border-left-color: var(--brand-primary); background: color-mix(in srgb, var(--brand-bg) 68%, transparent); }
+html[data-theme^="palette-"] .back-to-top { color: var(--on-accent); background: var(--brand-primary); border-color: var(--brand-primary); }
+html[data-theme^="palette-"] .map-shell .leaflet-control-attribution { color: var(--muted); background: color-mix(in srgb, var(--brand-bg) 86%, transparent); }
+html[data-theme^="palette-"] .map-shell .leaflet-control-attribution a { color: var(--brand-primary); }
 
-@media (max-width: 639px) {
-  .palette-card-trigger { min-height: 92px; padding: .95rem; }
-  .palette-card-details { padding-inline: .95rem; }
-  .palette-card-expanded .palette-card-details { padding-bottom: 1rem; }
-}
+@media (max-width: 639px) { .palette-card-trigger { min-height: 92px; padding: .95rem; } .palette-card-details { padding-inline: .95rem; } .palette-card-expanded .palette-card-details { padding-bottom: 1rem; } }

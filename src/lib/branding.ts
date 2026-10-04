@@ -1,4 +1,6 @@
-export type PaletteRole = "Principal" | "Fondo" | "Acción" | "Texto" | "Secundario" | "Apoyo" | "Énfasis" | "Neutro";
+export type PaletteRole = "Principal" | "Fondo" | "Acción" | "Texto" | "Secundario" | "Apoyo" | "Énfasis" | "Neutro" | "Superficie" | "Borde";
+
+export const PALETTE_ROLES: PaletteRole[] = ["Principal", "Secundario", "Fondo", "Superficie", "Acción", "Texto", "Apoyo", "Énfasis", "Borde", "Neutro"];
 
 export type BrandColor = {
   hex: string;
@@ -120,6 +122,11 @@ export function rgba(hex: string, alpha: number) {
   return `rgb(${r} ${g} ${b} / ${alpha})`;
 }
 
+function contrastColor(hex: string) {
+  const { r, g, b } = hexToRgb(hex);
+  return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.62 ? "#17131c" : "#fffaf5";
+}
+
 export function applyBranding(theme: string, palettes = DEFAULT_PALETTES) {
   if (typeof document === "undefined") return;
   const root = document.documentElement;
@@ -131,28 +138,37 @@ export function applyBranding(theme: string, palettes = DEFAULT_PALETTES) {
   }
 
   const colors = palette.colors;
-  const principal = colors.find((color) => color.role === "Principal")?.hex ?? colors[0].hex;
-  const background = colors.find((color) => color.role === "Fondo")?.hex ?? "#080812";
-  const action = colors.find((color) => color.role === "Acción")?.hex ?? principal;
-  const text = colors.find((color) => color.role === "Texto")?.hex ?? "#f8fafc";
-  const support = colors.find((color) => color.role === "Apoyo")?.hex ?? action;
+  const colorFor = (role: PaletteRole, fallback: string) => colors.find((color) => color.role === role)?.hex ?? fallback;
+  const principal = colorFor("Principal", colors[0].hex);
+  const secondary = colorFor("Secundario", principal);
+  const background = colorFor("Fondo", "#080812");
+  const surface = colorFor("Superficie", background);
+  const action = colorFor("Acción", principal);
+  const text = colorFor("Texto", "#f8fafc");
+  const support = colorFor("Apoyo", secondary);
+  const highlight = colorFor("Énfasis", support);
+  const border = colorFor("Borde", principal);
   root.style.setProperty("--brand-primary", principal);
+  root.style.setProperty("--brand-secondary", secondary);
   root.style.setProperty("--brand-bg", background);
+  root.style.setProperty("--brand-surface", surface);
   root.style.setProperty("--brand-action", action);
   root.style.setProperty("--brand-text", text);
   root.style.setProperty("--brand-support", support);
+  root.style.setProperty("--brand-highlight", highlight);
+  root.style.setProperty("--brand-border", border);
   root.style.setProperty("--accent", principal);
   root.style.setProperty("--accent2", support);
   root.style.setProperty("--accent-ink", action);
-  root.style.setProperty("--on-accent", text);
-  root.style.setProperty("--border", rgba(principal, 0.3));
-  root.style.setProperty("--border-soft", rgba(principal, 0.14));
+  root.style.setProperty("--on-accent", contrastColor(action));
+  root.style.setProperty("--border", rgba(border, 0.38));
+  root.style.setProperty("--border-soft", rgba(border, 0.18));
   root.style.setProperty("--fg", text);
   root.style.setProperty("--muted", rgba(text, 0.7));
   root.style.setProperty("--faint", rgba(text, 0.48));
   root.style.setProperty("--bg", background);
-  root.style.setProperty("--panel", rgba(background, 0.94));
-  root.style.setProperty("--panel-soft", rgba(background, 0.82));
+  root.style.setProperty("--panel", surface);
+  root.style.setProperty("--panel-soft", rgba(surface, 0.84));
   root.style.setProperty("--panel-2", rgba(principal, 0.16));
   for (let index = 0; index < 7; index += 1) {
     root.style.setProperty(`--c${index + 1}`, colors[index % colors.length].hex);
