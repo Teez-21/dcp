@@ -36,7 +36,7 @@ export type Election = {
 
 export type MapMode = "winner" | "split";
 export type MarginMetric = "absolute" | "percentage";
-export type ThemeName = "tokyo" | "solarized";
+export type ThemeName = "tokyo" | "solarized" | (string & {});
 
 export const PALETTE = [
   "#2a9d8f", "#e9a800", "#457b9d", "#f4722b", "#43aa8b",

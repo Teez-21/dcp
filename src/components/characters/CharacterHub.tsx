@@ -2,7 +2,6 @@
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import type { Session } from "@supabase/supabase-js";
 import { ArrowLeft, ArrowUpRight, Check, ChevronRight, ExternalLink, FileText, LockKeyhole, LogOut, Mail, Pencil, Plus, ShieldCheck, Upload, UserRound, X } from "lucide-react";
 import { CHARACTER_PHOTOS_BUCKET, getSupabaseClient } from "@/lib/supabase";
@@ -365,9 +364,9 @@ export default function CharacterHub() {
       <div className="character-glow pointer-events-none absolute inset-x-0 top-0 h-[34rem]" />
       <div className="container-wide relative z-10 mx-auto px-5 pb-12 pt-6 sm:px-8 md:px-12 md:pt-10">
         <header className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-5">
-          <Link href="/#inicio" className="magnetic-button magnetic-button-ghost">
+          <a href="/#inicio" className="magnetic-button magnetic-button-ghost">
             <ArrowLeft className="h-4 w-4" /> Volver al inicio
-          </Link>
+          </a>
           <div className="flex flex-wrap items-center gap-2">
             {session && isEditor && (
               <>

@@ -2,7 +2,6 @@
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import {
   Activity,
   ArrowDown,
@@ -29,6 +28,7 @@ import type { JournalTopic } from "@/store/useDashboardStore";
 import { sumVotes, ranking, nameOf } from "@/lib/electoral";
 import ControlDeck from "./ControlDeck";
 import ConstellationGrid from "./ConstellationGrid";
+import BrandingPanel from "./BrandingPanel";
 
 const MapCanvas = dynamic(() => import("./MapCanvas"), { ssr: false });
 
@@ -175,6 +175,8 @@ export default function Dashboard() {
           </div>
         </section>
 
+        <BrandingPanel />
+
         <SuggestionsSection />
       </main>
 
@@ -199,7 +201,7 @@ function ModuleCard({ module, index }: { module: DashboardModule; index: number 
   const Icon = module.icon;
   const cardClass = `module-card module-${module.tone}${module.href ? " module-card-action" : ""}`;
   const content = <><div className="flex items-start justify-between"><span className="font-mono text-xs text-mist-900">{module.number}</span><Icon className="h-5 w-5 text-signal" strokeWidth={1.6} /></div><div className="mt-20"><h3 className="font-display text-2xl leading-tight tracking-tight text-mist-100">{module.title}</h3><p className="mt-3 text-sm leading-relaxed text-mist-900">{module.description}</p><span className="module-link mt-7">Explorar <ChevronRight className="h-4 w-4" /></span></div></>;
-  return <Reveal delay={index * 0.06}>{module.href ? <Link href={module.href} aria-label={`Abrir ${module.title}`} className={cardClass}>{content}</Link> : <article className={cardClass}>{content}</article>}</Reveal>;
+  return <Reveal delay={index * 0.06}>{module.href ? <a href={module.href} aria-label={`Abrir ${module.title}`} className={cardClass}>{content}</a> : <article className={cardClass}>{content}</article>}</Reveal>;
 }
 
 function Reveal({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {

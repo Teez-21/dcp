@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, Landmark, ScrollText, TrendingUp, UsersRound } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -45,9 +44,9 @@ export default function ConcejoPage() {
       <div className="character-glow pointer-events-none absolute inset-x-0 top-0 h-[34rem]" />
       <div className="container-wide relative z-10 mx-auto px-5 pb-16 pt-6 sm:px-8 md:px-12 md:pt-10">
         <header className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-5">
-          <Link href="/#inicio" className="magnetic-button magnetic-button-ghost">
+          <a href="/#inicio" className="magnetic-button magnetic-button-ghost">
             <ArrowLeft className="h-4 w-4" /> Volver al inicio
-          </Link>
+          </a>
           <span className="character-meta-chip text-[10px] font-mono uppercase tracking-[.14em] text-mist-900">Bogotá · Concejo Distrital</span>
         </header>
 
@@ -60,9 +59,9 @@ export default function ConcejoPage() {
             Lecturas de tendencia, proposiciones, bancadas formales e informales, proyectos de acuerdo propuestos, entre otros.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
-            <Link href="/?election=concejo#territorio" className="magnetic-button magnetic-button-primary">
+            <a href="/?election=concejo#territorio" className="magnetic-button magnetic-button-primary">
               Ver votación del Concejo en el mapa <ArrowUpRight className="h-4 w-4" />
-            </Link>
+            </a>
             <span className="character-meta-chip self-center text-[11px] text-mist-900">Las secciones en preparación se completarán con fuentes verificables.</span>
           </div>
         </section>
@@ -83,9 +82,9 @@ export default function ConcejoPage() {
 
         <footer className="mt-14 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-mist-900">
           <p>Las interpretaciones políticas se publicarán con contexto y referencias documentales.</p>
-          <Link href="/#territorio" className="inline-flex items-center gap-2 text-signal transition-colors hover:text-white">
+          <a href="/#territorio" className="inline-flex items-center gap-2 text-signal transition-colors hover:text-white">
             Ir al mapa electoral <ArrowUpRight className="h-3.5 w-3.5" />
-          </Link>
+          </a>
         </footer>
       </div>
     </main>
