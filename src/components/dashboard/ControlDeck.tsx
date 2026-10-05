@@ -16,7 +16,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Slider } from "@/components/ui/slider";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
-import { displayPuestoVotes, sumVotes } from "@/lib/electoral";
+import { displayColor, displayPuestoVotes, sumVotes } from "@/lib/electoral";
 import { pollingStationSummary, stationForPuesto } from "@/lib/pollingStations";
 import MiniChart from "./MiniChart";
 
@@ -244,13 +244,13 @@ export default function ControlDeck() {
                   if (!c) return null;
                   return (
                   <div key={party} className="flex items-center gap-1.5">
-                    <input type="color" value={c.color} onChange={(e) => s.recolorCandidate(editingE.id, c.id, e.target.value)}
+                    <input type="color" value={displayColor(editingE, party, "party")} onChange={(e) => s.recolorCandidate(editingE.id, c.id, e.target.value)}
                       className="h-7 w-8 cursor-pointer rounded-md border border-border bg-panel p-0.5" aria-label={`Color de ${party}`} />
                     <span className="flex-1 text-[11px] leading-snug">{party}</span>
                   </div>);
                 }) : editingE?.candidates.length ? editingE.candidates.map((c) => (
                   <div key={c.id} className="flex items-center gap-1.5">
-                    <input type="color" value={c.color} onChange={(e) => s.recolorCandidate(editingE.id, c.id, e.target.value)}
+                    <input type="color" value={displayColor(editingE, c.id, "candidate")} onChange={(e) => s.recolorCandidate(editingE.id, c.id, e.target.value)}
                       className="h-7 w-8 cursor-pointer rounded-md border border-border bg-panel p-0.5" aria-label={`Color de ${c.name}`} />
                     <input type="text" defaultValue={c.name} onBlur={(e) => s.renameCandidate(editingE.id, c.id, e.target.value.trim() || c.name)}
                       className="h-7 flex-1 rounded-md border border-border bg-panel px-2 text-[12px]" />

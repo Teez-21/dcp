@@ -54,6 +54,11 @@ export const PRESET_COLORS: [RegExp, string][] = [
   [/oviedo/, "#0e9ca8"],
 ];
 
+export function presetColorFor(rawName: unknown): string | undefined {
+  const normalized = norm(rawName);
+  return PRESET_COLORS.find(([pattern]) => pattern.test(normalized))?.[1];
+}
+
 export const NON_CANDIDATES =
   /^(votos en blanco|votos nulos|votos no marcados|blanco|nulos|no marcados)$/;
 
@@ -123,7 +128,10 @@ export function newElection(id: string, name: string): Election {
 export function candOf(e: Election, cid: string): Candidate | undefined {
   return e.candidates.find((c) => c.id === cid);
 }
-export const colorOf = (e: Election, cid: string): string => candOf(e, cid)?.color ?? "#888";
+export const colorOf = (e: Election, cid: string): string => {
+  const candidate = candOf(e, cid);
+  return presetColorFor(candidate?.name) ?? candidate?.color ?? "#888";
+};
 export const nameOf = (e: Election, cid: string): string => candOf(e, cid)?.name ?? cid;
 
 export type ResultView = "party" | "candidate";
@@ -159,6 +167,8 @@ export function displayPuestoVotes(e: Election, puesto: Puesto, view: ResultView
 
 export function displayColor(e: Election, key: string, view: ResultView = "candidate"): string {
   if (!e.partyMode || view === "candidate") return colorOf(e, key);
+  const preset = presetColorFor(key);
+  if (preset) return preset;
   const partyColor = e.partyColors?.[key];
   if (partyColor) return partyColor;
   const candidate = e.candidates.find((c) => c.party === key);
@@ -172,11 +182,15 @@ export function displayName(e: Election, key: string, view: ResultView = "candid
 /** Crea o reutiliza un candidato dentro de una elección, asignando color fijo o de paleta. */
 export function ensureCand(e: Election, rawName: string): Candidate {
   const existing = e.candidates.find((x) => norm(x.name) === norm(rawName));
-  if (existing) return existing;
-  const preset = PRESET_COLORS.find(([re]) => re.test(norm(rawName)));
+  if (existing) {
+    const preset = presetColorFor(existing.name);
+    if (preset) existing.color = preset;
+    return existing;
+  }
+  const preset = presetColorFor(rawName);
   const used = e.candidates.filter((x) => !PRESET_COLORS.some(([, col]) => col === x.color)).length;
   const nm = rawName === rawName.toUpperCase() ? titleCase(rawName.trim()) : rawName.trim();
-  const c: Candidate = { id: uid(), name: nm, color: preset ? preset[1] : PALETTE[used % PALETTE.length] };
+  const c: Candidate = { id: uid(), name: nm, color: preset ?? PALETTE[used % PALETTE.length] };
   e.candidates.push(c);
   return c;
 }

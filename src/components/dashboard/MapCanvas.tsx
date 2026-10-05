@@ -545,7 +545,7 @@ export default function MapCanvas() {
                   ...Object.values(election.partyVotes || {}).flatMap((votes) => Object.keys(votes)),
                   ...election.puestos.flatMap((puesto) => Object.keys(puesto.partyVotes || {})),
                 ])).map((name) => ({ id: name, name, color: displayColor(election, name, view) }))
-              : election.candidates.map((candidate) => ({ id: candidate.id, name: candidate.name, color: candidate.color }));
+              : election.candidates.map((candidate) => ({ id: candidate.id, name: candidate.name, color: displayColor(election, candidate.id, view) }));
             return (
               <div key={election.id} className="mb-2 last:mb-0">
                 <b className="mb-1 flex items-center gap-1.5 font-display text-[13px]"><MapPin className="h-3 w-3 text-accent" />{election.name}</b>
