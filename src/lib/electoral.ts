@@ -43,11 +43,15 @@ export const PALETTE = [
   "#8d99ae", "#b56576", "#264653", "#a68a64", "#5f7d4f",
 ];
 
-// Colores fijos para dos candidatos presidenciales que el usuario pidió
-// explícitamente: morado para Cepeda/Petro, rojo para De la Espriella.
+// Colores semánticos para candidaturas y partidos que deben conservarse
+// iguales entre elecciones, incluso cuando se importan desde un CSV.
 export const PRESET_COLORS: [RegExp, string][] = [
-  [/cepeda|petro/, "#7b2cbf"],
-  [/espriella/, "#d62828"],
+  [/cepeda|petro|pacto historico|gustavo bolivar/, "#e9a800"],
+  [/centro democratico|paloma .*valencia/, "#173f73"],
+  [/espriella/, "#6b7280"],
+  [/partido verde|alianza verde|claudia .*lopez/, "#2f8f46"],
+  [/nuevo liberalismo|galan/, "#c8343d"],
+  [/oviedo/, "#0e9ca8"],
 ];
 
 export const NON_CANDIDATES =

@@ -10,6 +10,7 @@ import {
 } from "@/lib/electoral";
 import preloadedAlcaldia from "@/data/alcaldia-2023.json";
 import preloadedPresidencial from "@/data/presidencial-primera-vuelta.json";
+import preloadedPresidencialSegunda from "@/data/presidencial-segunda-vuelta.json";
 
 export type JournalEntry = { id: string; title: string; body: string; createdAt: string };
 export type JournalTopic = { id: string; title: string; description: string; entries: JournalEntry[] };
@@ -68,7 +69,7 @@ type Actions = {
 
 const defaultElections = (): Election[] => [
   preloadedPresidencial as Election,
-  newElection("pres2", "Presidencial · 2ª vuelta"),
+  preloadedPresidencialSegunda as Election,
   { ...newElection("camara", "Cámara de Representantes · Bogotá 2026–2030"), partyMode: true },
   preloadedAlcaldia as Election,
   { ...newElection("concejo", "Concejo de Bogotá 2023-2027"), partyMode: true },
@@ -99,6 +100,8 @@ export const useDashboardStore = create<State & Actions>()(
           const preloadedAlcaldiaData = preloadedAlcaldia as Election;
           const needsAlcaldiaRefresh = alcaldia.dataVersion !== preloadedAlcaldiaData.dataVersion;
           const presidencia = s.elections.find((e) => e.id === "pres1");
+          const presidencia2 = s.elections.find((e) => e.id === "pres2");
+          const preloadedPresidencialSegundaData = preloadedPresidencialSegunda as Election;
           const elections = s.elections.map((e) => {
             if (e.id === "alcaldia" && needsAlcaldiaRefresh) {
               const savedById = new Map(e.candidates.map((candidate) => [candidate.id, candidate]));
@@ -120,6 +123,7 @@ export const useDashboardStore = create<State & Actions>()(
               };
             }
             if (e.id === "pres1" && (!presidencia || !Object.keys(presidencia.localidades).length)) return preloadedPresidencial as Election;
+            if (e.id === "pres2" && (!presidencia2 || presidencia2.dataVersion !== preloadedPresidencialSegundaData.dataVersion || !Object.keys(presidencia2.localidades).length)) return preloadedPresidencialSegundaData;
             return e;
           });
           const oldEmptyView = s.visible.length === 1 && s.visible[0] === "pres1";
@@ -387,14 +391,21 @@ export const useDashboardStore = create<State & Actions>()(
         const hasAlcaldiaData = Boolean(savedAlcaldia && Object.keys(savedAlcaldia.localidades || {}).length);
         const savedPresidencial = savedElections.find((e) => e.id === "pres1");
         const hasPresidencialData = Boolean(savedPresidencial && Object.keys(savedPresidencial.localidades || {}).length);
+        const savedPresidencialSegunda = savedElections.find((e) => e.id === "pres2");
+        const hasPresidencialSegundaData = Boolean(savedPresidencialSegunda && Object.keys(savedPresidencialSegunda.localidades || {}).length);
         const elections = savedElections.map((e) => {
           if (e.id === "alcaldia" && !hasAlcaldiaData) return current.elections.find((base) => base.id === "alcaldia")!;
           if (e.id === "pres1" && !hasPresidencialData) return current.elections.find((base) => base.id === "pres1")!;
+          if (e.id === "pres2" && !hasPresidencialSegundaData) return current.elections.find((base) => base.id === "pres2")!;
           return e;
         });
         if (!elections.some((e) => e.id === "camara")) {
           const currentCamara = current.elections.find((e) => e.id === "camara");
           if (currentCamara) elections.push(currentCamara);
+        }
+        if (!elections.some((e) => e.id === "pres2")) {
+          const currentPresidencialSegunda = current.elections.find((e) => e.id === "pres2");
+          if (currentPresidencialSegunda) elections.push(currentPresidencialSegunda);
         }
         const isOldEmptySession = !hasAlcaldiaData && saved.visible?.length === 1 && saved.visible[0] === "pres1";
         const savedMode = (saved as any).mode;
