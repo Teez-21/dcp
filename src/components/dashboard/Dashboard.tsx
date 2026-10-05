@@ -104,12 +104,13 @@ export default function Dashboard() {
   const summary = useMemo(() => {
     const active = elections.filter((e) => visible.includes(e.id));
     const votes = active.reduce((total, election) => total + Object.values(election.localidades).reduce((sum, row) => sum + sumVotes(row), 0), 0);
-    const localityCount = active.reduce((total, election) => total + Object.keys(election.localidades).length, 0);
+    const localityCount = 20;
     const postCount = active.reduce((total, election) => total + election.puestos.length, 0);
     const candidateCount = active.reduce((total, election) => total + election.candidates.length, 0);
     const primary = active[active.length - 1];
     const leaders = primary ? ranking(Object.values(primary.localidades)[0]).slice(0, 3).map(([id, value]) => ({ name: nameOf(primary, id), value })) : [];
-    return { active, votes, localityCount, postCount, candidateCount, leaders };
+    const averageVotes = active.length ? Math.round(votes / active.length) : 0;
+    return { active, votes, localityCount, postCount, candidateCount, averageVotes, leaders };
   }, [elections, visible]);
 
   return (
@@ -127,11 +128,11 @@ export default function Dashboard() {
             <motion.div style={{ opacity: heroOpacity, scale: heroScale, y: heroY }} className="max-w-6xl">
               <Reveal delay={0.05}><p className="eyebrow mb-7"><span className="status-dot" />Centro de inteligencia · {new Date().getFullYear()}</p></Reveal>
               <h1 className="font-display text-[clamp(4rem,12vw,11rem)] font-semibold leading-[.82] tracking-[-.075em] text-mist-100">
-                <HeroWord delay={0.12}>Datos</HeroWord>{" "}
-                <HeroWord delay={0.2}>que</HeroWord><br />
-                <HeroWord delay={0.28} className="text-signal">importan.</HeroWord>
+                <HeroWord delay={0.12}>Hub</HeroWord>{" "}
+                <HeroWord delay={0.2}>-</HeroWord>{" "}<br className="hidden md:block" />
+                <HeroWord delay={0.28} className="text-signal">Concejo de Bogotá</HeroWord>
               </h1>
-              <Reveal delay={0.52} className="mt-10 max-w-xl"><p className="max-w-lg text-[15px] leading-relaxed text-mist-900 md:text-lg">Una superficie viva para recorrer señales, territorio y contexto. Desplázate, explora y deja que los datos revelen sus conexiones.</p></Reveal>
+              <Reveal delay={0.52} className="mt-10 max-w-xl"><p className="max-w-lg text-[15px] leading-relaxed text-mist-900 md:text-lg">Esta página busca mostrar datos relevantes para la campaña, desde la distribución del voto en Bogotá hasta los temas tratados por el Concejo de Bogotá, el branding y personajes importantes de la izquierda en Bogotá y Colombia.</p></Reveal>
               <Reveal delay={0.62} className="mt-8 flex flex-wrap items-center gap-3"><button className="magnetic-button magnetic-button-primary" onClick={() => scrollToId("señales")}>Explorar señales <ArrowDown className="h-4 w-4" /></button><button className="magnetic-button magnetic-button-ghost" onClick={() => scrollToId("territorio")}>Ver territorio <ChevronRight className="h-4 w-4" /></button></Reveal>
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.9, duration: 0.9, ease: EASE }} className="hero-index hidden md:block"><span>01</span><span className="h-20 w-px bg-signal/70" /><span>05</span></motion.div>
@@ -143,22 +144,22 @@ export default function Dashboard() {
 
         <section id="señales" className="nexus-section relative px-6 py-28 md:px-12 md:py-40">
           <div className="container-wide mx-auto">
-            <SectionHeader index="02" kicker="Señales en movimiento" title={<>Una lectura<br /><span className="text-stroke text-mist-100">más humana.</span></>} description="No se trata de acumular pantallas. Se trata de poder ver lo importante, reconocer el cambio y moverse hacia la siguiente pregunta." />
+            <SectionHeader index="02" kicker="Señales en movimiento" title="Datos electorales" description="Para ver lo importante, territorios relevantes, cambios en el comportamiento de la votación y moverse con intención y objetivo." />
             <div className="mt-16 grid gap-4 md:grid-cols-12">
               <MetricCard className="md:col-span-5" label="Votaciones activas" value={`${summary.active.length}/${elections.length}`} detail="seleccionadas para explorar" icon={Radar} accent="lime" />
-              <MetricCard className="md:col-span-3" label="Localidades" value={summary.localityCount.toLocaleString("es-CO")} detail="con señales disponibles" icon={MapPinned} accent="violet" />
+              <MetricCard className="md:col-span-3" label="Localidades" value="20" detail="localidades de Bogotá" icon={MapPinned} accent="violet" />
               <MetricCard className="md:col-span-4" label="Votos procesados" value={summary.votes ? formatCompact(summary.votes) : "—"} detail={summary.candidateCount ? `${summary.candidateCount} actores detectados` : "esperando una fuente de datos"} icon={Database} accent="orange" />
             </div>
             <div className="mt-4 grid gap-4 md:grid-cols-12">
-              <Reveal className="bento-card bento-card-dark md:col-span-7" delay={0.05}><div className="flex items-start justify-between"><div><p className="eyebrow text-signal">Lectura instantánea</p><h3 className="mt-4 max-w-md font-display text-3xl leading-tight tracking-tight md:text-5xl">Cada dato abre una nueva ruta.</h3></div><Sparkles className="h-6 w-6 text-signal" /></div><div className="signal-wave mt-16"><span /><span /><span /><span /><span /><span /><span /><span /><span /><span /><span /><span /></div><p className="mt-5 max-w-sm text-sm leading-relaxed text-mist-900">La interfaz se adapta a lo que ya tienes cargado: sin datos no inventa certezas; prepara el espacio para la siguiente señal.</p></Reveal>
-              <Reveal className="bento-card bento-card-signal md:col-span-5" delay={0.12}><p className="eyebrow text-ink-950/60">Primera señal</p><h3 className="mt-4 font-display text-4xl leading-none tracking-tight text-ink-950">{summary.active[0]?.name || "Sin elección activa"}</h3><div className="mt-16 flex items-end justify-between"><span className="font-mono text-xs uppercase tracking-widest text-ink-950/60">{summary.postCount} puestos</span><Activity className="h-10 w-10 text-ink-950/60" /></div></Reveal>
+              <Reveal className="bento-card bento-card-dark md:col-span-7" delay={0.05}><div className="flex items-start justify-between"><div><p className="eyebrow text-signal">Promedio de votos por votación activa</p><h3 className="mt-4 max-w-md font-display text-3xl leading-tight tracking-tight md:text-5xl">{summary.averageVotes ? formatCompact(summary.averageVotes) : "—"}</h3></div><Sparkles className="h-6 w-6 text-signal" /></div><div className="signal-wave mt-16"><span /><span /><span /><span /><span /><span /><span /><span /><span /><span /><span /><span /></div><p className="mt-5 max-w-sm text-sm leading-relaxed text-mist-900">Promedio calculado con las votaciones activas seleccionadas para explorar.</p></Reveal>
+              <Reveal className="bento-card bento-card-signal md:col-span-5" delay={0.12}><p className="eyebrow text-ink-950/60">Todas las votaciones activas</p><h3 className="mt-4 font-display text-3xl leading-tight tracking-tight text-ink-950">{summary.active.length ? summary.active.map((election) => election.name).join(" · ") : "Sin votaciones activas"}</h3><div className="mt-16 flex items-end justify-between"><span className="font-mono text-xs uppercase tracking-widest text-ink-950/60">{summary.postCount} puestos</span><Activity className="h-10 w-10 text-ink-950/60" /></div></Reveal>
             </div>
           </div>
         </section>
 
         <section id="territorio" className="nexus-section nexus-map-section relative px-4 py-24 md:px-8 md:py-32">
           <div className="container-wide mx-auto">
-            <SectionHeader index="03" kicker="Territorio interactivo" title={<>El mapa no es<br /><span className="text-stroke text-mist-100">el final.</span></>} description="Es el lugar donde las señales toman forma. Acerca, compara, carga fuentes y encuentra el punto donde una hipótesis empieza a sostenerse." />
+            <SectionHeader index="03" kicker="Territorio interactivo" title={<>¿Cómo se distribuyeron<br /><span className="text-stroke text-mist-100">los votos en el territorio?</span></>} description="El mapa busca mostrar cómo se distribuyeron los votos de las últimas 5 elecciones por localidad, UPZ y puesto de votación en Bogotá para identificar zonas de interés para actividades programáticas." />
             <div className="map-shell relative mt-14 h-[min(78vh,780px)] min-h-[580px] overflow-hidden rounded-[2rem] border border-white/10 bg-ink-900 shadow-2xl shadow-black/30">
               <div className="absolute inset-0 z-0"><MapCanvas /></div>
               <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-ink-950/60 via-transparent to-ink-950/10" />
@@ -170,7 +171,7 @@ export default function Dashboard() {
 
         <section id="sistema" className="nexus-section px-6 py-28 md:px-12 md:py-40">
           <div className="container-wide mx-auto">
-            <SectionHeader index="04" kicker="Un sistema, no siete pestañas" title={<>Todo conectado.<br /><span className="text-stroke text-mist-100">Todo cerca.</span></>} description="La navegación dejó de ser una barrera. Cada módulo vive en el mismo recorrido y aparece cuando el scroll llega a él." />
+            <SectionHeader index="04" kicker="Un sistema, no siete pestañas" title="Todos los temas, cerca." description="Acá encontrará todos los temas que consideramos relevantes para la campaña." />
             <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{MODULES.map((module, i) => <ModuleCard key={module.number} module={module} index={i} />)}</div>
           </div>
         </section>
@@ -234,7 +235,7 @@ function SuggestionsSection() {
   }
   return <section id="sugerencias" className="nexus-section journal-section relative overflow-hidden px-6 py-28 md:px-12 md:py-40">
     <div className="container-wide relative mx-auto">
-      <SectionHeader index="05" kicker="Sugerencias" title={<>Temas para<br /><span className="text-stroke text-mist-100">pensar mejor.</span></>} description="Organiza tus hipótesis, decisiones y hallazgos como un blog privado: cada tema puede contener todas las entradas que necesites." />
+      <SectionHeader index="05" kicker="Sugerencias" title={<>Temas para<br /><span className="text-stroke text-mist-100">pensar mejor.</span></>} description="Sugerencias, anotaciones u otros que merezcan ser anotados." />
       <div className="mt-14 grid gap-5 lg:grid-cols-[.8fr_1.4fr]">
         <Reveal className="journal-compose" delay={0.05}><div className="flex items-center gap-3"><span className="journal-icon"><BookOpen className="h-5 w-5" /></span><div><p className="eyebrow text-signal">Nuevo tema</p><h3 className="mt-1 font-display text-2xl">Abre una línea de trabajo</h3></div></div><form onSubmit={createTopic} className="mt-7 space-y-3"><input value={topicTitle} onChange={(e) => setTopicTitle(e.target.value)} placeholder="Ej. Elecciones 2027" className="journal-input" /><textarea value={topicDescription} onChange={(e) => setTopicDescription(e.target.value)} placeholder="Descripción breve del tema (opcional)" rows={4} className="journal-input resize-none" /><button type="submit" className="magnetic-button magnetic-button-primary w-full justify-center">Crear tema <BookOpen className="h-4 w-4" /></button></form><p className="mt-4 text-xs leading-relaxed text-mist-900">Los temas y sus entradas se guardan automáticamente en este navegador.</p></Reveal>
         <div className="space-y-3">{topics.length === 0 ? <Reveal className="journal-empty"><BookOpen className="h-7 w-7 text-signal" /><h3 className="mt-4 font-display text-2xl">Tus sugerencias están listas.</h3><p className="mt-2 max-w-sm text-sm leading-relaxed text-mist-900">Crea el primer tema para comenzar a guardar contexto, decisiones y aprendizajes.</p></Reveal> : topics.map((topic, index) => <JournalTopicCard key={topic.id} topic={topic} index={index} open={openTopic === topic.id} onToggle={() => setOpenTopic(openTopic === topic.id ? null : topic.id)} onAddEntry={addEntry} onDeleteTopic={() => deleteTopic(topic.id)} onDeleteEntry={deleteEntry} />)}</div>

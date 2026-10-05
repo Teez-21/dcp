@@ -110,7 +110,7 @@ export default function BrandingPanel() {
         <div className="mt-12 flex flex-wrap items-center justify-between gap-3"><p className="eyebrow text-signal">Paletas predeterminadas y tuyas</p><button type="button" className="magnetic-button magnetic-button-primary min-h-10 px-4 text-[11px]" onClick={() => setShowCreator((value) => !value)}><WandSparkles className="h-3.5 w-3.5" />{showCreator ? "Cerrar creador" : "Crear paleta"}</button></div>
         {showCreator && <PaletteCreator draft={draft} onChange={updateDraft} onColorChange={updateDraftColor} onAddColor={addDraftColor} onRemoveColor={removeDraftColor} onSubmit={createPalette} />}
         <div className="mt-6 grid gap-3 lg:grid-cols-2">{allPalettes.map((palette) => <PaletteCard key={palette.id} palette={palette} expanded={expanded === palette.id} active={theme === palette.id} onToggle={() => setExpanded(expanded === palette.id ? null : palette.id)} onChoose={() => choosePalette(palette)} onRestore={() => setTheme("tokyo")} onDelete={palette.source === "custom" ? () => deleteCustomPalette(palette.id) : undefined} observation={observation} setObservation={setObservation} website={website} setWebsite={setWebsite} notice={observationNotice} submitting={submitting} clientReady={Boolean(client)} onObservation={submitObservation} />)}</div>
-        <p className="mt-5 text-xs text-mist-900">La paleta 4 no se incluye porque no aparece en la documentación fuente. Las paletas creadas se guardan sólo en este navegador.</p>
+        <p className="mt-5 text-xs text-mist-900">Anotaciones</p>
       </div>
     </section>
   );
