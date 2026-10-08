@@ -39,6 +39,7 @@ const ANCHORS: Anchor[] = [
   { id: "inicio", label: "Inicio", icon: Radar },
   { id: "señales", label: "Señales", icon: BarChart3 },
   { id: "territorio", label: "Territorio", icon: MapPinned },
+  { id: "percepcion", label: "Percepción ciudadana", icon: MessageCircle },
   { id: "sistema", label: "Sistema", icon: Workflow },
   { id: "sugerencias", label: "Sugerencias", icon: NotebookPen },
 ];
@@ -135,7 +136,7 @@ export default function Dashboard() {
               <Reveal delay={0.52} className="mt-10 max-w-xl"><p className="max-w-lg text-[15px] leading-relaxed text-mist-900 md:text-lg">Esta página busca mostrar datos relevantes para la campaña, desde la distribución del voto en Bogotá hasta los temas tratados por el Concejo de Bogotá, el branding y personajes importantes de la izquierda en Bogotá y Colombia.</p></Reveal>
               <Reveal delay={0.62} className="mt-8 flex flex-wrap items-center gap-3"><button className="magnetic-button magnetic-button-primary" onClick={() => scrollToId("señales")}>Explorar señales <ArrowDown className="h-4 w-4" /></button><button className="magnetic-button magnetic-button-ghost" onClick={() => scrollToId("territorio")}>Ver territorio <ChevronRight className="h-4 w-4" /></button></Reveal>
             </motion.div>
-            <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.9, duration: 0.9, ease: EASE }} className="hero-index hidden md:block"><span>01</span><span className="h-20 w-px bg-signal/70" /><span>05</span></motion.div>
+            <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.9, duration: 0.9, ease: EASE }} className="hero-index hidden md:block"><span>01</span><span className="h-20 w-px bg-signal/70" /><span>06</span></motion.div>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }} className="absolute bottom-0 left-0 flex items-center gap-3 text-[10px] uppercase tracking-[.22em] text-mist-900"><span className="animate-bounce"><ArrowDown className="h-4 w-4 text-signal" /></span>Desplázate para descubrir</motion.div>
           </div>
         </section>
@@ -169,9 +170,31 @@ export default function Dashboard() {
           </div>
         </section>
 
+        <section id="percepcion" className="nexus-section relative px-6 py-28 md:px-12 md:py-40">
+          <div className="container-wide mx-auto">
+            <SectionHeader index="04" kicker="Percepción ciudadana" title={<>Lo que piensa<br /><span className="text-stroke text-mist-100">la ciudad.</span></>} description="Información sobre la Encuesta de Percepción Ciudadana de Bogotá Cómo Vamos, la Encuesta Distrital de Percepción de la Secretaría Distrital de Planeación y la Encuesta de Percepción y Victimización de la CCB." />
+            <Reveal className="mt-14" delay={0.08}>
+              <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-ink-900 shadow-2xl shadow-black/30">
+                <div className="border-b border-white/10 px-6 py-5 md:px-8">
+                  <p className="eyebrow text-signal">Fuente disponible</p>
+                  <h3 className="mt-2 font-display text-2xl tracking-tight md:text-3xl">Encuesta de Percepción Ciudadana · Bogotá Cómo Vamos</h3>
+                  <p className="mt-3 max-w-3xl text-sm leading-relaxed text-mist-900">Por ahora, esta sección presenta la información de la Encuesta de Percepción Ciudadana de Bogotá Cómo Vamos. El informe se muestra directamente desde Power BI.</p>
+                </div>
+                <div className="relative aspect-[600/373.5] min-h-[420px] w-full bg-black/20 md:min-h-[560px]">
+                  <iframe title="EPC BCV" src="https://app.powerbi.com/view?r=eyJrIjoiODQzNTVjNGQtM2YxMy00Y2NlLTk3ZGYtZTBhNThjMTA4MmQwIiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9" className="absolute inset-0 h-full w-full border-0" allowFullScreen />
+                </div>
+                <div className="flex flex-col gap-2 border-t border-white/10 px-6 py-5 text-sm leading-relaxed text-mist-900 md:flex-row md:items-center md:justify-between md:px-8">
+                  <p>Créditos: <strong className="text-mist-100">Bogotá Cómo Vamos</strong>. Más información sobre la encuesta en su página oficial.</p>
+                  <a href="https://bogotacomovamos.org/encuesta-de-percepcion-ciudadana-2025/" target="_blank" rel="noreferrer" className="module-link shrink-0">Ver fuente oficial <ChevronRight className="h-4 w-4" /></a>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
         <section id="sistema" className="nexus-section px-6 py-28 md:px-12 md:py-40">
           <div className="container-wide mx-auto">
-            <SectionHeader index="04" kicker="Un sistema, no siete pestañas" title="Todos los temas, cerca." description="Acá encontrará todos los temas que consideramos relevantes para la campaña." />
+            <SectionHeader index="05" kicker="Un sistema, no siete pestañas" title="Todos los temas, cerca." description="Acá encontrará todos los temas que consideramos relevantes para la campaña." />
             <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{MODULES.map((module, i) => <ModuleCard key={module.number} module={module} index={i} />)}</div>
           </div>
         </section>
@@ -235,7 +258,7 @@ function SuggestionsSection() {
   }
   return <section id="sugerencias" className="nexus-section journal-section relative overflow-hidden px-6 py-28 md:px-12 md:py-40">
     <div className="container-wide relative mx-auto">
-      <SectionHeader index="05" kicker="Sugerencias" title={<>Temas para<br /><span className="text-stroke text-mist-100">pensar mejor.</span></>} description="Sugerencias, anotaciones u otros que merezcan ser anotados." />
+      <SectionHeader index="06" kicker="Sugerencias" title={<>Temas para<br /><span className="text-stroke text-mist-100">pensar mejor.</span></>} description="Sugerencias, anotaciones u otros que merezcan ser anotados." />
       <div className="mt-14 grid gap-5 lg:grid-cols-[.8fr_1.4fr]">
         <Reveal className="journal-compose" delay={0.05}><div className="flex items-center gap-3"><span className="journal-icon"><BookOpen className="h-5 w-5" /></span><div><p className="eyebrow text-signal">Nuevo tema</p><h3 className="mt-1 font-display text-2xl">Abre una línea de trabajo</h3></div></div><form onSubmit={createTopic} className="mt-7 space-y-3"><input value={topicTitle} onChange={(e) => setTopicTitle(e.target.value)} placeholder="Ej. Elecciones 2027" className="journal-input" /><textarea value={topicDescription} onChange={(e) => setTopicDescription(e.target.value)} placeholder="Descripción breve del tema (opcional)" rows={4} className="journal-input resize-none" /><button type="submit" className="magnetic-button magnetic-button-primary w-full justify-center">Crear tema <BookOpen className="h-4 w-4" /></button></form><p className="mt-4 text-xs leading-relaxed text-mist-900">Los temas y sus entradas se guardan automáticamente en este navegador.</p></Reveal>
         <div className="space-y-3">{topics.length === 0 ? <Reveal className="journal-empty"><BookOpen className="h-7 w-7 text-signal" /><h3 className="mt-4 font-display text-2xl">Tus sugerencias están listas.</h3><p className="mt-2 max-w-sm text-sm leading-relaxed text-mist-900">Crea el primer tema para comenzar a guardar contexto, decisiones y aprendizajes.</p></Reveal> : topics.map((topic, index) => <JournalTopicCard key={topic.id} topic={topic} index={index} open={openTopic === topic.id} onToggle={() => setOpenTopic(openTopic === topic.id ? null : topic.id)} onAddEntry={addEntry} onDeleteTopic={() => deleteTopic(topic.id)} onDeleteEntry={deleteEntry} />)}</div>
