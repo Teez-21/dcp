@@ -26,6 +26,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useDashboardStore } from "@/store/useDashboardStore";
 import type { JournalTopic } from "@/store/useDashboardStore";
 import { sumVotes, ranking, nameOf } from "@/lib/electoral";
+import { getSupabaseClient } from "@/lib/supabase";
 import ControlDeck from "./ControlDeck";
 import ConstellationGrid from "./ConstellationGrid";
 import BrandingPanel from "./BrandingPanel";
@@ -53,6 +54,31 @@ const MODULES: DashboardModule[] = [
   { number: "04", title: "Temas ciudadanos", description: "Conecta conversaciones, prioridades y territorio para encontrar lo que está moviendo la agenda.", icon: MessageCircle, tone: "cyan" },
   { number: "05", title: "Temas del candidato", description: "Contrasta el discurso con la reacción y deja cada dato en su contexto.", icon: MousePointer2, tone: "pink" },
   { number: "06", title: "Sugerencias", description: "Agrupa temas y añade entradas para conservar ideas, decisiones y hallazgos.", icon: FileText, tone: "blue" },
+];
+
+type CitizenSurvey = { id: string; shortName: string; title: string; description: string; embedTitle: string; embedUrl: string; sourceLabel: string; sourceUrl: string };
+
+const CITIZEN_SURVEYS: CitizenSurvey[] = [
+  {
+    id: "bogota-como-vamos-2025",
+    shortName: "Bogotá Cómo Vamos",
+    title: "Encuesta de Percepción Ciudadana · Bogotá Cómo Vamos",
+    description: "Por ahora, esta sección presenta la información de la Encuesta de Percepción Ciudadana de Bogotá Cómo Vamos. El informe se muestra directamente desde Power BI.",
+    embedTitle: "EPC BCV",
+    embedUrl: "https://app.powerbi.com/view?r=eyJrIjoiODQzNTVjNGQtM2YxMy00Y2NlLTk3ZGYtZTBhNThjMTA4MmQwIiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9",
+    sourceLabel: "Encuesta de Percepción Ciudadana 2025",
+    sourceUrl: "https://bogotacomovamos.org/encuesta-de-percepcion-ciudadana-2025/",
+  },
+  {
+    id: "ccb-victimizacion-2025",
+    shortName: "Victimización CCB",
+    title: "Encuesta de Victimización 2025 · Cámara de Comercio de Bogotá",
+    description: "Esta encuesta presenta información sobre percepción de seguridad, victimización y otros aspectos de la experiencia ciudadana en Bogotá.",
+    embedTitle: "Encuesta de victimización CCB",
+    embedUrl: "https://app.powerbi.com/view?r=eyJrIjoiZGY4YWFhZGEtZTEyYy00MTM5LTg2MjEtMGRjYjY1ZjE3ZWMxIiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9",
+    sourceLabel: "Documento oficial de la Encuesta de Victimización 2025",
+    sourceUrl: "https://bibliotecadigital.ccb.org.co/server/api/core/bitstreams/8551dacc-c4c4-408c-8909-671a645731dc/content",
+  },
 ];
 
 function scrollToId(id: string) {
@@ -173,22 +199,7 @@ export default function Dashboard() {
         <section id="percepcion" className="nexus-section relative px-6 py-28 md:px-12 md:py-40">
           <div className="container-wide mx-auto">
             <SectionHeader index="04" kicker="Percepción ciudadana" title={<>Lo que piensa<br /><span className="text-stroke text-mist-100">la ciudad.</span></>} description="Información sobre la Encuesta de Percepción Ciudadana de Bogotá Cómo Vamos, la Encuesta Distrital de Percepción de la Secretaría Distrital de Planeación y la Encuesta de Percepción y Victimización de la CCB." />
-            <Reveal className="mt-14" delay={0.08}>
-              <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-ink-900 shadow-2xl shadow-black/30">
-                <div className="border-b border-white/10 px-6 py-5 md:px-8">
-                  <p className="eyebrow text-signal">Fuente disponible</p>
-                  <h3 className="mt-2 font-display text-2xl tracking-tight md:text-3xl">Encuesta de Percepción Ciudadana · Bogotá Cómo Vamos</h3>
-                  <p className="mt-3 max-w-3xl text-sm leading-relaxed text-mist-900">Por ahora, esta sección presenta la información de la Encuesta de Percepción Ciudadana de Bogotá Cómo Vamos. El informe se muestra directamente desde Power BI.</p>
-                </div>
-                <div className="relative aspect-[600/373.5] min-h-[420px] w-full bg-black/20 md:min-h-[560px]">
-                  <iframe title="EPC BCV" src="https://app.powerbi.com/view?r=eyJrIjoiODQzNTVjNGQtM2YxMy00Y2NlLTk3ZGYtZTBhNThjMTA4MmQwIiwidCI6ImFjYTUxNjMxLTAwZmUtNDkwZC05MWFiLTE2M2VmODcyNjBlZSIsImMiOjR9" className="absolute inset-0 h-full w-full border-0" allowFullScreen />
-                </div>
-                <div className="flex flex-col gap-2 border-t border-white/10 px-6 py-5 text-sm leading-relaxed text-mist-900 md:flex-row md:items-center md:justify-between md:px-8">
-                  <p>Créditos: <strong className="text-mist-100">Bogotá Cómo Vamos</strong>. Más información sobre la encuesta en su página oficial.</p>
-                  <a href="https://bogotacomovamos.org/encuesta-de-percepcion-ciudadana-2025/" target="_blank" rel="noreferrer" className="module-link shrink-0">Ver fuente oficial <ChevronRight className="h-4 w-4" /></a>
-                </div>
-              </div>
-            </Reveal>
+            <CitizenPerceptionSection />
           </div>
         </section>
 
@@ -207,6 +218,85 @@ export default function Dashboard() {
       <BackToTop visible={scrolled} />
     </div>
   );
+}
+
+function CitizenPerceptionSection() {
+  const client = useMemo(() => getSupabaseClient(), []);
+  const [activeId, setActiveId] = useState(CITIZEN_SURVEYS[0].id);
+  const [observations, setObservations] = useState<Record<string, Array<{ id: string; observation: string; created_at: string }>>>({});
+  const [observation, setObservation] = useState("");
+  const [website, setWebsite] = useState("");
+  const [notice, setNotice] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const survey = CITIZEN_SURVEYS.find((item) => item.id === activeId) ?? CITIZEN_SURVEYS[0];
+
+  useEffect(() => {
+    if (!client || observations[survey.id]) return;
+    let cancelled = false;
+    setLoading(true);
+    client.from("citizen_survey_observations").select("id, observation, created_at").eq("survey_id", survey.id).order("created_at", { ascending: false }).limit(30).then(({ data, error }) => {
+      if (cancelled) return;
+      setLoading(false);
+      if (error) { setNotice("No fue posible cargar las observaciones en este momento."); return; }
+      setObservations((current) => ({ ...current, [survey.id]: (data ?? []) as Array<{ id: string; observation: string; created_at: string }> }));
+    });
+    return () => { cancelled = true; };
+  }, [client, observations, survey.id]);
+
+  function changeSurvey(id: string) {
+    setActiveId(id);
+    setObservation("");
+    setNotice(null);
+  }
+
+  async function submitObservation(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (website.trim()) { setObservation(""); setNotice("Gracias. La observación fue recibida."); return; }
+    const text = observation.trim();
+    if (!text || text.length > 1200 || !client) return;
+    const last = Number(window.localStorage.getItem("dcp-surveys:last-observation") ?? 0);
+    if (Date.now() - last < 10_000) { setNotice("Espera unos segundos antes de enviar otra observación."); return; }
+    setSubmitting(true);
+    const { data, error } = await client.from("citizen_survey_observations").insert({ survey_id: survey.id, observation: text, website: "" }).select("id, observation, created_at").single();
+    setSubmitting(false);
+    if (error) { setNotice("No fue posible guardar la observación en este momento."); return; }
+    window.localStorage.setItem("dcp-surveys:last-observation", String(Date.now()));
+    setObservations((current) => ({ ...current, [survey.id]: [data as { id: string; observation: string; created_at: string }, ...(current[survey.id] ?? [])] }));
+    setObservation("");
+    setNotice("Observación publicada. Gracias por aportar contexto.");
+  }
+
+  return <Reveal className="mt-14" delay={0.08}>
+    <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-ink-900 shadow-2xl shadow-black/30">
+      <div className="flex flex-wrap border-b border-white/10" role="tablist" aria-label="Encuestas de percepción ciudadana">
+        {CITIZEN_SURVEYS.map((item) => <button key={item.id} type="button" role="tab" aria-selected={activeId === item.id} onClick={() => changeSurvey(item.id)} className={`border-b-2 px-5 py-4 text-left text-xs uppercase tracking-[.12em] transition-colors md:px-8 ${activeId === item.id ? "border-signal text-signal" : "border-transparent text-mist-900 hover:text-mist-100"}`}>{item.shortName}</button>)}
+      </div>
+      <div className="border-b border-white/10 px-6 py-5 md:px-8">
+        <p className="eyebrow text-signal">Fuente disponible</p>
+        <h3 className="mt-2 font-display text-2xl tracking-tight md:text-3xl">{survey.title}</h3>
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-mist-900">{survey.description}</p>
+      </div>
+      <div className="relative aspect-[600/373.5] min-h-[420px] w-full bg-black/20 md:min-h-[560px]"><iframe title={survey.embedTitle} src={survey.embedUrl} className="absolute inset-0 h-full w-full border-0" allowFullScreen /></div>
+      <div className="border-t border-white/10 px-6 py-5 md:px-8">
+        <div className="flex flex-col gap-2 text-sm leading-relaxed text-mist-900 md:flex-row md:items-center md:justify-between"><p>Créditos: <strong className="text-mist-100">{survey.id === "ccb-victimizacion-2025" ? "Cámara de Comercio de Bogotá" : "Bogotá Cómo Vamos"}</strong>. Más información en la fuente oficial.</p><a href={survey.sourceUrl} target="_blank" rel="noreferrer" className="module-link shrink-0">Ver {survey.sourceLabel} <ChevronRight className="h-4 w-4" /></a></div>
+        <div className="mt-6 grid gap-6 border-t border-white/10 pt-5 lg:grid-cols-[.8fr_1.2fr]">
+          <form onSubmit={submitObservation}>
+            <p className="eyebrow text-signal">Observaciones · {survey.shortName}</p>
+            <label className="mt-3 block text-sm text-mist-900">Comparte una observación sobre esta encuesta<textarea value={observation} onChange={(event) => setObservation(event.target.value)} maxLength={1200} rows={5} placeholder="Escribe un hallazgo, pregunta o contexto…" className="journal-input mt-2 resize-none" /></label>
+            <input tabIndex={-1} aria-hidden="true" autoComplete="off" value={website} onChange={(event) => setWebsite(event.target.value)} className="character-honeypot" />
+            <div className="mt-2 flex items-center justify-between gap-3"><span className="text-[10px] text-mist-900">{observation.length}/1200 · sin nombre</span><button type="submit" disabled={submitting || !clientReady(client)} className="magnetic-button magnetic-button-ghost min-h-9 px-3 text-[10px]">{submitting ? "Guardando…" : "Compartir observación"}</button></div>
+            {notice && <p className="mt-2 text-[11px] text-signal" role="status">{notice}</p>}
+          </form>
+          <div><p className="eyebrow text-signal">Aportes sobre esta encuesta</p>{loading ? <p className="mt-3 text-sm text-mist-900">Cargando observaciones…</p> : (observations[survey.id] ?? []).length === 0 ? <p className="mt-3 text-sm leading-relaxed text-mist-900">Todavía no hay observaciones. Sé la primera persona en añadir contexto.</p> : <div className="mt-3 max-h-64 space-y-2 overflow-y-auto pr-1">{observations[survey.id].map((item) => <article key={item.id} className="journal-entry"><p className="whitespace-pre-wrap text-sm leading-relaxed text-mist-100">{item.observation}</p><time className="mt-2 block font-mono text-[9px] uppercase tracking-widest text-mist-900">{new Date(item.created_at).toLocaleDateString("es-CO")}</time></article>)}</div>}</div>
+        </div>
+      </div>
+    </div>
+  </Reveal>;
+}
+
+function clientReady(client: ReturnType<typeof getSupabaseClient>) {
+  return Boolean(client);
 }
 
 function KineticNav({ scrolled }: { scrolled: boolean }) {
