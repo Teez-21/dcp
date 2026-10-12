@@ -342,7 +342,7 @@ export default function InterestSitesOverlay({ map, leaflet, selectingPoint, pic
     }
     setFormBusy(true);
     setNotice(null);
-    const { error } = await client.from("interest_site_submissions").insert({
+    const { error } = await client.from("interest_sites").insert({
       name: draft.name.trim(),
       site_type: draft.site_type.trim(),
       description: draft.description.trim(),
@@ -354,12 +354,13 @@ export default function InterestSitesOverlay({ map, leaflet, selectingPoint, pic
     });
     setFormBusy(false);
     if (error) {
-      setNotice({ tone: "error", text: "No se pudo enviar. Verifica que la migración de Sitios de interés ya esté aplicada." });
+      setNotice({ tone: "error", text: "No se pudo publicar el punto. Verifica la conexión con Supabase." });
       return;
     }
+    await loadSites();
     setDraft(EMPTY_DRAFT);
     setFormOpen(false);
-    setNotice({ tone: "success", text: "Propuesta recibida. Sólo aparecerá en el mapa cuando la apruebe la cuenta editorial." });
+    setNotice({ tone: "success", text: "Punto publicado. Ahora es visible para todas las personas." });
   };
 
   const signInEditor = async (event: FormEvent) => {
@@ -488,7 +489,7 @@ export default function InterestSitesOverlay({ map, leaflet, selectingPoint, pic
         {sitesError && <p className="interest-inline-error" role="status">{sitesError}</p>}
         <div className="interest-actions">
           <button type="button" className="interest-propose-button" onClick={() => { setPanelCollapsed(false); setNotice(null); setFormOpen(false); setDraft(EMPTY_DRAFT); onPickRequest(); }}>
-            <Crosshair className="h-3.5 w-3.5" /> Proponer punto de interés
+            <Crosshair className="h-3.5 w-3.5" /> Marcar punto público
           </button>
           <div className="interest-editor-actions">
             {isEditor ? <>
@@ -497,7 +498,7 @@ export default function InterestSitesOverlay({ map, leaflet, selectingPoint, pic
             </> : <button type="button" className="interest-editor-button" onClick={() => setLoginOpen(true)} disabled={checkingEditor}><LockKeyhole className="h-3.5 w-3.5" /> Acceso editorial</button>}
           </div>
         </div>
-        {sites.length === 0 && !sitesLoading && !sitesError && <p className="interest-inline-note">Aún no hay puntos publicados. Las propuestas son privadas hasta su aprobación.</p>}
+        {sites.length === 0 && !sitesLoading && !sitesError && <p className="interest-inline-note">Aún no hay puntos publicados. Los puntos marcados aparecen para todas las personas.</p>}
         </>}
       </section>
 
@@ -518,7 +519,7 @@ export default function InterestSitesOverlay({ map, leaflet, selectingPoint, pic
 
       {formOpen && proposalPoint && <div className="character-modal-backdrop" role="presentation" onClick={closeProposal}>
         <section ref={dialogRef} className="character-modal interest-modal" role="dialog" aria-modal="true" aria-labelledby="interest-proposal-title" onClick={(event) => event.stopPropagation()}>
-          <div className="flex items-start justify-between gap-4"><div><p className="interest-kicker"><MapPin className="h-3 w-3" />Punto seleccionado</p><h2 id="interest-proposal-title" className="mt-2 font-display text-2xl">Proponer un Sitio de interés</h2><p className="mt-2 text-[11px] text-muted">{proposalPoint.latitude.toFixed(5)}, {proposalPoint.longitude.toFixed(5)} · la propuesta no será pública hasta aprobarse.</p></div><button type="button" className="character-close-button" onClick={closeProposal} aria-label="Cerrar formulario"><X className="h-4 w-4" /></button></div>
+          <div className="flex items-start justify-between gap-4"><div><p className="interest-kicker"><MapPin className="h-3 w-3" />Punto seleccionado</p><h2 id="interest-proposal-title" className="mt-2 font-display text-2xl">Publicar punto de interés</h2><p className="mt-2 text-[11px] text-muted">{proposalPoint.latitude.toFixed(5)}, {proposalPoint.longitude.toFixed(5)} · será visible para todas las personas al publicarlo.</p></div><button type="button" className="character-close-button" onClick={closeProposal} aria-label="Cerrar formulario"><X className="h-4 w-4" /></button></div>
           <form className="interest-proposal-form" onSubmit={submitProposal}>
             <label className="character-field">Nombre del lugar <b>*</b><input className="character-input" required minLength={2} maxLength={120} value={draft.name} onChange={(event) => setDraft({ ...draft, name: event.target.value })} placeholder="Ej. Casa de la Cultura…" /></label>
             <label className="character-field">Tipo de lugar <b>*</b><select className="character-input" required value={draft.site_type} onChange={(event) => setDraft({ ...draft, site_type: event.target.value })}><option>Espacio público</option><option>Organización comunitaria</option><option>Equipamiento cultural</option><option>Institución pública</option><option>Educación</option><option>Salud</option><option>Político / administrativo</option><option>Otro</option></select></label>
@@ -526,8 +527,8 @@ export default function InterestSitesOverlay({ map, leaflet, selectingPoint, pic
             <label className="character-field">Dirección o referencia<input className="character-input" maxLength={300} value={draft.address} onChange={(event) => setDraft({ ...draft, address: event.target.value })} placeholder="Dirección o punto de referencia" /></label>
             <label className="character-field">Fuente o nota de verificación<input className="character-input" maxLength={1000} value={draft.source_note} onChange={(event) => setDraft({ ...draft, source_note: event.target.value })} placeholder="URL o contexto para revisión editorial" /></label>
             <label className="character-honeypot" aria-hidden="true">Sitio web<input tabIndex={-1} autoComplete="off" value={draft.website} onChange={(event) => setDraft({ ...draft, website: event.target.value })} /></label>
-            <p className="interest-privacy-note">No incluyas datos personales sensibles. El punto sólo se publicará después de la revisión editorial.</p>
-            <div className="flex justify-end gap-2"><button type="button" className="character-reject-button" onClick={closeProposal}>Cancelar</button><button type="submit" disabled={formBusy || !client} className="character-approve-button">{formBusy ? <LoaderCircle className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />} Enviar propuesta</button></div>
+            <p className="interest-privacy-note">No incluyas datos personales sensibles. Este punto será público para todas las personas que consulten el mapa.</p>
+            <div className="flex justify-end gap-2"><button type="button" className="character-reject-button" onClick={closeProposal}>Cancelar</button><button type="submit" disabled={formBusy || !client} className="character-approve-button">{formBusy ? <LoaderCircle className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />} Publicar punto</button></div>
           </form>
         </section>
       </div>}

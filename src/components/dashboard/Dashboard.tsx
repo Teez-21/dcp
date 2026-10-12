@@ -193,6 +193,7 @@ export default function Dashboard() {
               <div className="pointer-events-none absolute left-5 top-5 z-[700] hidden rounded-full border border-white/10 bg-ink-950/70 px-3 py-2 text-[10px] uppercase tracking-[.18em] text-mist-900 backdrop-blur md:block"><span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-signal shadow-[0_0_14px_#c4b5fd]" />Live territory canvas</div>
               <div className="pointer-events-none absolute inset-0 z-[800]"><ControlDeck /></div>
             </div>
+            <MapCommentsPanel />
           </div>
         </section>
 
@@ -297,6 +298,63 @@ function CitizenPerceptionSection() {
 
 function clientReady(client: ReturnType<typeof getSupabaseClient>) {
   return Boolean(client);
+}
+
+function MapCommentsPanel() {
+  const client = useMemo(() => getSupabaseClient(), []);
+  const loaded = useRef(false);
+  const [comments, setComments] = useState<Array<{ id: string; observation: string; created_at: string }>>([]);
+  const [comment, setComment] = useState("");
+  const [website, setWebsite] = useState("");
+  const [loading, setLoading] = useState(Boolean(client));
+  const [submitting, setSubmitting] = useState(false);
+  const [notice, setNotice] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!client || loaded.current) return;
+    loaded.current = true;
+    client.from("map_observations").select("id, observation, created_at").order("created_at", { ascending: false }).limit(50).then(({ data, error }) => {
+      setLoading(false);
+      if (error) { setNotice("No fue posible cargar los comentarios del mapa."); return; }
+      setComments((data ?? []) as Array<{ id: string; observation: string; created_at: string }>);
+    });
+  }, [client]);
+
+  async function submit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (website.trim()) { setComment(""); setNotice("Gracias. El comentario fue recibido."); return; }
+    const text = comment.trim();
+    if (!client || !text || text.length > 1200) return;
+    const last = Number(window.localStorage.getItem("dcp-map:last-comment") ?? 0);
+    if (Date.now() - last < 10_000) { setNotice("Espera unos segundos antes de publicar otro comentario."); return; }
+    setSubmitting(true);
+    const { data, error } = await client.from("map_observations").insert({ observation: text, website: "" }).select("id, observation, created_at").single();
+    setSubmitting(false);
+    if (error) { setNotice("No fue posible guardar el comentario en este momento."); return; }
+    window.localStorage.setItem("dcp-map:last-comment", String(Date.now()));
+    setComments((current) => [data as { id: string; observation: string; created_at: string }, ...current]);
+    setComment("");
+    setNotice("Comentario publicado y visible para todos.");
+  }
+
+  return <Reveal className="mt-5" delay={0.08}>
+    <div className="grid gap-5 rounded-[1.5rem] border border-white/10 bg-ink-900/80 p-5 md:p-7 lg:grid-cols-[.8fr_1.2fr]">
+      <form onSubmit={submit}>
+        <p className="eyebrow text-signal">Observaciones del mapa</p>
+        <h3 className="mt-2 font-display text-2xl tracking-tight md:text-3xl">Comparte una lectura del territorio</h3>
+        <p className="mt-3 text-sm leading-relaxed text-mist-900">Los comentarios se guardan en Supabase y quedan visibles para todas las personas que consulten el mapa.</p>
+        <label className="mt-5 block text-sm text-mist-900">Comentario<textarea value={comment} onChange={(event) => setComment(event.target.value)} maxLength={1200} rows={5} placeholder="Escribe un hallazgo, pregunta o contexto sobre el mapa…" className="journal-input mt-2 resize-none" /></label>
+        <input tabIndex={-1} aria-hidden="true" autoComplete="off" value={website} onChange={(event) => setWebsite(event.target.value)} className="character-honeypot" />
+        <div className="mt-2 flex items-center justify-between gap-3"><span className="text-[10px] text-mist-900">{comment.length}/1200 · sin nombre</span><button type="submit" disabled={submitting || !client} className="magnetic-button magnetic-button-primary min-h-9 px-3 text-[10px]">{submitting ? "Guardando…" : "Publicar comentario"}</button></div>
+        {!client && <p className="mt-2 text-[11px] text-amber-200">Supabase no está configurado en este entorno.</p>}
+        {notice && <p className="mt-2 text-[11px] text-signal" role="status">{notice}</p>}
+      </form>
+      <div>
+        <p className="eyebrow text-signal">Comentarios compartidos</p>
+        {loading ? <p className="mt-3 text-sm text-mist-900">Cargando comentarios…</p> : comments.length === 0 ? <p className="mt-3 text-sm leading-relaxed text-mist-900">Todavía no hay comentarios. Sé la primera persona en compartir una lectura.</p> : <div className="mt-3 max-h-72 space-y-2 overflow-y-auto pr-1">{comments.map((item) => <article key={item.id} className="journal-entry"><p className="whitespace-pre-wrap text-sm leading-relaxed text-mist-100">{item.observation}</p><time className="mt-2 block font-mono text-[9px] uppercase tracking-widest text-mist-900">{new Date(item.created_at).toLocaleDateString("es-CO")}</time></article>)}</div>}
+      </div>
+    </div>
+  </Reveal>;
 }
 
 function KineticNav({ scrolled }: { scrolled: boolean }) {

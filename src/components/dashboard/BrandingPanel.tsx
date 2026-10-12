@@ -46,6 +46,7 @@ export default function BrandingPanel() {
   const [website, setWebsite] = useState("");
   const [observationNotice, setObservationNotice] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [showTheme, setShowTheme] = useState(false);
 
   useEffect(() => setCustomPalettes(readCustomPalettes()), []);
 
@@ -101,8 +102,10 @@ export default function BrandingPanel() {
   }
 
   return (
-    <section id="branding" className="branding-section relative overflow-hidden px-6 py-24 md:px-12 md:py-32">
+    <section id="branding" className="branding-section relative overflow-hidden px-6 py-10 md:px-12 md:py-12">
       <div className="container-wide relative mx-auto">
+        <button type="button" className="magnetic-button magnetic-button-ghost min-h-10 px-4 text-[11px]" onClick={() => setShowTheme((value) => !value)} aria-expanded={showTheme}>{showTheme ? "Ocultar tema visual" : "Mostrar tema visual"}<WandSparkles className="h-3.5 w-3.5" /></button>
+        <div className={showTheme ? "mt-8" : "hidden"}>
         <div className="grid gap-8 md:grid-cols-[.55fr_1.45fr] md:items-end">
           <div><p className="eyebrow flex items-center gap-3"><span className="font-mono text-signal">06</span><span className="h-px w-8 bg-signal/60" />Identidad visual</p><h2 className="mt-5 font-display text-[clamp(3rem,7vw,6.5rem)] font-semibold leading-[.86] tracking-[-.065em]">Diseña el<br /><span className="text-stroke text-mist-100">tema completo.</span></h2></div>
           <p className="max-w-xl text-sm leading-relaxed text-mist-900 md:pb-1">Cada color tiene un papel: fondo, superficie, texto, acción, borde o énfasis. Intercambia esos papeles y observa el resultado en toda la página, incluido el mapa y las secciones editoriales.</p>
@@ -111,6 +114,7 @@ export default function BrandingPanel() {
         {showCreator && <PaletteCreator draft={draft} onChange={updateDraft} onColorChange={updateDraftColor} onAddColor={addDraftColor} onRemoveColor={removeDraftColor} onSubmit={createPalette} />}
         <div className="mt-6 grid gap-3 lg:grid-cols-2">{allPalettes.map((palette) => <PaletteCard key={palette.id} palette={palette} expanded={expanded === palette.id} active={theme === palette.id} onToggle={() => setExpanded(expanded === palette.id ? null : palette.id)} onChoose={() => choosePalette(palette)} onRestore={() => setTheme("tokyo")} onDelete={palette.source === "custom" ? () => deleteCustomPalette(palette.id) : undefined} observation={observation} setObservation={setObservation} website={website} setWebsite={setWebsite} notice={observationNotice} submitting={submitting} clientReady={Boolean(client)} onObservation={submitObservation} />)}</div>
         <p className="mt-5 text-xs text-mist-900">Anotaciones</p>
+        </div>
       </div>
     </section>
   );
