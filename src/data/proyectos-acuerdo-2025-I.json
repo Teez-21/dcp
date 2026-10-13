@@ -1,0 +1,394 @@
+{
+  "period": "2025-I",
+  "source": "public/data/proyectos-acuerdo-2025-I.txt",
+  "projects": [
+    {
+      "number": "994 de 2025",
+      "title": "Por medio del cual se busca incentivar, incluir y reconocer la disciplina deportiva cheerleading (porrismo) como deporte insignia de Bogotá D.C."
+    },
+    {
+      "number": "979 de 2025",
+      "title": "Por medio del cual se promueven y fortalecen los negocios locales, emprendimientos y mipymes pertenecientes al sector de estética, belleza y peluquerías en el distrito"
+    },
+    {
+      "number": "Objetado parcialmente",
+      "title": "Por medio del cual se declara a la tingua bogotana rallus semiplumbeus como ave emblemática de Bogotá D.C., se establecen lineamientos para la protección de las aves y se dictan otras disposiciones"
+    },
+    {
+      "number": "997 de 2025",
+      "title": "Por medio del cual se establecen medidas para reconocer y fortalecer la industria panificadora del distrito capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "998 de 2025",
+      "title": "Por el cual se adoptan medidas complementarias para prevenir, atender y reducir el acoso sexual en espacios públicos o de acceso público en Bogotá D.C. y se dictan otras disposiciones"
+    },
+    {
+      "number": "990 de 2025",
+      "title": "Por medio del cual se establecen lineamientos en materia de prevención del suicidio en el Distrito Capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "992 de 2025",
+      "title": "Por medio del cual se dictan los lineamientos para la formulación de la política pública de multilingüismo en el Distrito Capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "980 de 2025",
+      "title": "Por medio del cual se definen lineamientos para la promoción de estrategias preventivas que incentiven el manejo de las emociones por parte de la ciudadanía en procura de mitigar los conflictos en la vía y la siniestralidad vial"
+    },
+    {
+      "number": "981 de 2025",
+      "title": "Por medio del cual se promueve la estrategia de lecturas en movimiento y los servicios digitales de biblored a los usuarios del sistema integrado de transporte público en el Distrito Capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "1005 de 2025",
+      "title": "Por el cual se crea el festival “Quinto Centenario: Bogotá tiene mucho por contar"
+    },
+    {
+      "number": "982 de 2025",
+      "title": "Por medio del cual se trazan lineamientos para sensibilizar sobre el adecuado uso de pantallas en la primera infancia"
+    },
+    {
+      "number": "1000 de 2025",
+      "title": "Por el cual se fomenta la productividad de las personas mayores en Bogotá D.C."
+    },
+    {
+      "number": "Objetado parcialmente",
+      "title": "Por medio del cual se institucionaliza la “Expo Restrepo” como un evento insignia del sector cuero, calzado, marroquinería y afines en el Distrito Capital, y se dictan otras disposiciones."
+    },
+    {
+      "number": "1007 de 2025",
+      "title": "Por el cual se exalta la trayectoria de Jaime Garzón y su impacto en la cultura de la ciudad, con el fin de aportar al deber que tiene el Distrito Capital para la recuperación, el fortalecimiento, la promoción de la memoria histórica, la paz y la reconciliación en Bogotá D.C. y se dictan otras disposiciones"
+    },
+    {
+      "number": "1006 de 2025",
+      "title": "Por el cual se modifica el Acuerdo Distrital 478 de 2011 “Por medio del cual se establece la celebración del día del vehículo clásico y antiguo en Bogotá D.C.” y se incluye dentro del festival de verano de la ciudad el desfile de autos clásicos y antiguos “Por donde pasa un clásico, deja una sonrisa” como un evento de interés cultural, turístico"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se nombra el trazado férreo y turístico “Ingeniero Eduardo Rodríguez Ardila” en la ciudad de Bogotá D. C."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se adopta la Política Pública de Fortalecimiento del Bienestar Integral de las Familias en el Distrito Capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se institucionaliza el modelo de atención primaria en salud con el fin de garantizar el derecho a la salud de las y los ciudadanos en Bogotá D.C."
+    },
+    {
+      "number": "999 de 2025",
+      "title": "Por medio del cual se fortalecen y promueven los derechos de propiedad intelectual, autor y conexos en el distrito capital y se establecen actividades conmemorativas relacionadas"
+    },
+    {
+      "number": "984 de 2025",
+      "title": "Por medio del cual establecen los lineamientos para el manejo de ropa usada en el Distrito Capital"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se genera una estrategia para fortalecer el uso de drones en el patrullaje aéreo de la policía metropolitana de Bogotá"
+    },
+    {
+      "number": "993 de 2025",
+      "title": "Por medio del cual se establecen lineamientos para la prevención y mitigación del estrés postraumático en las fuerzas de emergencias, primeros atendientes y víctimas de emergencias y/o situaciones traumáticas, se crea el día distrital para la concientización sobre el trastorno de estrés postraumático en el Distrito Capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se dictan normas para crear el consejo distrital y los consejos locales de los motociclistas y conductores en Bogotá D.C."
+    },
+    {
+      "number": "1009 de 2025",
+      "title": "Por medio del cual se promueve la seguridad en las copropiedades sujetas al régimen de propiedad horizontal en el Distrito Capital"
+    },
+    {
+      "number": "996 de 2025",
+      "title": "Por medio del cual se implementa la línea de atención y orientación del adulto mayor”"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se establecen lineamientos para la creación de una única ruta de denuncia y atención integral para las víctimas de extorsión en el Distrito Capital"
+    },
+    {
+      "number": "1003 de 2025",
+      "title": "Por el cual se implementa una estrategia distrital de autocuidado y autoprotección para prevenir y actuar ante situaciones de hurto y acoso en Bogotá D.C."
+    },
+    {
+      "number": "1008 de 2025",
+      "title": "Por medio del cual se establece el sistema único de registro de animales domésticos en el Distrito Capital"
+    },
+    {
+      "number": "1001 de 2025",
+      "title": "Por el cual se fomenta la creación de la ruta de atención integral para mujeres en habitabilidad de calle en el Distrito Capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "Objetado parcialmente",
+      "title": "Por medio del cual se promueve la creación de una aplicación de salud mental en Bogotá"
+    },
+    {
+      "number": "985 de 2025",
+      "title": "Por medio del cual se dictan lineamientos para la implementación de estrategias intersectoriales y de cultura ciudadana para el manejo adecuado de excrementos de animales de compañía en el espacio público en Bogotá"
+    },
+    {
+      "number": "1010 de 2025",
+      "title": "Por el cual se establecen los lineamientos para el fomento de programas de capacitación modular virtual y transformación digital de emprendimientos, mipymes y startups en Bogotá”."
+    },
+    {
+      "number": "995 de 2025",
+      "title": "Por medio del cual se establecen lineamientos para el fortalecimiento de competencias digitales y emprendimiento para población mayor de 50 años en Bogotá D.C."
+    },
+    {
+      "number": "1004 de 2025",
+      "title": "Por medio del cual se modifica el Acuerdo 253 de 2006 «Por el cual se Institucionaliza el Programa Bogotá Bilingüe y se dictan otras disposiciones»"
+    },
+    {
+      "number": "1002 de 2025",
+      "title": "Por medio del cual se promueve la cooperación social entre el sector interreligioso y el Distrito Capital, se crea el Sistema Distrital de Libertad Religiosa y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se modifica el Acuerdo Distrital 138 de 2004 “Por medio del cual se regula el funcionamiento de los establecimientos públicos y privados que prestan el servicio de educación inicial”"
+    },
+    {
+      "number": "978 de 2025",
+      "title": "Por el cual se modifica la estructura organizacional, la planta de empleos de la Personería de Bogotá, D. C., y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se institucionaliza el protocolo “pregunta por Ángela” en las entidades públicas distritales, establecimientos de comercio y copropiedades de propiedad horizontal, para prevenir la violencia contra las mujeres víctimas de violencia y en riesgo de feminicidio en Bogotá D.C. y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se modifica parcialmente el acuerdo 650 del 2016 y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se promueve la prestación del servicio social estudiantil obligatorio en establecimientos educativos públicos y privados que atiendan a población con discapacidad auditiva en Bogotá D.C."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se establece un protocolo para gestionar la fatiga y el cansancio en los conductores que operan en los terminales de transporte terrestre automotor de pasajeros por carretera en Bogotá y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se dan lineamientos para la creación de un componente de asistencia nutricional a la primera infancia y a mujeres gestantes"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se promueve el uso responsable y ético de la Inteligencia Artificial posicionando a Bogotá D.C. como ciudad líder en la implementación de nuevas tecnologías"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se rinde homenaje en el Concejo de Bogotá a la heroína colombiana Policarpa Salavarrieta Ríos “La Pola”, quien cumplió un papel destacado en distintos procesos históricos de Colombia y de la ciudad de Bogotá D.C\"."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se prohíbe la construcción, instalación y puesta en funcionamiento de nuevos hornos crematorios en las zonas de proximidad del Distrito Capital, se dictan lineamientos para el traslado progresivo de los existentes en zonas de proximidad y otras disposiciones”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se crea el festival de Música Electrónica al Parque y se dictan otras disposiciones”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se establecen lineamientos para la racionalización normativa de los Acuerdos del Concejo de Bogotá y se crea el Observatorio de Seguimiento y Evaluación del Cumplimiento Normativo (“Alfonso López Michelsen”) en Bogotá D.C."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se establecen lineamientos para la implementación de la estrategia ‘Primeros Auxilios Psicologícos’ (PAP) del Distrito Capital, y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se modifica la fecha de la semana distrital de la cultura ciudadana y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se crea la ruta por la vida dirigida a mujeres gestantes, lactantes y la vida por nacer en apoyo a la ruta integral de atención materno-perinatal (RIAS)”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se establecen para garantizar medidas de protección inmediata destinadas a salvaguardar los derechos fundamentales de los niños, niñas y adolescentes que sean víctimas o presuntas víctimas de abuso sexual o de explotación sexual comercial de niños, niñas y adolescentes (ESCNNA)."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se establecen lineamientos para la creación de zonas de lactancia materna al interior de las estaciones del Sistema de Transporte Público de Bogotá”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se fomentan las startups en el Distrito Capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual promueve el turismo accesible en Bogotá D.C. y se crea el sello turismo accesible"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se establecen responsabilidades para que las entidades del Sector Desarrollo Económico, Industria y Turismo adopten medidas mínimas de prevención y control del riesgo de lavado de activos y financiación del terrorismo frente a las personas naturales y jurídicas beneficiarias de ayudas, subsidios o cualquier otra clase de apoyo económico por parte del Distrito"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se exalta la memoria de Jessica Liliana Ramírez Gaviria QEPD, se establecen los lineamientos de la estrategia de atención integral para las personas con enfermedades huérfanas en el Distrito Capital y se dictan otras disposiciones”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual modifica el Acuerdo 268 de 2006 y se reglamenta la asistencia espiritual en Instituciones del Distrito Capital (Capellanías)\"."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se establecen medidas para fortalecer las acciones en salud pública en establecimientos de preparación y consumo de alimentos en el Distrito Capital”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se fomenta la lectura en las instituciones educativas distritales a través del día de la lectura”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se designa la Calle 26 entre la carrera 7 y la carrera 10 como ‘La Calle del Mensajero’ en el Distrito Capital y se establece el día del mensajero en reconocimiento a la labor histórica, económica y social de los ciudadanos que prestan esta labor en Bogotá."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se promueve e incentiva la movilidad urbana sostenible mediante el tránsito gradual a energía eléctrica no contaminante para vehículos, taxis, servicio público especial, motos y demás medios de transporte terrestre de carácter oficial y particular en el Distrito Capital y se dictan otras disposiciones”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se establecen los lineamientos para la formulación de la política pública Integral de fomento al emprendimiento liderado por mujeres y se dictan otras disposiciones”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se implementan lineamientos para la depuración de cartera a cargo del instituto para la economía social (IPES) en beneficio de vivanderos, vivanderas y comerciantes del sistema distrital de plazas de mercado, y se dictan otras disposiciones\"."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se dictan lineamientos para fortalecer los consejos tutelares de los derechos de los niños y las niñas en el Distrito Capital y se modifica el Acuerdo 110 de 2003”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se impulsa la estrategia para la disminución de riñas, peleas, altercados o disputas violentas en la ciudad de Bogotá D.C."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se dictan medidas para la promoción y fomento del tejo como disciplina deportiva, motor económico y expresión cultural en el Distrito Capital\"."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se promueve el reúso de edificaciones para uso de vivienda y otros fines de renovación urbana en la ciudad de Bogotá, priorizando el centro histórico y áreas de transformación urbana\"."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se crea la sección de lectura y consulta: El Vallenato, en las 28 bibliotecas de la Red Distrital de Bibliotecas Públicas de Bogotá”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se crea un evento Artístico y Cultural para la preservación y promoción de la cultura nariñense en el Distrito Capital”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se adoptan medidas para la solidaridad social con las escobitas de Bogotá: acciones afirmativas orientadas a la dignificación y reconocimiento de los esquemas de aseo en vía y áreas públicas de la Capital."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se conforma la red de mercados de pulgas en los parques de la ciudad y se dictan otras disposiciones\"."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se fortalece la gestión del control político local en las juntas administradoras locales (JAL) de Bogotá mediante la participación de pasantes de pregrado y programas tecnológicos del Distrito Capital.”"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se implementa la semana de juegos tradicionales en las Instituciones Educativas del Distrito Capital"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se incentivan y reconocen las actividades de los establecimientos de comercio que favorecen la seguridad y la convivencia ciudadana en Bogotá D.C. y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se adoptan en el distrito los lineamientos para la política pública en abordaje, diagnóstico temprano y tratamiento integral de la endometriosis que trae la Ley 2338 de 2023”;"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se establecen los lineamientos para la formulación de la estrategia “Aulas Domiciliarias”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se brindan medidas para promover y fortalecer las redes de lactancia materna en el Distrito Capital”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se dictan lineamientos para la creación del registro distrital de personas reportadas como extraviadas y desaparecidas en Bogotá D.C."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se dictan lineamientos para la creación del registro distrital de personas reportadas como extraviadas y desaparecidas en Bogotá D.C."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se dictan lineamientos para la creación del registro distrital de personas reportadas como extraviadas y desaparecidas en Bogotá D.C."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se dictan lineamientos para la creación del registro distrital de personas reportadas como extraviadas y desaparecidas en Bogotá D.C."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se incentiva el uso temporal de predios adquiridos para proyectos de infraestructura de transporte en Bogotá y se establece un proyecto piloto para implementar mecanismos de captura de valor, contribuyendo al desarrollo económico, social y urbano de la ciudad."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se establece un reconocimiento anual al mejor funcionario del concejo de Bogotá, fomentando la excelencia y el compromiso en el Servicio Público"
+    },
+    {
+      "number": "983",
+      "title": "Por el cual se establece señalización clara en los perímetros y zonas en los que no está permitido el consumo de drogas en el espacio público"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se modifica el acuerdo 23 de 1998, que otorga la orden civil al mérito periodístico, Álvaro Gómez Hurtado"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se promueve el establecimiento de un marco de gobernanza orientado al reconocimiento de las Actividades Sexuales Pagadas dentro de las dinámicas socioeconómicas de Bogotá D.C.”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se dictan lineamientos para fortalecer la promoción y prevención de la salud mental en los niños, adolescentes y jóvenes en las instituciones educativas del ámbito escolar del Distrito Capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se dictan lineamientos para fortalecer la promoción y prevención de la salud mental en los niños, adolescentes y jóvenes en las instituciones educativas del ámbito escolar del Distrito Capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se dictan lineamientos para fortalecer la promoción y prevención de la salud mental en los niños, adolescentes y jóvenes en las instituciones educativas del ámbito escolar del Distrito Capital y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se generan lineamientos para el uso de inteligencia artificial para prevenir la explotación sexual y el abuso sexual NNA en el Distrito Capital y se dictan otras disposiciones”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se establecen lineamientos para el fortalecimiento institucional y la descongestión de expedientes en las inspecciones de policía de Bogotá, y se dictan otras disposiciones"
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por el cual se dictan los lineamientos generales para la formulación de la Política Pública Distrital de Bicitaxistas y se dictan otras disposiciones”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se institucionaliza la celebración del día del Skateboarding en la ciudad de Bogotá\"."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se designa y establece el nombre de la primera calle Indígena de Bogotá, y se promueve el reconocimiento y la visibilidad de las comunidades indígenas en el espacio público.”."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se implementa el modelo de urbanismo seguro en las zonas priorizadas del distrito capital y se dictan otras disposiciones\"."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se promueve la creación del plan Distrital de Recreación Denominado ERBC (experiencias recreativas basadas en comunidad)."
+    },
+    {
+      "number": "Sin número en la fuente",
+      "title": "Por medio del cual se crea el reconocimiento al mejor deportista del año en Bogotá y se dictan otras disposiciones"
+    }
+  ]
+}

@@ -29,6 +29,7 @@ import ConstellationGrid from "./ConstellationGrid";
 import BrandingPanel from "./BrandingPanel";
 import CharacterHub from "../characters/CharacterHub";
 import CouncilDataSection from "./CouncilDataSection";
+import CouncilOverviewSection from "./CouncilOverviewSection";
 
 const MapCanvas = dynamic(() => import("./MapCanvas"), { ssr: false });
 
@@ -177,6 +178,7 @@ export default function Dashboard() {
           <div className="container-wide mx-auto">
             <SectionHeader index="03" kicker="Representación política" title={<>Datos del<br /><span className="text-stroke text-mist-100">concejo.</span></>} description="Una lectura visual de las bancadas y concejales que integran el Concejo de Bogotá. Cada punto se puede explorar para consultar nombre, partido y votos registrados." />
             <CouncilDataSection />
+            <CouncilOverviewSection />
           </div>
         </section>
         <section id="territorio" className="nexus-section nexus-map-section relative px-4 py-24 md:px-8 md:py-32">
