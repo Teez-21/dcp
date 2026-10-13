@@ -1,14 +1,10 @@
 "use client";
 
 import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
-import Image from "next/image";
 import type { Session } from "@supabase/supabase-js";
-import { ArrowLeft, ArrowUpRight, Check, ChevronRight, ExternalLink, FileText, LockKeyhole, LogOut, Mail, Pencil, Plus, ShieldCheck, Upload, UserRound, X } from "lucide-react";
-import { CHARACTER_PHOTOS_BUCKET, getSupabaseClient } from "@/lib/supabase";
+import { ArrowLeft, ArrowUpRight, Check, ChevronRight, ExternalLink, FileText, LockKeyhole, LogOut, Mail, Pencil, Plus, ShieldCheck, UserRound, X } from "lucide-react";
+import { getSupabaseClient } from "@/lib/supabase";
 import type { CharacterDraft, CharacterProposalDraft, CharacterRecord, CharacterSubmissionRecord } from "@/types/character";
-
-const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
-const ALLOWED_IMAGE_TYPES = new Set(["image/jpeg", "image/png", "image/webp"]);
 
 type Notice = { tone: "success" | "info" | "error"; message: string };
 type DialogMode = "login" | "form" | "proposal" | "denied" | null;
@@ -29,7 +25,7 @@ const EMPTY_PROPOSAL: CharacterProposalDraft = {
   website: "",
 };
 
-export default function CharacterHub() {
+export default function CharacterHub({ embedded = false }: { embedded?: boolean }) {
   const client = useMemo(() => getSupabaseClient(), []);
   const [characters, setCharacters] = useState<CharacterRecord[]>([]);
   const [submissions, setSubmissions] = useState<CharacterSubmissionRecord[]>([]);
@@ -232,30 +228,10 @@ export default function CharacterHub() {
     }
   };
 
-  const saveCharacter = async (draft: CharacterDraft, imageFile: File | null) => {
+  const saveCharacter = async (draft: CharacterDraft) => {
     if (!client || !session || !isEditor) {
       throw new Error("Se requiere una sesión de editor autorizada para guardar cambios.");
     }
-    if (imageFile && (!ALLOWED_IMAGE_TYPES.has(imageFile.type) || imageFile.size > MAX_IMAGE_BYTES)) {
-      throw new Error("La imagen debe ser JPG, PNG o WebP y pesar máximo 5 MB.");
-    }
-
-    let imagePath = editing?.image_path ?? null;
-    let uploadedPath: string | null = null;
-    const storage = client.storage.from(CHARACTER_PHOTOS_BUCKET);
-
-    if (imageFile) {
-      const extension = imageFile.type === "image/png" ? "png" : imageFile.type === "image/webp" ? "webp" : "jpg";
-      uploadedPath = `characters/${crypto.randomUUID()}.${extension}`;
-      const { error } = await storage.upload(uploadedPath, imageFile, {
-        cacheControl: "3600",
-        contentType: imageFile.type,
-        upsert: false,
-      });
-      if (error) throw new Error("No se pudo subir la imagen. Revisa el límite de almacenamiento y los permisos de Storage.");
-      imagePath = uploadedPath;
-    }
-
     const payload = {
       name: draft.name.trim(),
       character_type: draft.character_type.trim(),
@@ -263,7 +239,7 @@ export default function CharacterHub() {
       facebook_url: draft.facebook_url.trim() || null,
       instagram_url: draft.instagram_url.trim() || null,
       x_url: draft.x_url.trim() || null,
-      image_path: imagePath,
+      image_path: editing?.image_path ?? null,
       updated_at: new Date().toISOString(),
     };
 
@@ -282,16 +258,7 @@ export default function CharacterHub() {
       if (error) writeError = "No se pudo guardar la ficha. Comprueba los permisos y la configuración de la base.";
     }
 
-    if (writeError) {
-      if (uploadedPath) {
-        try { await storage.remove([uploadedPath]); } catch { /* best-effort cleanup */ }
-      }
-      throw new Error(writeError);
-    }
-
-    if (editing?.image_path && editing.image_path !== imagePath) {
-      try { await storage.remove([editing.image_path]); } catch { /* best-effort cleanup */ }
-    }
+    if (writeError) throw new Error(writeError);
 
     await loadCharacters();
     setDialogMode(null);
@@ -353,20 +320,15 @@ export default function CharacterHub() {
     setNotice({ tone: "info", message: "Sesión editorial cerrada." });
   };
 
-  const photoUrl = (path: string | null) => {
-    if (!client || !path) return null;
-    return client.storage.from(CHARACTER_PHOTOS_BUCKET).getPublicUrl(path).data.publicUrl;
-  };
-
   return (
-    <main className="character-page nexus-page relative min-h-screen overflow-x-clip text-mist-100">
-      <div className="grain pointer-events-none fixed inset-0 z-[1]" />
-      <div className="character-glow pointer-events-none absolute inset-x-0 top-0 h-[34rem]" />
+    <main className={`character-page relative overflow-x-clip text-mist-100 ${embedded ? "character-page-embedded" : "nexus-page min-h-screen"}`}>
+      {!embedded && <div className="grain pointer-events-none fixed inset-0 z-[1]" />}
+      {!embedded && <div className="character-glow pointer-events-none absolute inset-x-0 top-0 h-[34rem]" />}
       <div className="container-wide relative z-10 mx-auto px-5 pb-12 pt-6 sm:px-8 md:px-12 md:pt-10">
         <header className="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-5">
-          <a href="/#inicio" className="magnetic-button magnetic-button-ghost">
+          {!embedded && <a href="/#inicio" className="magnetic-button magnetic-button-ghost">
             <ArrowLeft className="h-4 w-4" /> Volver al inicio
-          </a>
+          </a>}
           <div className="flex flex-wrap items-center gap-2">
             {session && isEditor && (
               <>
@@ -399,7 +361,7 @@ export default function CharacterHub() {
             </h1>
           </div>
           <div className="md:pb-2">
-            <p className="max-w-xl text-sm leading-relaxed text-mist-900 md:text-base">Un registro visual de personas clave y sus vínculos públicos. Cualquier visitante puede proponer una ficha; la cuenta editorial decide cuáles se publican.</p>
+            <p className="max-w-xl text-sm leading-relaxed text-mist-900 md:text-base">Un directorio público de personas clave y sus vínculos. Cualquier visitante puede proponer una ficha; la cuenta editorial decide cuáles se publican.</p>
             <div className="mt-5 flex flex-wrap items-center gap-2 text-[10px] font-mono uppercase tracking-[.14em] text-mist-900">
               <span className="character-meta-chip"><LockKeyhole className="h-3 w-3" /> Publicación moderada</span>
               <span className="character-meta-chip"><FileText className="h-3 w-3" /> {characters.length} {characters.length === 1 ? "ficha" : "fichas"}</span>
@@ -417,7 +379,7 @@ export default function CharacterHub() {
           {loading ? (
             <div className="character-empty"><div className="character-empty-mark">···</div><p className="eyebrow mt-4">Conectando con el directorio</p><p className="mt-2 text-sm text-mist-900">Cargando fichas compartidas…</p></div>
           ) : !client ? (
-            <div className="character-empty"><div className="character-empty-mark"><FileText className="h-7 w-7" /></div><p className="eyebrow mt-5 text-signal">Hub preparado</p><h2 className="mt-3 font-display text-2xl sm:text-3xl">La conexión común está pendiente.</h2><p className="mt-3 max-w-lg text-sm leading-relaxed text-mist-900">No se guardará información en el navegador. Cuando Supabase quede configurado, aquí aparecerán las mismas fichas para todas las personas.</p></div>
+          <div className="character-empty"><div className="character-empty-mark"><FileText className="h-7 w-7" /></div><p className="eyebrow mt-5 text-signal">Hub preparado</p><h2 className="mt-3 font-display text-2xl sm:text-3xl">La conexión común está pendiente.</h2><p className="mt-3 max-w-lg text-sm leading-relaxed text-mist-900">No se guardará información en el navegador. Cuando Supabase quede configurado, aquí aparecerán las mismas fichas para todas las personas.</p></div>
           ) : loadError && characters.length === 0 ? (
             <div className="character-empty"><div className="character-empty-mark"><FileText className="h-7 w-7" /></div><p className="eyebrow mt-5 text-signal">Conexión pendiente de revisar</p><h2 className="mt-3 font-display text-2xl">No se pudieron leer las fichas.</h2><p className="mt-2 text-sm text-mist-900">La página sigue en modo de sólo lectura hasta que la base y sus políticas estén listas.</p></div>
           ) : characters.length === 0 ? (
@@ -425,7 +387,7 @@ export default function CharacterHub() {
           ) : (
             <div className="character-grid">
               {characters.map((character, index) => (
-                <CharacterCard key={character.id} character={character} index={index} imageUrl={photoUrl(character.image_path)} canEdit={isEditor} onEdit={() => openEditDialog(character)} />
+                <CharacterCard key={character.id} character={character} index={index} canEdit={isEditor} onEdit={() => openEditDialog(character)} />
               ))}
             </div>
           )}
@@ -450,26 +412,22 @@ export default function CharacterHub() {
 
       {dialogMode === "login" && <LoginModal onClose={() => setDialogMode(null)} onAuthenticate={authenticateEditor} />}
       {dialogMode === "denied" && <DeniedModal email={session?.user.email ?? null} onClose={() => setDialogMode(null)} onSignOut={signOut} />}
-      {dialogMode === "form" && <CharacterFormModal key={editing?.id ?? "new-character"} character={editing} imageUrl={photoUrl(editing?.image_path ?? null)} onClose={() => { setDialogMode(null); setEditing(null); }} onSave={saveCharacter} />}
+      {dialogMode === "form" && <CharacterFormModal key={editing?.id ?? "new-character"} character={editing} onClose={() => { setDialogMode(null); setEditing(null); }} onSave={saveCharacter} />}
       {dialogMode === "proposal" && <ProposalFormModal onClose={() => setDialogMode(null)} onSubmit={submitProposal} />}
     </main>
   );
 }
 
-function CharacterCard({ character, index, imageUrl, canEdit, onEdit }: { character: CharacterRecord; index: number; imageUrl: string | null; canEdit: boolean; onEdit: () => void }) {
+function CharacterCard({ character, index, canEdit, onEdit }: { character: CharacterRecord; index: number; canEdit: boolean; onEdit: () => void }) {
   const facebook = safeExternalUrl(character.facebook_url);
   const instagram = safeExternalUrl(character.instagram_url);
   const xUrl = safeExternalUrl(character.x_url);
 
   return (
-    <article className="character-card" style={{ animationDelay: `${Math.min(index, 10) * 45}ms` }}>
-      <div className="character-photo">
-        {imageUrl ? <Image src={imageUrl} alt={`Fotografía de ${character.name}`} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" unoptimized className="object-cover" /> : <div className="character-photo-fallback"><UserRound className="h-12 w-12" /><span>Sin fotografía</span></div>}
-        <span className="character-type-pill">{character.character_type}</span>
-      </div>
+    <article className="character-list-item" style={{ animationDelay: `${Math.min(index, 10) * 45}ms` }}>
       <div className="character-card-body">
         <div className="flex items-start justify-between gap-3">
-          <div className="min-w-0"><p className="eyebrow text-signal">Perfil público</p><h2 className="mt-2 break-words font-display text-2xl font-semibold leading-tight tracking-tight">{character.name}</h2></div>
+          <div className="min-w-0"><p className="eyebrow text-signal">{character.character_type}</p><h2 className="mt-2 break-words font-display text-2xl font-semibold leading-tight tracking-tight">{character.name}</h2></div>
           <button type="button" onClick={onEdit} className="character-edit-button" aria-label={canEdit ? `Editar ficha de ${character.name}` : `Iniciar sesión para editar ficha de ${character.name}`} title={canEdit ? "Editar ficha" : "Sólo editores autorizados pueden editar"}>{canEdit ? <Pencil className="h-4 w-4" /> : <LockKeyhole className="h-4 w-4" />}<span>Editar</span></button>
         </div>
         <div className="character-contact-line"><Mail className="h-4 w-4 shrink-0 text-signal" /><span className="break-words">{character.contact || "Sin contacto publicado"}</span></div>
@@ -525,7 +483,7 @@ function DeniedModal({ email, onClose, onSignOut }: { email: string | null; onCl
   </ModalShell>;
 }
 
-function CharacterFormModal({ character, imageUrl, onClose, onSave }: { character: CharacterRecord | null; imageUrl: string | null; onClose: () => void; onSave: (draft: CharacterDraft, file: File | null) => Promise<void> }) {
+function CharacterFormModal({ character, onClose, onSave }: { character: CharacterRecord | null; onClose: () => void; onSave: (draft: CharacterDraft) => Promise<void> }) {
   const [draft, setDraft] = useState<CharacterDraft>(() => character ? {
     name: character.name,
     character_type: character.character_type,
@@ -534,41 +492,13 @@ function CharacterFormModal({ character, imageUrl, onClose, onSave }: { characte
     instagram_url: character.instagram_url ?? "",
     x_url: character.x_url ?? "",
   } : EMPTY_DRAFT);
-  const [imageFile, setImageFile] = useState<File | null>(null);
-  const [preview, setPreview] = useState<string | null>(imageUrl);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (!imageFile) {
-      setPreview(imageUrl);
-      return;
-    }
-    const objectUrl = URL.createObjectURL(imageFile);
-    setPreview(objectUrl);
-    return () => URL.revokeObjectURL(objectUrl);
-  }, [imageFile, imageUrl]);
 
   function update(field: keyof CharacterDraft, value: string) {
     setDraft((current) => ({ ...current, [field]: value }));
   }
 
-  function chooseImage(event: React.ChangeEvent<HTMLInputElement>) {
-    const file = event.target.files?.[0] ?? null;
-    if (!file) return;
-    if (!ALLOWED_IMAGE_TYPES.has(file.type)) {
-      setError("Elige una imagen JPG, PNG o WebP.");
-      event.target.value = "";
-      return;
-    }
-    if (file.size > MAX_IMAGE_BYTES) {
-      setError("La imagen debe pesar máximo 5 MB para cuidar el espacio gratuito.");
-      event.target.value = "";
-      return;
-    }
-    setError(null);
-    setImageFile(file);
-  }
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -579,7 +509,7 @@ function CharacterFormModal({ character, imageUrl, onClose, onSave }: { characte
     setSubmitting(true);
     setError(null);
     try {
-      await onSave(draft, imageFile);
+      await onSave(draft);
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : "No fue posible guardar la ficha.");
     } finally {
@@ -588,15 +518,7 @@ function CharacterFormModal({ character, imageUrl, onClose, onSave }: { characte
   }
 
   return <ModalShell title={character ? "Editar personaje" : "Añadir personaje"} subtitle="Los datos guardados aquí serán visibles para todas las personas que visiten el sitio." onClose={onClose} wide>
-    <form onSubmit={submit} className="grid gap-5 md:grid-cols-[.8fr_1.2fr]">
-      <div>
-        <div className="character-photo-preview">
-          {preview ? <img src={preview} alt="Vista previa de la imagen del personaje" /> : <div className="character-photo-fallback"><UserRound className="h-10 w-10" /><span>Sin fotografía</span></div>}
-        </div>
-        <label className="character-upload-button mt-3"><Upload className="h-4 w-4" /><span>{imageFile ? "Cambiar fotografía" : "Subir fotografía"}</span><input type="file" accept="image/jpeg,image/png,image/webp" onChange={chooseImage} /></label>
-        <p className="mt-2 text-[11px] leading-relaxed text-mist-900">JPG, PNG o WebP · máximo 5 MB. La foto será pública.</p>
-      </div>
-      <div className="space-y-3">
+    <form onSubmit={submit} className="space-y-3">
         <label className="character-field"><span>Nombre <b>*</b></span><input required maxLength={120} value={draft.name} onChange={(event) => update("name", event.target.value)} placeholder="Nombre y apellido" className="character-input" /></label>
         <label className="character-field"><span>Tipo de personaje <b>*</b></span><input required maxLength={80} value={draft.character_type} onChange={(event) => update("character_type", event.target.value)} placeholder="Ej. líder social, funcionario, candidato…" className="character-input" /></label>
         <label className="character-field"><span>Contacto público</span><input maxLength={300} value={draft.contact} onChange={(event) => update("contact", event.target.value)} placeholder="Correo, teléfono, sitio u otra vía de contacto" className="character-input" /></label>
@@ -608,7 +530,6 @@ function CharacterFormModal({ character, imageUrl, onClose, onSave }: { characte
         {error && <p role="alert" className="character-form-error">{error}</p>}
         <div className="rounded-xl border border-signal/15 bg-signal/[.04] p-3 text-[11px] leading-relaxed text-mist-900"><ShieldCheck className="mr-2 inline h-3.5 w-3.5 text-signal" />Publica sólo información de contacto y perfiles sociales que esté destinada a ser pública.</div>
         <div className="flex flex-wrap justify-end gap-2 pt-1"><button type="button" onClick={onClose} className="magnetic-button magnetic-button-ghost">Cancelar</button><button type="submit" disabled={submitting} className="magnetic-button magnetic-button-primary disabled:cursor-wait disabled:opacity-60">{submitting ? "Guardando…" : <><Check className="h-4 w-4" /> Guardar ficha</>}</button></div>
-      </div>
     </form>
   </ModalShell>;
 }
@@ -654,7 +575,7 @@ function ProposalFormModal({ onClose, onSubmit }: { onClose: () => void; onSubmi
       <div className="flex flex-col gap-3">
         <label className="character-field"><span>Contexto o fuente para revisión <span className="font-normal text-mist-900">(privado)</span></span><textarea maxLength={1000} rows={7} value={draft.source_note} onChange={(event) => update("source_note", event.target.value)} placeholder="¿Por qué es importante? ¿De dónde proviene la información?" className="character-input character-textarea" /></label>
         <div className="character-review-note"><ShieldCheck className="mr-2 inline h-4 w-4 shrink-0 text-signal" />La ficha y los datos de contacto sólo serán públicos si se aprueban. No envíes información sensible o privada.</div>
-        <p className="text-[11px] leading-relaxed text-mist-900">Para evitar subidas anónimas al almacenamiento gratuito, la fotografía la añadirá la cuenta editorial después de aprobar la propuesta.</p>
+        <p className="text-[11px] leading-relaxed text-mist-900">La ficha propuesta no incluye fotografías. Sólo se publicará después de la revisión y aprobación editorial.</p>
         <div className="character-honeypot" aria-hidden="true">
           <label htmlFor="proposal-website">Sitio web (dejar vacío)</label>
           <input id="proposal-website" type="text" tabIndex={-1} autoComplete="off" value={draft.website} onChange={(event) => update("website", event.target.value)} />

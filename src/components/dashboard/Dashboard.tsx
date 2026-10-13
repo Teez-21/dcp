@@ -30,6 +30,7 @@ import { getSupabaseClient } from "@/lib/supabase";
 import ControlDeck from "./ControlDeck";
 import ConstellationGrid from "./ConstellationGrid";
 import BrandingPanel from "./BrandingPanel";
+import CharacterHub from "../characters/CharacterHub";
 
 const MapCanvas = dynamic(() => import("./MapCanvas"), { ssr: false });
 
@@ -41,6 +42,7 @@ const ANCHORS: Anchor[] = [
   { id: "señales", label: "Señales", icon: BarChart3 },
   { id: "territorio", label: "Territorio", icon: MapPinned },
   { id: "percepcion", label: "Percepción ciudadana", icon: MessageCircle },
+  { id: "personajes", label: "Personajes", icon: Activity },
   { id: "sistema", label: "Sistema", icon: Workflow },
   { id: "sugerencias", label: "Sugerencias", icon: NotebookPen },
 ];
@@ -50,7 +52,6 @@ type DashboardModule = { number: string; title: string; description: string; ico
 const MODULES: DashboardModule[] = [
   { number: "01", title: "Datos sobre el Concejo de Bogotá", description: "Lecturas de tendencia, proposiciones, bancadas formales e informales, proyectos de acuerdo propuestos, entre otros.", icon: BarChart3, tone: "lime", href: "/concejo/" },
   { number: "02", title: "Espectro del voto", description: "Contrasta elecciones, territorios y escenarios en una misma superficie de lectura.", icon: Layers3, tone: "violet" },
-  { number: "03", title: "Personajes importantes", description: "Ordena actores, alianzas y movimientos con una vista que se adapta al contexto.", icon: Activity, tone: "orange", href: "/personajes/" },
   { number: "04", title: "Temas ciudadanos", description: "Conecta conversaciones, prioridades y territorio para encontrar lo que está moviendo la agenda.", icon: MessageCircle, tone: "cyan" },
   { number: "05", title: "Temas del candidato", description: "Contrasta el discurso con la reacción y deja cada dato en su contexto.", icon: MousePointer2, tone: "pink" },
   { number: "06", title: "Sugerencias", description: "Agrupa temas y añade entradas para conservar ideas, decisiones y hallazgos.", icon: FileText, tone: "blue" },
@@ -201,6 +202,13 @@ export default function Dashboard() {
           <div className="container-wide mx-auto">
             <SectionHeader index="04" kicker="Percepción ciudadana" title={<>Lo que piensa<br /><span className="text-stroke text-mist-100">la ciudad.</span></>} description="Información sobre la Encuesta de Percepción Ciudadana de Bogotá Cómo Vamos, la Encuesta Distrital de Percepción de la Secretaría Distrital de Planeación y la Encuesta de Percepción y Victimización de la CCB." />
             <CitizenPerceptionSection />
+          </div>
+        </section>
+
+        <section id="personajes" className="nexus-section relative px-6 py-28 md:px-12 md:py-40">
+          <div className="container-wide mx-auto">
+            <SectionHeader index="05" kicker="Directorio compartido" title={<>Personajes<br /><span className="text-stroke text-mist-100">importantes.</span></>} description="Una lista pública de actores relevantes para leer vínculos, trayectorias y contexto. Cualquier persona puede proponer una ficha; la cuenta editorial decide cuáles se publican." />
+            <div className="mt-8 overflow-hidden rounded-[2rem] border border-white/10 bg-ink-950/35"><CharacterHub embedded /></div>
           </div>
         </section>
 

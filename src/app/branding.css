@@ -50,6 +50,7 @@ html[data-theme^="palette-"] .journal-compose,
 html[data-theme^="palette-"] .journal-topic,
 html[data-theme^="palette-"] .journal-empty,
 html[data-theme^="palette-"] .character-card,
+html[data-theme^="palette-"] .character-list-item,
 html[data-theme^="palette-"] .council-card,
 html[data-theme^="palette-"] .character-review-section { border-color: var(--border-soft) !important; background: linear-gradient(145deg, color-mix(in srgb, var(--brand-primary) 13%, var(--brand-surface)), var(--brand-bg)) !important; }
 html[data-theme^="palette-"] .bento-card-signal,
