@@ -59,10 +59,17 @@ function blockParty(councillor: Councillor) {
 function pointSlots() {
   const slots: { row: number; angle: number; x: number; y: number }[] = [];
   RINGS.forEach((count, row) => {
+    if (row === 0) {
+      // La fila interior se lee como un triángulo invertido: dos arriba y una abajo.
+      slots.push({ row, angle: 150, x: 444, y: 247 });
+      slots.push({ row, angle: 90, x: 460, y: 274 });
+      slots.push({ row, angle: 30, x: 476, y: 247 });
+      return;
+    }
     for (let i = 0; i < count; i += 1) {
       const angle = 180 - (180 * i) / Math.max(1, count - 1);
       const radians = (angle * Math.PI) / 180;
-      slots.push({ row, angle, x: 460 + RADII[row] * Math.cos(radians), y: 292 - RADII[row] * Math.sin(radians) });
+      slots.push({ row, angle, x: 460 + RADII[row] * Math.cos(radians), y: 288 - RADII[row] * Math.sin(radians) });
     }
   });
   return slots.sort((a, b) => b.angle - a.angle || a.row - b.row);
