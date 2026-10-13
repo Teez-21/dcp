@@ -9,17 +9,13 @@ import {
   BarChart3,
   ChevronRight,
   Database,
-  FileText,
   BookOpen,
   Trash2,
-  Layers3,
   MapPinned,
   MessageCircle,
-  MousePointer2,
   NotebookPen,
   Radar,
   Sparkles,
-  Workflow,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
@@ -43,18 +39,7 @@ const ANCHORS: Anchor[] = [
   { id: "territorio", label: "Territorio", icon: MapPinned },
   { id: "percepcion", label: "Percepción ciudadana", icon: MessageCircle },
   { id: "personajes", label: "Personajes", icon: Activity },
-  { id: "sistema", label: "Sistema", icon: Workflow },
   { id: "sugerencias", label: "Sugerencias", icon: NotebookPen },
-];
-
-type DashboardModule = { number: string; title: string; description: string; icon: LucideIcon; tone: string; href?: string };
-
-const MODULES: DashboardModule[] = [
-  { number: "01", title: "Datos sobre el Concejo de Bogotá", description: "Lecturas de tendencia, proposiciones, bancadas formales e informales, proyectos de acuerdo propuestos, entre otros.", icon: BarChart3, tone: "lime", href: "/concejo/" },
-  { number: "02", title: "Espectro del voto", description: "Contrasta elecciones, territorios y escenarios en una misma superficie de lectura.", icon: Layers3, tone: "violet" },
-  { number: "04", title: "Temas ciudadanos", description: "Conecta conversaciones, prioridades y territorio para encontrar lo que está moviendo la agenda.", icon: MessageCircle, tone: "cyan" },
-  { number: "05", title: "Temas del candidato", description: "Contrasta el discurso con la reacción y deja cada dato en su contexto.", icon: MousePointer2, tone: "pink" },
-  { number: "06", title: "Sugerencias", description: "Agrupa temas y añade entradas para conservar ideas, decisiones y hallazgos.", icon: FileText, tone: "blue" },
 ];
 
 type CitizenSurvey = { id: string; shortName: string; title: string; description: string; embedTitle: string; embedUrl: string; sourceLabel: string; sourceUrl: string };
@@ -209,13 +194,6 @@ export default function Dashboard() {
           <div className="container-wide mx-auto">
             <SectionHeader index="05" kicker="Directorio compartido" title={<>Personajes<br /><span className="text-stroke text-mist-100">importantes.</span></>} description="Una lista pública de actores relevantes para leer vínculos, trayectorias y contexto. Cualquier persona puede proponer una ficha; la cuenta editorial decide cuáles se publican." />
             <div className="mt-8 overflow-hidden rounded-[2rem] border border-white/10 bg-ink-950/35"><CharacterHub embedded /></div>
-          </div>
-        </section>
-
-        <section id="sistema" className="nexus-section px-6 py-28 md:px-12 md:py-40">
-          <div className="container-wide mx-auto">
-            <SectionHeader index="05" kicker="Un sistema, no siete pestañas" title="Todos los temas, cerca." description="Acá encontrará todos los temas que consideramos relevantes para la campaña." />
-            <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{MODULES.map((module, i) => <ModuleCard key={module.number} module={module} index={i} />)}</div>
           </div>
         </section>
 
@@ -375,13 +353,6 @@ function SectionHeader({ index, kicker, title, description }: { index: string; k
 
 function MetricCard({ label, value, detail, icon: Icon, accent, className = "" }: { label: string; value: string; detail: string; icon: LucideIcon; accent: string; className?: string }) {
   return <Reveal className={`metric-card ${className}`}><div className={`metric-icon metric-${accent}`}><Icon className="h-5 w-5" /></div><p className="eyebrow mt-10">{label}</p><p className="mt-3 font-display text-5xl font-semibold tracking-[-.05em] text-mist-100">{value}</p><p className="mt-2 text-xs text-mist-900">{detail}</p></Reveal>;
-}
-
-function ModuleCard({ module, index }: { module: DashboardModule; index: number }) {
-  const Icon = module.icon;
-  const cardClass = `module-card module-${module.tone}${module.href ? " module-card-action" : ""}`;
-  const content = <><div className="flex items-start justify-between"><span className="font-mono text-xs text-mist-900">{module.number}</span><Icon className="h-5 w-5 text-signal" strokeWidth={1.6} /></div><div className="mt-20"><h3 className="font-display text-2xl leading-tight tracking-tight text-mist-100">{module.title}</h3><p className="mt-3 text-sm leading-relaxed text-mist-900">{module.description}</p><span className="module-link mt-7">Explorar <ChevronRight className="h-4 w-4" /></span></div></>;
-  return <Reveal delay={index * 0.06}>{module.href ? <a href={module.href} aria-label={`Abrir ${module.title}`} className={cardClass}>{content}</a> : <article className={cardClass}>{content}</article>}</Reveal>;
 }
 
 function Reveal({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
