@@ -21,21 +21,26 @@ const shortName = (name: string) => {
   return parts.length > 2 ? `${parts[0]} ${parts[parts.length - 2]} ${parts[parts.length - 1]}` : name;
 };
 
+const DOME_ROWS = [13, 11, 9, 7, 5];
+const DOME_RADII = [222, 181, 140, 99, 58];
+
 function pointPosition(index: number) {
-  const columns = 9;
-  const row = Math.floor(index / columns);
-  const column = index % columns;
-  const rowCount = Math.min(columns, councillors.length - row * columns);
-  const rowWidth = (rowCount - 1) * 82;
-  const x = 460 - rowWidth / 2 + column * 82;
-  const y = 58 + row * 58 + Math.abs(4 - column) * 5;
-  return { x, y };
+  let cursor = index;
+  let row = 0;
+  while (cursor >= DOME_ROWS[row] && row < DOME_ROWS.length - 1) {
+    cursor -= DOME_ROWS[row];
+    row += 1;
+  }
+  const count = DOME_ROWS[row];
+  const angle = 200 - (cursor / Math.max(1, count - 1)) * 220;
+  const radians = (angle * Math.PI) / 180;
+  return { x: 460 + DOME_RADII[row] * Math.cos(radians), y: 294 - DOME_RADII[row] * Math.sin(radians) };
 }
 
 export default function CouncilDataSection() {
   const [hovered, setHovered] = useState<Hovered | null>(null);
   const [selectedParty, setSelectedParty] = useState<string | null>(null);
-  const points = useMemo(() => councillors.map((councillor, index) => ({ councillor, ...pointPosition(index) })), []);
+  const points = useMemo(() => [...councillors].sort((a, b) => a.party.localeCompare(b.party, "es") || a.name.localeCompare(b.name, "es")).map((councillor, index) => ({ councillor, ...pointPosition(index) })), []);
   const parties = useMemo(() => Object.entries(partyColors).filter(([party]) => councillors.some((councillor) => councillor.party === party)), []);
   const knownVotes = councillors.filter((councillor) => councillor.votes !== null);
   const totalVotes = knownVotes.reduce((sum, councillor) => sum + (councillor.votes ?? 0), 0);
@@ -47,7 +52,7 @@ export default function CouncilDataSection() {
         <div className="max-w-2xl">
           <p className="eyebrow text-signal">45 puntos · 17 bancadas</p>
           <h3 className="mt-3 font-display text-3xl font-semibold tracking-[-.04em] md:text-5xl">Una cámara de nombres.</h3>
-          <p className="mt-4 text-sm leading-relaxed text-mist-900">Cada punto representa un concejal o concejala. Pasa el cursor —o enfoca con teclado— para consultar su bancada y los votos registrados.</p>
+          <p className="mt-4 text-sm leading-relaxed text-mist-900">Cada punto representa un concejal o concejala. Las bancadas están agrupadas por color en una media dona; pasa el cursor —o enfoca con teclado— para consultar su bancada y los votos registrados.</p>
         </div>
         <div className="grid grid-cols-2 gap-2 text-right text-[10px] uppercase tracking-[.16em] text-mist-900">
           <div className="rounded-xl border border-white/10 bg-white/[.03] px-3 py-2"><span className="block font-mono text-lg tracking-normal text-mist-100">{knownVotes.length}</span>con votos</div>
@@ -57,12 +62,12 @@ export default function CouncilDataSection() {
 
       <div className="relative mt-7 overflow-x-auto rounded-2xl border border-white/10 bg-[#0b1020] p-3 md:p-5">
         <div className="min-w-[720px]">
-          <svg viewBox="0 0 920 370" className="h-auto w-full" role="img" aria-label="Gráfico interactivo de concejales por bancada">
+          <svg viewBox="0 0 920 370" className="h-auto w-full" role="img" aria-label="Gráfico interactivo de concejales agrupados por bancada en media dona">
             <defs>
               <radialGradient id="council-glow" cx="50%" cy="42%" r="62%"><stop offset="0%" stopColor="#c4b5fd" stopOpacity=".12" /><stop offset="100%" stopColor="#c4b5fd" stopOpacity="0" /></radialGradient>
             </defs>
             <rect width="920" height="370" fill="url(#council-glow)" rx="18" />
-            <path d="M110 318 Q460 8 810 318" fill="none" stroke="#c4b5fd" strokeOpacity=".11" strokeWidth="1" strokeDasharray="4 8" />
+            <path d="M238 221 Q460 -12 682 221" fill="none" stroke="#c4b5fd" strokeOpacity=".14" strokeWidth="1" strokeDasharray="4 8" />
             {points.map(({ councillor, x, y }) => {
               const active = !selectedParty || selectedParty === councillor.party;
               return (
