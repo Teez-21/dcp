@@ -361,7 +361,7 @@ export default function CharacterHub({ embedded = false }: { embedded?: boolean 
             </h1>
           </div>
           <div className="md:pb-2">
-            <p className="max-w-xl text-sm leading-relaxed text-mist-900 md:text-base">Un directorio público de personas clave y sus vínculos. Cualquier visitante puede proponer una ficha; la cuenta editorial decide cuáles se publican.</p>
+            <p className="max-w-xl text-sm leading-relaxed text-mist-900 md:text-base">Una lista pública de actores relevantes para leer vínculos, trayectorias y contexto. Cualquier persona puede proponer una ficha; la cuenta editorial decide cuáles se publican.</p>
             <div className="mt-5 flex flex-wrap items-center gap-2 text-[10px] font-mono uppercase tracking-[.14em] text-mist-900">
               <span className="character-meta-chip"><LockKeyhole className="h-3 w-3" /> Publicación moderada</span>
               <span className="character-meta-chip"><FileText className="h-3 w-3" /> {characters.length} {characters.length === 1 ? "ficha" : "fichas"}</span>

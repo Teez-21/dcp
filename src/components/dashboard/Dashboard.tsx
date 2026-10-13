@@ -202,7 +202,6 @@ export default function Dashboard() {
 
         <section id="personajes" className="nexus-section relative px-6 py-28 md:px-12 md:py-40">
           <div className="container-wide mx-auto">
-            <SectionHeader index="06" kicker="Directorio compartido" title={<>Personajes<br /><span className="text-stroke text-mist-100">importantes.</span></>} description="Una lista pública de actores relevantes para leer vínculos, trayectorias y contexto. Cualquier persona puede proponer una ficha; la cuenta editorial decide cuáles se publican." />
             <div className="mt-8 overflow-hidden rounded-[2rem] border border-white/10 bg-ink-950/35"><CharacterHub embedded /></div>
           </div>
         </section>
