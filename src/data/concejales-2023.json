@@ -1,0 +1,344 @@
+{
+  "source": "src/data/concejo-2023.json",
+  "year": "2023-2027",
+  "councillors": [
+    {
+      "name": "Abisambra Vesga Samir José",
+      "party": "Partido Liberal",
+      "votes": 53291,
+      "id": "concejal-1",
+      "color": "#7b2cbf"
+    },
+    {
+      "name": "Acosta Rico Marco Fidel",
+      "party": "Justas libres",
+      "votes": 20893,
+      "id": "concejal-2",
+      "color": "#f59e0b"
+    },
+    {
+      "name": "Amín Martelo Humberto Rafael",
+      "party": "Centro Democrático",
+      "votes": 16349,
+      "id": "concejal-3",
+      "color": "#173f73"
+    },
+    {
+      "name": "Araque Mejía Jesús David",
+      "party": "Nuevo Liberalismo",
+      "votes": 16037,
+      "id": "concejal-4",
+      "color": "#c8343d"
+    },
+    {
+      "name": "Arias Rubio Edward Anibal",
+      "party": "Alianza Verde",
+      "votes": 32062,
+      "id": "concejal-5",
+      "color": "#2f8f46"
+    },
+    {
+      "name": "Atanassova Iakimova Donka",
+      "party": "Polo Democrático",
+      "votes": null,
+      "id": "concejal-6",
+      "color": "#8b5cf6"
+    },
+    {
+      "name": "Baena Merlano Juan Javier",
+      "party": "Nuevo Liberalismo",
+      "votes": 48778,
+      "id": "concejal-7",
+      "color": "#c8343d"
+    },
+    {
+      "name": "Barrios Bernal Andrés Giovanni",
+      "party": "Centro Democrático",
+      "votes": 13351,
+      "id": "concejal-8",
+      "color": "#173f73"
+    },
+    {
+      "name": "Bastidas Oscar Fernando",
+      "party": "MAIS",
+      "votes": null,
+      "id": "concejal-9",
+      "color": "#e76f51"
+    },
+    {
+      "name": "Bedoya Piraquive Samir",
+      "party": "MIRA",
+      "votes": 26853,
+      "id": "concejal-10",
+      "color": "#58a6d9"
+    },
+    {
+      "name": "Bernal Ana Teresa",
+      "party": "Colombia Humana",
+      "votes": null,
+      "id": "concejal-11",
+      "color": "#e9a800"
+    },
+    {
+      "name": "Briceño Montes Daniel Felipe",
+      "party": "Centro Democrático",
+      "votes": 49442,
+      "id": "concejal-12",
+      "color": "#173f73"
+    },
+    {
+      "name": "Calderón Restrepo Cristina",
+      "party": "Nuevo Liberalismo",
+      "votes": 13002,
+      "id": "concejal-13",
+      "color": "#c8343d"
+    },
+    {
+      "name": "Castellanos Serrano Andrés Leandro",
+      "party": "Alianza Verde",
+      "votes": 23524,
+      "id": "concejal-14",
+      "color": "#2f8f46"
+    },
+    {
+      "name": "Cepeda Peña Darío Fernando",
+      "party": "Partido Liberal",
+      "votes": 20935,
+      "id": "concejal-15",
+      "color": "#7b2cbf"
+    },
+    {
+      "name": "Correa Mojica Ricardo Andrés",
+      "party": "Nuevo Liberalismo",
+      "votes": 13643,
+      "id": "concejal-16",
+      "color": "#c8343d"
+    },
+    {
+      "name": "Cuesta Novoa José del Carmen",
+      "party": "Colombia Humana",
+      "votes": null,
+      "id": "concejal-17",
+      "color": "#e9a800"
+    },
+    {
+      "name": "Diago Guáqueta Diana Marcela",
+      "party": "Centro Democrático",
+      "votes": 28307,
+      "id": "concejal-18",
+      "color": "#173f73"
+    },
+    {
+      "name": "Díaz Martínez Juan Manuel",
+      "party": "Nuevo Liberalismo",
+      "votes": 21493,
+      "id": "concejal-19",
+      "color": "#c8343d"
+    },
+    {
+      "name": "Dussán Pérez Rocío",
+      "party": "Polo Democrático",
+      "votes": null,
+      "id": "concejal-20",
+      "color": "#8b5cf6"
+    },
+    {
+      "name": "Espinosa Ortiz Julián",
+      "party": "Alianza Verde",
+      "votes": 19420,
+      "id": "concejal-21",
+      "color": "#2f8f46"
+    },
+    {
+      "name": "Forero Castelblanco Edison Julián",
+      "party": "Colombia Renaciente",
+      "votes": 69392,
+      "id": "concejal-22",
+      "color": "#14b8a6"
+    },
+    {
+      "name": "Forero Ramírez Sandra Consuelo",
+      "party": "Centro Democrático",
+      "votes": 32680,
+      "id": "concejal-23",
+      "color": "#173f73"
+    },
+    {
+      "name": "García Maya Germán Augusto",
+      "party": "Partido Liberal",
+      "votes": 29965,
+      "id": "concejal-24",
+      "color": "#7b2cbf"
+    },
+    {
+      "name": "García Vargas Andrés Ernesto",
+      "party": "Alianza Verde",
+      "votes": 24822,
+      "id": "concejal-25",
+      "color": "#2f8f46"
+    },
+    {
+      "name": "González García Rolando Alberto",
+      "party": "Cambio Radical",
+      "votes": 29917,
+      "id": "concejal-26",
+      "color": "#2563eb"
+    },
+    {
+      "name": "Gutiérrez González Armando",
+      "party": "Partido Liberal",
+      "votes": null,
+      "id": "concejal-27",
+      "color": "#7b2cbf"
+    },
+    {
+      "name": "López Gutiérrez Fernando",
+      "party": "Nuevo Liberalismo",
+      "votes": 10996,
+      "id": "concejal-28",
+      "color": "#c8343d"
+    },
+    {
+      "name": "Name Ramírez María Clara",
+      "party": "Alianza Verde",
+      "votes": 22557,
+      "id": "concejal-29",
+      "color": "#2f8f46"
+    },
+    {
+      "name": "Onzaga Niño Andrés Darío",
+      "party": "Alianza Verde",
+      "votes": 20082,
+      "id": "concejal-30",
+      "color": "#2f8f46"
+    },
+    {
+      "name": "Oviedo Arango Juan Daniel",
+      "party": "Con Toda Por Bogotá",
+      "votes": null,
+      "id": "concejal-31",
+      "color": "#0e9ca8"
+    },
+    {
+      "name": "Puentes Sierra Fabián Andrés",
+      "party": "MIRA",
+      "votes": 28377,
+      "id": "concejal-32",
+      "color": "#58a6d9"
+    },
+    {
+      "name": "Quintero Rubio Juan David",
+      "party": "En Marcha",
+      "votes": 12551,
+      "id": "concejal-33",
+      "color": "#e9a800"
+    },
+    {
+      "name": "Ramírez Vahos Oscar Jaime",
+      "party": "Centro Democrático",
+      "votes": 25198,
+      "id": "concejal-34",
+      "color": "#173f73"
+    },
+    {
+      "name": "Ribadeneira Quena María",
+      "party": "Polo Democrático",
+      "votes": null,
+      "id": "concejal-35",
+      "color": "#8b5cf6"
+    },
+    {
+      "name": "Rodríguez Sastoque Julián David",
+      "party": "Alianza Verde",
+      "votes": 24649,
+      "id": "concejal-36",
+      "color": "#2f8f46"
+    },
+    {
+      "name": "Rojas Castillo Emel",
+      "party": "Nueva Fuerza Demócratica",
+      "votes": 11794,
+      "id": "concejal-37",
+      "color": "#64748b"
+    },
+    {
+      "name": "Saavedra Murcia David Hernando",
+      "party": "En Marcha",
+      "votes": 9185,
+      "id": "concejal-38",
+      "color": "#e9a800"
+    },
+    {
+      "name": "Sánchez Barreto Heidy Lorena",
+      "party": "Unión Patriotica",
+      "votes": null,
+      "id": "concejal-39",
+      "color": "#dc2626"
+    },
+    {
+      "name": "Sandoval Moreno Clara Lucía",
+      "party": "Partido Liberal",
+      "votes": 22605,
+      "id": "concejal-40",
+      "color": "#7b2cbf"
+    },
+    {
+      "name": "Schiavenato Rivadeneira Angelo",
+      "party": "Partido Ecologista Colombiano",
+      "votes": 10970,
+      "id": "concejal-41",
+      "color": "#84cc16"
+    },
+    {
+      "name": "Torrado Pacheco Rubén Darío",
+      "party": "Partido de la U",
+      "votes": 23612,
+      "id": "concejal-42",
+      "color": "#f97316"
+    },
+    {
+      "name": "Triana Vargas Julián Felipe",
+      "party": "Alianza Verde",
+      "votes": 33614,
+      "id": "concejal-43",
+      "color": "#2f8f46"
+    },
+    {
+      "name": "Uscátegui Pastrana Julián",
+      "party": "Centro Democrático",
+      "votes": 18527,
+      "id": "concejal-44",
+      "color": "#173f73"
+    },
+    {
+      "name": "Vargas Silva María Victoria",
+      "party": "Partido Liberal",
+      "votes": 20964,
+      "id": "concejal-45",
+      "color": "#7b2cbf"
+    }
+  ],
+  "partyColors": {
+    "Partido Liberal": "#7b2cbf",
+    "Justas libres": "#f59e0b",
+    "Centro Democrático": "#173f73",
+    "Nuevo Liberalismo": "#c8343d",
+    "Alianza Verde": "#2f8f46",
+    "Polo Democrático": "#8b5cf6",
+    "MAIS": "#e76f51",
+    "MIRA": "#58a6d9",
+    "Colombia Humana": "#e9a800",
+    "Colombia Renaciente": "#14b8a6",
+    "Cambio Radical": "#2563eb",
+    "Con Toda Por Bogotá": "#0e9ca8",
+    "En Marcha": "#e9a800",
+    "Nueva Fuerza Demócratica": "#64748b",
+    "Unión Patriotica": "#dc2626",
+    "Partido Ecologista Colombiano": "#84cc16",
+    "Partido de la U": "#f97316",
+    "Pacto Histórico": "#e9a800",
+    "Partido Verde": "#2f8f46",
+    "Partido Conservador": "#f8fafc",
+    "Conservador": "#f8fafc"
+  }
+}

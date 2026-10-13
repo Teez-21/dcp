@@ -9,6 +9,7 @@ import {
   BarChart3,
   ChevronRight,
   Database,
+  Landmark,
   BookOpen,
   Trash2,
   MapPinned,
@@ -27,6 +28,7 @@ import ControlDeck from "./ControlDeck";
 import ConstellationGrid from "./ConstellationGrid";
 import BrandingPanel from "./BrandingPanel";
 import CharacterHub from "../characters/CharacterHub";
+import CouncilDataSection from "./CouncilDataSection";
 
 const MapCanvas = dynamic(() => import("./MapCanvas"), { ssr: false });
 
@@ -36,6 +38,7 @@ type Anchor = { id: string; label: string; icon: LucideIcon };
 const ANCHORS: Anchor[] = [
   { id: "inicio", label: "Inicio", icon: Radar },
   { id: "señales", label: "Señales", icon: BarChart3 },
+  { id: "datos-concejo", label: "Datos del concejo", icon: Landmark },
   { id: "territorio", label: "Territorio", icon: MapPinned },
   { id: "percepcion", label: "Percepción ciudadana", icon: MessageCircle },
   { id: "personajes", label: "Personajes", icon: Activity },
@@ -148,7 +151,7 @@ export default function Dashboard() {
               <Reveal delay={0.52} className="mt-10 max-w-xl"><p className="max-w-lg text-[15px] leading-relaxed text-mist-900 md:text-lg">Esta página busca mostrar datos relevantes para la campaña, desde la distribución del voto en Bogotá hasta los temas tratados por el Concejo de Bogotá, el branding y personajes importantes de la izquierda en Bogotá y Colombia.</p></Reveal>
               <Reveal delay={0.62} className="mt-8 flex flex-wrap items-center gap-3"><button className="magnetic-button magnetic-button-primary" onClick={() => scrollToId("señales")}>Explorar señales <ArrowDown className="h-4 w-4" /></button><button className="magnetic-button magnetic-button-ghost" onClick={() => scrollToId("territorio")}>Ver territorio <ChevronRight className="h-4 w-4" /></button></Reveal>
             </motion.div>
-            <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.9, duration: 0.9, ease: EASE }} className="hero-index hidden md:block"><span>01</span><span className="h-20 w-px bg-signal/70" /><span>06</span></motion.div>
+            <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.9, duration: 0.9, ease: EASE }} className="hero-index hidden md:block"><span>01</span><span className="h-20 w-px bg-signal/70" /><span>07</span></motion.div>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }} className="absolute bottom-0 left-0 flex items-center gap-3 text-[10px] uppercase tracking-[.22em] text-mist-900"><span className="animate-bounce"><ArrowDown className="h-4 w-4 text-signal" /></span>Desplázate para descubrir</motion.div>
           </div>
         </section>
@@ -170,9 +173,15 @@ export default function Dashboard() {
           </div>
         </section>
 
+        <section id="datos-concejo" className="nexus-section relative px-6 py-28 md:px-12 md:py-40">
+          <div className="container-wide mx-auto">
+            <SectionHeader index="03" kicker="Representación política" title={<>Datos del<br /><span className="text-stroke text-mist-100">concejo.</span></>} description="Una lectura visual de las bancadas y concejales que integran el Concejo de Bogotá. Cada punto se puede explorar para consultar nombre, partido y votos registrados." />
+            <CouncilDataSection />
+          </div>
+        </section>
         <section id="territorio" className="nexus-section nexus-map-section relative px-4 py-24 md:px-8 md:py-32">
           <div className="container-wide mx-auto">
-            <SectionHeader index="03" kicker="Territorio interactivo" title={<>¿Cómo se distribuyeron<br /><span className="text-stroke text-mist-100">los votos en el territorio?</span></>} description="El mapa busca mostrar cómo se distribuyeron los votos de las últimas 5 elecciones por localidad, UPZ y puesto de votación en Bogotá para identificar zonas de interés para actividades programáticas." />
+            <SectionHeader index="04" kicker="Territorio interactivo" title={<>¿Cómo se distribuyeron<br /><span className="text-stroke text-mist-100">los votos en el territorio?</span></>} description="El mapa busca mostrar cómo se distribuyeron los votos de las últimas 5 elecciones por localidad, UPZ y puesto de votación en Bogotá para identificar zonas de interés para actividades programáticas." />
             <div className="map-shell relative mt-14 h-[min(78vh,780px)] min-h-[580px] overflow-hidden rounded-[2rem] border border-white/10 bg-ink-900 shadow-2xl shadow-black/30">
               <div className="absolute inset-0 z-0"><MapCanvas /></div>
               <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-t from-ink-950/60 via-transparent to-ink-950/10" />
@@ -185,14 +194,14 @@ export default function Dashboard() {
 
         <section id="percepcion" className="nexus-section relative px-6 py-28 md:px-12 md:py-40">
           <div className="container-wide mx-auto">
-            <SectionHeader index="04" kicker="Percepción ciudadana" title={<>Lo que piensa<br /><span className="text-stroke text-mist-100">la ciudad.</span></>} description="Información sobre la Encuesta de Percepción Ciudadana de Bogotá Cómo Vamos, la Encuesta Distrital de Percepción de la Secretaría Distrital de Planeación y la Encuesta de Percepción y Victimización de la CCB." />
+            <SectionHeader index="05" kicker="Percepción ciudadana" title={<>Lo que piensa<br /><span className="text-stroke text-mist-100">la ciudad.</span></>} description="Información sobre la Encuesta de Percepción Ciudadana de Bogotá Cómo Vamos, la Encuesta Distrital de Percepción de la Secretaría Distrital de Planeación y la Encuesta de Percepción y Victimización de la CCB." />
             <CitizenPerceptionSection />
           </div>
         </section>
 
         <section id="personajes" className="nexus-section relative px-6 py-28 md:px-12 md:py-40">
           <div className="container-wide mx-auto">
-            <SectionHeader index="05" kicker="Directorio compartido" title={<>Personajes<br /><span className="text-stroke text-mist-100">importantes.</span></>} description="Una lista pública de actores relevantes para leer vínculos, trayectorias y contexto. Cualquier persona puede proponer una ficha; la cuenta editorial decide cuáles se publican." />
+            <SectionHeader index="06" kicker="Directorio compartido" title={<>Personajes<br /><span className="text-stroke text-mist-100">importantes.</span></>} description="Una lista pública de actores relevantes para leer vínculos, trayectorias y contexto. Cualquier persona puede proponer una ficha; la cuenta editorial decide cuáles se publican." />
             <div className="mt-8 overflow-hidden rounded-[2rem] border border-white/10 bg-ink-950/35"><CharacterHub embedded /></div>
           </div>
         </section>
@@ -385,7 +394,7 @@ function SuggestionsSection() {
   }
   return <section id="sugerencias" className="nexus-section journal-section relative overflow-hidden px-6 py-28 md:px-12 md:py-40">
     <div className="container-wide relative mx-auto">
-      <SectionHeader index="06" kicker="Sugerencias" title={<>Temas para<br /><span className="text-stroke text-mist-100">pensar mejor.</span></>} description="Sugerencias, anotaciones u otros que merezcan ser anotados." />
+      <SectionHeader index="07" kicker="Sugerencias" title={<>Temas para<br /><span className="text-stroke text-mist-100">pensar mejor.</span></>} description="Sugerencias, anotaciones u otros que merezcan ser anotados." />
       <div className="mt-14 grid gap-5 lg:grid-cols-[.8fr_1.4fr]">
         <Reveal className="journal-compose" delay={0.05}><div className="flex items-center gap-3"><span className="journal-icon"><BookOpen className="h-5 w-5" /></span><div><p className="eyebrow text-signal">Nuevo tema</p><h3 className="mt-1 font-display text-2xl">Abre una línea de trabajo</h3></div></div><form onSubmit={createTopic} className="mt-7 space-y-3"><input value={topicTitle} onChange={(e) => setTopicTitle(e.target.value)} placeholder="Ej. Elecciones 2027" className="journal-input" /><textarea value={topicDescription} onChange={(e) => setTopicDescription(e.target.value)} placeholder="Descripción breve del tema (opcional)" rows={4} className="journal-input resize-none" /><button type="submit" className="magnetic-button magnetic-button-primary w-full justify-center">Crear tema <BookOpen className="h-4 w-4" /></button></form><p className="mt-4 text-xs leading-relaxed text-mist-900">Los temas y sus entradas se guardan automáticamente en este navegador.</p></Reveal>
         <div className="space-y-3">{topics.length === 0 ? <Reveal className="journal-empty"><BookOpen className="h-7 w-7 text-signal" /><h3 className="mt-4 font-display text-2xl">Tus sugerencias están listas.</h3><p className="mt-2 max-w-sm text-sm leading-relaxed text-mist-900">Crea el primer tema para comenzar a guardar contexto, decisiones y aprendizajes.</p></Reveal> : topics.map((topic, index) => <JournalTopicCard key={topic.id} topic={topic} index={index} open={openTopic === topic.id} onToggle={() => setOpenTopic(openTopic === topic.id ? null : topic.id)} onAddEntry={addEntry} onDeleteTopic={() => deleteTopic(topic.id)} onDeleteEntry={deleteEntry} />)}</div>
