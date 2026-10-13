@@ -24,6 +24,7 @@ type State = {
   opacity: number;
   marginMetric: MarginMetric;
   territoryLevel: "localidades" | "upz" | "puestos";
+  upzDecileFilterEnabled: boolean;
   geo: GeoFC | null;
   nameProp: string | null;
   theme: ThemeName;
@@ -40,6 +41,7 @@ type Actions = {
   setOpacity: (v: number) => void;
   setMarginMetric: (metric: MarginMetric) => void;
   setTerritoryLevel: (level: "localidades" | "upz" | "puestos") => void;
+  setUpzDecileFilterEnabled: (enabled: boolean) => void;
   setResultView: (electionId: string, view: "party" | "candidate") => void;
   loadPreloadedConcejo: () => Promise<void>;
   loadPreloadedCamara: () => Promise<void>;
@@ -87,6 +89,7 @@ export const useDashboardStore = create<State & Actions>()(
       opacity: 0.3,
       marginMetric: "absolute",
       territoryLevel: "localidades",
+      upzDecileFilterEnabled: false,
       geo: null,
       nameProp: null,
       theme: "tokyo",
@@ -151,6 +154,7 @@ export const useDashboardStore = create<State & Actions>()(
       setOpacity: (v) => set({ opacity: v }),
       setMarginMetric: (metric) => set({ marginMetric: metric }),
       setTerritoryLevel: (level) => set({ territoryLevel: level }),
+      setUpzDecileFilterEnabled: (enabled) => set({ upzDecileFilterEnabled: enabled }),
       setResultView: (electionId, view) => set((s) => ({ resultViewByElection: { ...s.resultViewByElection, [electionId]: view } })),
       loadPreloadedConcejo: async () => {
         const current = get().elections.find((e) => e.id === "concejo");

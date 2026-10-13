@@ -160,6 +160,26 @@ export default function ControlDeck() {
             )}
           </div>
 
+          {s.territoryLevel === "upz" && s.visible.includes("enmarcha-concejo-upz") && (
+            <div className="rounded-xl border border-accent/30 bg-accent/5 p-3">
+              <button
+                type="button"
+                onClick={() => s.setUpzDecileFilterEnabled(!s.upzDecileFilterEnabled)}
+                className="flex w-full items-center justify-between gap-3 text-left"
+                aria-pressed={s.upzDecileFilterEnabled}
+              >
+                <span>
+                  <span className="block text-[11.5px] font-semibold text-accent">Intensidad por deciles</span>
+                  <span className="mt-1 block text-[10.5px] leading-snug text-muted">Ordena las UPZ por votos totales de En Marcha.</span>
+                </span>
+                <span className={`rounded-full px-2 py-1 text-[10px] font-semibold ${s.upzDecileFilterEnabled ? "bg-accent text-on-accent" : "border border-border text-muted"}`}>
+                  {s.upzDecileFilterEnabled ? "Activa" : "Inactiva"}
+                </span>
+              </button>
+              {s.upzDecileFilterEnabled && <p className="mt-2 border-t border-accent/15 pt-2 text-[10px] leading-snug text-muted">Decil 1: mayor concentración. Decil 10: color muy suave.</p>}
+            </div>
+          )}
+
           {/* Modo de resultado y margen de los círculos */}
           <div>
             {s.territoryLevel === "puestos" ? (

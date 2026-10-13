@@ -77,6 +77,7 @@ export default function MapCanvas() {
   const opacity = useDashboardStore((s) => s.opacity);
   const marginMetric = useDashboardStore((s) => s.marginMetric);
   const territoryLevel = useDashboardStore((s) => s.territoryLevel);
+  const upzDecileFilterEnabled = useDashboardStore((s) => s.upzDecileFilterEnabled);
   const resultViewByElection = useDashboardStore((s) => s.resultViewByElection);
 
   const getE = (id: string) => elections.find((e) => e.id === id);
@@ -243,10 +244,22 @@ export default function MapCanvas() {
     return totals;
   }
 
+  function decilesForUpz(votesByUpz: Record<string, Record<string, number>>): Record<string, number> {
+    const rankedUpz = Object.entries(votesByUpz)
+      .map(([code, votes]) => [code, sumVotes(votes)] as const)
+      .sort((a, b) => b[1] - a[1]);
+    const deciles: Record<string, number> = {};
+    rankedUpz.forEach(([code], index) => {
+      deciles[code] = Math.min(10, Math.floor((index / Math.max(1, rankedUpz.length)) * 10) + 1);
+    });
+    return deciles;
+  }
+
   function addUpz(e: Election, L: any, geoData: GeoFC) {
     const map = mapRef.current;
     const view = resultViewByElection?.[e.id] || "candidate";
     const votesByUpz = upzVotesForElection(e, view);
+    const decileByUpz = e.id === "enmarcha-concejo-upz" && upzDecileFilterEnabled ? decilesForUpz(votesByUpz) : {};
     const svg = ensureSvgRenderer(L);
     const layer = L.geoJSON(geoData, {
       renderer: svg,
@@ -257,9 +270,11 @@ export default function MapCanvas() {
         const votes = votesByUpz[code] || {};
         const ranked = ranking(votes);
         const base = { color: getComputedStyle(document.documentElement).getPropertyValue("--fg").trim(), weight: 1.05, opacity: 0.8, fillOpacity: opacity };
-        if (!stationCount) return { ...base, color: "#626a78", fillColor: "#858b99", weight: 1.15, fillOpacity: Math.max(0.72, opacity) };
+        if (!stationCount && !e.upzVotes) return { ...base, color: "#626a78", fillColor: "#858b99", weight: 1.15, fillOpacity: Math.max(0.72, opacity) };
         if (!ranked.length) return { ...base, fillColor: "#8b93a0", fillOpacity: 0.12, dashArray: "4 3" };
-        if (mode === "winner") return { ...base, fillColor: displayColor(e, ranked[0][0], view) };
+        const decile = decileByUpz[code];
+        const decileOpacity = decile ? Math.max(0.1, (0.15 + ((10 - decile) / 9) * 0.75) * Math.max(0.5, opacity)) : opacity;
+        if (mode === "winner") return { ...base, fillColor: displayColor(e, ranked[0][0], view), fillOpacity: decile ? decileOpacity : base.fillOpacity };
 
         const gid = "g-" + uidL();
         const total = sumVotes(votes);
@@ -274,7 +289,7 @@ export default function MapCanvas() {
         gradient.setAttribute("id", gid); gradient.setAttribute("x1", "0"); gradient.setAttribute("x2", "1"); gradient.setAttribute("y1", "0"); gradient.setAttribute("y2", "0");
         gradient.innerHTML = stops;
         defsRef.current!.appendChild(gradient);
-        return { ...base, fillColor: `url(#${gid})` };
+        return { ...base, fillColor: `url(#${gid})`, fillOpacity: decile ? decileOpacity : base.fillOpacity };
       },
       onEachFeature: (feature: any, featureLayer: any) => {
         const props = feature.properties || {};
@@ -287,7 +302,7 @@ export default function MapCanvas() {
         const territoryHint = e.upzVotes ? "datos agregados por UPZ" : `${stationCount} puesto${stationCount === 1 ? "" : "s"}`;
         featureLayer.bindTooltip(`${escapeHtml(label)} · ${territoryHint}`, { sticky: true });
         featureLayer.bindPopup(
-          !stationCount
+          !stationCount && !e.upzVotes
             ? `<div class="dossier-pop"><h4>${escapeHtml(label)}</h4><div class="hint">${escapeHtml(locality)}</div><p>Sin puestos de votación en la fuente geográfica; esta UPZ aparece en gris.</p></div>`
             : ranked.length
               ? popupHTML(e, votes, label, ` · ${territoryHint} · ${escapeHtml(locality)}`, view)
@@ -447,13 +462,15 @@ export default function MapCanvas() {
       territoryLevel === "puestos"
         ? `Círculo exterior: ganador · interior: segundo lugar · tamaño según ${marginMetric === "absolute" ? "diferencia absoluta de votos" : "diferencia porcentual del total"} · número: puestos agrupados.`
         : territoryLevel === "upz"
-          ? `Los votos de los puestos se suman por UPZ; cada elección es una capa transparente. Las UPZ sin puestos tienen relleno gris.`
+          ? upzDecileFilterEnabled && visible.includes("enmarcha-concejo-upz")
+            ? "En Marcha: decil 1 muestra las UPZ con más votos; el decil 10 usa un color muy suave. Las demás elecciones se muestran con su intensidad normal."
+            : "Los votos de los puestos se suman por UPZ; cada elección es una capa transparente. Las UPZ sin puestos tienen relleno gris."
           : mode === "split"
             ? "Cada localidad se divide en franjas proporcionales; las elecciones se superponen con transparencia."
             : "Cada elección seleccionada se superpone con transparencia; los colores se mezclan en las zonas compartidas."
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ready, visible, mode, opacity, marginMetric, territoryLevel, localitiesGeo, upzGeo, localitiesError, upzError, upzLoading, elections, resultViewByElection]);
+  }, [ready, visible, mode, opacity, marginMetric, territoryLevel, localitiesGeo, upzGeo, localitiesError, upzError, upzLoading, elections, resultViewByElection, upzDecileFilterEnabled]);
 
   // --- Encuadrar automáticamente al cambiar de capa territorial ---
   useEffect(() => {
