@@ -50,7 +50,7 @@ const themes: Slice[] = [
   { label: "Género", value: 1, color: "#f472b6" },
 ];
 const populations: Slice[] = [
-  { label: "NNA", value: 6, color: "#e9a800" },
+  { label: "Niños, niñas y adolescentes", value: 6, color: "#e9a800" },
   { label: "Personas mayores", value: 3, color: "#c4b5fd" },
   { label: "Personas con discapacidad", value: 2, color: "#58a6d9" },
   { label: "Personas lactantes", value: 2, color: "#f472b6" },
