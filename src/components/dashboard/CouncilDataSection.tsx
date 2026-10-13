@@ -59,17 +59,10 @@ function blockParty(councillor: Councillor) {
 function pointSlots() {
   const slots: { row: number; angle: number; x: number; y: number }[] = [];
   RINGS.forEach((count, row) => {
-    if (row === 0) {
-      // La fila interior se lee como un triángulo invertido: dos arriba y una abajo.
-      slots.push({ row, angle: 150, x: 444, y: 247 });
-      slots.push({ row, angle: 90, x: 460, y: 274 });
-      slots.push({ row, angle: 30, x: 476, y: 247 });
-      return;
-    }
     for (let i = 0; i < count; i += 1) {
       const angle = 180 - (180 * i) / Math.max(1, count - 1);
       const radians = (angle * Math.PI) / 180;
-      slots.push({ row, angle, x: 460 + RADII[row] * Math.cos(radians), y: 288 - RADII[row] * Math.sin(radians) });
+      slots.push({ row, angle, x: 460 + RADII[row] * Math.cos(radians), y: 292 - RADII[row] * Math.sin(radians) });
     }
   });
   return slots.sort((a, b) => b.angle - a.angle || a.row - b.row);
@@ -93,7 +86,8 @@ export default function CouncilDataSection() {
       const display = displayParty(councillor);
       const block = blockParty(councillor);
       const individualColor = councillor.name.includes("Forero Castelblanco Edison Julián") ? "#050505" : null;
-      return { councillor, ...slot, displayParty: display, blockParty: block, color: individualColor ?? (block === "Pacto Histórico" ? "#e9a800" : PARTY_COLORS[block] ?? councillor.color), radius: councillor.party === "En Marcha" ? 10.5 : 9.5 };
+      const largerSeat = councillor.name.includes("Quintero Rubio Juan David") || councillor.name.includes("Saavedra Murcia David Hernando");
+      return { councillor, ...slot, displayParty: display, blockParty: block, color: individualColor ?? (block === "Pacto Histórico" ? "#e9a800" : PARTY_COLORS[block] ?? councillor.color), radius: largerSeat ? 11 : 9.5 };
     });
   }, []);
   const knownVotes = councillors.filter((councillor) => councillor.votes !== null);
