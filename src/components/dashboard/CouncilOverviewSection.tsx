@@ -140,7 +140,7 @@ export default function CouncilOverviewSection() {
   const projects = projectsData.projects;
   return (
     <div className="mt-10 space-y-5">
-      <div className="rounded-[1.5rem] border border-white/10 bg-ink-950/40 p-5 md:p-7"><p className="eyebrow text-signal">Concejo de Bogotá · primer semestre de 2025</p><h3 className="mt-2 font-display text-3xl tracking-tight md:text-4xl">Qué se discutió y a quiénes estuvo dirigido.</h3><p className="mt-3 max-w-3xl text-sm leading-relaxed text-mist-900">Tres lecturas rápidas sobre las sesiones, los temas priorizados por la ciudadanía y los proyectos de acuerdo con enfoque poblacional.</p></div>
+      <div className="rounded-[1.5rem] border border-white/10 bg-ink-950/40 p-5 md:p-7"><p className="eyebrow text-signal">Concejo de Bogotá · primer semestre de 2025</p><h3 className="mt-2 font-display text-3xl tracking-tight md:text-4xl">Qué se discutió y a quiénes estuvo dirigido.</h3><p className="mt-3 max-w-3xl text-sm leading-relaxed text-mist-900">Tres lecturas rápidas sobre las sesiones, los temas priorizados por la ciudadanía y los proyectos de acuerdo con enfoque poblacional en el semestre 2025-I (referencia).</p></div>
       <PieChart title="Distribución de sesiones" subtitle="Actividad del Concejo" totalLabel="152 sesiones" data={sessions} />
       <PieChart title="Temas de los debates de control político" subtitle="Argumentación 30% · 2025-I" totalLabel="151 debates" data={debates} />
       <TimingBarChart />
