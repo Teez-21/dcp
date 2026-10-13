@@ -81,13 +81,22 @@ export default function CouncilDataSection() {
     const order = new Map(PARTY_ORDER.map((party, index) => [party, index]));
     const sorted = [...councillors].sort((a, b) => (order.get(blockParty(a)) ?? 99) - (order.get(blockParty(b)) ?? 99) || a.name.localeCompare(b.name, "es"));
     const slots = pointSlots();
-    return slots.map((slot, index) => {
+    const basePoints = slots.map((slot, index) => {
       const councillor = sorted[index];
       const display = displayParty(councillor);
       const block = blockParty(councillor);
       const individualColor = councillor.name.includes("Forero Castelblanco Edison Julián") ? "#050505" : null;
       const largerSeat = councillor.name.includes("Quintero Rubio Juan David") || councillor.name.includes("Saavedra Murcia David Hernando");
       return { councillor, ...slot, displayParty: display, blockParty: block, color: individualColor ?? (block === "Pacto Histórico" ? "#e9a800" : PARTY_COLORS[block] ?? councillor.color), radius: largerSeat ? 11 : 9.5 };
+    });
+    const vNames = new Set(["Quintero Rubio Juan David", "López Gutiérrez Fernando", "Díaz Martínez Juan Manuel"]);
+    const vPoints = basePoints.filter((point) => vNames.has(point.councillor.name));
+    const vAnchor = vPoints.reduce((sum, point) => ({ x: sum.x + point.x / vPoints.length, y: sum.y + point.y / vPoints.length }), { x: 0, y: 0 });
+    return basePoints.map((point) => {
+      if (point.councillor.name === "Quintero Rubio Juan David") return { ...point, x: vAnchor.x - 14, y: vAnchor.y - 11 };
+      if (point.councillor.name === "López Gutiérrez Fernando") return { ...point, x: vAnchor.x + 14, y: vAnchor.y - 11 };
+      if (point.councillor.name === "Díaz Martínez Juan Manuel") return { ...point, x: vAnchor.x, y: vAnchor.y + 15 };
+      return point;
     });
   }, []);
   const knownVotes = councillors.filter((councillor) => councillor.votes !== null);
