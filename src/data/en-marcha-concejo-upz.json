@@ -1,0 +1,638 @@
+{
+  "id": "enmarcha-concejo-upz",
+  "name": "Votos de En Marcha al Concejo de Bogotá",
+  "dataVersion": "enmarcha-concejo-upz-v1",
+  "candidates": [
+    {
+      "id": "enmarcha-david-hernando-saavedra-murcia",
+      "name": "David Hernando Saavedra Murcia",
+      "color": "#264653",
+      "party": "En Marcha"
+    },
+    {
+      "id": "enmarcha-juan-david-quintero-rubio",
+      "name": "Juan David Quintero Rubio",
+      "color": "#e9a800",
+      "party": "En Marcha"
+    }
+  ],
+  "localidades": {
+    "L1": {
+      "enmarcha-david-hernando-saavedra-murcia": 1476,
+      "enmarcha-juan-david-quintero-rubio": 2223
+    },
+    "L10": {
+      "enmarcha-david-hernando-saavedra-murcia": 1051,
+      "enmarcha-juan-david-quintero-rubio": 993
+    },
+    "L11": {
+      "enmarcha-david-hernando-saavedra-murcia": 2066,
+      "enmarcha-juan-david-quintero-rubio": 2477
+    },
+    "L12": {
+      "enmarcha-david-hernando-saavedra-murcia": 272,
+      "enmarcha-juan-david-quintero-rubio": 426
+    },
+    "L13": {
+      "enmarcha-david-hernando-saavedra-murcia": 327,
+      "enmarcha-juan-david-quintero-rubio": 468
+    },
+    "L14": {
+      "enmarcha-david-hernando-saavedra-murcia": 110,
+      "enmarcha-juan-david-quintero-rubio": 113
+    },
+    "L15": {
+      "enmarcha-david-hernando-saavedra-murcia": 119,
+      "enmarcha-juan-david-quintero-rubio": 232
+    },
+    "L16": {
+      "enmarcha-david-hernando-saavedra-murcia": 284,
+      "enmarcha-juan-david-quintero-rubio": 386
+    },
+    "L17": {
+      "enmarcha-david-hernando-saavedra-murcia": 148,
+      "enmarcha-juan-david-quintero-rubio": 81
+    },
+    "L18": {
+      "enmarcha-david-hernando-saavedra-murcia": 249,
+      "enmarcha-juan-david-quintero-rubio": 310
+    },
+    "L19": {
+      "enmarcha-david-hernando-saavedra-murcia": 375,
+      "enmarcha-juan-david-quintero-rubio": 474
+    },
+    "L2": {
+      "enmarcha-david-hernando-saavedra-murcia": 357,
+      "enmarcha-juan-david-quintero-rubio": 1133
+    },
+    "L3": {
+      "enmarcha-david-hernando-saavedra-murcia": 126,
+      "enmarcha-juan-david-quintero-rubio": 187
+    },
+    "L4": {
+      "enmarcha-david-hernando-saavedra-murcia": 240,
+      "enmarcha-juan-david-quintero-rubio": 305
+    },
+    "L5": {
+      "enmarcha-david-hernando-saavedra-murcia": 182,
+      "enmarcha-juan-david-quintero-rubio": 287
+    },
+    "L6": {
+      "enmarcha-david-hernando-saavedra-murcia": 222,
+      "enmarcha-juan-david-quintero-rubio": 264
+    },
+    "L7": {
+      "enmarcha-david-hernando-saavedra-murcia": 380,
+      "enmarcha-juan-david-quintero-rubio": 612
+    },
+    "L8": {
+      "enmarcha-david-hernando-saavedra-murcia": 1465,
+      "enmarcha-juan-david-quintero-rubio": 2097
+    },
+    "L9": {
+      "enmarcha-david-hernando-saavedra-murcia": 409,
+      "enmarcha-juan-david-quintero-rubio": 548
+    }
+  },
+  "upzVotes": {
+    "1": {
+      "enmarcha-david-hernando-saavedra-murcia": 6,
+      "enmarcha-juan-david-quintero-rubio": 10
+    },
+    "3": {
+      "enmarcha-david-hernando-saavedra-murcia": 5,
+      "enmarcha-juan-david-quintero-rubio": 25
+    },
+    "9": {
+      "enmarcha-david-hernando-saavedra-murcia": 337,
+      "enmarcha-juan-david-quintero-rubio": 122
+    },
+    "10": {
+      "enmarcha-david-hernando-saavedra-murcia": 98,
+      "enmarcha-juan-david-quintero-rubio": 121
+    },
+    "11": {
+      "enmarcha-david-hernando-saavedra-murcia": 29,
+      "enmarcha-juan-david-quintero-rubio": 46
+    },
+    "12": {
+      "enmarcha-david-hernando-saavedra-murcia": 41,
+      "enmarcha-juan-david-quintero-rubio": 55
+    },
+    "13": {
+      "enmarcha-david-hernando-saavedra-murcia": 362,
+      "enmarcha-juan-david-quintero-rubio": 583
+    },
+    "14": {
+      "enmarcha-david-hernando-saavedra-murcia": 186,
+      "enmarcha-juan-david-quintero-rubio": 447
+    },
+    "15": {
+      "enmarcha-david-hernando-saavedra-murcia": 167,
+      "enmarcha-juan-david-quintero-rubio": 307
+    },
+    "16": {
+      "enmarcha-david-hernando-saavedra-murcia": 250,
+      "enmarcha-juan-david-quintero-rubio": 532
+    },
+    "17": {
+      "enmarcha-david-hernando-saavedra-murcia": 113,
+      "enmarcha-juan-david-quintero-rubio": 141
+    },
+    "18": {
+      "enmarcha-david-hernando-saavedra-murcia": 94,
+      "enmarcha-juan-david-quintero-rubio": 103
+    },
+    "19": {
+      "enmarcha-david-hernando-saavedra-murcia": 165,
+      "enmarcha-juan-david-quintero-rubio": 174
+    },
+    "20": {
+      "enmarcha-david-hernando-saavedra-murcia": 131,
+      "enmarcha-juan-david-quintero-rubio": 239
+    },
+    "21": {
+      "enmarcha-david-hernando-saavedra-murcia": 93,
+      "enmarcha-juan-david-quintero-rubio": 136
+    },
+    "22": {
+      "enmarcha-david-hernando-saavedra-murcia": 98,
+      "enmarcha-juan-david-quintero-rubio": 159
+    },
+    "23": {
+      "enmarcha-david-hernando-saavedra-murcia": 362,
+      "enmarcha-juan-david-quintero-rubio": 345
+    },
+    "24": {
+      "enmarcha-david-hernando-saavedra-murcia": 237,
+      "enmarcha-juan-david-quintero-rubio": 377
+    },
+    "25": {
+      "enmarcha-david-hernando-saavedra-murcia": 72,
+      "enmarcha-juan-david-quintero-rubio": 142
+    },
+    "26": {
+      "enmarcha-david-hernando-saavedra-murcia": 115,
+      "enmarcha-juan-david-quintero-rubio": 113
+    },
+    "27": {
+      "enmarcha-david-hernando-saavedra-murcia": 283,
+      "enmarcha-juan-david-quintero-rubio": 262
+    },
+    "28": {
+      "enmarcha-david-hernando-saavedra-murcia": 330,
+      "enmarcha-juan-david-quintero-rubio": 328
+    },
+    "29": {
+      "enmarcha-david-hernando-saavedra-murcia": 173,
+      "enmarcha-juan-david-quintero-rubio": 196
+    },
+    "30": {
+      "enmarcha-david-hernando-saavedra-murcia": 234,
+      "enmarcha-juan-david-quintero-rubio": 159
+    },
+    "31": {
+      "enmarcha-david-hernando-saavedra-murcia": 81,
+      "enmarcha-juan-david-quintero-rubio": 56
+    },
+    "32": {
+      "enmarcha-david-hernando-saavedra-murcia": 31,
+      "enmarcha-juan-david-quintero-rubio": 30
+    },
+    "33": {
+      "enmarcha-david-hernando-saavedra-murcia": 53,
+      "enmarcha-juan-david-quintero-rubio": 58
+    },
+    "34": {
+      "enmarcha-david-hernando-saavedra-murcia": 60,
+      "enmarcha-juan-david-quintero-rubio": 95
+    },
+    "35": {
+      "enmarcha-david-hernando-saavedra-murcia": 37,
+      "enmarcha-juan-david-quintero-rubio": 58
+    },
+    "36": {
+      "enmarcha-david-hernando-saavedra-murcia": 40,
+      "enmarcha-juan-david-quintero-rubio": 50
+    },
+    "37": {
+      "enmarcha-david-hernando-saavedra-murcia": 39,
+      "enmarcha-juan-david-quintero-rubio": 48
+    },
+    "38": {
+      "enmarcha-david-hernando-saavedra-murcia": 82,
+      "enmarcha-juan-david-quintero-rubio": 174
+    },
+    "39": {
+      "enmarcha-david-hernando-saavedra-murcia": 99,
+      "enmarcha-juan-david-quintero-rubio": 105
+    },
+    "40": {
+      "enmarcha-david-hernando-saavedra-murcia": 132,
+      "enmarcha-juan-david-quintero-rubio": 153
+    },
+    "41": {
+      "enmarcha-david-hernando-saavedra-murcia": 68,
+      "enmarcha-juan-david-quintero-rubio": 93
+    },
+    "42": {
+      "enmarcha-david-hernando-saavedra-murcia": 149,
+      "enmarcha-juan-david-quintero-rubio": 179
+    },
+    "43": {
+      "enmarcha-david-hernando-saavedra-murcia": 59,
+      "enmarcha-juan-david-quintero-rubio": 123
+    },
+    "44": {
+      "enmarcha-david-hernando-saavedra-murcia": 147,
+      "enmarcha-juan-david-quintero-rubio": 217
+    },
+    "45": {
+      "enmarcha-david-hernando-saavedra-murcia": 172,
+      "enmarcha-juan-david-quintero-rubio": 240
+    },
+    "46": {
+      "enmarcha-david-hernando-saavedra-murcia": 272,
+      "enmarcha-juan-david-quintero-rubio": 350
+    },
+    "47": {
+      "enmarcha-david-hernando-saavedra-murcia": 191,
+      "enmarcha-juan-david-quintero-rubio": 382
+    },
+    "48": {
+      "enmarcha-david-hernando-saavedra-murcia": 204,
+      "enmarcha-juan-david-quintero-rubio": 258
+    },
+    "49": {
+      "enmarcha-david-hernando-saavedra-murcia": 25,
+      "enmarcha-juan-david-quintero-rubio": 39
+    },
+    "50": {
+      "enmarcha-david-hernando-saavedra-murcia": 61,
+      "enmarcha-juan-david-quintero-rubio": 76
+    },
+    "51": {
+      "enmarcha-david-hernando-saavedra-murcia": 35,
+      "enmarcha-juan-david-quintero-rubio": 46
+    },
+    "52": {
+      "enmarcha-david-hernando-saavedra-murcia": 14,
+      "enmarcha-juan-david-quintero-rubio": 8
+    },
+    "53": {
+      "enmarcha-david-hernando-saavedra-murcia": 38,
+      "enmarcha-juan-david-quintero-rubio": 58
+    },
+    "54": {
+      "enmarcha-david-hernando-saavedra-murcia": 47,
+      "enmarcha-juan-david-quintero-rubio": 59
+    },
+    "55": {
+      "enmarcha-david-hernando-saavedra-murcia": 25,
+      "enmarcha-juan-david-quintero-rubio": 38
+    },
+    "56": {
+      "enmarcha-david-hernando-saavedra-murcia": 27,
+      "enmarcha-juan-david-quintero-rubio": 26
+    },
+    "57": {
+      "enmarcha-david-hernando-saavedra-murcia": 84,
+      "enmarcha-juan-david-quintero-rubio": 154
+    },
+    "58": {
+      "enmarcha-david-hernando-saavedra-murcia": 37,
+      "enmarcha-juan-david-quintero-rubio": 61
+    },
+    "59": {
+      "enmarcha-david-hernando-saavedra-murcia": 15,
+      "enmarcha-juan-david-quintero-rubio": 16
+    },
+    "61": {
+      "enmarcha-david-hernando-saavedra-murcia": 5,
+      "enmarcha-juan-david-quintero-rubio": 22
+    },
+    "62": {
+      "enmarcha-david-hernando-saavedra-murcia": 73,
+      "enmarcha-juan-david-quintero-rubio": 85
+    },
+    "65": {
+      "enmarcha-david-hernando-saavedra-murcia": 72,
+      "enmarcha-juan-david-quintero-rubio": 87
+    },
+    "66": {
+      "enmarcha-david-hernando-saavedra-murcia": 59,
+      "enmarcha-juan-david-quintero-rubio": 102
+    },
+    "67": {
+      "enmarcha-david-hernando-saavedra-murcia": 96,
+      "enmarcha-juan-david-quintero-rubio": 110
+    },
+    "68": {
+      "enmarcha-david-hernando-saavedra-murcia": 30,
+      "enmarcha-juan-david-quintero-rubio": 33
+    },
+    "69": {
+      "enmarcha-david-hernando-saavedra-murcia": 98,
+      "enmarcha-juan-david-quintero-rubio": 103
+    },
+    "70": {
+      "enmarcha-david-hernando-saavedra-murcia": 20,
+      "enmarcha-juan-david-quintero-rubio": 39
+    },
+    "71": {
+      "enmarcha-david-hernando-saavedra-murcia": 274,
+      "enmarcha-juan-david-quintero-rubio": 341
+    },
+    "72": {
+      "enmarcha-david-hernando-saavedra-murcia": 126,
+      "enmarcha-juan-david-quintero-rubio": 139
+    },
+    "73": {
+      "enmarcha-david-hernando-saavedra-murcia": 200,
+      "enmarcha-juan-david-quintero-rubio": 193
+    },
+    "74": {
+      "enmarcha-david-hernando-saavedra-murcia": 84,
+      "enmarcha-juan-david-quintero-rubio": 89
+    },
+    "75": {
+      "enmarcha-david-hernando-saavedra-murcia": 128,
+      "enmarcha-juan-david-quintero-rubio": 162
+    },
+    "76": {
+      "enmarcha-david-hernando-saavedra-murcia": 10,
+      "enmarcha-juan-david-quintero-rubio": 20
+    },
+    "77": {
+      "enmarcha-david-hernando-saavedra-murcia": 34,
+      "enmarcha-juan-david-quintero-rubio": 43
+    },
+    "78": {
+      "enmarcha-david-hernando-saavedra-murcia": 44,
+      "enmarcha-juan-david-quintero-rubio": 59
+    },
+    "79": {
+      "enmarcha-david-hernando-saavedra-murcia": 77,
+      "enmarcha-juan-david-quintero-rubio": 81
+    },
+    "80": {
+      "enmarcha-david-hernando-saavedra-murcia": 21,
+      "enmarcha-juan-david-quintero-rubio": 38
+    },
+    "81": {
+      "enmarcha-david-hernando-saavedra-murcia": 47,
+      "enmarcha-juan-david-quintero-rubio": 102
+    },
+    "82": {
+      "enmarcha-david-hernando-saavedra-murcia": 149,
+      "enmarcha-juan-david-quintero-rubio": 191
+    },
+    "83": {
+      "enmarcha-david-hernando-saavedra-murcia": 5,
+      "enmarcha-juan-david-quintero-rubio": 10
+    },
+    "84": {
+      "enmarcha-david-hernando-saavedra-murcia": 80,
+      "enmarcha-juan-david-quintero-rubio": 126
+    },
+    "85": {
+      "enmarcha-david-hernando-saavedra-murcia": 178,
+      "enmarcha-juan-david-quintero-rubio": 302
+    },
+    "86": {
+      "enmarcha-david-hernando-saavedra-murcia": 42,
+      "enmarcha-juan-david-quintero-rubio": 85
+    },
+    "87": {
+      "enmarcha-david-hernando-saavedra-murcia": 55,
+      "enmarcha-juan-david-quintero-rubio": 60
+    },
+    "88": {
+      "enmarcha-david-hernando-saavedra-murcia": 98,
+      "enmarcha-juan-david-quintero-rubio": 416
+    },
+    "89": {
+      "enmarcha-david-hernando-saavedra-murcia": 5,
+      "enmarcha-juan-david-quintero-rubio": 13
+    },
+    "90": {
+      "enmarcha-david-hernando-saavedra-murcia": 25,
+      "enmarcha-juan-david-quintero-rubio": 83
+    },
+    "91": {
+      "enmarcha-david-hernando-saavedra-murcia": 16,
+      "enmarcha-juan-david-quintero-rubio": 26
+    },
+    "92": {
+      "enmarcha-david-hernando-saavedra-murcia": 13,
+      "enmarcha-juan-david-quintero-rubio": 15
+    },
+    "93": {
+      "enmarcha-david-hernando-saavedra-murcia": 55,
+      "enmarcha-juan-david-quintero-rubio": 100
+    },
+    "94": {
+      "enmarcha-david-hernando-saavedra-murcia": 148,
+      "enmarcha-juan-david-quintero-rubio": 81
+    },
+    "95": {
+      "enmarcha-david-hernando-saavedra-murcia": 18,
+      "enmarcha-juan-david-quintero-rubio": 15
+    },
+    "96": {
+      "enmarcha-david-hernando-saavedra-murcia": 24,
+      "enmarcha-juan-david-quintero-rubio": 31
+    },
+    "97": {
+      "enmarcha-david-hernando-saavedra-murcia": 140,
+      "enmarcha-juan-david-quintero-rubio": 463
+    },
+    "98": {
+      "enmarcha-david-hernando-saavedra-murcia": 77,
+      "enmarcha-juan-david-quintero-rubio": 127
+    },
+    "99": {
+      "enmarcha-david-hernando-saavedra-murcia": 89,
+      "enmarcha-juan-david-quintero-rubio": 158
+    },
+    "100": {
+      "enmarcha-david-hernando-saavedra-murcia": 77,
+      "enmarcha-juan-david-quintero-rubio": 93
+    },
+    "101": {
+      "enmarcha-david-hernando-saavedra-murcia": 32,
+      "enmarcha-juan-david-quintero-rubio": 69
+    },
+    "102": {
+      "enmarcha-david-hernando-saavedra-murcia": 71,
+      "enmarcha-juan-david-quintero-rubio": 65
+    },
+    "103": {
+      "enmarcha-david-hernando-saavedra-murcia": 4,
+      "enmarcha-juan-david-quintero-rubio": 4
+    },
+    "104": {
+      "enmarcha-david-hernando-saavedra-murcia": 36,
+      "enmarcha-juan-david-quintero-rubio": 42
+    },
+    "105": {
+      "enmarcha-david-hernando-saavedra-murcia": 17,
+      "enmarcha-juan-david-quintero-rubio": 24
+    },
+    "106": {
+      "enmarcha-david-hernando-saavedra-murcia": 90,
+      "enmarcha-juan-david-quintero-rubio": 147
+    },
+    "107": {
+      "enmarcha-david-hernando-saavedra-murcia": 40,
+      "enmarcha-juan-david-quintero-rubio": 56
+    },
+    "108": {
+      "enmarcha-david-hernando-saavedra-murcia": 11,
+      "enmarcha-juan-david-quintero-rubio": 3
+    },
+    "109": {
+      "enmarcha-david-hernando-saavedra-murcia": 52,
+      "enmarcha-juan-david-quintero-rubio": 61
+    },
+    "110": {
+      "enmarcha-david-hernando-saavedra-murcia": 72,
+      "enmarcha-juan-david-quintero-rubio": 92
+    },
+    "111": {
+      "enmarcha-david-hernando-saavedra-murcia": 14,
+      "enmarcha-juan-david-quintero-rubio": 14
+    },
+    "112": {
+      "enmarcha-david-hernando-saavedra-murcia": 82,
+      "enmarcha-juan-david-quintero-rubio": 127
+    },
+    "113": {
+      "enmarcha-david-hernando-saavedra-murcia": 136,
+      "enmarcha-juan-david-quintero-rubio": 169
+    },
+    "114": {
+      "enmarcha-david-hernando-saavedra-murcia": 71,
+      "enmarcha-juan-david-quintero-rubio": 98
+    },
+    "115": {
+      "enmarcha-david-hernando-saavedra-murcia": 12,
+      "enmarcha-juan-david-quintero-rubio": 6
+    },
+    "116": {
+      "enmarcha-david-hernando-saavedra-murcia": 21,
+      "enmarcha-juan-david-quintero-rubio": 24
+    }
+  },
+  "upzNames": {
+    "1": "Paseo De Los Libertadores",
+    "3": "Guaymaral",
+    "9": "Verbenal",
+    "10": "La Uribe",
+    "11": "San Cristobal Norte",
+    "12": "Toberin",
+    "13": "Los Cedros",
+    "14": "Usaquen",
+    "15": "Country Club",
+    "16": "Santa Barbara",
+    "17": "San Jose De Bavaria",
+    "18": "Britalia",
+    "19": "El Prado",
+    "20": "La Alhambra",
+    "21": "Los Andes",
+    "22": "Doce De Octubre",
+    "23": "Casa Blanca Suba",
+    "24": "Niza",
+    "25": "La Floresta",
+    "26": "Las Ferias",
+    "27": "Suba",
+    "28": "El Rincon",
+    "29": "Minuto De Dios",
+    "30": "Boyaca Real",
+    "31": "Santa Cecilia",
+    "32": "San Blas",
+    "33": "Sosiego",
+    "34": "20 De Julio",
+    "35": "Ciudad Jardin",
+    "36": "San Jose",
+    "37": "Santa Isabel",
+    "38": "Restrepo",
+    "39": "Quiroga",
+    "40": "Ciudad Montes",
+    "41": "Muzu",
+    "42": "Venecia",
+    "43": "San Rafael",
+    "44": "Americas",
+    "45": "Carvajal",
+    "46": "Castilla",
+    "47": "Kennedy Central",
+    "48": "Timiza",
+    "49": "Apogeo",
+    "50": "La Gloria",
+    "51": "Los Libertadores",
+    "52": "La Flora",
+    "53": "Marco Fidel Suarez",
+    "54": "Marruecos",
+    "55": "Diana Turbay",
+    "56": "Danubio",
+    "57": "Gran Yomasa",
+    "58": "Comuneros",
+    "59": "Alfonso Lopez",
+    "61": "Ciudad Usme",
+    "62": "Tunjuelito",
+    "65": "Arborizadora",
+    "66": "San Francisco",
+    "67": "Lucero",
+    "68": "El Tesoro",
+    "69": "Ismael Perdomo",
+    "70": "Jerusalem",
+    "71": "Tibabuyes",
+    "72": "Bolivia",
+    "73": "Garces Navas",
+    "74": "Engativa",
+    "75": "Fontibon",
+    "76": "Fontibon San Pablo",
+    "77": "Zona Franca",
+    "78": "Tintal Norte",
+    "79": "Calandaima",
+    "80": "Corabastos",
+    "81": "Gran Britalia",
+    "82": "Patio Bonito",
+    "83": "Las Margaritas",
+    "84": "Bosa Occidental",
+    "85": "Bosa Central",
+    "86": "El Porvenir",
+    "87": "Tintal Sur",
+    "88": "El Refugio",
+    "89": "San Isidro - Patios",
+    "90": "Pardo Rubio",
+    "91": "Sagrado Corazon",
+    "92": "La Macarena",
+    "93": "Las Nieves",
+    "94": "La Candelaria",
+    "95": "Las Cruces",
+    "96": "Lourdes",
+    "97": "Chico Lago",
+    "98": "Los Alcazares",
+    "99": "Chapinero",
+    "100": "Galerias",
+    "101": "Teusaquillo",
+    "102": "La Sabana",
+    "103": "Parque Salitre",
+    "104": "Parque Simon Bolivar - Can",
+    "105": "Jardin Botanico",
+    "106": "La Esmeralda",
+    "107": "Quinta Paredes",
+    "108": "Zona Industrial",
+    "109": "Ciudad Salitre Oriental",
+    "110": "Ciudad Salitre Occidental",
+    "111": "Puente Aranda",
+    "112": "Granjas De Techo",
+    "113": "Bavaria",
+    "114": "Modelia",
+    "115": "Capellania",
+    "116": "Alamos"
+  },
+  "puestos": [],
+  "partyMode": false
+}

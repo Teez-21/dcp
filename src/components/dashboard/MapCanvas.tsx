@@ -228,6 +228,7 @@ export default function MapCanvas() {
   }
 
   function upzVotesForElection(e: Election, view: ResultView): Record<string, Record<string, number>> {
+    if (e.upzVotes) return e.upzVotes;
     const totals: Record<string, Record<string, number>> = {};
     e.puestos.forEach((puesto) => {
       const station = stationForPuesto(puesto);
@@ -283,13 +284,14 @@ export default function MapCanvas() {
         const stationCount = Number(props.PUESTOS_GEOJSON_COUNT ?? 0);
         const votes = votesByUpz[code] || {};
         const ranked = ranking(votes);
-        featureLayer.bindTooltip(`${escapeHtml(label)} · ${stationCount} puesto${stationCount === 1 ? "" : "s"}`, { sticky: true });
+        const territoryHint = e.upzVotes ? "datos agregados por UPZ" : `${stationCount} puesto${stationCount === 1 ? "" : "s"}`;
+        featureLayer.bindTooltip(`${escapeHtml(label)} · ${territoryHint}`, { sticky: true });
         featureLayer.bindPopup(
           !stationCount
             ? `<div class="dossier-pop"><h4>${escapeHtml(label)}</h4><div class="hint">${escapeHtml(locality)}</div><p>Sin puestos de votación en la fuente geográfica; esta UPZ aparece en gris.</p></div>`
             : ranked.length
-              ? popupHTML(e, votes, label, ` · ${stationCount} puestos · ${escapeHtml(locality)}`, view)
-              : `<div class="dossier-pop"><h4>${escapeHtml(label)}</h4><div class="hint">${escapeHtml(locality)} · ${stationCount} puestos</div><p>Sin resultados para esta elección.</p></div>`
+              ? popupHTML(e, votes, label, ` · ${territoryHint} · ${escapeHtml(locality)}`, view)
+              : `<div class="dossier-pop"><h4>${escapeHtml(label)}</h4><div class="hint">${escapeHtml(locality)} · ${territoryHint}</div><p>Sin resultados para esta elección.</p></div>`
         );
         featureLayer.on("mouseover", () => featureLayer.setStyle({ weight: 2.6 }));
         featureLayer.on("mouseout", () => layer.resetStyle(featureLayer));

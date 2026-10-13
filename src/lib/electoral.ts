@@ -27,6 +27,9 @@ export type Election = {
   /** votos agregados por localidad, clave 'L1'..'L20' u otra normalizada */
   localidades: Record<string, Record<string, number>>;
   puestos: Puesto[];
+  /** Votos agregados directamente por código UPZ, cuando la fuente no está desagregada por puesto. */
+  upzVotes?: Record<string, Record<string, number>>;
+  upzNames?: Record<string, string>;
   partyVotes?: Record<string, Record<string, number>>;
   /** Colores por partido, incluidos los partidos con sólo votos no preferentes de lista. */
   partyColors?: Record<string, string>;

@@ -213,8 +213,10 @@ export default function ControlDeck() {
           </div>
           {editingE && (
             <p className="-mt-2 px-0.5 text-[11px] text-muted">
-              {Object.keys(editingE.localidades).length} localidades con datos · {editingE.puestos.length} puestos
-              ({editingE.puestos.filter((p) => Number.isFinite(p.lat) && Number.isFinite(p.lng) || Boolean(stationForPuesto(p))).length} con coordenadas)
+              {editingE.upzVotes
+                ? `${Object.keys(editingE.upzVotes).length} UPZ con datos directos`
+                : <>{Object.keys(editingE.localidades).length} localidades con datos · {editingE.puestos.length} puestos
+                  ({editingE.puestos.filter((p) => Number.isFinite(p.lat) && Number.isFinite(p.lng) || Boolean(stationForPuesto(p))).length} con coordenadas)</>}
             </p>
           )}
 

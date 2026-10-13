@@ -11,6 +11,7 @@ import {
 import preloadedAlcaldia from "@/data/alcaldia-2023.json";
 import preloadedPresidencial from "@/data/presidencial-primera-vuelta.json";
 import preloadedPresidencialSegunda from "@/data/presidencial-segunda-vuelta.json";
+import preloadedEnMarcha from "@/data/en-marcha-concejo-upz.json";
 
 export type JournalEntry = { id: string; title: string; body: string; createdAt: string };
 export type JournalTopic = { id: string; title: string; description: string; entries: JournalEntry[] };
@@ -73,6 +74,7 @@ const defaultElections = (): Election[] => [
   { ...newElection("camara", "Cámara de Representantes · Bogotá 2026–2030"), partyMode: true },
   preloadedAlcaldia as Election,
   { ...newElection("concejo", "Concejo de Bogotá 2023-2027"), partyMode: true },
+  preloadedEnMarcha as Election,
 ];
 
 export const useDashboardStore = create<State & Actions>()(
@@ -102,7 +104,7 @@ export const useDashboardStore = create<State & Actions>()(
           const presidencia = s.elections.find((e) => e.id === "pres1");
           const presidencia2 = s.elections.find((e) => e.id === "pres2");
           const preloadedPresidencialSegundaData = preloadedPresidencialSegunda as Election;
-          const elections = s.elections.map((e) => {
+          const mappedElections = s.elections.map((e) => {
             if (e.id === "alcaldia" && needsAlcaldiaRefresh) {
               const savedById = new Map(e.candidates.map((candidate) => [candidate.id, candidate]));
               const sourceIds = new Set(preloadedAlcaldiaData.candidates.map((candidate) => candidate.id));
@@ -126,6 +128,9 @@ export const useDashboardStore = create<State & Actions>()(
             if (e.id === "pres2" && (!presidencia2 || presidencia2.dataVersion !== preloadedPresidencialSegundaData.dataVersion || !Object.keys(presidencia2.localidades).length)) return preloadedPresidencialSegundaData;
             return e;
           });
+          const elections = mappedElections.some((e) => e.id === preloadedEnMarcha.id)
+            ? mappedElections
+            : [...mappedElections, preloadedEnMarcha as Election];
           const oldEmptyView = s.visible.length === 1 && s.visible[0] === "pres1";
           const pres1 = s.elections.find((e) => e.id === "pres1");
           const oldPresidentialStateIsEmpty = !pres1 || Object.keys(pres1.localidades).length === 0;
