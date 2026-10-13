@@ -143,7 +143,6 @@ export default function Dashboard() {
           <div className="hero-orb hero-orb-two" />
           <div className="container-wide relative mx-auto w-full">
             <motion.div style={{ opacity: heroOpacity, scale: heroScale, y: heroY }} className="max-w-6xl">
-              <Reveal delay={0.05}><p className="eyebrow mb-7"><span className="status-dot" />Centro de inteligencia · {new Date().getFullYear()}</p></Reveal>
               <h1 className="font-display text-[clamp(4rem,12vw,11rem)] font-semibold leading-[.82] tracking-[-.075em] text-mist-100">
                 <HeroWord delay={0.12}>Hub</HeroWord>{" "}
                 <HeroWord delay={0.2}>-</HeroWord>{" "}<br className="hidden md:block" />
